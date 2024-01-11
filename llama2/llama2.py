@@ -1,32 +1,24 @@
+from transformers import AutoTokenizer
+import transformers
 import torch
-from transformers import Llama2Model, Llama2Tokenizer
 
-# Set the CUDA devices
-device_ids = [0, 1, 2]  # Replace with the device IDs you want to use
-torch.cuda.set_device(device_ids[0])
-torch.cuda.init()
+model = "meta-llama/Llama-2-7b-chat-hf"
 
-# Load the Llama 2 model and tokenizer
-model_name = "llama-2"
-model = Llama2Model.from_pretrained(model_name)
-tokenizer = Llama2Tokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model)
+pipeline = transformers.pipeline(
+    "text-generation",
+    model=model,
+    torch_dtype=torch.float16,
+    device_map="auto",
+)
 
-# Move the model to CUDA devices
-model = model.to(device_ids[0])
-if len(device_ids) > 1:
-    model = torch.nn.DataParallel(model, device_ids=device_ids)
-
-# Accept prompts and process them
-while True:
-    prompt = input("Enter a prompt (or 'exit' to quit): ")
-    if prompt == "exit":
-        break
-
-    inputs = tokenizer(prompt, return_tensors="pt")
-    inputs = inputs.to(device_ids[0])
-
-    with torch.no_grad():
-        outputs = model(**inputs)
-
-    # Process the outputs as needed
-    # ...
+sequences = pipeline(
+    'I liked "Breaking Bad" and "Band of Brothers". Do you have any recommendations of other shows I might like?\n',
+    do_sample=True,
+    top_k=10,
+    num_return_sequences=1,
+    eos_token_id=tokenizer.eos_token_id,
+    max_length=200,
+)
+for seq in sequences:
+    print(f"Result: {seq['generated_text']}")
