@@ -5,7 +5,7 @@ from pyJoules.device.nvidia_device import NvidiaGPUDomain
 from pyJoules.handler.csv_handler import CSVHandler
 
 num_gpus = torch.cuda.device_count()
-csv_handle = CSVHandler(f"mistral7b-cuda-{num_gpus}.csv")
+csv_handle = CSVHandler(f"phi2-cuda-{num_gpus}.csv")
 num_tokens = 200
 
 with EnergyContext(
@@ -13,7 +13,7 @@ with EnergyContext(
     domains=[NvidiaGPUDomain([i for i in range(num_gpus)])],
     start_tag="tokenizer",
 ) as ctx:
-    model_name = "mistralai/Mistral-7B-v0.1"
+    model_name = "microsoft/phi-2"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     ctx.record(tag="model load")
     model = AutoModelForCausalLM.from_pretrained(

@@ -5,7 +5,7 @@ from pyJoules.device.nvidia_device import NvidiaGPUDomain
 from pyJoules.handler.csv_handler import CSVHandler
 
 num_gpus = torch.cuda.device_count()
-csv_handle = CSVHandler(f"mistral7b-cuda-{num_gpus}.csv")
+csv_handle = CSVHandler(f"llama2-7b-cuda-{num_gpus}.csv")
 num_tokens = 200
 
 with EnergyContext(
@@ -13,23 +13,17 @@ with EnergyContext(
     domains=[NvidiaGPUDomain([i for i in range(num_gpus)])],
     start_tag="tokenizer",
 ) as ctx:
-    model_name = "mistralai/Mistral-7B-v0.1"
+    model_name = "meta-llama/Llama-2-7b-chat-hf"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    ctx.record(tag="model load")
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        trust_remote_code=True,
-    )
     ctx.record(tag="pipeline load")
+
     pipe = pipeline(
         "text-generation",
-        model=model,
-        tokenizer=tokenizer,
-        torch_dtype=torch.bfloat16,
+        model=model_name,
+        torch_dtype=torch.float16,
         device_map="auto",
     )
+
     ctx.record(tag="inference")
     prompt = "As a data scientist, can you explain the concept of regularization in machine learning?"
     sequences = pipe(
