@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#SBATCH -J mistral-1
+#SBATCH -J phi2-1
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=1:00:00 
 #SBATCH --gres=gpu:1
 
-cd /home/ac.gwilkins/energy-inference/mistral/
+cd /home/ac.gwilkins/energy-inference/phi/
 for i in {0..25}
 do
-	python3 mistral7b-cuda.py
+	python3 phi-2-cuda.py
 done
