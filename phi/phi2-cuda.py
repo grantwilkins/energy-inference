@@ -10,7 +10,7 @@ num_tokens = 200
 
 with EnergyContext(
     handler=csv_handle,
-    domains=[NvidiaGPUDomain([i for i in range(num_gpus)])],
+    domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
     start_tag="tokenizer",
 ) as ctx:
     model_name = "microsoft/phi-2"
