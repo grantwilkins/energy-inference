@@ -110,3 +110,21 @@ plt.xlabel("Time (s)")
 plt.ylabel("Power (W)")
 plt.tight_layout()
 plt.savefig("llama2-mps.pdf")
+
+
+def aggregate_time(row):
+    global time, last_event
+    if last_event != row["event"]:
+        time = 0
+    else:
+        time += row["timestamp"]
+    last_event = row["event"]
+    return time
+
+
+df["Process Time"] = df.apply(aggregate_time, axis=1) / 1000
+df["Token Rate (tokens/s)"] = token_count / df["Process Time"]
+df_inference = df[df["event"] == "inference"]
+print(df_inference["Token Rate (tokens/s)"].min())
+print(df_inference["GPU Energy (J)"].max())
+print(df_inference["GPU Energy (J)"].max() / token_count)
