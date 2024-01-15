@@ -32,6 +32,7 @@ print(df_inference.groupby("GPU Count")["Token Rate (tokens/s)"].mean())
 
 sns.set_theme(style="whitegrid")
 sns.set_context("paper")
+plt.figure(figsize=(4, 3))
 sns.barplot(
     x="Event",
     y="Total GPU Energy (J)",
