@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from time import sleep
+import io
 
 
 def monitor_power_usage(power_readings, stop_monitoring):
