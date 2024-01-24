@@ -7,8 +7,8 @@
 #SBATCH --time=1:00:00 
 #SBATCH --gres=gpu:8
 
-cd /home/ac.gwilkins/energy-inference/phi/
+cd /home/ac.gwilkins/energy-inference/cuda/
 for i in {0..25}
 do
-	python3 phi-2-cuda.py
+	python3 open-source-cuda.py --num_tokens 1000 --model_name microsoft/phi-2
 done

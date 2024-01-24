@@ -3,11 +3,9 @@ import torch
 import subprocess
 import threading
 import re
-import time
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from time import sleep
+import argparse
 
 
 def monitor_power_usage(power_readings, stop_monitoring):
@@ -56,19 +54,28 @@ def process_data(power_readings, event):
     return readings
 
 
-num_tokens = 200
-model_name = "meta-llama/Llama-2-7b-chat-hf"
+parser = argparse.ArgumentParser()
+parser.add_argument("--num_tokens", type=int, default=200)
+parser.add_argument("--model_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
+args = parser.parse_args()
+num_tokens = args.num_tokens
+model_name = args.model_name
 tokenizer_event = threading.Event()
+model_load_event = threading.Event()
 pipeline_load_event = threading.Event()
 inference_event = threading.Event()
 power_readings = {
     "tokenizer": [],
+    "model load": [],
     "pipeline load": [],
     "inference": [],
 }
 # Start the power monitoring in a separate thread
 tokenizer_monitor = threading.Thread(
     target=monitor_power_usage, args=(power_readings["tokenizer"], tokenizer_event)
+)
+model_load_monitor = threading.Thread(
+    target=monitor_power_usage, args=(power_readings["model load"], model_load_event)
 )
 pipeline_load_monitor = threading.Thread(
     target=monitor_power_usage,
@@ -84,11 +91,23 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer_event.set()
 tokenizer_monitor.join()
 
+
+model_load_monitor.start()
+sleep(2)
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype=torch.float16,
+    device_map="auto",
+    trust_remote_code=True,
+)
+model_load_event.set()
+model_load_monitor.join()
+
 pipeline_load_monitor.start()
 sleep(2)
 pipe = pipeline(
     "text-generation",
-    model=model_name,
+    model=model,
     tokenizer=tokenizer,
     torch_dtype=torch.float16,
     device_map="auto",
@@ -116,9 +135,11 @@ print(sequences[0]["generated_text"])
 
 # Process the collected data
 readings = process_data(power_readings["tokenizer"], "tokenizer")
+readings.extend(process_data(power_readings["model load"], "model load"))
 readings.extend(process_data(power_readings["pipeline load"], "pipeline load"))
 readings.extend(process_data(power_readings["inference"], "inference"))
 
 df_power = pd.DataFrame(readings)
 
-df_power.to_csv("llama2-mps.csv", index=False, header=True, mode="a")
+stats_name = model_name.split("/")[1]
+df_power.to_csv(f"{stats_name}-mps.csv", index=False, header=False, mode="a")
