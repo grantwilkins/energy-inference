@@ -41,17 +41,19 @@ with EnergyContext(
         torch_dtype=torch.bfloat16,
         device_map="auto",
     )
-    ctx.record(tag="inference")
-    prompt = "As a data scientist, can you explain the concept of regularization in machine learning?"
-    sequences = pipe(
-        prompt,
-        do_sample=True,
-        max_new_tokens=num_tokens,
-        temperature=0.7,
-        top_k=50,
-        top_p=0.95,
-        num_return_sequences=1,
-    )
-    print(sequences[0]["generated_text"])
+
+    for i in range(10):
+        ctx.record(tag=f"inference-{i}")
+        prompt = "As a data scientist, can you explain the concept of regularization in machine learning?"
+        sequences = pipe(
+            prompt,
+            do_sample=True,
+            max_new_tokens=num_tokens,
+            temperature=0.7,
+            top_k=50,
+            top_p=0.95,
+            num_return_sequences=1,
+        )
+        print(sequences[0]["generated_text"])
 
 csv_handle.save_data()
