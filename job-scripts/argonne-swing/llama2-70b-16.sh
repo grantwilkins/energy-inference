@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -J llama2-7b-16
+#SBATCH -J llama2-70b-16
 
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=16
@@ -8,7 +8,7 @@
 #SBATCH --gres=gpu:8
 
 cd /home/ac.gwilkins/energy-inference/cuda
-for i in {0..25}
+for i in {0..10}
 do
-	python3 gated-cuda.py --num_tokens 1000 --model_name meta-llama/Llama-2-7b-chat-hf
+	python3 gated-cuda.py --num_tokens 1000 --model_name meta-llama/Llama-2-70b-chat-hf
 done

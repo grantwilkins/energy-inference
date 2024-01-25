@@ -8,7 +8,7 @@
 #SBATCH --gres=gpu:8
 
 cd /home/ac.gwilkins/energy-inference/cuda
-for i in {0..25}
+for i in {0..10}
 do
 	python3 gated-cuda.py --num_tokens 1000 --model_name meta-llama/Llama-2-13b-chat-hf
 done
