@@ -46,6 +46,7 @@ with EnergyContext(
             top_k=50,
             top_p=0.95,
             num_return_sequences=1,
+            batch_size=8192,
         )
         print(sequences[0]["generated_text"])
 
