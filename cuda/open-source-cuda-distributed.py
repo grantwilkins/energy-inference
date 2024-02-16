@@ -7,7 +7,23 @@ import argparse
 
 
 def setup_distributed():
-    """Set up distributed environment."""
+    """Set up PyTorch distributed environment."""
+    # Retrieve Slurm environment variables
+    rank = int(os.environ["SLURM_PROCID"])
+    world_size = int(os.environ["SLURM_NPROCS"])
+    node_list = os.environ["SLURM_NODELIST"]
+    master_addr = (
+        os.popen(f"scontrol show hostname {node_list} | head -n1").read().strip()
+    )
+    master_port = "29500"  # This can be any free port on your master node
+
+    # Set environment variables for `init_process_group`
+    os.environ["RANK"] = str(rank)
+    os.environ["WORLD_SIZE"] = str(world_size)
+    os.environ["MASTER_ADDR"] = master_addr
+    os.environ["MASTER_PORT"] = master_port
+
+    # Initialize the process group
     dist.init_process_group(backend="nccl")
 
 
