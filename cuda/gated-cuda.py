@@ -10,10 +10,11 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument("--num_tokens", type=int, default=200)
 parser.add_argument("--model_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
+parser.add_argument("--batch_size", type=int, default=32)
 
 args = parser.parse_args()
 
-
+batch_size = args.batch_size
 num_gpus = torch.cuda.device_count()
 stats_name = args.model_name.split("/")[1]
 csv_handle = CSVHandler(f"{stats_name}-{num_gpus}.csv")
@@ -46,7 +47,7 @@ with EnergyContext(
             top_k=50,
             top_p=0.95,
             num_return_sequences=1,
-            batch_size=8192,
+            batch_size=batch_size,
         )
         print(sequences[0]["generated_text"])
 
