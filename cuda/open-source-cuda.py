@@ -27,7 +27,7 @@ with EnergyContext(
     model_name = args.model_name
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     ctx.record(tag="model load")
-    model = AutoModelForCausalLM.from_pretrained(
+    model = AutoForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.bfloat16,
         device_map="auto",
