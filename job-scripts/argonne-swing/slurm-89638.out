@@ -1,0 +1,36 @@
+Starting WORKER 1 at gpu4
+Usage: ray start [OPTIONS]
+Try 'ray start --help' for help.
+
+Error: Invalid value for '--num-cpus': '' is not a valid integer.
+srun: error: gpu1: task 0: Exited with exit code 2
+Usage: ray start [OPTIONS]
+Try 'ray start --help' for help.
+
+Error: Invalid value for '--num-cpus': '' is not a valid integer.
+srun: error: gpu4: task 0: Exited with exit code 2
+Traceback (most recent call last):
+  File "/gpfs/fs1/home/ac.gwilkins/energy-inference/job-scripts/argonne-swing/../../cuda/open-source-cuda-ray.py", line 1, in <module>
+    from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/__init__.py", line 26, in <module>
+    from . import dependency_versions_check
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/utils/__init__.py", line 32, in <module>
+    from .generic import (
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/utils/generic.py", line 33, in <module>
+    import jax.numpy as jnp
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/jax/__init__.py", line 35, in <module>
+    from jax import config as _config_module
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/jax/config.py", line 17, in <module>
+    from jax._src.config import config
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/jax/_src/config.py", line 29, in <module>
+    from jax._src import lib
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/jax/_src/lib/__init__.py", line 87, in <module>
+    version = check_jaxlib_version(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/jax/_src/lib/__init__.py", line 82, in check_jaxlib_version
+    raise RuntimeError(msg)
+RuntimeError: jaxlib version 0.4.24 is newer than and incompatible with jax version 0.3.22. Please update your jax and/or jaxlib packages.
+2024-02-19 17:40:59,645	INFO scripts.py:1163 -- Did not find any active Ray processes.
+environment: line 5: __conda_exe: command not found
