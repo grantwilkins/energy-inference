@@ -10,7 +10,7 @@
 
 
 # Load modules or your own conda environment here
-module load cuda/11.1.1-nkh7mm7 cudnn/8.0.5.39
+module load cuda/11.1.1-nkh7mm7
 conda activate alpa-inference
 
 head_node=$(hostname)
