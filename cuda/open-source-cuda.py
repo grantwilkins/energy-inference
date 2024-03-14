@@ -7,6 +7,7 @@ from pyJoules.handler.pandas_handler import PandasHandler
 import argparse
 import datetime
 import pandas as pd
+from pynvml.smi import nvidia_smi
 
 
 def tokenizer_model_pipeline(model_name: str, ctx: EnergyContext) -> Pipeline:
@@ -34,8 +35,6 @@ def run_inference(
     pipe: Pipeline,
     num_tokens: int,
     prompt: str,
-    idx: tuple[str, int],
-    ctx: EnergyContext,
 ) -> str:
     sequences = pipe(
         prompt,
@@ -46,7 +45,6 @@ def run_inference(
         top_p=0.95,
         num_return_sequences=1,
     )
-    ctx.record(tag=f"stop-inference-{idx[0]}-{idx[1]}")
     return sequences[0]["generated_text"]
 
 
@@ -73,7 +71,6 @@ if __name__ == "__main__":
         start_tag="tokenizer",
     ) as ctx:
         pipe = tokenizer_model_pipeline(args.hf_name, ctx)
-        ctx.record("startup-done")
     df = pandas_handle.get_dataframe()
     df["Number of Tokens Allowed"] = num_tokens
     df["Length of Input"] = 0
@@ -83,6 +80,21 @@ if __name__ == "__main__":
     df["Prompt"] = "startup"
     df["Number of Tokens Produced"] = 0
     df["Batch Size"] = batch_size
+    total_memory = [
+        nvidia_smi.getInstance().DeviceQuery("memory.total")["gpu"][idx][
+            "fb_memory_usage"
+        ]["total"]
+        for idx in range(num_gpus)
+    ]
+    used_memory = [
+        nvidia_smi.getInstance().DeviceQuery("memory.used")["gpu"][idx][
+            "fb_memory_usage"
+        ]["used"]
+        for idx in range(num_gpus)
+    ]
+    for idx in range(num_gpus):
+        df[f"Total Memory {idx}"] = total_memory[idx]
+        df[f"Used Memory {idx}"] = used_memory[idx]
     df.to_csv(
         f"{model_name}-{todays_date}-{num_gpus}.csv",
         mode="a",
@@ -110,7 +122,8 @@ if __name__ == "__main__":
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
                 start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
             ) as ctx:
-                llm_output = run_inference(pipe, num_tokens, prompt, idx_log, ctx)
+                llm_output = run_inference(pipe, num_tokens, prompt)
+            print(llm_output)
             df = pandas_handle.get_dataframe()
             df["Number of Input Tokens Allowed"] = num_tokens
             df["Length of Input"] = len(prompt)
@@ -120,6 +133,21 @@ if __name__ == "__main__":
             df["Prompt"] = prompt
             df["Number of Tokens Produced"] = len(llm_output)
             df["Batch Size"] = batch_size
+            total_memory = [
+                nvidia_smi.getInstance().DeviceQuery("memory.total")["gpu"][idx][
+                    "fb_memory_usage"
+                ]["total"]
+                for idx in range(num_gpus)
+            ]
+            used_memory = [
+                nvidia_smi.getInstance().DeviceQuery("memory.used")["gpu"][idx][
+                    "fb_memory_usage"
+                ]["used"]
+                for idx in range(num_gpus)
+            ]
+            for idx in range(num_gpus):
+                df[f"Total Memory {idx}"] = total_memory[idx]
+                df[f"Used Memory {idx}"] = used_memory[idx]
 
             df.to_csv(
                 f"{model_name}-{todays_date}-{num_gpus}.csv",
