@@ -102,11 +102,11 @@ if __name__ == "__main__":
         index=False,
     )
     prompts = {
-        "A": "Once upon a time",
-        "B": "The quick brown fox jumps over the lazy dog",
-        "C": "The quick brown fox jumps over the lazy dog",
-        "D": "The quick brown fox jumps over the lazy dog",
-        "E": "The quick brown fox jumps over the lazy dog",
+        "A": "What is the capital of France?",
+        "B": "Can you explain the difference between a simile and a metaphor? Provide an example of each.",
+        "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic or a personal crisis?",
+        "D": "Imagine you are a travel guide. Can you recommend a 7-day itinerary for a trip to Japan, including must-visit destinations, cultural experiences, and local cuisine? Provide a brief description of each day's activities and how they showcase the best of Japan.",
+        "E": "As an AI language model, you have the ability to process and generate human-like text. Can you discuss the potential implications of advanced AI systems like yourself on various industries, such as healthcare, education, and creative fields? Consider the benefits, challenges, and ethical considerations surrounding the integration of AI in these sectors. Provide specific examples to support your analysis.",
     }
 
     for idx, prompt in prompts.items():
