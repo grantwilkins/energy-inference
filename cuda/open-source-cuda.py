@@ -67,13 +67,13 @@ if __name__ == "__main__":
     batch_size = args.batch_size
 
     pandas_handle = PandasHandler()
-    ctx = EnergyContext(
+    with EnergyContext(
         handler=pandas_handle,
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
-    )
-    pipe = tokenizer_model_pipeline(args.hf_name, ctx)
-    ctx.record("startup-done")
+    ) as ctx:
+        pipe = tokenizer_model_pipeline(args.hf_name, ctx)
+        ctx.record("startup-done")
     df = pandas_handle.get_dataframe()
     df["Number of Tokens Allowed"] = num_tokens
     df["Length of Input"] = 0
@@ -105,12 +105,12 @@ if __name__ == "__main__":
         while iteration < max_iterations:
             pandas_handle = PandasHandler()
             idx_log = (idx, iteration)
-            ctx = EnergyContext(
+            with EnergyContext(
                 handler=pandas_handle,
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
                 start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
-            )
-            llm_output = run_inference(pipe, num_tokens, prompt, idx_log, ctx)
+            ) as ctx:
+                llm_output = run_inference(pipe, num_tokens, prompt, idx_log, ctx)
             df = pandas_handle.get_dataframe()
             df["Number of Input Tokens Allowed"] = num_tokens
             df["Length of Input"] = len(prompt)
