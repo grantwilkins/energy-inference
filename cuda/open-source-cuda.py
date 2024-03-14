@@ -6,10 +6,10 @@ from pyJoules.handler.csv_handler import CSVHandler
 from pyJoules.handler.pandas_handler import PandasHandler
 import argparse
 import datetime
+import pandas as pd
 
 
 def tokenizer_model_pipeline(model_name: str, ctx: EnergyContext) -> Pipeline:
-    model_name = args.model_name
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     ctx.record(tag="model load")
@@ -52,7 +52,7 @@ def run_inference(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_tokens", type=int, default=200)
+    parser.add_argument("--num_tokens", type=int, default=3500)
     parser.add_argument("--hf_name", type=str, default="mistralai/Mistral-7B-v0.1")
     parser.add_argument("--system_name", type=str, required=True)
     parser.add_argument("--batch_size", type=int, default=32)
@@ -72,7 +72,7 @@ if __name__ == "__main__":
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
     )
-    pipe = tokenizer_model_pipeline(args.model_name, ctx)
+    pipe = tokenizer_model_pipeline(args.hf_name, ctx)
     ctx.record("startup-done")
     df = pandas_handle.get_dataframe()
     df["Number of Tokens Allowed"] = num_tokens
