@@ -1,76 +1,0 @@
-/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/utils/hub.py:122: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Downloading shards:   0%|          | 0/15 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 15/15 [00:00<00:00, 816.20it/s]
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:08<02:05,  8.94s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:16<01:46,  8.20s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:24<01:38,  8.23s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:33<01:31,  8.32s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:40<01:20,  8.06s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:48<01:11,  8.00s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:56<01:04,  8.04s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:05<00:58,  8.30s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:07<00:36,  6.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:07<00:22,  4.48s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [01:08<00:13,  3.34s/it]Loading checkpoint shards:  80%|████████  | 12/15 [01:09<00:07,  2.52s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [01:09<00:03,  1.95s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [01:10<00:01,  1.59s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:10<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:10<00:00,  4.73s/it]
-WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
-Traceback (most recent call last):
-  File "/gpfs/fs1/home/ac.gwilkins/energy-inference/cuda/gated-cuda.py", line 41, in <module>
-    sequences = pipe(
-                ^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1140, in __call__
-    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1147, in run_single
-    model_outputs = self.forward(model_inputs, **forward_params)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/generation/utils.py", line 1783, in generate
-    return self.sample(
-           ^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/generation/utils.py", line 2880, in sample
-    outputs = self(
-              ^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/accelerate/hooks.py", line 165, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 1183, in forward
-    outputs = self.model(
-              ^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 1070, in forward
-    layer_outputs = decoder_layer(
-                    ^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/accelerate/hooks.py", line 165, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 798, in forward
-    hidden_states, self_attn_weights, present_key_value = self.self_attn(
-                                                          ^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/accelerate/hooks.py", line 165, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 408, in forward
-    key_states, value_states = past_key_value.update(key_states, value_states, self.layer_idx, cache_kwargs)
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/cache_utils.py", line 128, in update
-    self.value_cache[layer_idx] = torch.cat([self.value_cache[layer_idx], value_states], dim=-2)
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 1; 39.59 GiB total capacity; 38.37 GiB already allocated; 2.19 MiB free; 38.41 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-/home/ac.gwilkins/.conda/envs/fedsz2/lib/python3.11/site-packages/transformers/utils/hub.py:122: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Downloading shards:   0%|          | 0/15 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 15/15 [00:00<00:00, 702.86it/s]
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:08<01:56,  8.32s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:16<01:48,  8.37s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:25<01:41,  8.42s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:34<01:34,  8.61s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:42<01:25,  8.52s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:50<01:16,  8.47s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:59<01:07,  8.46s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:07<00:59,  8.53s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:08<00:35,  5.94s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:08<00:21,  4.34s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [01:09<00:12,  3.17s/it]Loading checkpoint shards:  80%|████████  | 12/15 [01:10<00:07,  2.41s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [01:10<00:03,  1.72s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [01:10<00:01,  1.41s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:11<00:00,  1.03s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:11<00:00,  4.74s/it]
-WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
-slurmstepd: error: *** JOB 87305 ON gpu6 CANCELLED AT 2024-01-25T18:08:23 DUE TO TIME LIMIT ***
