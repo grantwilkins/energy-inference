@@ -68,23 +68,23 @@ if __name__ == "__main__":
     num_tokens = args.num_tokens
     batch_size = args.batch_size
     pandas_handle = PandasHandler()
-    profile_tokenizer = ProfileAMDEnergy(
-        tag="tokenizer-model-pipeline",
-        date=todays_date,
-        model=model_name,
-        system_name=args.system_name,
-        num_gpus=num_gpus,
-        num_tokens=num_tokens,
-        batch_size=batch_size,
-    )
-    profile_tokenizer_proc = profile_tokenizer.start_profiling()
+    # profile_tokenizer = ProfileAMDEnergy(
+    #     tag="tokenizer-model-pipeline",
+    #     date=todays_date,
+    #     model=model_name,
+    #     system_name=args.system_name,
+    #     num_gpus=num_gpus,
+    #     num_tokens=num_tokens,
+    #     batch_size=batch_size,
+    # )
+    # profile_tokenizer_proc = profile_tokenizer.start_profiling()
     with EnergyContext(
         handler=pandas_handle,
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
     ) as ctx:
         pipe, tokenizer = tokenizer_model_pipeline(args.hf_name, ctx)
-    profile_tokenizer.stop_profiling(proc=profile_tokenizer_proc)
+    # profile_tokenizer.stop_profiling(proc=profile_tokenizer_proc)
     df = pandas_handle.get_dataframe()
     df["Max Number of Tokens"] = num_tokens
     df["Input Tokens"] = 0
@@ -124,16 +124,16 @@ if __name__ == "__main__":
         while iteration < max_iterations:
             pandas_handle = PandasHandler()
             idx_log = (idx, iteration)
-            profile_inference = ProfileAMDEnergy(
-                tag=f"inference-{idx_log[0]}-{idx_log[1]}",
-                date=todays_date,
-                model=model_name,
-                system_name=args.system_name,
-                num_gpus=num_gpus,
-                num_tokens=num_tokens,
-                batch_size=batch_size,
-            )
-            profile_inference_proc = profile_inference.start_profiling()
+            # profile_inference = ProfileAMDEnergy(
+            #     tag=f"inference-{idx_log[0]}-{idx_log[1]}",
+            #     date=todays_date,
+            #     model=model_name,
+            #     system_name=args.system_name,
+            #     num_gpus=num_gpus,
+            #     num_tokens=num_tokens,
+            #     batch_size=batch_size,
+            # )
+            # profile_inference_proc = profile_inference.start_profiling()
             with EnergyContext(
                 handler=pandas_handle,
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
@@ -141,7 +141,7 @@ if __name__ == "__main__":
             ) as ctx:
                 llm_output = run_inference(pipe, num_tokens, prompt)
             print(llm_output)
-            profile_inference.stop_profiling(proc=profile_inference_proc)
+            # profile_inference.stop_profiling(proc=profile_inference_proc)
             input_tokens = tokenizer.encode(prompt)
             num_input_tokens = len(input_tokens)
             output_tokens = tokenizer.encode(llm_output)
