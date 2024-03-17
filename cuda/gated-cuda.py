@@ -88,13 +88,13 @@ if __name__ == "__main__":
     df["Output Tokens"] = 0
     df["Batch Size"] = batch_size
     df["System Name"] = args.system_name
-    for idx in range(num_gpus):
-        df[f"Total Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
+    for idx_gpus in range(num_gpus):
+        df[f"Total Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
             "memory.total"
-        )["gpu"][idx]["fb_memory_usage"]["total"]
-        df[f"Used Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery("memory.used")[
-            "gpu"
-        ][idx]["fb_memory_usage"]["used"]
+        )["gpu"][idx_gpus]["fb_memory_usage"]["total"]
+        df[f"Used Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
+            "memory.used"
+        )["gpu"][idx_gpus]["fb_memory_usage"]["used"]
     df.to_csv(
         f"{model_name}-{args.system_name}-{num_gpus}.csv",
         mode="a",
@@ -149,13 +149,13 @@ if __name__ == "__main__":
             df["Output Tokens"] = num_output_tokens
             df["Batch Size"] = batch_size
             df["System Name"] = args.system_name
-            for idx in range(num_gpus):
-                df[f"Total Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
+            for idx_gpus in range(num_gpus):
+                df[f"Total Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
                     "memory.total"
-                )["gpu"][idx]["fb_memory_usage"]["total"]
-                df[f"Used Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
+                )["gpu"][idx_gpus]["fb_memory_usage"]["total"]
+                df[f"Used Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
                     "memory.used"
-                )["gpu"][idx]["fb_memory_usage"]["used"]
+                )["gpu"][idx_gpus]["fb_memory_usage"]["used"]
 
             df.to_csv(
                 f"{model_name}-{args.system_name}-{num_gpus}.csv",
