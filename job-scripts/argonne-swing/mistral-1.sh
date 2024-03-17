@@ -3,7 +3,7 @@
 #SBATCH -J mistral-1
 
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=128
 #SBATCH --time=6:00:00 
 #SBATCH --gres=gpu:1
 
@@ -21,11 +21,11 @@ cd /home/ac.gwilkins/energy-inference/cuda/
 
 for num_tokens in "${N_TOKENS[@]}"
 	do 
-        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$SYSTEM/$N_GPUS-$num_tokens-$batch_size python3 open-source-cuda.py --num_tokens $num_tokens --hf_name $HF_NAME --batch_size 32 --system_name $SYSTEM
+        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$SYSTEM/gpus-$N_GPUS-tokens-$num_tokens-batch_size-32 python3 open-source-cuda.py --num_tokens $num_tokens --hf_name $HF_NAME --batch_size 32 --system_name $SYSTEM
     done
 
 for batch_size in "${BATCH_SIZES[@]}"
         do 
-        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$SYSTEM/$N_GPUS-$num_tokens-$batch_size python3 open-source-cuda.py --num_tokens 512 --hf_name $HF_NAME --batch_size $batch_size --system_name $SYSTEM
+        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$SYSTEM/gpus-$N_GPUS-tokens-512-batch_size-$batch_size python3 open-source-cuda.py --num_tokens 512 --hf_name $HF_NAME --batch_size $batch_size --system_name $SYSTEM
     done
 done
