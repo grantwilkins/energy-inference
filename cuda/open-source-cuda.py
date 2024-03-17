@@ -77,14 +77,14 @@ if __name__ == "__main__":
         num_tokens=num_tokens,
         batch_size=batch_size,
     )
-    profile_tokenizer.start_profiling()
+    profile_tokenizer_proc = profile_tokenizer.start_profiling()
     with EnergyContext(
         handler=pandas_handle,
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
     ) as ctx:
         pipe, tokenizer = tokenizer_model_pipeline(args.hf_name, ctx)
-    profile_tokenizer.stop_profiling()
+    profile_tokenizer.stop_profiling(proc=profile_tokenizer_proc)
     df = pandas_handle.get_dataframe()
     df["Max Number of Tokens"] = num_tokens
     df["Input Tokens"] = 0
@@ -132,6 +132,7 @@ if __name__ == "__main__":
                 num_tokens,
                 batch_size,
             )
+            profile_inference_proc = profile_inference.start_profiling()
             with EnergyContext(
                 handler=pandas_handle,
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
@@ -139,6 +140,7 @@ if __name__ == "__main__":
             ) as ctx:
                 llm_output = run_inference(pipe, num_tokens, prompt)
             print(llm_output)
+            profile_inference.stop_profiling(proc=profile_inference_proc)
             input_tokens = tokenizer.encode(prompt)
             num_input_tokens = len(input_tokens)
             output_tokens = tokenizer.encode(llm_output)
