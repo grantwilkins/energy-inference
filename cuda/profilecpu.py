@@ -11,7 +11,7 @@ class ProfileAMDEnergy:
         self.num_gpus = num_gpus
         self.num_tokens = num_tokens
         self.batch_size = batch_size
-        self.path = f"{self.date}/{self.model}/{self.system_name}/{self.tag}-{self.num_gpus}gpus-{self.num_tokens}tokens-{self.batch_size}batch"
+        self.path = f"{self.model}/{self.date}/{self.system_name}-{self.tag}-{self.num_gpus}gpus-{self.num_tokens}tokens-{self.batch_size}batch"
 
     def start_profiling(self) -> subprocess.Popen:
         # Start AMDuProf profiling

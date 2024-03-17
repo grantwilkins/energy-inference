@@ -125,12 +125,13 @@ if __name__ == "__main__":
             pandas_handle = PandasHandler()
             idx_log = (idx, iteration)
             profile_inference = ProfileAMDEnergy(
-                f"inference-{idx_log[0]}-{idx_log[1]}",
-                model_name,
-                args.system_name,
-                num_gpus,
-                num_tokens,
-                batch_size,
+                tag=f"inference-{idx_log[0]}-{idx_log[1]}",
+                date=todays_date,
+                model=model_name,
+                system_name=args.system_name,
+                num_gpus=num_gpus,
+                num_tokens=num_tokens,
+                batch_size=batch_size,
             )
             profile_inference_proc = profile_inference.start_profiling()
             with EnergyContext(
