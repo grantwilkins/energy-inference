@@ -19,14 +19,12 @@ DATE=$(date +"%Y-%m-%d")
 cd /home/ac.gwilkins/energy-inference/cuda/
 
 for num_tokens in "${N_TOKENS[@]}"
-do
-        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$HF_NAME/$DATE/$SYSTEM/$num_tokens-$batch_size \
-        python3 gated-cuda.py --num_tokens $num_tokens --hf_name $HF_NAME --batch_size 32 --system_name $SYSTEM
-done
+	do 
+        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$HF_NAME/$DATE/$SYSTEM/$num_tokens-$batch_size python3 gated-cuda.py --num_tokens 512 --hf_name $HF_NAME --batch_size $batch_size --system_name $SYSTEM
+    done
 
 for batch_size in "${BATCH_SIZES[@]}"
-    do 
-        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$HF_NAME/$DATE/$SYSTEM/$num_tokens-$batch_size \
-        python3 gated-cuda.py --num_tokens 512 --hf_name $HF_NAME --batch_size $batch_size --system_name $SYSTEM
+        do 
+        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$HF_NAME/$DATE/$SYSTEM/$num_tokens-$batch_size python3 gated-cuda.py --num_tokens 512 --hf_name $HF_NAME --batch_size $batch_size --system_name $SYSTEM
     done
 done
