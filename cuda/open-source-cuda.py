@@ -8,13 +8,15 @@ import argparse
 import datetime
 import pandas as pd
 from pynvml.smi import nvidia_smi
+from profilecpu import ProfileAMDEnergy
 
 
 def tokenizer_model_pipeline(
-    model_name: str, ctx: EnergyContext
+    model_name: str,
+    ctx: EnergyContext,
 ) -> tuple[Pipeline, AutoTokenizer]:
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
     ctx.record(tag="model load")
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -65,14 +67,24 @@ if __name__ == "__main__":
     model_name = hf_name.split("/")[1]
     num_tokens = args.num_tokens
     batch_size = args.batch_size
-
     pandas_handle = PandasHandler()
+    profile_tokenizer = ProfileAMDEnergy(
+        tag="tokenizer-model-pipeline",
+        date=todays_date,
+        model=model_name,
+        system_name=args.system_name,
+        num_gpus=num_gpus,
+        num_tokens=num_tokens,
+        batch_size=batch_size,
+    )
+    profile_tokenizer.start_profiling()
     with EnergyContext(
         handler=pandas_handle,
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
     ) as ctx:
         pipe, tokenizer = tokenizer_model_pipeline(args.hf_name, ctx)
+    profile_tokenizer.stop_profiling()
     df = pandas_handle.get_dataframe()
     df["Max Number of Tokens"] = num_tokens
     df["Input Tokens"] = 0
@@ -112,6 +124,14 @@ if __name__ == "__main__":
         while iteration < max_iterations:
             pandas_handle = PandasHandler()
             idx_log = (idx, iteration)
+            profile_inference = ProfileAMDEnergy(
+                f"inference-{idx_log[0]}-{idx_log[1]}",
+                model_name,
+                args.system_name,
+                num_gpus,
+                num_tokens,
+                batch_size,
+            )
             with EnergyContext(
                 handler=pandas_handle,
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
