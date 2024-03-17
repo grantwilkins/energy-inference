@@ -31,6 +31,7 @@ class ProfileAMDEnergy:
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
+        time.sleep(1)
         return proc
 
     def stop_profiling(self, proc):
