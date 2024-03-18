@@ -5,10 +5,10 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=128
 #SBATCH --time=6:00:00 
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 
 N_NODES=1
-N_GPUS_PER_NODE=1
+N_GPUS_PER_NODE=2
 N_GPUS=$((N_NODES * N_GPUS_PER_NODE))
 N_TOKENS=(128 256 512 1024 2048)
 HF_NAME="meta-llama/Llama-2-7b-chat-hf"
@@ -16,6 +16,7 @@ MODEL_NAME="llama2-7b"
 BATCH_SIZES=(8 16 32 64 128)
 SYSTEM="argonne-swing"
 DATE=$(date +"%Y-%m-%d")
+module load amd-uprof
 
 cd /home/ac.gwilkins/energy-inference/cuda/
 

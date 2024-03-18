@@ -16,6 +16,7 @@ MODEL_NAME="mistral-7b"
 BATCH_SIZES=(8 16 32 64 128)
 SYSTEM="argonne-swing"
 DATE=$(date +"%Y-%m-%d")
+module load amd-uprof
 
 cd /home/ac.gwilkins/energy-inference/cuda/
 
