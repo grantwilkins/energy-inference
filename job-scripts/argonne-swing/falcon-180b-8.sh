@@ -5,10 +5,10 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=128
 #SBATCH --time=6:00:00 
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:8
 
 N_NODES=1
-N_GPUS_PER_NODE=1
+N_GPUS_PER_NODE=8
 N_GPUS=$((N_NODES * N_GPUS_PER_NODE))
 N_TOKENS=(128 256 512 1024 2048)
 HF_NAME="tiiuae/falcon-180b"
