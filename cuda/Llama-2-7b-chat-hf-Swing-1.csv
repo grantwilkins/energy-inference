@@ -1,0 +1,10 @@
+1710974311.528411,tokenizer,1.045072317123413,52759,256,0,0,Llama-2-7b-chat-hf,1,startup,0,32,Swing,40960.0,14025.6875
+1710974312.5734832,pipeline load,17.73252296447754,1016730,256,0,0,Llama-2-7b-chat-hf,1,startup,0,32,Swing,40960.0,14025.6875
+1710974330.330256,start-inference-A-0,6.5256733894348145,634231,256,8,0,Llama-2-7b-chat-hf,1,What is the capital of France?,109,32,Swing,40960.0,14443.6875
+1710974336.8625298,start-inference-A-1,2.267627000808716,329195,256,8,1,Llama-2-7b-chat-hf,1,What is the capital of France?,86,32,Swing,40960.0,14443.6875
+1710974339.1369965,start-inference-A-2,2.899986505508423,438259,256,8,2,Llama-2-7b-chat-hf,1,What is the capital of France?,108,32,Swing,40960.0,14443.6875
+1710974342.0437021,start-inference-A-3,0.3471963405609131,60063,256,8,3,Llama-2-7b-chat-hf,1,What is the capital of France?,19,32,Swing,40960.0,14443.6875
+1710974342.3961835,start-inference-A-4,0.2917952537536621,44613,256,8,4,Llama-2-7b-chat-hf,1,What is the capital of France?,17,32,Swing,40960.0,14443.6875
+1710974342.6937947,start-inference-B-0,5.128785133361816,776163,256,23,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile and a metaphor? Provide an example of each.,201,32,Swing,40960.0,14637.6875
+1710974347.8293076,start-inference-B-1,0.2617194652557373,30450,256,23,1,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile and a metaphor? Provide an example of each.,31,32,Swing,40960.0,14637.6875
+1710974348.0962868,start-inference-B-2,3.78591251373291,575726,256,23,2,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile and a metaphor? Provide an example of each.,154,32,Swing,40960.0,14637.6875
