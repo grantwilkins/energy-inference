@@ -8,21 +8,32 @@ import argparse
 import datetime
 import pandas as pd
 from pynvml.smi import nvidia_smi
+import os
+import psutil
+
+def find_core():
+    pid = os.getpid()
+    p = psutil.Process(pid)
+    current_core = p.cpu_num()
+    print(f"Process on {current_core}")
 
 
 def tokenizer_pipeline(
     model_name: str,
     ctx: EnergyContext,
 ) -> tuple[Pipeline, AutoTokenizer]:
-
+    find_core()
     tokenizer = AutoTokenizer.from_pretrained(model_name)
+    find_core()
     ctx.record(tag="pipeline load")
+    find_core()
     pipe = pipeline(
         "text-generation",
         model=model_name,
         torch_dtype=torch.float16,
         device_map="auto",
     )
+    find_core()
     return pipe, tokenizer
 
 
@@ -31,6 +42,7 @@ def run_inference(
     num_tokens: int,
     prompt: str,
 ) -> str:
+    find_core()
     sequences = pipe(
         prompt,
         do_sample=True,
@@ -41,6 +53,7 @@ def run_inference(
         num_return_sequences=1,
         batch_size=batch_size,
     )
+    find_core()
     return sequences[0]["generated_text"]
 
 
