@@ -8,14 +8,21 @@ import argparse
 import datetime
 import pandas as pd
 from pynvml.smi import nvidia_smi
+import psutil
+import os
+
+
+def find_current_cpu_core():
+    return psutil.Process().cpu_num()
 
 
 def tokenizer_model_pipeline(
     model_name: str,
     ctx: EnergyContext,
-) -> tuple[Pipeline, AutoTokenizer]:
-
+) -> tuple[Pipeline, AutoTokenizer, tuple[int, int, int]]:
+    tokenizer_cpu_core = find_current_cpu_core()
     tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model_cpu_core = find_current_cpu_core()
     ctx.record(tag="model load")
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -23,6 +30,7 @@ def tokenizer_model_pipeline(
         device_map="auto",
         trust_remote_code=True,
     )
+    pipeline_cpu_core = find_current_cpu_core()
     ctx.record(tag="pipeline load")
     pipe = pipeline(
         "text-generation",
@@ -31,7 +39,7 @@ def tokenizer_model_pipeline(
         torch_dtype=torch.bfloat16,
         device_map="auto",
     )
-    return pipe, tokenizer
+    return pipe, tokenizer, (tokenizer_cpu_core, model_cpu_core, pipeline_cpu_core)
 
 
 def run_inference(
@@ -82,7 +90,7 @@ if __name__ == "__main__":
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
         start_tag="tokenizer",
     ) as ctx:
-        pipe, tokenizer = tokenizer_model_pipeline(args.hf_name, ctx)
+        pipe, tokenizer, cores = tokenizer_model_pipeline(args.hf_name, ctx)
     # profile_tokenizer.stop_profiling(proc=profile_tokenizer_proc)
     df = pandas_handle.get_dataframe()
     df["Max Number of Tokens"] = num_tokens
@@ -101,6 +109,7 @@ if __name__ == "__main__":
         df[f"Used Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery("memory.used")[
             "gpu"
         ][idx]["fb_memory_usage"]["used"]
+    df["CPU Core"] = cores
     df.to_csv(
         f"{model_name}-{args.system_name}-{num_gpus}.csv",
         mode="a",
@@ -138,6 +147,7 @@ if __name__ == "__main__":
                 domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
                 start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
             ) as ctx:
+                cpu_core = find_current_cpu_core()
                 llm_output = run_inference(pipe, num_tokens, prompt)
             print(llm_output)
             # profile_inference.stop_profiling(proc=profile_inference_proc)
@@ -155,6 +165,7 @@ if __name__ == "__main__":
             df["Output Tokens"] = num_output_tokens
             df["Batch Size"] = batch_size
             df["System Name"] = args.system_name
+            df["CPU Core"] = cpu_core
             for idx in range(num_gpus):
                 df[f"Total Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
                     "memory.total"
