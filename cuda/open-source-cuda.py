@@ -65,6 +65,7 @@ if __name__ == "__main__":
     parser.add_argument("--hf_name", type=str, default="mistralai/Mistral-7B-v0.1")
     parser.add_argument("--system_name", type=str, default="Swing")
     parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--out_dir", type=str, default=".")
 
     args = parser.parse_args()
 
@@ -74,6 +75,15 @@ if __name__ == "__main__":
     model_name = hf_name.split("/")[1]
     num_tokens = args.num_tokens
     batch_size = args.batch_size
+    system_name = args.system_name
+    out_dir = args.out_dir
+    prompts = {
+        "A": "What is the capital of France?",
+        "B": "Can you explain the difference between a simile and a metaphor? Provide an example of each.",
+        "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic or a personal crisis?",
+        "D": "Imagine you are a travel guide. Can you recommend a 7-day itinerary for a trip to Japan, including must-visit destinations, cultural experiences, and local cuisine? Provide a brief description of each day's activities and how they showcase the best of Japan.",
+        "E": "As an AI language model, you have the ability to process and generate human-like text. Can you discuss the potential implications of advanced AI systems like yourself on various industries, such as healthcare, education, and creative fields? Consider the benefits, challenges, and ethical considerations surrounding the integration of AI in these sectors. Provide specific examples to support your analysis.",
+    }
     pandas_handle = PandasHandler()
     # profile_tokenizer = ProfileAMDEnergy(
     #     tag="tokenizer-model-pipeline",
@@ -85,6 +95,24 @@ if __name__ == "__main__":
     #     batch_size=batch_size,
     # )
     # profile_tokenizer_proc = profile_tokenizer.start_profiling()
+    if out_dir == ".":
+        start_time = datetime.datetime.now().strftime("%H-%M-%S")
+    else:
+        start_time = out_dir.split("/")[-1]
+
+    with open(f"{out_dir}/job_info.yaml", "w") as file:
+        file.write("job:\n")
+        file.write(f"  date: {todays_date}\n")
+        file.write(f"  start_time: {start_time}\n")
+        file.write("  details:\n")
+        file.write(f"    model_name: {model_name}\n")
+        file.write(f"    system_name: {system_name}\n")
+        file.write(f"    num_tokens: {num_tokens}\n")
+        file.write(f"    batch_size: {batch_size}\n")
+        file.write(f"    hf_name: {hf_name}\n")
+        for idx, prompt in prompts.items():
+            file.write(f"    prompt-{idx}: {prompt}\n")
+
     with EnergyContext(
         handler=pandas_handle,
         domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
@@ -101,7 +129,7 @@ if __name__ == "__main__":
     df["Prompt"] = "startup"
     df["Output Tokens"] = 0
     df["Batch Size"] = batch_size
-    df["System Name"] = args.system_name
+    df["System Name"] = system_name
     for idx in range(num_gpus):
         df[f"Total Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
             "memory.total"
@@ -116,13 +144,6 @@ if __name__ == "__main__":
         header=False,
         index=False,
     )
-    prompts = {
-        "A": "What is the capital of France?",
-        "B": "Can you explain the difference between a simile and a metaphor? Provide an example of each.",
-        "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic or a personal crisis?",
-        "D": "Imagine you are a travel guide. Can you recommend a 7-day itinerary for a trip to Japan, including must-visit destinations, cultural experiences, and local cuisine? Provide a brief description of each day's activities and how they showcase the best of Japan.",
-        "E": "As an AI language model, you have the ability to process and generate human-like text. Can you discuss the potential implications of advanced AI systems like yourself on various industries, such as healthcare, education, and creative fields? Consider the benefits, challenges, and ethical considerations surrounding the integration of AI in these sectors. Provide specific examples to support your analysis.",
-    }
 
     for idx, prompt in prompts.items():
         max_iterations = 5
@@ -164,7 +185,7 @@ if __name__ == "__main__":
             df["Prompt"] = prompt
             df["Output Tokens"] = num_output_tokens
             df["Batch Size"] = batch_size
-            df["System Name"] = args.system_name
+            df["System Name"] = system_name
             df["CPU Core"] = cpu_core
             for idx in range(num_gpus):
                 df[f"Total Memory {idx}"] = nvidia_smi.getInstance().DeviceQuery(
