@@ -570,5 +570,5 @@ Describe the code above and some potential confusion points for developers. Desc
             z_critical = stats.norm.ppf((1 + 0.95) / 2)
             ci_half_width = z_critical * std_err
             # Break if we have more than 5 samples and the confidence interval half-width is less than 0.5
-            if i > 5 and ci_half_width < 0.5:
+            if iteration > 5 and ci_half_width < 0.5:
                 break

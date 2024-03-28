@@ -1,0 +1,16 @@
+1711641475.357981,tokenizer,0.31550073623657227,16834,32,0,0,Llama-2-7b-chat-hf,1,startup,0,32,argonne-swing,48,40960.0,14025.6875
+1711641475.6734817,model load,35.848594427108765,2163363,32,0,0,Llama-2-7b-chat-hf,1,startup,0,32,argonne-swing,48,40960.0,14025.6875
+1711641511.540356,start-inference-A-0,6.817817687988281,497709,32,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641518.4573252,start-inference-A-1,0.9866859912872314,140094,32,9,1,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641519.4509697,start-inference-A-2,0.9866058826446533,140757,32,9,2,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641520.4449039,start-inference-A-3,0.9804067611694336,158839,32,9,3,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641521.433986,start-inference-A-4,0.9784848690032959,158081,32,9,4,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641522.4194472,start-inference-A-5,1.1793181896209717,173917,32,9,5,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641523.605672,start-inference-A-6,0.9773824214935303,160096,32,9,6,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,48,40960.0,14317.6875
+1711641524.5897305,start-inference-B-0,0.9841454029083252,146257,32,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14317.6875
+1711641525.5808532,start-inference-B-1,0.9795808792114258,164441,32,21,1,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14317.6875
+1711641526.5684147,start-inference-B-2,0.985314130783081,164334,32,21,2,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14317.6875
+1711641527.5605595,start-inference-B-3,0.9962894916534424,162813,32,21,3,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14319.6875
+1711641528.5638258,start-inference-B-4,0.9894001483917236,164971,32,21,4,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14319.6875
+1711641529.5609753,start-inference-B-5,0.9815092086791992,165173,32,21,5,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14319.6875
+1711641530.5493617,start-inference-B-6,1.0015594959259033,164226,32,21,6,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,48,40960.0,14317.6875
