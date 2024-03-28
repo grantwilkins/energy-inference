@@ -1,0 +1,52 @@
+load model,22.188042879104614,26.70374627142064,0.5078825799999998,64,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-A-0,40.301955699920654,102.92756525100071,235.31420037999993,64,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-1,18.659407138824463,22.56907936107196,242.0462925,64,9,1,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-2,18.620187282562256,22.851430861392277,243.14842665,64,9,2,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-3,18.622408866882324,22.572501277967998,244.18261141999994,64,9,3,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-4,18.65014123916626,23.060270418531438,244.64478536999997,64,9,4,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-5,18.61992907524109,23.026868940675772,245.14779725999998,64,9,5,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-6,18.626931190490723,23.20058654690317,244.66295578999998,64,9,6,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-B-0,26.90432119369507,46.49984782647463,295.89039004,64,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,84,32,M1-Pro,12916.515625
+inference-B-1,20.854724168777466,22.94141890627914,296.82807127999996,64,21,1,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,85,32,M1-Pro,12916.515625
+inference-B-2,20.906225204467773,22.624529699051926,296.31993596000007,64,21,2,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,81,32,M1-Pro,12916.515625
+inference-B-3,21.088430881500244,21.340997777836265,297.22470834000006,64,21,3,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,82,32,M1-Pro,12916.515625
+inference-B-4,21.081136226654053,22.462371447845438,296.49556256000005,64,21,4,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,84,32,M1-Pro,12916.515625
+inference-B-5,21.066735982894897,21.45625317390313,297.09155747,64,21,5,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,84,32,M1-Pro,12916.515625
+inference-B-6,21.04799509048462,21.824550404869818,296.61988468999994,64,21,6,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,83,32,M1-Pro,12916.515625
+inference-C-0,33.98585605621338,56.33172373445204,374.2610489600002,64,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-1,24.483443021774292,20.327583091431023,372.93422031,64,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-2,24.654645919799805,20.699082640476423,376.4169427099998,64,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-3,24.65413784980774,19.38869389364444,375.2895224200003,64,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-4,24.6992130279541,19.992112302526543,377.65209479,64,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-5,24.625002145767212,21.374665210723453,376.66459620000006,64,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-6,24.62757110595703,21.55442988128702,377.15151162000006,64,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-D-0,73.13319706916809,172.88952595519356,556.2568479699999,64,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,139,32,M1-Pro,12916.515625
+inference-D-1,34.12916922569275,16.55481586571557,558.0738632799998,64,78,1,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,139,32,M1-Pro,12916.515625
+inference-D-2,34.11863136291504,17.412869020584594,558.2599283600003,64,78,2,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,139,32,M1-Pro,12916.515625
+inference-D-3,33.76171922683716,18.134580841253296,557.6405721900001,64,78,3,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,141,32,M1-Pro,12916.515625
+inference-D-4,33.93629217147827,18.877754887331424,557.7099785399998,64,78,4,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,140,32,M1-Pro,12916.515625
+inference-D-5,33.91746187210083,18.185605691526234,557.05851962,64,78,5,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,136,32,M1-Pro,12916.515625
+inference-D-6,34.14718794822693,19.109774685157124,561.7761261199998,64,78,6,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,113,32,M1-Pro,12916.515625
+inference-E-0,141.56521701812744,324.39807503531273,916.9732242499999,64,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",211,32,M1-Pro,12916.515625
+inference-E-1,51.943361043930054,18.789420434598547,926.3474815100001,64,154,1,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",212,32,M1-Pro,12916.515625
+inference-E-2,51.73579502105713,17.52470671023287,924.45649452,64,154,2,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",217,32,M1-Pro,12916.515625
+inference-E-3,51.81843090057373,17.68925301257682,926.2816396299996,64,154,3,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",216,32,M1-Pro,12916.515625
+inference-E-4,51.65060997009277,17.66208941144576,924.4409330599999,64,154,4,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",217,32,M1-Pro,12916.515625
+inference-E-5,51.78848719596863,18.003947088124455,923.1076961499998,64,154,5,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",211,32,M1-Pro,12916.515625
+inference-E-6,51.91242504119873,16.94656990718055,921.0799963000004,64,154,6,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",211,32,M1-Pro,12916.515625
+inference-F-0,233.0217878818512,521.7605296186955,1452.0193784099988,64,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,329,32,M1-Pro,12916.515625
+inference-F-1,78.65464377403259,18.37594920127447,1461.3320860799997,64,267,1,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,322,32,M1-Pro,12916.515625
+inference-F-2,78.46873497962952,17.659091010361898,1466.7427618699996,64,267,2,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,327,32,M1-Pro,12916.515625
+inference-F-3,78.79872703552246,22.766986397460695,1470.8387618799998,64,267,3,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,328,32,M1-Pro,12916.515625
+inference-F-4,79.39455008506775,21.13133475984858,1470.3282404999998,64,267,4,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,330,32,M1-Pro,12916.515625
+inference-F-5,81.46910500526428,23.81649426384643,1473.9441484300005,64,267,5,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,329,32,M1-Pro,12916.515625
+inference-F-6,78.30388283729553,18.375547310377307,1456.1680127299996,64,267,6,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,327,32,M1-Pro,12916.515625
+inference-F-7,78.09172868728638,18.70647695618789,1455.9529867099993,64,267,7,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,328,32,M1-Pro,12916.515625
+inference-F-8,78.72771906852722,17.748717192256688,1457.4140063699995,64,267,8,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,329,32,M1-Pro,12916.515625
+inference-F-9,78.54014492034912,18.328031918852336,1459.7134183099997,64,267,9,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,330,32,M1-Pro,12916.515625
+inference-F-10,78.33942317962646,20.36196571601691,1458.8772199199993,64,267,10,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,324,32,M1-Pro,12916.515625
+inference-F-11,78.07856583595276,20.52152472102936,1456.3101945799997,64,267,11,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,326,32,M1-Pro,12916.515625
+inference-F-12,78.3989691734314,18.52962449232982,1455.8230428400002,64,267,12,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,328,32,M1-Pro,12916.515625
+inference-F-13,78.90671801567078,19.63673309909622,1462.5205975999984,64,267,13,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,325,32,M1-Pro,12916.515625
+inference-G-0,353.18268489837646,625.2075586705118,2857.1700682900023,64,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,592,32,M1-Pro,12916.515625
+inference-G-1,150.45603108406067,42.073875029436884,2857.691406060005,64,541,1,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,602,32,M1-Pro,12916.515625

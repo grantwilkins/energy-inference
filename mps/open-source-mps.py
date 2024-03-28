@@ -10,41 +10,30 @@ import argparse
 import os
 import datetime
 import torch.mps
+import numpy as np
+from scipy import stats
 
 
-def tokenizer_model_pipeline(
+def load_model(
     model_name: str,
-    tokenizer_event: threading.Event,
-    tokenizer_thread: threading.Thread,
-    model_load_event: threading.Event,
-    model_load_thread: threading.Thread,
-    pipeline_load_event: threading.Event,
-    pipeline_load_thread: threading.Thread,
-) -> tuple[Pipeline, AutoTokenizer, tuple[float, float, float]]:
-    tokenizer_thread.start()
-    sleep(2)
-    tokenizer_start_time = time.time()
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    tokenizer_time = time.time() - tokenizer_start_time
-    tokenizer_event.set()
-    tokenizer_thread.join()
+    load_model_event: threading.Event,
+    load_model_thread: threading.Thread,
+) -> tuple[Pipeline, AutoTokenizer, float]:
 
-    model_load_thread.start()
-    sleep(2)
-    model_load_start_time = time.time()
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    load_model_thread.start()
+    load_model_start_time = time.time()
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float16,
         device_map="auto",
         trust_remote_code=True,
     )
-    model_load_time = time.time() - model_load_start_time
-    model_load_event.set()
-    model_load_thread.join()
+    load_model_time = time.time() - load_model_start_time
+    load_model_event.set()
+    load_model_thread.join()
 
-    pipeline_load_thread.start()
-    sleep(2)
-    pipeline_start_time = time.time()
     pipe = pipeline(
         "text-generation",
         model=model,
@@ -52,14 +41,10 @@ def tokenizer_model_pipeline(
         torch_dtype=torch.float16,
         device_map="auto",
     )
-    pipeline_load_time = time.time() - pipeline_start_time
-    pipeline_load_event.set()
-    pipeline_load_thread.join()
-
     return (
         pipe,
         tokenizer,
-        (tokenizer_time, model_load_time, pipeline_load_time),
+        load_model_time,
     )
 
 
@@ -69,6 +54,7 @@ def run_inference(
     prompt: str,
     inference_event: threading.Event,
     inference_monitor: threading.Thread,
+    batch_size: int,
 ) -> str:
     inference_monitor.start()
     sleep(2)
@@ -76,10 +62,13 @@ def run_inference(
         prompt,
         do_sample=True,
         max_new_tokens=num_tokens,
+        min_new_tokens=int(num_tokens * 0.9),
         temperature=0.7,
         top_k=50,
         top_p=0.95,
         num_return_sequences=1,
+        use_cache=False,
+        batch_size=batch_size,
     )
     inference_event.set()
     inference_monitor.join()
@@ -141,7 +130,13 @@ def post_process_power_data(readings: list[dict], runtime_s: float) -> pd.DataFr
     df["Runtime (s)"] = [runtime_s]
     total_cpu_energy = 0
     for reading in readings:
-        total_cpu_energy += reading["cpu"] * reading["timestamp"] / 1000 / 1000
+        total_cpu_energy += (
+            reading["cpu"]
+            * reading["timestamp"]
+            * (float(reading["python3.12"]) / float(reading["ALL_TASKS"]))
+            / 1000
+            / 1000
+        )
     df["CPU Energy (J)"] = [total_cpu_energy]
     total_gpu_energy = 0
     for reading in readings:
@@ -152,7 +147,7 @@ def post_process_power_data(readings: list[dict], runtime_s: float) -> pd.DataFr
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_tokens", type=int, default=256)
+    parser.add_argument("--num_tokens", type=int, default=64)
     parser.add_argument("--hf_name", type=str, default="mistralai/Mistral-7B-v0.1")
     parser.add_argument("--system_name", type=str, default="M1-Pro")
     parser.add_argument("--batch_size", type=int, default=32)
@@ -166,10 +161,10 @@ if __name__ == "__main__":
     model_name = args.hf_name.split("/")[1]
     prompts = {
         "A": "What is the capital of France?",
-        "B": "Can you explain the difference between a simile and a metaphor? Provide an example of each.",
-        "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic or a personal crisis?",
-        "D": "Imagine you are a travel guide. Can you recommend a 7-day itinerary for a trip to Japan, including must-visit destinations, cultural experiences, and local cuisine? Provide a brief description of each day's activities and how they showcase the best of Japan.",
-        "E": "As an AI language model, you have the ability to process and generate human-like text. Can you discuss the potential implications of advanced AI systems like yourself on various industries, such as healthcare, education, and creative fields? Consider the benefits, challenges, and ethical considerations surrounding the integration of AI in these sectors. Provide specific examples to support your analysis.",
+        # "B": "Can you explain the difference between a simile and a metaphor? Provide an example of each.",
+        # "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic or a personal crisis?",
+        # "D": "Imagine you are a travel guide. Can you recommend a 7-day itinerary for a trip to Japan, including must-visit destinations, cultural experiences, and local cuisine? Provide a brief description of each day's activities and how they showcase the best of Japan.",
+        # "E": "As an AI language model, you have the ability to process and generate human-like text. Can you discuss the potential implications of advanced AI systems like yourself on various industries, such as healthcare, education, and creative fields? Consider the benefits, challenges, and ethical considerations surrounding the integration of AI in these sectors. Provide specific examples to support your analysis.",
     }
 
     out_dir = f"{model_name}/{todays_date}/{start_time}"
@@ -190,79 +185,44 @@ if __name__ == "__main__":
         for idx, prompt in prompts.items():
             file.write(f"    prompt-{idx}: {prompt}\n")
 
-    tokenizer_event = threading.Event()
-    model_load_event = threading.Event()
-    pipeline_load_event = threading.Event()
+    load_model_event = threading.Event()
     power_readings = {
-        "tokenizer": [],
-        "model load": [],
-        "pipeline load": [],
+        "load model": [],
     }
 
-    tokenizer_monitor = threading.Thread(
-        target=monitor_power_usage, args=(power_readings["tokenizer"], tokenizer_event)
-    )
-    model_load_monitor = threading.Thread(
+    load_model_monitor_thread = threading.Thread(
         target=monitor_power_usage,
-        args=(power_readings["model load"], model_load_event),
-    )
-    pipeline_load_monitor = threading.Thread(
-        target=monitor_power_usage,
-        args=(power_readings["pipeline load"], pipeline_load_event),
+        args=(power_readings["load model"], load_model_event),
     )
 
     pre_mem = torch.mps.current_allocated_memory() / 1024**2
-    pipe, tokenizer, (tokenizer_runtime, model_load_runtime, pipeline_runtime) = (
-        tokenizer_model_pipeline(
-            args.hf_name,
-            tokenizer_event,
-            tokenizer_monitor,
-            model_load_event,
-            model_load_monitor,
-            pipeline_load_event,
-            pipeline_load_monitor,
-        )
+    pipe, tokenizer, model_load_runtime = load_model(
+        model_name=args.hf_name,
+        load_model_event=load_model_event,
+        load_model_thread=load_model_monitor_thread,
     )
     model_mem = torch.mps.current_allocated_memory() / 1024**2  # in MB
-    readings_tokenizer = process_data(power_readings["tokenizer"], "tokenizer")
-
-    df_energy_tokenizer = post_process_power_data(readings_tokenizer, tokenizer_runtime)
-
-    readings_model_load = process_data(power_readings["model load"], "model load")
-    readings_tokenizer.extend(readings_model_load)
-
-    df_energy_model_load = post_process_power_data(
-        readings_model_load, model_load_runtime
+    readings_load_model = process_data(
+        power_readings=power_readings["load model"], event="load model"
     )
-
-    readings_pipeline_load = process_data(
-        power_readings["pipeline load"], "pipeline load"
-    )
-    readings_tokenizer.extend(
-        readings_pipeline_load,
-    )
-    df_energy_pipeline_load = post_process_power_data(
-        readings_pipeline_load, pipeline_runtime
-    )
-    df_energy = pd.concat(
-        [df_energy_tokenizer, df_energy_model_load, df_energy_pipeline_load],
-        ignore_index=True,
+    df_energy = post_process_power_data(
+        readings=readings_load_model, runtime_s=model_load_runtime
     )
     df_energy["Output Token Limit"] = num_tokens
     df_energy["Input Tokens"] = 0
     df_energy["Iteration"] = 0
     df_energy["Model Name"] = model_name
     df_energy["Number of GPUs"] = 1
-    df_energy["Prompt"] = "startup"
+    df_energy["Prompt"] = ""
     df_energy["Output Tokens"] = 0
     df_energy["Batch Size"] = batch_size
     df_energy["System"] = system_name
-    df_energy["GPU Memory (MB)"] = [pre_mem, model_mem, model_mem]
+    df_energy["GPU Memory (MB)"] = [model_mem - pre_mem]
     df_energy.to_csv(
         f"{model_name}-{system_name}.csv", index=False, header=False, mode="a"
     )
 
-    df_power = pd.DataFrame(readings_tokenizer)
+    df_power = pd.DataFrame(readings_load_model)
     # print(df_power)
     df_power.to_csv(
         csv_power,
@@ -272,7 +232,8 @@ if __name__ == "__main__":
     )
 
     for idx, prompt in prompts.items():
-        for i in range(5):
+        runtimes = []
+        for i in range(100):
             dict_key = f"inference-{idx}-{i}"
             power_readings[dict_key] = []
             inference_event = threading.Event()
@@ -282,7 +243,12 @@ if __name__ == "__main__":
             )
             inference_start_time = time.time()
             llm_output = run_inference(
-                pipe, num_tokens, prompt, inference_event, inference_monitor
+                pipe=pipe,
+                num_tokens=num_tokens,
+                prompt=prompt,
+                inference_event=inference_event,
+                inference_monitor=inference_monitor,
+                batch_size=batch_size,
             )
             inference_runtime = time.time() - inference_start_time
             inference_mem = torch.mps.current_allocated_memory() / 1024**2
@@ -294,6 +260,7 @@ if __name__ == "__main__":
                 header=False,
                 mode="a",
             )
+            torch.mps.empty_cache()
 
             input_tokens = tokenizer.encode(prompt)
             num_input_tokens = len(input_tokens)
@@ -313,3 +280,12 @@ if __name__ == "__main__":
             df_energy_inference.to_csv(
                 f"{model_name}-{system_name}.csv", index=False, header=False, mode="a"
             )
+
+            runtimes.append(inference_runtime)
+            mean_runtime = np.mean(runtimes)
+            std_err = stats.sem(runtimes)
+            z_critical = stats.norm.ppf((1 + 0.95) / 2)
+            ci_half_width = z_critical * std_err
+            # Break if we have more than 5 samples and the confidence interval half-width is less than 0.5
+            if i > 5 and ci_half_width < 0.5:
+                break
