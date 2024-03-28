@@ -524,7 +524,12 @@ Describe the code above and some potential confusion points for developers. Desc
             ) as ctx:
                 cpu_core = find_current_cpu_core()
                 inference_start = time.time()
-                llm_output = run_inference(pipe, num_tokens, prompt)
+                llm_output = run_inference(
+                    pipe=pipe,
+                    num_tokens=num_tokens,
+                    prompt=prompt,
+                    batch_size=batch_size,
+                )
                 inference_end = time.time()
                 inference_runtime = inference_end - inference_start
             # print(llm_output)
