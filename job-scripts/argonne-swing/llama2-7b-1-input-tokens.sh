@@ -19,10 +19,10 @@ TIME=$(date +"%H-%M-%S")
 module load amd-uprof
 cd /home/ac.gwilkins/energy-inference/cuda/
 
-for num_tokens in "${N_TOKENS[@]}"
-	do 
-        nvidia-smi -lms 100 -f ./$MODEL_NAME/$DATE/$TIME/nvidia-smi-$num_tokens.log --query-gpu=timestamp,power.draw,utilization.gpu,utilization.memory --format=csv &
-        pid=$!
-        AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$TIME/ python3 gated-cuda.py --out_dir ./$MODEL_NAME/$DATE/$TIME --num_tokens $num_tokens --hf_name $HF_NAME --system_name $SYSTEM
-        kill $pid
-    done
+# for num_tokens in "${N_TOKENS[@]}"
+# 	do 
+nvidia-smi -lms 100 -f ./$MODEL_NAME/$DATE/$TIME/nvidia-smi.csv --query-gpu=timestamp,power.draw,utilization.gpu,utilization.memory --format=csv &
+pid=$!
+AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$TIME/ python3 cuda.py --out_dir ./$MODEL_NAME/$DATE/$TIME --num_tokens 32 --hf_name $HF_NAME --system_name $SYSTEM
+kill $pid
+    # done

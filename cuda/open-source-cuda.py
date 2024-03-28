@@ -10,6 +10,9 @@ import pandas as pd
 from pynvml.smi import nvidia_smi
 import psutil
 import os
+import time
+import numpy as np
+from scipy import stats
 
 
 def find_current_cpu_core():
@@ -46,22 +49,26 @@ def run_inference(
     pipe: Pipeline,
     num_tokens: int,
     prompt: str,
+    batch_size: int,
 ) -> str:
     sequences = pipe(
         prompt,
         do_sample=True,
         max_new_tokens=num_tokens,
+        min_new_tokens=num_tokens * 0.9,
         temperature=0.7,
         top_k=50,
         top_p=0.95,
         num_return_sequences=1,
+        batch_size=batch_size,
+        use_cache=False,
     )
     return sequences[0]["generated_text"]
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_tokens", type=int, default=256)
+    parser.add_argument("--num_tokens", type=int, default=64)
     parser.add_argument("--hf_name", type=str, default="mistralai/Mistral-7B-v0.1")
     parser.add_argument("--system_name", type=str, default="Swing")
     parser.add_argument("--batch_size", type=int, default=32)
@@ -146,11 +153,8 @@ if __name__ == "__main__":
     )
 
     for idx, prompt in prompts.items():
-        max_iterations = 5
-        iteration = 0
-        previous_var = float("inf")
-
-        while iteration < max_iterations:
+        runtimes = []
+        for iteration in range(100):
             pandas_handle = PandasHandler()
             idx_log = (idx, iteration)
             # profile_inference = ProfileAMDEnergy(
@@ -169,8 +173,17 @@ if __name__ == "__main__":
                 start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
             ) as ctx:
                 cpu_core = find_current_cpu_core()
-                llm_output = run_inference(pipe, num_tokens, prompt)
+                inference_start = time.time()
+                llm_output = run_inference(
+                    pipe=pipe,
+                    num_tokens=num_tokens,
+                    prompt=prompt,
+                    batch_size=batch_size,
+                )
+                inference_end = time.time()
+                inference_runtime = inference_end - inference_start
             print(llm_output)
+
             # profile_inference.stop_profiling(proc=profile_inference_proc)
             input_tokens = tokenizer.encode(prompt)
             num_input_tokens = len(input_tokens)
@@ -182,7 +195,7 @@ if __name__ == "__main__":
             df["Iteration"] = iteration
             df["Model Name"] = model_name
             df["Number of GPUs"] = num_gpus
-            df["Prompt"] = prompt
+            df["Prompt"] = prompt[:50]
             df["Output Tokens"] = num_output_tokens
             df["Batch Size"] = batch_size
             df["System Name"] = system_name
@@ -201,8 +214,11 @@ if __name__ == "__main__":
                 header=False,
                 index=False,
             )
-            current_var = df["nvidia_gpu_0"].std()
-            if abs(previous_var - current_var) < 0.1:
+            runtimes.append(inference_runtime)
+            mean_runtime = np.mean(runtimes)
+            std_err = stats.sem(runtimes)
+            z_critical = stats.norm.ppf((1 + 0.95) / 2)
+            ci_half_width = z_critical * std_err
+            # Break if we have more than 5 samples and the confidence interval half-width is less than 0.5
+            if iteration > 5 and ci_half_width < 0.5:
                 break
-            previous_var = current_var
-            iteration += 1
