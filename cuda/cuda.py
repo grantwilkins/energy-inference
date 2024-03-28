@@ -75,7 +75,7 @@ if __name__ == "__main__":
     batch_size = args.batch_size
     system_name = args.system_name
     out_dir = args.out_dir
-        prompts = {
+    prompts = {
         "A": "What is the largest city in France?",
         "B": "Can you explain the difference between a simile and a metaphor? Provide an example.",
         "C": "What are some effective strategies for managing stress and maintaining good mental health during challenging times, such as a pandemic, a break-up, or a personal crisis?",
