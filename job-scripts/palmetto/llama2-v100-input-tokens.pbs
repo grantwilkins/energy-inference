@@ -3,4 +3,4 @@
 
 cd /home/gfwilki/energy-inference/job_scripts/palmetto
 conda activate energy-inference
-sh ./mistral-1-input-tokens-v100.sh
+sh ./llama2-1-input-tokens-v100.sh
