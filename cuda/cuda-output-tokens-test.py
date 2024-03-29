@@ -63,7 +63,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--hf_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
     parser.add_argument("--system_name", type=str, default="Swing")
-    parser.add_argument("--batch_size", type=int, default=8)
+    parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--num_tokens", type=int, default=8)
     parser.add_argument("--out_dir", type=str, default=".")
 
     args = parser.parse_args()
