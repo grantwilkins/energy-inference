@@ -1,0 +1,7 @@
+mkdir: cannot create directory ‘./llama2-7b/2024-03-29/08-41-14’: No such file or directory
+Traceback (most recent call last):
+  File "/home/gfwilki/energy-inference/cuda/cuda.py", line 476, in <module>
+    with open(f"{out_dir}/job_info.yaml", "w") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './llama2-7b/2024-03-29/08-41-14/job_info.yaml'
+./llama2-1-input-tokens-v100.sh: line 24: kill: (1074616) - No such process
