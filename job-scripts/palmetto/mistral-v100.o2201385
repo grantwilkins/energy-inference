@@ -1,0 +1,18 @@
+Failed to create log file ./llama2-7b/2024-03-29/08-36-26/nvidia-smi.csv
+
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=40
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:12,mem=354268kb,walltime=00:00:10,ncpus=40,cpupercent=0,vmem=6850844kb
+ 
+ 

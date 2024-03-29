@@ -537,7 +537,8 @@ _quicksort (void *const pbase, size_t total_elems, size_t size,
 Describe the code above and some potential confusion points for developers. Describe ways that we can also make the code more readable.
 """,
     }
-
+    new_prompts = {}
+    new_prompts["F"] = prompts["F"]
     out_dir = f"{model_name}/{todays_date}/{start_time}"
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
@@ -553,7 +554,7 @@ Describe the code above and some potential confusion points for developers. Desc
         file.write(f"    num_tokens: {num_tokens}\n")
         file.write(f"    batch_size: {batch_size}\n")
         file.write(f"    hf_name: {hf_name}\n")
-        for idx, prompt in prompts.items():
+        for idx, prompt in new_prompts.items():
             file.write(f"    prompt-{idx}: {prompt[:50].strip()}\n")
 
     load_model_event = threading.Event()
@@ -602,7 +603,7 @@ Describe the code above and some potential confusion points for developers. Desc
         mode="a",
     )
 
-    for idx, prompt in prompts.items():
+    for idx, prompt in new_prompts.items():
         runtimes = []
         for i in range(100):
             dict_key = f"inference-{idx}-{i}"
@@ -623,6 +624,7 @@ Describe the code above and some potential confusion points for developers. Desc
             )
             inference_runtime = time.time() - inference_start_time
             inference_mem = torch.mps.current_allocated_memory() / 1024**2
+            print(llm_output)
             readings = process_data(power_readings[dict_key], dict_key)
             df_power = pd.DataFrame(readings)
             df_power.to_csv(
@@ -644,7 +646,7 @@ Describe the code above and some potential confusion points for developers. Desc
             df_energy_inference["Model Name"] = model_name
             df_energy_inference["Number of GPUs"] = 1
             df_energy_inference["Prompt"] = prompt[:50].strip()
-            df_energy_inference["Output Tokens"] = num_output_tokens
+            df_energy_inference["Output Tokens"] = num_output_tokens - num_input_tokens
             df_energy_inference["Batch Size"] = batch_size
             df_energy_inference["System"] = system_name
             df_energy_inference["GPU Memory (MB)"] = inference_mem
