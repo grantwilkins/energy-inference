@@ -1,45 +1,41 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, Pipeline
 import torch
-import subprocess
-import threading
-import re
-import pandas as pd
-from time import sleep
-import time
+from pyJoules.energy_meter import EnergyContext
+from pyJoules.device.nvidia_device import NvidiaGPUDomain
+from pyJoules.device.rapl_device import RaplPackageDomain
+from pyJoules.handler.csv_handler import CSVHandler
+from pyJoules.handler.pandas_handler import PandasHandler
 import argparse
-import os
 import datetime
-import torch.mps
+import pandas as pd
+from pynvml.smi import nvidia_smi
+import os
+import psutil
+import time
 import numpy as np
 from scipy import stats
+import subprocess
 
 
-def load_model(
+def find_current_cpu_core():
+    return psutil.Process().cpu_num()
+
+
+def tokenizer_pipeline(
     model_name: str,
-    load_model_event: threading.Event,
-    load_model_thread: threading.Thread,
-) -> tuple[Pipeline, AutoTokenizer, float]:
-
+    ctx: EnergyContext,
+) -> tuple[Pipeline, AutoTokenizer, tuple[int, int]]:
+    tokenizer_cpu_core = find_current_cpu_core()
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-    load_model_thread.start()
-    load_model_start_time = time.time()
+    model_cpu_core = find_current_cpu_core()
+    ctx.record(tag="model load")
     pipe = pipeline(
         "text-generation",
         model=model_name,
-        tokenizer=tokenizer,
-        torch_dtype=torch.float16,
+        torch_dtype=torch.bfloat16,
         device_map="auto",
     )
-    load_model_time = time.time() - load_model_start_time
-    load_model_event.set()
-    load_model_thread.join()
-
-    return (
-        pipe,
-        tokenizer,
-        load_model_time,
-    )
+    return pipe, tokenizer, (tokenizer_cpu_core, model_cpu_core)
 
 
 def run_inference(
@@ -47,11 +43,7 @@ def run_inference(
     num_tokens: int,
     prompt: str,
     batch_size: int,
-    inference_event: threading.Event,
-    inference_monitor: threading.Thread,
 ) -> str:
-    inference_monitor.start()
-    sleep(2)
     sequences = pipe(
         prompt,
         do_sample=True,
@@ -61,98 +53,30 @@ def run_inference(
         top_k=50,
         top_p=0.95,
         num_return_sequences=1,
-        use_cache=False,
         batch_size=batch_size,
+        use_cache=False,
     )
-    inference_event.set()
-    inference_monitor.join()
-
     return sequences[0]["generated_text"]
-
-
-def monitor_power_usage(power_readings: list[str], stop_monitoring: threading.Event):
-    cmd = "echo ***REMOVED*** | sudo -S powermetrics --show-process-energy -i 200"
-    with subprocess.Popen(
-        cmd, stdout=subprocess.PIPE, shell=True, text=True
-    ) as process:
-        while not stop_monitoring.is_set():
-            line = process.stdout.readline()
-            if not line:
-                break
-            power_readings.append(line)
-    print("Powermetrics process ended.")
-
-
-def process_data(power_readings, event):
-    cpu_pattern = r"CPU Power:\s+(\d+)\s+mW"
-    gpu_pattern = r"GPU Power:\s+(\d+)\s+mW"
-    keywords = ["python3.12", "ALL_TASKS"]
-    readings = []
-    power_usage = {"event": event}
-    for line in power_readings:
-        if not line:
-            break
-        cpu_match = re.search(cpu_pattern, line)
-        gpu_match = re.search(gpu_pattern, line)
-        if any(line.startswith(keyword) for keyword in keywords):
-            split_line = line.split()
-            power_usage[split_line[0]] = split_line[-1]
-        if line.startswith("*** Sampled"):
-            power_usage["timestamp"] = float(
-                line.split()[-3].replace("(", "").replace("ms", "")
-            )
-        if cpu_match:
-            power_usage["cpu"] = int(cpu_match.group(1))
-        if gpu_match:
-            power_usage["gpu"] = int(gpu_match.group(1))
-        if power_usage.keys() == {
-            "cpu",
-            "gpu",
-            "python3.12",
-            "ALL_TASKS",
-            "event",
-            "timestamp",
-        }:
-            readings.append(power_usage)
-            power_usage = {"event": event}
-    return readings
-
-
-def post_process_power_data(readings: list[dict], runtime_s: float) -> pd.DataFrame:
-    df = pd.DataFrame()
-    df["Event"] = [readings[0]["event"]]
-    df["Runtime (s)"] = [runtime_s]
-    total_cpu_energy = 0
-    for reading in readings:
-        total_cpu_energy += (
-            reading["cpu"]
-            * reading["timestamp"]
-            * (float(reading["python3.12"]) / float(reading["ALL_TASKS"]))
-            / 1000
-            / 1000
-        )
-    df["CPU Energy (J)"] = [total_cpu_energy]
-    total_gpu_energy = 0
-    for reading in readings:
-        total_gpu_energy += reading["gpu"] * reading["timestamp"] / 1000 / 1000
-    df["GPU Energy (J)"] = [total_gpu_energy]
-    return df
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_tokens", type=int, default=64)
+    parser.add_argument("--num_tokens", type=int, default=256)
     parser.add_argument("--hf_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
-    parser.add_argument("--system_name", type=str, default="M1-Pro")
+    parser.add_argument("--system_name", type=str, default="Swing")
     parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--out_dir", type=str, default=".")
+
     args = parser.parse_args()
+
     todays_date = datetime.date.today().strftime("%Y-%m-%d")
-    start_time = datetime.datetime.now().strftime("%H-%M-%S")
-    num_tokens = args.num_tokens
+    num_gpus = torch.cuda.device_count()
     hf_name = args.hf_name
-    system_name = args.system_name
+    model_name = hf_name.split("/")[1]
+    num_tokens = args.num_tokens
     batch_size = args.batch_size
-    model_name = args.hf_name.split("/")[1]
+    system_name = args.system_name
+    out_dir = args.out_dir
     prompts = {
         "A": "What is the largest city in France?",
         "B": "Can you explain the difference between a simile and a metaphor? Provide an example.",
@@ -537,12 +461,17 @@ _quicksort (void *const pbase, size_t total_elems, size_t size,
 Describe the code above and some potential confusion points for developers. Describe ways that we can also make the code more readable.
 """,
     }
-    new_prompts = {}
-    new_prompts["F"] = prompts["F"]
-    out_dir = f"{model_name}/{todays_date}/{start_time}"
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
-    csv_power = f"{out_dir}/{model_name}-{system_name}-power.csv"
+    pandas_handle = PandasHandler()
+    if out_dir == ".":
+        start_time = datetime.datetime.now().strftime("%H-%M-%S")
+    else:
+        start_time = out_dir.split("/")[-1]
+
+    if "AMD" in subprocess.check_output("lscpu").decode():
+        domains = [NvidiaGPUDomain(i) for i in range(num_gpus)]
+    elif "Intel" in subprocess.check_output("lscpu").decode():
+        domains = [RaplPackageDomain(0), RaplPackageDomain(1)]
+        domains.extend([NvidiaGPUDomain(i) for i in range(num_gpus)])
 
     with open(f"{out_dir}/job_info.yaml", "w") as file:
         file.write("job:\n")
@@ -554,111 +483,100 @@ Describe the code above and some potential confusion points for developers. Desc
         file.write(f"    num_tokens: {num_tokens}\n")
         file.write(f"    batch_size: {batch_size}\n")
         file.write(f"    hf_name: {hf_name}\n")
-        for idx, prompt in new_prompts.items():
+        for idx, prompt in prompts.items():
             file.write(f"    prompt-{idx}: {prompt[:50].strip()}\n")
 
-    load_model_event = threading.Event()
-    power_readings = {
-        "load model": [],
-    }
-
-    load_model_monitor_thread = threading.Thread(
-        target=monitor_power_usage,
-        args=(power_readings["load model"], load_model_event),
-    )
-
-    pre_mem = torch.mps.current_allocated_memory() / 1024**2
-    pipe, tokenizer, model_load_runtime = load_model(
-        model_name=args.hf_name,
-        load_model_event=load_model_event,
-        load_model_thread=load_model_monitor_thread,
-    )
-    model_mem = torch.mps.current_allocated_memory() / 1024**2  # in MB
-    readings_load_model = process_data(
-        power_readings=power_readings["load model"], event="load model"
-    )
-    df_energy = post_process_power_data(
-        readings=readings_load_model, runtime_s=model_load_runtime
-    )
-    df_energy["Output Token Limit"] = num_tokens
-    df_energy["Input Tokens"] = 0
-    df_energy["Iteration"] = 0
-    df_energy["Model Name"] = model_name
-    df_energy["Number of GPUs"] = 1
-    df_energy["Prompt"] = ""
-    df_energy["Output Tokens"] = 0
-    df_energy["Batch Size"] = batch_size
-    df_energy["System"] = system_name
-    df_energy["GPU Memory (MB)"] = [model_mem - pre_mem]
-    df_energy.to_csv(
-        f"{model_name}-{system_name}.csv", index=False, header=False, mode="a"
-    )
-
-    df_power = pd.DataFrame(readings_load_model)
-    # print(df_power)
-    df_power.to_csv(
-        csv_power,
-        index=False,
-        header=False,
+    with EnergyContext(
+        handler=pandas_handle,
+        domains=domains,
+        start_tag="tokenizer",
+    ) as ctx:
+        pipe, tokenizer, (tokenizer_core, pipeline_core) = tokenizer_pipeline(
+            hf_name, ctx
+        )
+    # profile_tokenizer.stop_profiling(proc=profile_tokenizer_proc)
+    df = pandas_handle.get_dataframe()
+    df["Max Number of Tokens"] = num_tokens
+    df["Input Tokens"] = 0
+    df["Iteration"] = 0
+    df["Model Name"] = model_name
+    df["Number of GPUs"] = num_gpus
+    df["Prompt"] = "startup"
+    df["Output Tokens"] = 0
+    df["Batch Size"] = batch_size
+    df["System Name"] = system_name
+    df["CPU Core"] = [tokenizer_core, pipeline_core]
+    for idx_gpus in range(num_gpus):
+        df[f"Total Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
+            "memory.total"
+        )["gpu"][idx_gpus]["fb_memory_usage"]["total"]
+        df[f"Used Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
+            "memory.used"
+        )["gpu"][idx_gpus]["fb_memory_usage"]["used"]
+    df.to_csv(
+        f"{model_name}-{args.system_name}-{num_gpus}.csv",
         mode="a",
+        header=False,
+        index=False,
     )
 
-    for idx, prompt in new_prompts.items():
+    for idx, prompt in prompts.items():
         runtimes = []
-        for i in range(100):
-            dict_key = f"inference-{idx}-{i}"
-            power_readings[dict_key] = []
-            inference_event = threading.Event()
-            inference_monitor = threading.Thread(
-                target=monitor_power_usage,
-                args=(power_readings[dict_key], inference_event),
-            )
-            inference_start_time = time.time()
-            llm_output = run_inference(
-                pipe=pipe,
-                num_tokens=num_tokens,
-                prompt=prompt,
-                inference_event=inference_event,
-                inference_monitor=inference_monitor,
-                batch_size=batch_size,
-            )
-            inference_runtime = time.time() - inference_start_time
-            inference_mem = torch.mps.current_allocated_memory() / 1024**2
-            print(llm_output)
-            readings = process_data(power_readings[dict_key], dict_key)
-            df_power = pd.DataFrame(readings)
-            df_power.to_csv(
-                csv_power,
-                index=False,
-                header=False,
-                mode="a",
-            )
-            torch.mps.empty_cache()
-
+        for iteration in range(100):
+            pandas_handle = PandasHandler()
+            idx_log = (idx, iteration)
+            with EnergyContext(
+                handler=pandas_handle,
+                domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
+                start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
+            ) as ctx:
+                cpu_core = find_current_cpu_core()
+                inference_start = time.time()
+                llm_output = run_inference(
+                    pipe=pipe,
+                    num_tokens=num_tokens,
+                    prompt=prompt,
+                    batch_size=batch_size,
+                )
+                inference_end = time.time()
+                inference_runtime = inference_end - inference_start
+            # print(llm_output)
+            # profile_inference.stop_profiling(proc=profile_inference_proc)
             input_tokens = tokenizer.encode(prompt)
             num_input_tokens = len(input_tokens)
             output_tokens = tokenizer.encode(llm_output)
             num_output_tokens = len(output_tokens)
-            df_energy_inference = post_process_power_data(readings, inference_runtime)
-            df_energy_inference["Output Token Limit"] = num_tokens
-            df_energy_inference["Input Tokens"] = num_input_tokens
-            df_energy_inference["Iteration"] = i
-            df_energy_inference["Model Name"] = model_name
-            df_energy_inference["Number of GPUs"] = 1
-            df_energy_inference["Prompt"] = prompt[:50].strip()
-            df_energy_inference["Output Tokens"] = num_output_tokens - num_input_tokens
-            df_energy_inference["Batch Size"] = batch_size
-            df_energy_inference["System"] = system_name
-            df_energy_inference["GPU Memory (MB)"] = inference_mem
-            df_energy_inference.to_csv(
-                f"{model_name}-{system_name}.csv", index=False, header=False, mode="a"
+            df = pandas_handle.get_dataframe()
+            df["Max Number of Tokens"] = num_tokens
+            df["Input Tokens"] = num_input_tokens
+            df["Iteration"] = iteration
+            df["Model Name"] = model_name
+            df["Number of GPUs"] = num_gpus
+            df["Prompt"] = prompt[:50].strip()
+            df["Output Tokens"] = num_output_tokens
+            df["Batch Size"] = batch_size
+            df["System Name"] = system_name
+            df["CPU Core"] = cpu_core
+            for idx_gpus in range(num_gpus):
+                df[f"Total Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
+                    "memory.total"
+                )["gpu"][idx_gpus]["fb_memory_usage"]["total"]
+                df[f"Used Memory {idx_gpus}"] = nvidia_smi.getInstance().DeviceQuery(
+                    "memory.used"
+                )["gpu"][idx_gpus]["fb_memory_usage"]["used"]
+            torch.cuda.empty_cache()
+            df.to_csv(
+                f"{model_name}-{args.system_name}-{num_gpus}.csv",
+                mode="a",
+                header=False,
+                index=False,
             )
-            if i > 0:
+            if iteration > 0:
                 runtimes.append(inference_runtime)
             mean_runtime = np.mean(runtimes)
             std_err = stats.sem(runtimes)
             z_critical = stats.norm.ppf((1 + 0.95) / 2)
             ci_half_width = z_critical * std_err
             # Break if we have more than 5 samples and the confidence interval half-width is less than 0.5
-            if i > 5 and ci_half_width < 0.5:
+            if iteration > 5 and ci_half_width < 0.5:
                 break

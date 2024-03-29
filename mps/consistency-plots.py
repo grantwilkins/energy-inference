@@ -5,7 +5,7 @@ from scipy import stats
 import numpy as np
 
 df = pd.read_csv("Llama-2-7b-chat-hf-M1-Pro.csv")
-df_mistral = pd.read_csv("Mistral-7B-v0.1-M1-Pro.csv")
+# df_mistral = pd.read_csv("Mistral-7B-v0.1-M1-Pro.csv")
 
 # df = pd.concat([df, df_mistral])
 
@@ -13,18 +13,17 @@ plt.figure(figsize=(4, 3))
 sns.set_theme(style="whitegrid")
 sns.set_context("paper")
 
-print(df)
-df = df[df["Operation"].str.contains("inference")]
-print(df)
-df["Throughput (tokens/s)"] = df["Output Token Size"] / df["Runtime (s)"]
-df["Total Energy (J)"] = df["GPU Energy (J)"] + df["CPU Energy (J)"]
-df["Energy per Token (J)"] = df["Total Energy (J)"] / df["Output Token Size"]
+df["Output Token Size"] = df["Output Token Size"] + df["Input Token Size"]
+df.to_csv("Llama-2-7b-chat-hf-M1-Pro.csv", sep=",", index=False)
 
-# sns.histplot(
-#     data=df,
-#     hue="Model Name",
-#     x="Runtime (s)",
-# )
+# print(df)
+# df = df[df["Operation"].str.contains("inference")]
+# print(df)
+# df["Throughput (tokens/s)"] = df["Output Token Size"] / df["Runtime (s)"]
+# df["Total Energy (J)"] = df["GPU Energy (J)"] + df["CPU Energy (J)"]
+# df["Energy per Token (J)"] = df["Total Energy (J)"] / df["Output Token Size"]
+
+# sns.histplot(data=df, x="Runtime (s)", hue="Input Token Size", palette="colorblind")
 # plt.show()
 
 # sns.histplot(

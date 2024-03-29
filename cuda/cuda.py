@@ -2,6 +2,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, Pipeline
 import torch
 from pyJoules.energy_meter import EnergyContext
 from pyJoules.device.nvidia_device import NvidiaGPUDomain
+from pyJoules.device.rapl_device import RaplPackageDomain
 from pyJoules.handler.csv_handler import CSVHandler
 from pyJoules.handler.pandas_handler import PandasHandler
 import argparse
@@ -13,6 +14,7 @@ import psutil
 import time
 import numpy as np
 from scipy import stats
+import subprocess
 
 
 def find_current_cpu_core():
@@ -465,6 +467,12 @@ Describe the code above and some potential confusion points for developers. Desc
     else:
         start_time = out_dir.split("/")[-1]
 
+    if "AMD" in subprocess.check_output("lscpu").decode():
+        domains = [NvidiaGPUDomain(i) for i in range(num_gpus)]
+    elif "Intel" in subprocess.check_output("lscpu").decode():
+        domains = [RaplPackageDomain(0), RaplPackageDomain(1)]
+        domains.extend([NvidiaGPUDomain(i) for i in range(num_gpus)])
+
     with open(f"{out_dir}/job_info.yaml", "w") as file:
         file.write("job:\n")
         file.write(f"  date: {todays_date}\n")
@@ -480,7 +488,7 @@ Describe the code above and some potential confusion points for developers. Desc
 
     with EnergyContext(
         handler=pandas_handle,
-        domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
+        domains=domains,
         start_tag="tokenizer",
     ) as ctx:
         pipe, tokenizer, (tokenizer_core, pipeline_core) = tokenizer_pipeline(
@@ -519,7 +527,7 @@ Describe the code above and some potential confusion points for developers. Desc
             idx_log = (idx, iteration)
             with EnergyContext(
                 handler=pandas_handle,
-                domains=[NvidiaGPUDomain(i) for i in range(num_gpus)],
+                domains=domains,
                 start_tag=f"start-inference-{idx_log[0]}-{idx_log[1]}",
             ) as ctx:
                 cpu_core = find_current_cpu_core()
