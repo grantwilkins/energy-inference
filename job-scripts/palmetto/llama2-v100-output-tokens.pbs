@@ -1,0 +1,6 @@
+#PBS -N llama2-v100
+#PBS -l select=1:ncpus=40:mpiprocs=40:gpu_model=v100:mem=376gb:ngpus=1,walltime=72:00:00
+
+cd /home/gfwilki/energy-inference/job-scripts/palmetto
+source activate energy-inference
+sh ./llama2-1-output-tokens-v100.sh

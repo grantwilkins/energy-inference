@@ -1,0 +1,6 @@
+#PBS -N falcon-a100
+#PBS -l select=1:ncpus=56:mpiprocs=56:gpu_model=a100:mem=376gb:ngpus=1,walltime=72:00:00
+
+cd /home/gfwilki/energy-inference/job-scripts/palmetto
+source activate energy-inference
+sh ./falcon-1-output-tokens-v100.sh
