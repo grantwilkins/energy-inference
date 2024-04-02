@@ -1,0 +1,611 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:16<00:16, 16.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.74s/it]
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:163: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+Traceback (most recent call last):
+  File "/home/gfwilki/energy-inference/cuda/cuda-output-tokens-test.py", line 151, in <module>
+    llm_output = run_inference(
+                 ^^^^^^^^^^^^^^
+  File "/home/gfwilki/energy-inference/cuda/cuda-output-tokens-test.py", line 47, in run_inference
+    sequences = pipe(
+                ^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/text_generation.py", line 241, in __call__
+    return super().__call__(text_inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py", line 1196, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py", line 1203, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/base.py", line 1102, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/pipelines/text_generation.py", line 328, in _forward
+    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/generation/utils.py", line 1592, in generate
+    return self.sample(
+           ^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/generation/utils.py", line 2696, in sample
+    outputs = self(
+              ^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/models/falcon/modeling_falcon.py", line 1282, in forward
+    transformer_outputs = self.transformer(
+                          ^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/models/falcon/modeling_falcon.py", line 1161, in forward
+    outputs = block(
+              ^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/models/falcon/modeling_falcon.py", line 811, in forward
+    attn_outputs = self.self_attention(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gfwilki/.conda/envs/energy-inference/lib/python3.12/site-packages/transformers/models/falcon/modeling_falcon.py", line 450, in forward
+    attn_output = F.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 560.00 MiB. GPU 0 has a total capacity of 15.77 GiB of which 78.44 MiB is free. Including non-PyTorch memory, this process has 15.55 GiB memory in use. Of the allocated memory 13.85 GiB is allocated by PyTorch, and 819.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
