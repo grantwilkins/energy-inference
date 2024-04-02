@@ -1,0 +1,20 @@
+job:
+  date: 2024-04-02
+  start_time: 07-36-20
+  details:
+    model_name: falcon-7b
+    system_name: argonne-swing
+    num_tokens: 32
+    batch_size: 32
+    hf_name: tiiuae/falcon-7b
+    prompt-A: What is the largest city in France?
+    prompt-B: Can you explain the difference between a simile an
+    prompt-C: What are some effective strategies for managing st
+    prompt-D: Imagine you are an expert travel guide for Japan.
+    prompt-E: As an AI language model, you possess the capabilit
+    prompt-F: /* An improved random number generation package.
+    prompt-G: /*This is a version (aka ptmalloc2) of malloc/free
+    prompt-H: /void _quicksort (void *const pbase, size_t total_
+    prompt-I: #include <alloca.h>
+#include <limits.h>
+#include <
