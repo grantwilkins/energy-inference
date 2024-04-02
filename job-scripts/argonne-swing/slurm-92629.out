@@ -1,0 +1,12 @@
+mkdir: cannot create directory ‘mistral-7b/2024-03-29/13-02-53’: No such file or directory
+/gpfs/fs1/soft/swing/manual/amd-uprof/4.1.424/bin/AMDuProfCLI
+Failed to create log file mistral-7b/2024-03-29/13-02-53/nvidia-smi.csv
+
+A power profiling session is already in progress. Please make sure that no other
+instance of AMDuProf GUI or command line tool is performing a power profiling
+session and then start command line power profiling again. (error code 0x80070005)
+Unable to start the profiling.
+ERROR: Unable to Collect Live Power Profiling Data.
+
+Profile finished
+/var/spool/slurmd/job92629/slurm_script: line 28: kill: (3575983) - No such process
