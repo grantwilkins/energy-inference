@@ -21,7 +21,7 @@ module load amd-uprof
 
 cd /home/ac.gwilkins/energy-inference/cuda/
 
-mkdir $MODEL_NAME/$DATE/$TIME
+mkdir -p $MODEL_NAME/$DATE/$TIME
 nvidia-smi -lms 100 -f $MODEL_NAME/$DATE/$TIME/nvidia-smi.csv --query-gpu=timestamp,power.draw,utilization.gpu,utilization.memory --format=csv &
 pid=$!
 AMDuProfCLI timechart --event power --interval 100 --duration 99999 -o ./$MODEL_NAME/$DATE/$TIME/ python3 cuda-output-tokens-test.py --out_dir ./$MODEL_NAME/$DATE/$TIME --num_tokens 32 --hf_name $HF_NAME --system_name $SYSTEM
