@@ -262,17 +262,17 @@ Please describe what the following quicksort algorithm and code does and how it 
 #include <string.h>
 
 /* Byte-wise swap two items of size SIZE. */
-#define SWAP(a, b, size)						      \
-  do									      \
-    {									      \
-      size_t __size = (size);						      \
-      char *__a = (a), *__b = (b);					      \
-      do								      \
-	{								      \
-	  char __tmp = *__a;						      \
-	  *__a++ = *__b;						      \
-	  *__b++ = __tmp;						      \
-	} while (--__size > 0);						      \
+#define SWAP(a, b, size)						      
+  do									      
+    {									      
+      size_t __size = (size);						      
+      char *__a = (a), *__b = (b);					      
+      do								      
+	{								      
+	  char __tmp = *__a;						      
+	  *__a++ = *__b;						      
+	  *__b++ = __tmp;						      
+	} while (--__size > 0);						      
     } while (0)
 
 #define MAX_THRESH 4
@@ -461,6 +461,8 @@ _quicksort (void *const pbase, size_t total_elems, size_t size,
 Describe the code above and some potential confusion points for developers. Describe ways that we can also make the code more readable.
 """,
     }
+    new_prompts = {}
+    new_prompts["I"] = prompts["I"]
     pandas_handle = PandasHandler()
     if out_dir == ".":
         start_time = datetime.datetime.now().strftime("%H-%M-%S")
