@@ -1,0 +1,12 @@
+job:
+  date: 2024-04-03
+  start_time: 14-47-54
+  details:
+    model_name: falcon-7b
+    system_name: M1-Pro
+    num_tokens: 32
+    batch_size: 32
+    hf_name: tiiuae/falcon-7b
+    prompt-I: #include <alloca.h>
+#include <limits.h>
+#include <

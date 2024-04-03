@@ -3,7 +3,7 @@ job:
   start_time: 10-55-34
   details:
     model_name: Mistral-7B-v0.1
-    system_name: palmetto-v100
+    system_name: palmetto-a100
     num_tokens: 32
     batch_size: 32
     hf_name: mistralai/Mistral-7B-v0.1

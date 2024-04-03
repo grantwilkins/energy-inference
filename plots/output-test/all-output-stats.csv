@@ -1,0 +1,1 @@
+Phase,Runtime (s),CPU Energy (J),GPU Energy (J),Output Token Limit,Number of Input Tokens,Iteration,Model,Number of GPUs,Prompt,Total Number of Tokens,Batch Size,System,GPU Used Memory (MB),GPU Total Memory (MB)

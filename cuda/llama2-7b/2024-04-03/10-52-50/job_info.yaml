@@ -3,7 +3,7 @@ job:
   start_time: 10-52-50
   details:
     model_name: Llama-2-7b-chat-hf
-    system_name: palmetto-v100
+    system_name: palmetto-a100
     num_tokens: 32
     batch_size: 32
     hf_name: meta-llama/Llama-2-7b-chat-hf
