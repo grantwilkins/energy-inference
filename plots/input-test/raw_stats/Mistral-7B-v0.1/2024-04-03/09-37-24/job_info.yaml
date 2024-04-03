@@ -1,0 +1,12 @@
+job:
+  date: 2024-04-03
+  start_time: 09-37-24
+  details:
+    model_name: Mistral-7B-v0.1
+    system_name: M1-Pro
+    num_tokens: 32
+    batch_size: 32
+    hf_name: mistralai/Mistral-7B-v0.1
+    prompt-I: #include <alloca.h>
+#include <limits.h>
+#include <

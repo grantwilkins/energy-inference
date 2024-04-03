@@ -141,7 +141,7 @@ def post_process_power_data(readings: list[dict], runtime_s: float) -> pd.DataFr
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_tokens", type=int, default=64)
+    parser.add_argument("--num_tokens", type=int, default=32)
     parser.add_argument("--hf_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
     parser.add_argument("--system_name", type=str, default="M1-Pro")
     parser.add_argument("--batch_size", type=int, default=32)
@@ -538,7 +538,7 @@ Describe the code above and some potential confusion points for developers. Desc
 """,
     }
     new_prompts = {}
-    new_prompts["F"] = prompts["F"]
+    new_prompts["I"] = prompts["I"]
     out_dir = f"{model_name}/{todays_date}/{start_time}"
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
@@ -605,7 +605,7 @@ Describe the code above and some potential confusion points for developers. Desc
 
     for idx, prompt in new_prompts.items():
         runtimes = []
-        for i in range(100):
+        for i in range(25):
             dict_key = f"inference-{idx}-{i}"
             power_readings[dict_key] = []
             inference_event = threading.Event()

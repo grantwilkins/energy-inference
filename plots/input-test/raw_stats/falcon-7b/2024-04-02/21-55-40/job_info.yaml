@@ -1,0 +1,10 @@
+job:
+  date: 2024-04-02
+  start_time: 21-55-40
+  details:
+    model_name: falcon-7b
+    system_name: M1-Pro
+    num_tokens: 32
+    batch_size: 32
+    hf_name: tiiuae/falcon-7b
+    prompt-F: /* An improved random number generation package.
