@@ -51,6 +51,10 @@ df_llama_stats["CPU Energy (J)"] = (
     - df_llama_stats["Idle Package-1 Energy (uJ)"]
 ) / 1e6
 
+df_falcon_stats["GPU Energy (J)"] = df_falcon_stats["GPU Energy (uJ)"] / 1e6
+df_mistral_stats["GPU Energy (J)"] = df_mistral_stats["GPU Energy (uJ)"] / 1e6
+df_llama_stats["GPU Energy (J)"] = df_llama_stats["GPU Energy (uJ)"] / 1e6
+
 print(df_falcon_stats["CPU Energy (J)"])
 
 df_falcon_stats.to_csv(
