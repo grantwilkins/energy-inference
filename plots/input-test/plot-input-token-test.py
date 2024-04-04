@@ -64,7 +64,12 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-energy-per-token.pdf", bbox_inches="tight")
@@ -78,7 +83,12 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-throughput-bar.pdf", bbox_inches="tight")
@@ -92,7 +102,12 @@ facet_grid = sns.catplot(
     data=df,
     kind="point",
     sharey=False,
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-throughput-line.pdf", bbox_inches="tight")
@@ -106,7 +121,12 @@ facet_grid = sns.catplot(
     data=df,
     kind="bar",
     sharey=False,
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set_xticklabels(rotation=45)
 facet_grid.set(yscale="log")
@@ -121,7 +141,12 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-total-power-draw.pdf", bbox_inches="tight")
@@ -135,7 +160,12 @@ facet_grid = sns.catplot(
     data=df,
     kind="bar",
     sharey=False,
-    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
+    col_order=[
+        "M1-Pro",
+        "Palmetto Intel+V100",
+        "Palmetto Intel+A100",
+        "Swing AMD+A100",
+    ],
 )
 facet_grid.set(yscale="log")
 facet_grid.set_xticklabels(rotation=45)

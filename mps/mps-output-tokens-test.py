@@ -217,8 +217,8 @@ if __name__ == "__main__":
         mode="a",
     )
 
-    output_token_lengths = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
-    for num_tokens in output_token_lengths:
+    output_token_lengths = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+    for num_tokens in reversed(output_token_lengths):
         runtimes = []
         for i in range(25):
             dict_key = f"inference-{num_tokens}-{i}"

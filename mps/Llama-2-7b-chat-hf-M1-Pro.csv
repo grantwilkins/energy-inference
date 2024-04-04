@@ -1,13 +1,1 @@
-load model,22.095041036605835,17.642131166479665,3.289127469999999,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
-inference-8-0,8.765005111694336,13.186869594976947,29.322530060000002,8,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-1,4.427641868591309,3.3348579775227307,24.268215150000003,8,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-2,4.460777997970581,2.8252653023254015,23.858077750000003,8,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-3,4.670430898666382,3.3299949492240115,26.709036329999996,8,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-4,4.686273097991943,3.508751345335665,26.99185977,8,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-5,4.620301008224487,3.391851430105654,26.9045747,8,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-8-6,4.611627101898193,3.373582771962279,26.78968827,8,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
-inference-16-0,8.033097982406616,11.678005467582485,62.05827045000001,16,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
-inference-16-1,6.649647951126099,5.892067495829686,61.17803382000002,16,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
-inference-16-2,6.57288122177124,6.088628888328076,60.37431587,16,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
-inference-16-3,6.597976207733154,6.312470735189967,61.6737078,16,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,15,32,M1-Pro,12916.515625
-inference-16-4,6.572218894958496,6.14059406057998,61.86900186999999,16,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+load model,23.413467168807983,25.384123699727382,2.53869733,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
