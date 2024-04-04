@@ -1,1 +1,59 @@
 load model,23.413467168807983,25.384123699727382,2.53869733,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+load model,16.684744834899902,17.70305860691905,0.9827774599999999,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-64-0,46.57827091217041,102.39790141576913,368.6783133000001,64,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,64,32,M1-Pro,12916.515625
+inference-64-1,24.878820180892944,20.1297678564096,374.34017925999996,64,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,64,32,M1-Pro,12916.515625
+inference-64-2,24.527538061141968,21.286206040480874,373.0251290499999,64,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,63,32,M1-Pro,12916.515625
+inference-64-3,24.81653094291687,25.745900641764425,381.1148846700001,64,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,64,32,M1-Pro,12916.515625
+inference-64-4,24.566601991653442,21.49734082049508,377.02953246999994,64,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,63,32,M1-Pro,12916.515625
+inference-64-5,24.54551410675049,20.94565334355971,378.24563021999995,64,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,64,32,M1-Pro,12916.515625
+inference-64-6,24.569861888885498,21.077643557827567,378.52339702999996,64,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,64,32,M1-Pro,12916.515625
+inference-512-0,1905.940260887146,4247.687254742417,11491.736895029993,512,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,511,32,M1-Pro,12916.515625
+inference-512-1,621.6166100502014,364.8654890284941,11659.929484479999,512,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,512,32,M1-Pro,12916.515625
+inference-512-2,741.5685250759125,392.68015857218546,11691.177317790012,512,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,362,32,M1-Pro,12916.515625
+inference-512-3,728.4655568599701,430.64786187745926,11616.254154390015,512,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,512,32,M1-Pro,12916.515625
+inference-512-4,719.1192429065704,419.40750690347653,11627.225589589989,512,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,504,32,M1-Pro,12916.515625
+inference-512-5,730.1387600898743,414.37032765070916,11632.203310189994,512,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,501,32,M1-Pro,12916.515625
+inference-512-6,723.4556078910828,404.7841247230837,11664.886610089983,512,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,511,32,M1-Pro,12916.515625
+inference-512-7,727.0484800338745,377.19449481961726,11654.081930520006,512,38,7,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,500,32,M1-Pro,12916.515625
+inference-512-8,730.0453350543976,409.7338035092393,11600.132542850028,512,38,8,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,507,32,M1-Pro,12916.515625
+inference-512-9,706.5079679489136,408.35138163830453,11554.203615220016,512,38,9,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,509,32,M1-Pro,12916.515625
+inference-512-10,722.0432357788086,418.33880998554775,11572.854876600002,512,38,10,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,510,32,M1-Pro,12916.515625
+load model,20.759817123413086,30.354278899051373,0.61666062,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-8-0,7.990582227706909,12.245443322920732,26.648765360000002,8,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-1,4.360212087631226,3.0157402143419896,23.4908438,8,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-2,4.640101671218872,3.586324756987938,26.89932489,8,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-3,4.42774510383606,3.1013846820841295,23.932379299999997,8,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-4,4.459080934524536,3.0694682901027193,24.326057,8,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-5,4.419103622436523,3.0492895415342756,23.736125959999995,8,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-8-6,4.4052088260650635,3.1236347304363776,23.382890609999997,8,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,8,32,M1-Pro,12916.515625
+inference-16-0,8.110996007919312,11.695582556591965,62.017079549999984,16,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-1,6.614357948303223,5.788637086533991,61.373373,16,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-2,6.654392719268799,5.908866981599722,61.891057339999996,16,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-3,6.632583856582642,5.801728146489935,61.02779864000001,16,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-4,6.6243321895599365,5.751794578974145,61.404722019999994,16,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-5,6.617984056472778,5.758763449125882,61.07812769,16,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+inference-16-6,6.647604942321777,5.570791647731587,61.02548657,16,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,16,32,M1-Pro,12916.515625
+load model,20.74759817123413,28.933867364454983,2.649387639999999,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+load model,20.22861099243164,20.070197277237366,4.432363980000002,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+load model,20.244652032852173,24.142190992482096,2.752457029999999,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-32-0,21.307101011276245,46.41544674588093,144.51935806999992,32,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-1,11.494410991668701,13.350826570034283,146.22813582999999,32,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-2,11.469386100769043,11.840822206130966,145.79419918,32,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-3,11.589982986450195,12.04706839404829,146.75015711999998,32,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-4,11.54048490524292,12.445802847775594,146.28799241999994,32,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-5,11.589198112487793,11.713922654987577,146.98063528999998,32,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-32-6,11.494313955307007,12.28802709953876,146.73770776,32,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,32,32,M1-Pro,12916.515625
+inference-128-0,123.95318984985352,293.9771175795705,1050.4168239600017,128,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,127,32,M1-Pro,12916.515625
+inference-128-1,61.904369831085205,38.928131263140365,1052.1995269199997,128,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,126,32,M1-Pro,12916.515625
+inference-128-2,61.73058605194092,41.50113684123999,1063.57229748,128,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,127,32,M1-Pro,12916.515625
+inference-128-3,61.2803750038147,45.044527955537085,1059.51366408,128,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,128,32,M1-Pro,12916.515625
+inference-128-4,61.820966958999634,41.25638549301937,1063.2146433300004,128,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,128,32,M1-Pro,12916.515625
+inference-128-5,61.39983797073364,44.04517961571031,1059.0714673799998,128,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,128,32,M1-Pro,12916.515625
+inference-128-6,61.730794191360474,40.41790754277184,1061.067764700001,128,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,128,32,M1-Pro,12916.515625
+inference-256-0,423.39561915397644,883.4936946456318,3342.0360711999997,256,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,254,32,M1-Pro,12916.515625
+inference-256-1,182.30912804603577,79.79911808533265,3375.3332513799924,256,38,1,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,251,32,M1-Pro,12916.515625
+inference-256-2,182.4741051197052,78.48356655396589,3365.0646903500037,256,38,2,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,248,32,M1-Pro,12916.515625
+inference-256-3,182.16648983955383,79.45619747268117,3364.839973409998,256,38,3,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,247,32,M1-Pro,12916.515625
+inference-256-4,182.60409808158875,79.27158536273366,3369.308403500002,256,38,4,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,256,32,M1-Pro,12916.515625
+inference-256-5,182.99100303649902,84.63092446912223,3389.0529775999985,256,38,5,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,258,32,M1-Pro,12916.515625
+inference-256-6,181.4390730857849,92.67395713912533,3346.390728589999,256,38,6,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,254,32,M1-Pro,12916.515625

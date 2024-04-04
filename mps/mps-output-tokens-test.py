@@ -12,6 +12,7 @@ import datetime
 import torch.mps
 import numpy as np
 from scipy import stats
+import random
 
 
 def load_model(
@@ -217,10 +218,11 @@ if __name__ == "__main__":
         mode="a",
     )
 
-    output_token_lengths = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
-    for num_tokens in reversed(output_token_lengths):
+    output_token_lengths = [32, 128, 256]
+    random.shuffle(output_token_lengths)
+    for num_tokens in output_token_lengths:
         runtimes = []
-        for i in range(25):
+        for i in range(10):
             dict_key = f"inference-{num_tokens}-{i}"
             power_readings[dict_key] = []
             inference_event = threading.Event()
