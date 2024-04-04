@@ -33,7 +33,9 @@ df["Energy per Token (J/tokens)"] = (
 )
 
 df = df[df["Phase"].str.contains("inference")]  # Filter for only inference jobs
-df = df[df["Phase"].str.contains("0")]  # Remove the first inference job for consistency
+df = df[
+    ~df["Phase"].str.contains("0")
+]  # Remove the first inference job for consistency
 df_only_mac = df[df["System"] == "M1-Pro"]
 # df = df[df["System"] != "M1-Pro"]
 
