@@ -1,0 +1,64 @@
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=56
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:27:26,mem=3823784kb,walltime=00:26:23,ncpus=56,cpupercent=101,vmem=64886464kb
+ 
+ 
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=56
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=01:33:05,mem=3796432kb,walltime=01:29:11,ncpus=56,cpupercent=104,vmem=40801816kb
+ 
+ 
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=56
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:36:49,mem=18834656kb,walltime=00:36:08,ncpus=56,cpupercent=96,vmem=64035816kb
+ 
+ 
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=56
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=16:45:42,mem=3821716kb,walltime=16:07:38,ncpus=56,cpupercent=103,vmem=102800208kb
+ 
+ 

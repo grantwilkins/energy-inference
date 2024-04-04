@@ -1,0 +1,18 @@
+Failed to properly clean up on exit
+
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=376gb,walltime=72:00:00,ncpus=40
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=67:26:01,mem=17873756kb,walltime=65:42:36,ncpus=40,cpupercent=102,vmem=42241460kb
+ 
+ 
