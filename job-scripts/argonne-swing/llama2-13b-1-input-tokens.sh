@@ -10,7 +10,7 @@
 N_NODES=1
 N_GPUS_PER_NODE=1
 N_GPUS=$((N_NODES * N_GPUS_PER_NODE))
-
+SYSTEM="argonne-swing"
 HF_NAME="meta-llama/Llama-2-13b-chat-hf"
 MODEL_NAME="llama2-13b"
 DATE=$(date +"%Y-%m-%d")
