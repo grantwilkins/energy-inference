@@ -10,7 +10,7 @@
 N_NODES=1
 N_GPUS_PER_NODE=2
 N_GPUS=$((N_NODES * N_GPUS_PER_NODE))
-SYSTEM="argonne-swing-gpu-large"
+SYSTEM="argonne-swing-gpu"
 module load amd-uprof
 
 HF_NAME="tiiuae/falcon-40b"
