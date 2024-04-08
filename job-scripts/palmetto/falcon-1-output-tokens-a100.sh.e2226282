@@ -1,6 +1,0 @@
-/var/spool/pbs/mom_priv/jobs/2226282.pbs02.SC: line 21: nvidia-smi: command not found
-Traceback (most recent call last):
-  File "/home/gfwilki/energy-inference/cuda/cuda-output-tokens-test.py", line 1, in <module>
-    from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, Pipeline
-ModuleNotFoundError: No module named 'transformers'
-/var/spool/pbs/mom_priv/jobs/2226282.pbs02.SC: line 24: kill: (1766311) - No such process
