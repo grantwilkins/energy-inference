@@ -135,10 +135,10 @@ if __name__ == "__main__":
         header=False,
         index=False,
     )
-    output_token_lengths = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+    output_token_lengths = [1024, 2048, 4096]
     for num_tokens in output_token_lengths:
         runtimes = []
-        for iteration in range(100):
+        for iteration in range(15):
             pandas_handle = PandasHandler()
             idx_log = (num_tokens, iteration)
             with EnergyContext(
