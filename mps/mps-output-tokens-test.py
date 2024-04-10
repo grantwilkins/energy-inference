@@ -218,7 +218,7 @@ if __name__ == "__main__":
         mode="a",
     )
 
-    output_token_lengths = [32, 128, 256]
+    output_token_lengths = [8, 16, 32, 64, 128, 256, 512]
     random.shuffle(output_token_lengths)
     for num_tokens in output_token_lengths:
         runtimes = []

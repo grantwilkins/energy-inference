@@ -36,26 +36,10 @@ df = df[df["Phase"].str.contains("inference")]  # Filter for only inference jobs
 df = df[
     ~df["Phase"].str.contains("0")
 ]  # Remove the first inference job for consistency
-df_only_mac = df[df["System"] == "M1-Pro"]
 # df = df[df["System"] != "M1-Pro"]
 
 sns.set(style="whitegrid", context="talk", font_scale=1.2)
 sns.set_palette("colorblind")
-plt.figure(figsize=(10, 6))
-sns.barplot(
-    x="Number of Input Tokens",
-    y="Throughput (tokens/s)",
-    data=df_only_mac,
-)
-plt.savefig("input-tokens-throughput-mac.pdf", bbox_inches="tight")
-
-plt.figure(figsize=(10, 6))
-sns.barplot(
-    x="Number of Input Tokens",
-    y="Energy per Token (J/tokens)",
-    data=df_only_mac,
-)
-plt.savefig("input-tokens-energy-per-token-mac.pdf", bbox_inches="tight")
 
 plt.figure(figsize=(10, 6))
 facet_grid = sns.catplot(
@@ -66,12 +50,7 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-energy-per-token.pdf", bbox_inches="tight")
@@ -85,12 +64,7 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-throughput-bar.pdf", bbox_inches="tight")
@@ -104,12 +78,7 @@ facet_grid = sns.catplot(
     data=df,
     kind="point",
     sharey=False,
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-throughput-line.pdf", bbox_inches="tight")
@@ -123,12 +92,7 @@ facet_grid = sns.catplot(
     data=df,
     kind="bar",
     sharey=False,
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set_xticklabels(rotation=45)
 facet_grid.set(yscale="log")
@@ -143,12 +107,7 @@ facet_grid = sns.catplot(
     data=df,
     sharey=False,
     kind="bar",
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-total-power-draw.pdf", bbox_inches="tight")
@@ -162,12 +121,7 @@ facet_grid = sns.catplot(
     data=df,
     kind="bar",
     sharey=False,
-    col_order=[
-        "M1-Pro",
-        "Palmetto Intel+V100",
-        "Palmetto Intel+A100",
-        "Swing AMD+A100",
-    ],
+    col_order=["M1-Pro", "Palmetto Intel+V100", "Swing AMD+A100"],
 )
 facet_grid.set(yscale="log")
 facet_grid.set_xticklabels(rotation=45)
