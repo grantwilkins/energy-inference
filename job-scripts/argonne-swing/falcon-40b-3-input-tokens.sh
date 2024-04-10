@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#SBATCH -J falcon-40b-2-input-tokens
+#SBATCH -J falcon-40b-3-input-tokens
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 #SBATCH --time=6:00:00 
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:3
 
 N_NODES=1
-N_GPUS_PER_NODE=2
+N_GPUS_PER_NODE=3
 N_GPUS=$((N_NODES * N_GPUS_PER_NODE))
 SYSTEM="argonne-swing"
 module load amd-uprof
