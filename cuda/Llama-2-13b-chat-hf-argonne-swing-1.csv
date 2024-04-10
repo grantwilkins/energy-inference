@@ -1,0 +1,14 @@
+1712757811.8012917,tokenizer,0.8999958038330078,44872,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,5,40960.0,26121.6875
+1712757812.7012875,model load,57.05457782745361,3145346,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,5,40960.0,26121.6875
+1712757869.8146493,start-inference-1024-0,101.66081118583679,37685641,1024,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,11,40960.0,26945.6875
+1712757971.5361447,start-inference-1024-1,98.75098752975464,37704170,1024,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,11,40960.0,26945.6875
+1712758070.2992985,start-inference-1024-2,98.70887422561646,37723487,1024,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,11,40960.0,26945.6875
+1712758169.0201774,start-inference-1024-3,99.08518075942993,38115799,1024,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,11,40960.0,26945.6875
+1712758268.1185522,start-inference-1024-4,99.1379017829895,38097898,1024,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,12,40960.0,26945.6875
+1712758367.268166,start-inference-1024-5,98.91505289077759,37756561,1024,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,12,40960.0,26945.6875
+1712758466.2090347,start-inference-1024-6,92.84286141395569,35689338,1024,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1025,32,argonne-swing,12,40960.0,26685.6875
+1712758559.063699,start-inference-1024-7,99.09062314033508,38109529,1024,38,7,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,12,40960.0,26945.6875
+1712758658.1663773,start-inference-1024-8,98.89882135391235,38054436,1024,38,8,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,12,40960.0,26945.6875
+1712758757.0765293,start-inference-1024-9,98.95818734169006,38056136,1024,38,9,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,12,40960.0,26945.6875
+1712758856.0460112,start-inference-1024-10,98.64142179489136,37728180,1024,38,10,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,142,40960.0,26945.6875
+1712758954.7018647,start-inference-1024-11,98.69179105758667,37795720,1024,38,11,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,142,40960.0,26945.6875
