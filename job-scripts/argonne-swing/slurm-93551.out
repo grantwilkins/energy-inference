@@ -1,0 +1,10 @@
+/gpfs/fs1/soft/swing/manual/amd-uprof/4.1.424/bin/AMDuProfCLI
+  File "/gpfs/fs1/home/ac.gwilkins/energy-inference/cuda/cuda-output-tokens-test.py", line 138
+    output_token_lengths = 2048, 4096]
+                                     ^
+SyntaxError: unmatched ']'
+Profiling started...
+Profile Elapse Time in ms: 0
+Profile finished
+Generated data files path: /gpfs/fs1/home/ac.gwilkins/energy-inference/cuda/llama2-70b/2024-04-10/18-19-30/AMDuProf-python3-Timechart_Apr-10-2024_18-19-30
+Live Profile Output file : /gpfs/fs1/home/ac.gwilkins/energy-inference/cuda/llama2-70b/2024-04-10/18-19-30/AMDuProf-python3-Timechart_Apr-10-2024_18-19-30/timechart.csv
