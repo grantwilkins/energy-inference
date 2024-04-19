@@ -166,3 +166,171 @@
 1712791358.3445566,start-inference-I-6,11.41327166557312,4551887,32,2134,6,Llama-2-13b-chat-hf,1,"#include <alloca.h>
 #include <limits.h>
 #include <",2166,32,argonne-swing,61,40960.0,28367.6875
+1713452957.5883002,tokenizer,0.6427712440490723,36970,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,75,40960.0,26121.6875
+1713452958.2310715,model load,61.10764718055725,3505597,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,75,40960.0,26121.6875
+1713453019.451715,start-inference-A-0,4.490954875946045,427694,32,9,0,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26413.6875
+1713453024.000558,start-inference-A-1,1.159257411956787,229682,32,9,1,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26413.6875
+1713453025.168457,start-inference-A-2,1.1590476036071777,239246,32,9,2,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26413.6875
+1713453026.3383043,start-inference-A-3,1.1659395694732666,217168,32,9,3,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26415.6875
+1713453027.511511,start-inference-A-4,1.1621124744415283,237612,32,9,4,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26415.6875
+1713453028.6804688,start-inference-A-5,1.1607234477996826,239196,32,9,5,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26415.6875
+1713453029.8481905,start-inference-A-6,1.1626856327056885,213154,32,9,6,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,73,40960.0,26415.6875
+1713453031.0179944,start-inference-B-0,1.1683220863342285,241998,32,21,0,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453032.1953237,start-inference-B-1,1.158972978591919,222611,32,21,1,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453033.3618836,start-inference-B-2,1.162757158279419,222795,32,21,2,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453034.5342205,start-inference-B-3,1.1826891899108887,240224,32,21,3,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453035.7241237,start-inference-B-4,1.161630392074585,244287,32,21,4,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453036.8926935,start-inference-B-5,1.156745195388794,223907,32,21,5,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453038.058172,start-inference-B-6,1.157527208328247,246686,32,21,6,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,73,40960.0,26415.6875
+1713453039.2227504,start-inference-C-0,1.1584930419921875,238325,32,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453040.3891287,start-inference-C-1,1.1631696224212646,261552,32,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453041.5608969,start-inference-C-2,1.1606261730194092,262138,32,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453042.7288318,start-inference-C-3,1.1629133224487305,238437,32,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453043.9018927,start-inference-C-4,1.1596555709838867,262253,32,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453045.0811214,start-inference-C-5,1.1639373302459717,259867,32,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453046.2528327,start-inference-C-6,1.1600511074066162,238887,32,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453047.4199266,start-inference-D-0,1.2319974899291992,327779,32,78,0,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453048.6602092,start-inference-D-1,1.2288579940795898,303287,32,78,1,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453049.897095,start-inference-D-2,1.2320795059204102,304468,32,78,2,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453051.1368675,start-inference-D-3,1.3863942623138428,327376,32,78,3,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453052.5347672,start-inference-D-4,1.2328245639801025,304801,32,78,4,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453053.7763216,start-inference-D-5,1.2303197383880615,331367,32,78,5,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453055.015427,start-inference-D-6,1.2353944778442383,302379,32,78,6,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,73,40960.0,26455.6875
+1713453056.2598898,start-inference-E-0,1.403719186782837,452229,32,154,0,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453057.6724384,start-inference-E-1,1.4019920825958252,459709,32,154,1,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453059.0899596,start-inference-E-2,1.4040825366973877,457028,32,154,2,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453060.5016553,start-inference-E-3,1.403066873550415,461162,32,154,3,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453061.9130304,start-inference-E-4,1.4010577201843262,462152,32,154,4,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453063.3217344,start-inference-E-5,1.4005475044250488,463401,32,154,5,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453064.7304733,start-inference-E-6,1.4052963256835938,461338,32,154,6,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,73,40960.0,26445.6875
+1713453066.1432803,start-inference-F-0,2.0609631538391113,711973,32,267,0,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26545.6875
+1713453068.212537,start-inference-F-1,2.0604326725006104,680637,32,267,1,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26543.6875
+1713453070.2816517,start-inference-F-2,2.0616354942321777,715075,32,267,2,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26543.6875
+1713453072.3511388,start-inference-F-3,2.0593106746673584,681423,32,267,3,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26545.6875
+1713453074.4181826,start-inference-F-4,2.060067653656006,684224,32,267,4,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26545.6875
+1713453076.4866552,start-inference-F-5,2.0597054958343506,719611,32,267,5,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26543.6875
+1713453078.554067,start-inference-F-6,2.0604755878448486,690012,32,267,6,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,73,40960.0,26543.6875
+1713453080.623297,start-inference-G-0,2.9691994190216064,1185767,32,541,0,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453014.2093701,tokenizer,0.3648951053619385,24072,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,68,40960.0,26121.6875
+1713453014.5742652,model load,71.28769135475159,4642296,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,68,40960.0,26121.6875
+1713453083.6020248,start-inference-G-1,2.9907383918762207,1141897,32,541,1,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453085.9094841,start-inference-8-0,2.266371488571167,164873,8,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453088.1930242,start-inference-8-1,0.29794836044311523,66546,8,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453088.4994295,start-inference-8-2,0.3036167621612549,64716,8,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26415.6875
+1713453088.809816,start-inference-8-3,0.2968120574951172,66485,8,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453089.1134188,start-inference-8-4,0.30097484588623047,66546,8,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453086.6072195,start-inference-G-2,2.9754834175109863,1157737,32,541,2,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453089.4214404,start-inference-8-5,0.29987215995788574,67062,8,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453089.7312799,start-inference-8-6,0.2974579334259033,66077,8,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,73,40960.0,26413.6875
+1713453090.0362232,start-inference-16-0,0.5935935974121094,136366,16,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453090.6382897,start-inference-16-1,0.5911102294921875,137092,16,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453091.2364144,start-inference-16-2,0.5915746688842773,137261,16,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453091.8351123,start-inference-16-3,0.5945758819580078,136887,16,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453089.5967484,start-inference-G-3,2.9767167568206787,1196726,32,541,3,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453092.4367368,start-inference-16-4,0.5933945178985596,135585,16,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453093.0413663,start-inference-16-5,0.5904450416564941,132540,16,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453093.6386197,start-inference-16-6,0.5919539928436279,133068,16,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,73,40960.0,26415.6875
+1713453094.2604625,start-inference-32-0,1.1808092594146729,274363,32,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453092.5853267,start-inference-G-4,2.976839065551758,1156274,32,541,4,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26551.6875
+1713453095.4535232,start-inference-32-1,1.1782031059265137,252466,32,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453096.6429489,start-inference-32-2,1.1765522956848145,253059,32,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453095.5751617,start-inference-G-5,2.9780807495117188,1157894,32,541,5,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453097.826672,start-inference-32-3,1.358962059020996,299400,32,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453099.1986258,start-inference-32-4,1.1747162342071533,278160,32,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453098.5747468,start-inference-G-6,2.9778244495391846,1195199,32,541,6,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,73,40960.0,26553.6875
+1713453100.3949924,start-inference-32-5,1.1823005676269531,276563,32,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453101.5937366,start-inference-32-6,1.1775214672088623,277738,32,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,73,40960.0,26417.6875
+1713453102.778942,start-inference-64-0,2.3921375274658203,573690,64,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453101.5666277,start-inference-H-0,4.9125518798828125,1956986,32,986,0,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453105.1932921,start-inference-64-1,2.392012119293213,572239,64,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453107.5988424,start-inference-64-2,2.39302659034729,602052,64,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453106.494093,start-inference-H-1,4.907915115356445,1957073,32,986,1,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453110.001529,start-inference-64-3,2.3966033458709717,603224,64,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453112.4100215,start-inference-64-4,2.4127161502838135,600114,64,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453111.416362,start-inference-H-2,4.904016494750977,1921326,32,986,2,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453114.83131,start-inference-64-5,2.3946385383605957,605414,64,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453117.2511597,start-inference-64-6,2.3931384086608887,603212,64,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,73,40960.0,26455.6875
+1713453116.3353932,start-inference-H-3,4.927969694137573,1921421,32,986,3,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453119.6519666,start-inference-128-0,5.051623821258545,1469004,128,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26455.6875
+1713453121.2765174,start-inference-H-4,4.904358625411987,1959947,32,986,4,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453124.7169008,start-inference-128-1,5.062119245529175,1447464,128,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26457.6875
+1713453126.198207,start-inference-H-5,4.906092166900635,1962371,32,986,5,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453129.7925951,start-inference-128-2,5.235799551010132,1482341,128,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26455.6875
+1713453131.118833,start-inference-H-6,4.906268835067749,1960639,32,986,6,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,73,40960.0,26807.6875
+1713453135.0423558,start-inference-128-3,5.054143190383911,1461716,128,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26455.6875
+1713453140.1098917,start-inference-128-4,5.055828332901001,1463239,128,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26455.6875
+1713453136.0456278,start-inference-I-0,11.302130937576294,4467188,32,2134,0,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453145.1757631,start-inference-128-5,5.0614354610443115,1437924,128,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26453.6875
+1713453150.2547448,start-inference-128-6,5.0556089878082275,1502016,128,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,73,40960.0,26457.6875
+1713453147.373363,start-inference-I-1,11.307971715927124,4462454,32,2134,1,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453155.3201625,start-inference-256-0,11.611241817474365,3932745,256,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453158.7046134,start-inference-I-2,11.304588317871094,4463385,32,2134,2,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453166.9446204,start-inference-256-1,11.50858473777771,3999622,256,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453170.0280285,start-inference-I-3,11.293646335601807,4475897,32,2134,3,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453178.4661531,start-inference-256-2,11.485762357711792,3962230,256,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453181.3418584,start-inference-I-4,11.294509887695312,4469059,32,2134,4,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453189.9650521,start-inference-256-3,11.636808633804321,4001323,256,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453192.6540344,start-inference-I-5,11.29436445236206,4471911,32,2134,5,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28369.6875
+1713453201.6135066,start-inference-256-4,11.488603353500366,3970718,256,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453203.9887326,start-inference-I-6,11.305877447128296,4462139,32,2134,6,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,73,40960.0,28367.6875
+1713453213.1147735,start-inference-256-5,11.511690378189087,3976441,256,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453224.6407058,start-inference-256-6,11.652653932571411,3981896,256,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,73,40960.0,26583.6875
+1713453236.3026912,start-inference-512-0,30.79693603515625,11582224,512,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26583.6875
+1713453267.1088498,start-inference-512-1,30.792731523513794,11612967,512,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453297.9117875,start-inference-512-2,30.764225482940674,11560775,512,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453328.691344,start-inference-512-3,30.893450260162354,11586143,512,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26587.6875
+1713453359.5943875,start-inference-512-4,27.02226424217224,10080054,512,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,507,32,argonne-swing,73,40960.0,26585.6875
+1713453386.6317298,start-inference-512-5,30.867795705795288,11595332,512,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453417.5091813,start-inference-512-6,30.86988663673401,11614092,512,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453448.3882258,start-inference-512-7,30.838911533355713,11596582,512,38,7,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453479.237068,start-inference-512-8,30.81373906135559,11591875,512,38,8,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453510.0596187,start-inference-512-9,30.77641773223877,11563461,512,38,9,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453540.8519533,start-inference-512-10,30.64289927482605,11377814,512,38,10,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,73,40960.0,26585.6875
+1713453571.5038664,start-inference-512-11,30.803478240966797,11622085,512,38,11,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,201,40960.0,26587.6875
+1713453602.316164,start-inference-512-12,30.79242515563965,11568925,512,38,12,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,201,40960.0,26587.6875
+1713453633.126859,start-inference-512-13,30.75770139694214,11595390,512,38,13,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,201,40960.0,26587.6875
+1713453663.901265,start-inference-512-14,30.933720588684082,11577022,512,38,14,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,201,40960.0,26585.6875
+1713453694.8442686,start-inference-1024-0,89.15869498252869,34661085,1024,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,994,32,argonne-swing,201,40960.0,26681.6875
+1713453784.014793,start-inference-1024-1,99.47146034240723,38786304,1024,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,77,40960.0,26945.6875
+1713453883.5010557,start-inference-1024-2,99.59156465530396,38705036,1024,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,77,40960.0,26945.6875
+1713453983.107436,start-inference-1024-3,99.36941456794739,38738625,1024,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,205,40960.0,26945.6875
+1713454082.510618,start-inference-1024-4,100.02591061592102,39090640,1024,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,205,40960.0,26945.6875
+1713454182.5487792,start-inference-1024-5,100.02825284004211,39104545,1024,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,205,40960.0,26945.6875
+1713454282.5885484,start-inference-1024-6,99.49621105194092,38860544,1024,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,205,40960.0,26945.6875
+1713454382.0959723,start-inference-2048-0,361.90589690208435,143314978,2048,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,205,40960.0,37287.6875
+1713454744.0490644,start-inference-2048-1,328.2062394618988,129775115,2048,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1981,32,argonne-swing,200,40960.0,33779.6875
+1713455072.279961,start-inference-2048-2,314.9187054634094,124494659,2048,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1936,32,argonne-swing,64,40960.0,32813.6875
+1713455387.2246869,start-inference-2048-3,358.6320869922638,141695782,2048,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,76,40960.0,37287.6875
+1713455745.8802423,start-inference-2048-4,331.33539390563965,131033863,2048,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1991,32,argonne-swing,204,40960.0,34265.6875
+1713456077.243311,start-inference-2048-5,362.22834300994873,143353714,2048,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,68,40960.0,37287.6875
+1713456439.5022655,start-inference-2048-6,362.1318054199219,143245359,2048,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,200,40960.0,37287.6875
+1713456801.6643088,start-inference-2048-7,363.17941975593567,143476426,2048,38,7,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,72,40960.0,37289.6875
+1713457164.8761947,start-inference-2048-8,358.62326526641846,141641074,2048,38,8,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,192,40960.0,37287.6875
+1713457523.5296729,start-inference-2048-9,362.340726852417,143278295,2048,38,9,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,75,40960.0,37285.6875
+1713457885.9078343,start-inference-2048-10,362.21594619750977,143371820,2048,38,10,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,203,40960.0,37287.6875
+1713458248.1538649,start-inference-2048-11,359.09209299087524,141681386,2048,38,11,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,76,40960.0,37285.6875
+1713458607.2694278,start-inference-2048-12,311.70964670181274,123166657,2048,38,12,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1927,32,argonne-swing,76,40960.0,32337.6875
+1713458919.036458,start-inference-2048-13,359.67265462875366,142042204,2048,38,13,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,76,40960.0,37287.6875
+1713459278.731427,start-inference-2048-14,315.5654718875885,124710955,2048,38,14,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,1940,32,argonne-swing,196,40960.0,32813.6875
+1713459594.317625,start-inference-4096-0,1345.3259501457214,533790322,4096,38,0,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,3982,32,argonne-swing,68,40960.0,28401.6875
+1713460939.664193,start-inference-4096-1,1440.6891338825226,570393766,4096,38,1,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4065,32,argonne-swing,68,40960.0,38341.6875
+1713462380.4229624,start-inference-4096-2,1919.4525504112244,619446159,4096,38,2,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4134,32,argonne-swing,64,40960.0,39375.6875
+1713464300.4558475,start-inference-4096-3,1922.1185750961304,620132851,4096,38,3,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4075,32,argonne-swing,192,40960.0,38859.6875
+1713466222.6015062,start-inference-4096-4,1923.5970454216003,621500813,4096,38,4,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4134,32,argonne-swing,67,40960.0,36613.6875
+1713468146.244854,start-inference-4096-5,1924.0100688934326,619185372,4096,38,5,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4106,32,argonne-swing,77,40960.0,36325.6875
+1713470070.28744,start-inference-4096-6,1930.3476867675781,624729509,4096,38,6,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4022,32,argonne-swing,74,40960.0,37043.6875
+1713472000.6665199,start-inference-4096-7,1943.095829963684,633056235,4096,38,7,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,4134,32,argonne-swing,74,40960.0,37043.6875
