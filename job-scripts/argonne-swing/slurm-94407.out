@@ -1,0 +1,8 @@
+/gpfs/fs1/soft/swing/manual/amd-uprof/4.1.424/bin/AMDuProfCLI
+A power profiling session is already in progress. Please make sure that no other
+instance of AMDuProf GUI or command line tool is performing a power profiling
+session and then start command line power profiling again. (error code 0x80070005)
+Unable to start the profiling.
+ERROR: Unable to Collect Live Power Profiling Data.
+
+Profile finished
