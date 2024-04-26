@@ -525,7 +525,7 @@ Describe the code above and some potential confusion points for developers. Desc
         runtimes = []
         for num_tokens in output_tokens:
             pandas_handle = PandasHandler()
-            idx_log = (idx, 1)
+            idx_log = (idx, num_tokens)
             with EnergyContext(
                 handler=pandas_handle,
                 domains=domains,
@@ -550,7 +550,7 @@ Describe the code above and some potential confusion points for developers. Desc
             df = pandas_handle.get_dataframe()
             df["Max Number of Tokens"] = num_tokens
             df["Input Tokens"] = num_input_tokens
-            df["Iteration"] = 1
+            df["Iteration"] = num_tokens
             df["Model Name"] = model_name
             df["Number of GPUs"] = num_gpus
             df["Prompt"] = prompt[:50].strip()
