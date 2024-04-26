@@ -523,9 +523,9 @@ Describe the code above and some potential confusion points for developers. Desc
     output_tokens = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
     for idx, prompt in prompts.items():
         runtimes = []
-        for num_tokens in output_tokens:
+        for num_tokens_o in output_tokens:
             pandas_handle = PandasHandler()
-            idx_log = (idx, num_tokens)
+            idx_log = (idx, num_tokens_o)
             with EnergyContext(
                 handler=pandas_handle,
                 domains=domains,
@@ -535,7 +535,7 @@ Describe the code above and some potential confusion points for developers. Desc
                 inference_start = time.time()
                 llm_output = run_inference(
                     pipe=pipe,
-                    num_tokens=num_tokens,
+                    num_tokens=num_tokens_o,
                     prompt=prompt,
                     batch_size=batch_size,
                 )
@@ -548,9 +548,9 @@ Describe the code above and some potential confusion points for developers. Desc
             output_tokens = tokenizer.encode(llm_output)
             num_output_tokens = len(output_tokens)
             df = pandas_handle.get_dataframe()
-            df["Max Number of Tokens"] = num_tokens
+            df["Max Number of Tokens"] = num_tokens_o
             df["Input Tokens"] = num_input_tokens
-            df["Iteration"] = num_tokens
+            df["Iteration"] = num_tokens_o
             df["Model Name"] = model_name
             df["Number of GPUs"] = num_gpus
             df["Prompt"] = prompt[:50].strip()
