@@ -520,10 +520,10 @@ Describe the code above and some potential confusion points for developers. Desc
         index=False,
     )
     np.random.seed(42)
-    output_tokens = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+    output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
     for idx, prompt in prompts.items():
         runtimes = []
-        for num_tokens_o in output_tokens:
+        for num_tokens_o in output_tokens_counts:
             pandas_handle = PandasHandler()
             idx_log = (idx, num_tokens_o)
             with EnergyContext(
