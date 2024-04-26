@@ -520,14 +520,12 @@ Describe the code above and some potential confusion points for developers. Desc
         index=False,
     )
     np.random.seed(42)
-    output_tokens = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+    output_tokens = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
     for idx, prompt in prompts.items():
         runtimes = []
-        for iteration in range(5):
-            random_idx = np.random.randint(0, len(output_tokens))
-            num_tokens = output_tokens[random_idx]
+        for num_tokens in output_tokens:
             pandas_handle = PandasHandler()
-            idx_log = (idx, iteration)
+            idx_log = (idx, 1)
             with EnergyContext(
                 handler=pandas_handle,
                 domains=domains,
@@ -552,7 +550,7 @@ Describe the code above and some potential confusion points for developers. Desc
             df = pandas_handle.get_dataframe()
             df["Max Number of Tokens"] = num_tokens
             df["Input Tokens"] = num_input_tokens
-            df["Iteration"] = iteration
+            df["Iteration"] = 1
             df["Model Name"] = model_name
             df["Number of GPUs"] = num_gpus
             df["Prompt"] = prompt[:50].strip()
