@@ -2,6 +2,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import matplotlib
+
+matplotlib.rcParams["pdf.fonttype"] = 42
+matplotlib.rcParams["ps.fonttype"] = 42
 
 # Load the data
 # df_palmetto = pd.read_csv("input-token-test-palmetto.csv")
@@ -56,7 +60,7 @@ facet_grid = sns.catplot(
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-energy-per-token.pdf", bbox_inches="tight")
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(10, 6))
 sns.lineplot(
     x="Number of Input Tokens",
     y="Energy per Token (J/tokens)",
@@ -90,7 +94,13 @@ plt.xticks(
         2048,
     ]
 )
-plt.legend(loc="center left", bbox_to_anchor=(1, 0.5))
+plt.legend(
+    loc="upper center",
+    bbox_to_anchor=(0.5, -0.15),
+    frameon=False,
+    alignment="left",
+    ncol=2,
+)
 # plt.savefig("output-tokens-throughput-line.pdf", bbox_inches="tight")
 plt.savefig("input-tokens-energy-per-token-line.pdf", bbox_inches="tight")
 
@@ -108,7 +118,7 @@ facet_grid = sns.catplot(
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-throughput-bar.pdf", bbox_inches="tight")
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(10, 6))
 sns.lineplot(
     x="Number of Input Tokens",
     y="Throughput (tokens/s)",
@@ -161,7 +171,7 @@ facet_grid.set_xticklabels(rotation=45)
 facet_grid.set(yscale="log")
 plt.savefig("input-tokens-total-energy.pdf", bbox_inches="tight")
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(10, 6))
 sns.lineplot(
     x="Number of Input Tokens",
     y="Total Energy (J)",
@@ -176,12 +186,12 @@ sns.lineplot(
     markersize=8,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
-    legend=False,
+    # legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
 plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
-plt.ylim(1e2, 1e5)
+plt.ylim(9e1, 1e5)
 plt.xticks(
     [
         8,
@@ -196,8 +206,16 @@ plt.xticks(
     ]
 )
 # plt.legend(loc="center left", bbox_to_anchor=(1, 0.5))
+plt.legend(
+    loc="upper center",
+    bbox_to_anchor=(0.5, -0.15),
+    frameon=False,
+    alignment="left",
+    ncol=2,
+)
 # plt.savefig("output-tokens-throughput-line.pdf", bbox_inches="tight")
 plt.savefig("input-tokens-total-energy-line.pdf", bbox_inches="tight")
+
 
 plt.figure(figsize=(10, 6))
 facet_grid = sns.catplot(
@@ -213,7 +231,7 @@ facet_grid = sns.catplot(
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-total-power-draw.pdf", bbox_inches="tight")
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(10, 6))
 sns.lineplot(
     x="Number of Input Tokens",
     y="Average Total Power Draw (W)",
@@ -266,7 +284,7 @@ facet_grid.set(yscale="log")
 facet_grid.set_xticklabels(rotation=45)
 plt.savefig("input-tokens-runtime.pdf", bbox_inches="tight")
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(10, 6))
 sns.lineplot(
     x="Number of Input Tokens",
     y="Runtime (s)",

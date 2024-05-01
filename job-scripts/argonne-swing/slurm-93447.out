@@ -1,4 +1,0 @@
-/gpfs/fs1/soft/swing/manual/amd-uprof/4.1.424/bin/AMDuProfCLI
-/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-slurmstepd: error: *** JOB 93447 ON gpu6 CANCELLED AT 2024-04-10T09:02:01 ***

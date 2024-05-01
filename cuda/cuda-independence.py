@@ -514,7 +514,7 @@ Describe the code above and some potential confusion points for developers. Desc
             "memory.used"
         )["gpu"][idx_gpus]["fb_memory_usage"]["used"]
     df.to_csv(
-        f"{model_name}-{args.system_name}-{num_gpus}-indepdence.csv",
+        f"{model_name}-{args.system_name}-{num_gpus}-independence.csv",
         mode="a",
         header=False,
         index=False,
