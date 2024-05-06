@@ -519,7 +519,7 @@ Describe the code above and some potential confusion points for developers. Desc
         header=False,
         index=False,
     )
-    batch_sizes = [1, 2, 4, 8, 16, 32, 64, 128, 256]
+    batch_sizes = [2, 4, 8, 16, 32, 64, 128, 256]
     output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
     for batch_size in batch_sizes:
         for idx, prompt in prompts.items():
