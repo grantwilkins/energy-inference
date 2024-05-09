@@ -462,7 +462,7 @@ Describe the code above and some potential confusion points for developers. Desc
 """,
     }
     new_prompts = {}
-    new_prompts["G"] = prompts["G"]
+    #new_prompts["G"] = prompts["G"]
     new_prompts["H"] = prompts["H"]
     new_prompts["I"] = prompts["I"]
     prompts = new_prompts
@@ -525,7 +525,7 @@ Describe the code above and some potential confusion points for developers. Desc
         index=False,
     )
     np.random.seed(42)
-    output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024]
+    output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
     for idx, prompt in prompts.items():
         runtimes = []
         for num_tokens_o in output_tokens_counts:
