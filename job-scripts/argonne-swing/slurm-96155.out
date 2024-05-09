@@ -1,0 +1,31 @@
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Downloading shards:   0%|          | 0/15 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 15/15 [00:00<00:00, 693.24it/s]
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:17<04:11, 17.95s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:44<04:59, 23.04s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:08<04:41, 23.49s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [01:33<04:25, 24.12s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [01:54<03:50, 23.00s/it]Loading checkpoint shards:  40%|████      | 6/15 [02:14<03:18, 22.01s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [02:36<02:55, 21.93s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [03:02<02:43, 23.29s/it]Loading checkpoint shards:  60%|██████    | 9/15 [03:23<02:14, 22.37s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [03:46<01:52, 22.56s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [04:07<01:28, 22.10s/it]Loading checkpoint shards:  80%|████████  | 12/15 [04:28<01:05, 21.89s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [04:49<00:43, 21.55s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [05:11<00:21, 21.60s/it]Loading checkpoint shards: 100%|██████████| 15/15 [05:11<00:00, 15.23s/it]Loading checkpoint shards: 100%|██████████| 15/15 [05:11<00:00, 20.77s/it]
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+/home/ac.gwilkins/.conda/envs/alpa-inference/lib/python3.12/site-packages/transformers/pipelines/base.py:1157: UserWarning: You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+  warnings.warn(
+slurmstepd: error: *** JOB 96155 ON gpu3 CANCELLED AT 2024-05-08T14:45:33 ***

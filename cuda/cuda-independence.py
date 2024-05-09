@@ -461,6 +461,11 @@ _quicksort (void *const pbase, size_t total_elems, size_t size,
 Describe the code above and some potential confusion points for developers. Describe ways that we can also make the code more readable.
 """,
     }
+    new_prompts = {}
+    new_prompts["G"] = prompts["G"]
+    new_prompts["H"] = prompts["H"]
+    new_prompts["I"] = prompts["I"]
+    prompts = new_prompts
     pandas_handle = PandasHandler()
     if out_dir == ".":
         start_time = datetime.datetime.now().strftime("%H-%M-%S")
@@ -520,7 +525,7 @@ Describe the code above and some potential confusion points for developers. Desc
         index=False,
     )
     np.random.seed(42)
-    output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+    output_tokens_counts = [8, 16, 32, 64, 128, 256, 512, 1024]
     for idx, prompt in prompts.items():
         runtimes = []
         for num_tokens_o in output_tokens_counts:
