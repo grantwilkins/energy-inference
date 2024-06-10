@@ -1,0 +1,106 @@
+Phase,Runtime (s),CPU Energy (J),GPU Energy (J),Number of Output Tokens,Number of Input Tokens,Iteration,Model,Number of GPUs,Prompt,Total Number of Tokens,Batch Size,System Name,GPU Memory (MB)
+load model,13.48346996307373,17.994739321962886,1.07803583,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-A-8,7.711592197418213,12.583239552069532,15.43971942,8,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,17,32,M1-Pro,12916.515625
+inference-A-16,7.590944051742554,13.832714362162138,37.96733165,16,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,25,32,M1-Pro,12916.515625
+inference-A-32,13.98671007156372,31.2030432556117,87.16954446000001,32,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,M1-Pro,12916.515625
+inference-A-64,31.036262273788452,74.3650201366158,239.9170701800001,64,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-128,95.5387511253357,233.17907933668377,772.5813432499999,128,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,137,32,M1-Pro,12916.515625
+inference-A-256,383.0486512184143,879.2690881661878,2741.586214360001,256,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,265,32,M1-Pro,12916.515625
+inference-A-512,491.2277638912201,857.0492469433133,4751.496321549998,512,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,345,32,M1-Pro,12916.515625
+inference-B-1,2.823817014694214,1.0142425196954128,0.00793488,1,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,22,32,M1-Pro,12916.515625
+inference-B-1724,7.752519845962524,8.349575873784286,61.35387953999999,1724,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,39,32,M1-Pro,12916.515625
+inference-B-338,25.688743829727173,24.984102847174682,376.20310131000014,338,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,95,32,M1-Pro,12916.515625
+inference-B-278,189.226135969162,80.39768322427554,3489.8548801100033,278,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,298,32,M1-Pro,12916.515625
+load model,20.54149603843689,28.028534353855687,1.27150759,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-A-8,7.578262805938721,12.905545921127572,15.506514220000001,8,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,17,32,M1-Pro,12916.515625
+inference-A-16,7.449198246002197,12.590142935203845,35.54693304999999,16,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,25,32,M1-Pro,12916.515625
+inference-A-32,13.461904048919678,30.721684653483354,85.18540747999997,32,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,M1-Pro,12916.515625
+inference-A-64,30.912630081176758,75.12520013566827,241.27003404,64,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-128,95.21223998069763,231.829259549485,771.1010822499999,128,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,135,32,M1-Pro,12916.515625
+inference-A-256,37.56167387962341,31.73905898384108,576.06159494,256,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,115,32,M1-Pro,12916.515625
+inference-A-512,253.73913478851318,551.0735891038839,2024.3570497800015,512,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,225,32,M1-Pro,12916.515625
+inference-B-8,4.803941965103149,3.794517772077917,18.10296679,8,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,29,32,M1-Pro,12916.515625
+inference-B-16,6.107107162475586,6.023445553608962,41.20544894000001,16,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,37,32,M1-Pro,12916.515625
+inference-B-32,10.396372079849243,11.359129637507637,109.40314583999998,32,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,M1-Pro,12916.515625
+inference-B-64,21.094013214111328,20.359729573573503,293.97885403,64,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,83,32,M1-Pro,12916.515625
+inference-B-128,54.209022998809814,35.350806844945815,894.2286095400004,128,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,149,32,M1-Pro,12916.515625
+inference-B-256,294.53928899765015,493.7395270126975,2997.9844721699983,256,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,276,32,M1-Pro,12916.515625
+inference-B-512,3.385079860687256,1.5184528522846439,4.03458867,512,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,23,32,M1-Pro,12916.515625
+inference-C-8,4.752841949462891,3.5678878783982664,24.3102853,8,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,46,32,M1-Pro,12916.515625
+inference-C-16,6.638528108596802,5.7353634213872375,60.91659299999999,16,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,54,32,M1-Pro,12916.515625
+inference-C-32,11.649980068206787,10.747711338126834,146.34640195999995,32,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,70,32,M1-Pro,12916.515625
+inference-C-64,25.07594394683838,18.83874330898083,376.40224923,64,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-128,62.017394065856934,34.90608480570685,1052.3571031499991,128,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,166,32,M1-Pro,12916.515625
+inference-C-256,119.55324411392212,50.27389054067484,2153.7399824400004,256,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,234,32,M1-Pro,12916.515625
+load model,19.51919722557068,28.360294656562473,1.4547855000000003,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-A-8,6.532957077026367,11.09798720650799,15.724846290000002,8,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,17,32,M1-Pro,12916.515625
+inference-A-16,7.447852611541748,11.637885610563266,35.56711756000001,16,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,25,32,M1-Pro,12916.515625
+inference-A-32,14.072613000869751,31.26225077317784,87.50844286000002,32,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,M1-Pro,12916.515625
+inference-A-64,31.59427309036255,78.60911554398352,241.66710878000006,64,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,M1-Pro,12916.515625
+inference-A-128,97.0144431591034,239.883854365238,787.0307849999995,128,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,137,32,M1-Pro,12916.515625
+inference-A-256,387.0574300289154,863.501756923031,2882.997562490006,256,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,265,32,M1-Pro,12916.515625
+inference-A-512,1508.8030889034271,3184.093088699003,10393.761566019994,512,9,0,Llama-2-7b-chat-hf,1,What is the largest city in France?,520,32,M1-Pro,12916.515625
+inference-B-8,6.351977109909058,11.369794064111876,18.95294276,8,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,28,32,M1-Pro,12916.515625
+inference-B-16,8.232855081558228,6.502852776211696,41.606324279999995,16,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,37,32,M1-Pro,12916.515625
+inference-B-32,10.494988918304443,12.733581786924853,108.88609258999996,32,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,50,32,M1-Pro,12916.515625
+inference-B-64,21.999985218048096,23.094505606166656,293.41585516000004,64,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,84,32,M1-Pro,12916.515625
+inference-B-128,55.92324614524841,42.37830424744298,890.3969175100001,128,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,148,32,M1-Pro,12916.515625
+inference-B-256,168.13930487632751,75.58392846790001,3010.7849817799993,256,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,275,32,M1-Pro,12916.515625
+inference-B-512,686.5259609222412,482.73486199160465,11015.281168480034,512,21,0,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,532,32,M1-Pro,12916.515625
+inference-C-8,7.381221055984497,9.268398112419149,27.899328360000002,8,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,46,32,M1-Pro,12916.515625
+inference-C-16,6.8436970710754395,6.9056103324990366,61.68591063999999,16,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,54,32,M1-Pro,12916.515625
+inference-C-32,12.175793886184692,13.43969666950376,146.51927195,32,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,70,32,M1-Pro,12916.515625
+inference-C-64,29.777758836746216,30.347745529578503,374.90878423999993,64,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,M1-Pro,12916.515625
+inference-C-128,70.59128189086914,58.33772975873202,1059.6057733000002,128,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,166,32,M1-Pro,12916.515625
+inference-C-256,193.89101386070251,102.01800412136562,3353.041789570004,256,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,294,32,M1-Pro,12916.515625
+inference-C-512,766.1758880615234,606.061886344462,11566.892457089993,512,38,0,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,549,32,M1-Pro,12916.515625
+inference-D-8,9.225064039230347,9.528981818165038,50.85923262,8,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,86,32,M1-Pro,12916.515625
+inference-D-16,9.734591960906982,9.920549202671769,108.47832919000001,16,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,94,32,M1-Pro,12916.515625
+inference-D-32,17.69161081314087,19.84769403707821,240.3927392199999,32,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,M1-Pro,12916.515625
+inference-D-64,36.0498411655426,38.975112099285525,554.8419860300002,64,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,141,32,M1-Pro,12916.515625
+inference-D-128,83.22360610961914,85.1606245591311,1434.79181553,128,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,202,32,M1-Pro,12916.515625
+inference-D-256,228.86580395698547,167.71365782971856,4086.637262759999,256,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,332,32,M1-Pro,12916.515625
+inference-D-512,910.3983459472656,856.7633633383465,13156.376683710036,512,78,0,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,586,32,M1-Pro,12916.515625
+inference-E-8,7.901580095291138,3.4579025858373407,90.89446143,8,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",162,32,M1-Pro,12916.515625
+inference-E-16,13.417774200439453,4.62229739158675,196.85830490000006,16,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",170,32,M1-Pro,12916.515625
+inference-E-32,27.829702854156494,12.23235012776018,420.92907200999997,32,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",185,32,M1-Pro,12916.515625
+inference-E-64,60.94875407218933,27.158158178168303,922.8838357999999,64,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",214,32,M1-Pro,12916.515625
+inference-E-128,129.52193093299866,38.590763936828296,2133.0677501000014,128,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",271,32,M1-Pro,12916.515625
+inference-E-256,335.2495460510254,122.36771757541638,5552.1878275600075,256,154,0,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",408,32,M1-Pro,12916.515625
+load model,23.100524187088013,26.492657263314577,0.9139724500000004,32,0,0,Llama-2-7b-chat-hf,1,,0,32,M1-Pro,12916.515625
+inference-F-8,16.4911470413208,15.344729653108482,158.49758701999997,8,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,275,32,M1-Pro,12916.515625
+inference-F-16,21.727336168289185,10.266529107628292,329.89440656,16,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,282,32,M1-Pro,12916.515625
+inference-F-32,42.88998889923096,25.470126588894296,688.0014229100002,32,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,298,32,M1-Pro,12916.515625
+inference-F-64,90.63524198532104,70.0709913997298,1464.2209261900005,64,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,327,32,M1-Pro,12916.515625
+inference-F-128,221.16017484664917,238.51419852244632,3260.9775741499943,128,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,394,32,M1-Pro,12916.515625
+inference-F-256,651.7915749549866,900.3561139989084,7751.158479359989,256,267,0,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,518,32,M1-Pro,12916.515625
+inference-G-8,39.590980768203735,73.94323212925136,324.21357453999997,8,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,548,32,M1-Pro,12916.515625
+inference-G-16,57.63805413246155,78.0704441646274,665.4360058200002,16,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,554,32,M1-Pro,12916.515625
+inference-G-32,114.05267596244812,156.32677446364747,1355.6828401299997,32,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,572,32,M1-Pro,12916.515625
+inference-G-64,233.25253796577454,320.28358537725967,2805.401615260001,64,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,600,32,M1-Pro,12916.515625
+inference-G-128,525.4371199607849,720.1258081320769,5939.91927157,128,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,665,32,M1-Pro,12916.515625
+inference-G-256,1349.7777581214905,2152.918295069968,13134.767029839999,256,541,0,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,776,32,M1-Pro,12916.515625
+inference-H-8,77.72257995605469,144.21314301584863,606.6662841499995,8,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",994,32,M1-Pro,12916.515625
+inference-H-16,112.66908502578735,159.45250108403692,1229.5550277299988,16,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1002,32,M1-Pro,12916.515625
+inference-H-32,215.6312131881714,303.4252808034665,2492.1423406800004,32,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1016,32,M1-Pro,12916.515625
+inference-H-64,468.66153597831726,683.9805152137864,5085.237711769992,64,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1049,32,M1-Pro,12916.515625
+inference-H-128,995.567822933197,1383.7349003983272,10523.868100119982,128,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1106,32,M1-Pro,12916.515625
+inference-H-256,1976.392655134201,2713.8721233706337,22274.085226450028,256,986,0,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1212,32,M1-Pro,12916.515625
+inference-I-8,144.12621593475342,220.46499769662856,1394.4747558699996,8,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2125,32,M1-Pro,12916.515625
+inference-I-16,225.11329579353333,242.787899258075,2802.8195978700023,16,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2132,32,M1-Pro,12916.515625
+inference-I-32,449.1646270751953,496.41752490871863,5628.7109944599915,32,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2147,32,M1-Pro,12916.515625
+inference-I-64,923.0919659137726,1120.1314769692146,11321.13672495998,64,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2176,32,M1-Pro,12916.515625
+inference-I-128,1906.0316388607025,2237.735709602292,23019.05184927,128,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2235,32,M1-Pro,12916.515625
+inference-I-256,3877.2055521011353,4647.354521346428,48709.963235359726,256,2117,0,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2343,32,M1-Pro,12916.515625

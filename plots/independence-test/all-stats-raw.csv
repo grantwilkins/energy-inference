@@ -1,0 +1,705 @@
+Timestamp,Phase,Runtime (s),GPU Energy (mJ),Number of Output Tokens,Number of Input Tokens,Iteration,Model,Number of GPUs,Prompt,Total Number of Tokens,Batch Size,System,CPU Core,GPU Total Memory (MB),GPU Used Memory (MB)
+1714146368,tokenizer,0.36428213119506836,16202,32,0,0,falcon-7b,1,startup,0,32,argonne-swing,22,40960,14925.6875
+1714146368.5163221,model load,53.38050914,3130488,32,0,0,falcon-7b,1,startup,0,32,argonne-swing,22,40960,14925.6875
+1714146421.9131973,start-inference-A-8,0.265953779,36274,8,8,8,falcon-7b,1,What is the largest city in France?,16,32,argonne-swing,26,40960,15021.6875
+1714146424.6891944,start-inference-A-16,0.5040438175201416,70278,16,8,16,falcon-7b,1,What is the largest city in France?,24,32,argonne-swing,26,40960,15023.6875
+1714146425.199451,start-inference-A-32,1.0229322910308838,152039,32,8,32,falcon-7b,1,What is the largest city in France?,40,32,argonne-swing,26,40960,15023.6875
+1714146426.2309976,start-inference-A-64,1.9969122409820557,323519,64,8,64,falcon-7b,1,What is the largest city in France?,72,32,argonne-swing,26,40960,15025.6875
+1714146428.2392457,start-inference-A-128,4.107945442199707,747346,128,8,128,falcon-7b,1,What is the largest city in France?,136,32,argonne-swing,26,40960,15027.6875
+1714146432.3574374,start-inference-A-256,8.972232580184937,1987927,256,8,256,falcon-7b,1,What is the largest city in France?,264,32,argonne-swing,26,40960,15027.6875
+1714146441.3396192,start-inference-A-512,21.576148509979248,6128644,512,8,512,falcon-7b,1,What is the largest city in France?,520,32,argonne-swing,26,40960,15027.6875
+1714146462.9321973,start-inference-A-1024,68.59607219696045,23880572,1024,8,1024,falcon-7b,1,What is the largest city in France?,1032,32,argonne-swing,26,40960,15167.6875
+1714146531.5459547,start-inference-A-2048,289.37542033195496,110371358,2048,8,2048,falcon-7b,1,What is the largest city in France?,2056,32,argonne-swing,20,40960,33669.6875
+1714146820.956327,start-inference-B-8,0.277637243,51497,8,16,8,falcon-7b,1,Can you explain the difference between a simile an,24,32,argonne-swing,20,40960,15027.6875
+1714146821.2416599,start-inference-B-16,0.5444004535675049,81467,16,16,16,falcon-7b,1,Can you explain the difference between a simile an,32,32,argonne-swing,20,40960,15027.6875
+1714146821.7922604,start-inference-B-32,0.9972701072692871,170002,32,16,32,falcon-7b,1,Can you explain the difference between a simile an,48,32,argonne-swing,20,40960,15027.6875
+1714146822.796494,start-inference-B-64,2.036358356,373263,64,16,64,falcon-7b,1,Can you explain the difference between a simile an,80,32,argonne-swing,20,40960,15031.6875
+1714146824.8410256,start-inference-B-128,4.207318544387817,829631,128,16,128,falcon-7b,1,Can you explain the difference between a simile an,144,32,argonne-swing,20,40960,15031.6875
+1714146829.059151,start-inference-B-256,9.080349922180176,2116864,256,16,256,falcon-7b,1,Can you explain the difference between a simile an,272,32,argonne-swing,20,40960,15031.6875
+1714146838.1495273,start-inference-B-512,21.975577354431152,6415054,512,16,512,falcon-7b,1,Can you explain the difference between a simile an,528,32,argonne-swing,20,40960,15031.6875
+1714146860.1356037,start-inference-B-1024,69.47151494026184,24181316,1024,16,1024,falcon-7b,1,Can you explain the difference between a simile an,1040,32,argonne-swing,20,40960,15171.6875
+1714146929.621703,start-inference-B-2048,291.5742783546448,111499149,2048,16,2048,falcon-7b,1,Can you explain the difference between a simile an,2064,32,argonne-swing,20,40960,37125.6875
+1714147221.2330635,start-inference-C-8,0.41452884674072266,58332,8,32,8,falcon-7b,1,What are some effective strategies for managing st,40,32,argonne-swing,24,40960,15027.6875
+1714147221.6549873,start-inference-C-16,0.5154216289520264,84826,16,32,16,falcon-7b,1,What are some effective strategies for managing st,48,32,argonne-swing,24,40960,15027.6875
+1714147222.1778982,start-inference-C-32,1.019515037536621,173576,32,32,32,falcon-7b,1,What are some effective strategies for managing st,64,32,argonne-swing,24,40960,15029.6875
+1714147223.2058265,start-inference-C-64,2.0689785480499268,390903,64,32,64,falcon-7b,1,What are some effective strategies for managing st,96,32,argonne-swing,24,40960,15031.6875
+1714147225.2830243,start-inference-C-128,4.312601566314697,889096,128,32,128,falcon-7b,1,What are some effective strategies for managing st,160,32,argonne-swing,24,40960,15033.6875
+1714147229.6056771,start-inference-C-256,9.213148355484009,2261254,256,32,256,falcon-7b,1,What are some effective strategies for managing st,288,32,argonne-swing,24,40960,15033.6875
+1714147238.8289795,start-inference-C-512,22.59320306777954,6687146,512,32,512,falcon-7b,1,What are some effective strategies for managing st,544,32,argonne-swing,24,40960,15033.6875
+1714147261.432923,start-inference-C-1024,71.21581220626831,25049169,1024,32,1024,falcon-7b,1,What are some effective strategies for managing st,1056,32,argonne-swing,24,40960,15173.6875
+1714147332.6652367,start-inference-C-2048,296.8249876499176,113487043,2048,32,2048,falcon-7b,1,What are some effective strategies for managing st,2080,32,argonne-swing,24,40960,16867.6875
+1714147629.5164235,start-inference-D-8,0.2682058811187744,64861,8,64,8,falcon-7b,1,Imagine you are an expert travel guide for Japan.,69,32,argonne-swing,24,40960,15031.6875
+1714147629.7959347,start-inference-D-16,0.524026632,96839,16,64,16,falcon-7b,1,Imagine you are an expert travel guide for Japan.,77,32,argonne-swing,24,40960,15031.6875
+1714147630.3264449,start-inference-D-32,1.056938648223877,216996,32,64,32,falcon-7b,1,Imagine you are an expert travel guide for Japan.,93,32,argonne-swing,24,40960,15033.6875
+1714147631.3913538,start-inference-D-64,2.1101088523864746,427864,64,64,64,falcon-7b,1,Imagine you are an expert travel guide for Japan.,125,32,argonne-swing,24,40960,15033.6875
+1714147633.5134723,start-inference-D-128,4.462337255477905,994809,128,64,128,falcon-7b,1,Imagine you are an expert travel guide for Japan.,189,32,argonne-swing,24,40960,15033.6875
+1714147637.9851725,start-inference-D-256,9.444902420043945,2451822,256,64,256,falcon-7b,1,Imagine you are an expert travel guide for Japan.,317,32,argonne-swing,24,40960,15033.6875
+1714147647.438856,start-inference-D-512,23.623027086257935,7284395,512,64,512,falcon-7b,1,Imagine you are an expert travel guide for Japan.,573,32,argonne-swing,24,40960,15033.6875
+1714147671.0745096,start-inference-D-1024,74.10521388053894,26356239,1024,64,1024,falcon-7b,1,Imagine you are an expert travel guide for Japan.,1085,32,argonne-swing,16,40960,15325.6875
+1714147745.1939607,start-inference-D-2048,305.9484751224518,117216615,2048,64,2048,falcon-7b,1,Imagine you are an expert travel guide for Japan.,2109,32,argonne-swing,16,40960,26141.6875
+1714148051.1672046,start-inference-E-8,0.29853105545043945,66634,8,128,8,falcon-7b,1,"As an AI language model, you possess the capabilit",133,32,argonne-swing,16,40960,15025.6875
+1714148051.4728856,start-inference-E-16,0.5816264152526855,119480,16,128,16,falcon-7b,1,"As an AI language model, you possess the capabilit",141,32,argonne-swing,16,40960,15025.6875
+1714148052.0613294,start-inference-E-32,1.1777558326721191,269772,32,128,32,falcon-7b,1,"As an AI language model, you possess the capabilit",157,32,argonne-swing,16,40960,15025.6875
+1714148053.2477517,start-inference-E-64,2.361738681793213,607610,64,128,64,falcon-7b,1,"As an AI language model, you possess the capabilit",189,32,argonne-swing,16,40960,15025.6875
+1714148055.617989,start-inference-E-128,4.924132823944092,1268281,128,128,128,falcon-7b,1,"As an AI language model, you possess the capabilit",253,32,argonne-swing,16,40960,15025.6875
+1714148060.5509515,start-inference-E-256,10.107421636581421,2967842,256,128,256,falcon-7b,1,"As an AI language model, you possess the capabilit",381,32,argonne-swing,16,40960,15025.6875
+1714148070.6675804,start-inference-E-512,25.989771366119385,8529024,512,128,512,falcon-7b,1,"As an AI language model, you possess the capabilit",637,32,argonne-swing,20,40960,15025.6875
+1714148096.668856,start-inference-E-1024,80.94270992279053,29389293,1024,128,1024,falcon-7b,1,"As an AI language model, you possess the capabilit",1149,32,argonne-swing,16,40960,15319.6875
+1714148177.6267965,start-inference-E-2048,326.7024657726288,125062275,2048,128,2048,falcon-7b,1,"As an AI language model, you possess the capabilit",2173,32,argonne-swing,24,40960,25923.6875
+1714148504.3563867,start-inference-F-8,0.3336913585662842,86756,8,256,8,falcon-7b,1,/* An improved random number generation package.,264,32,argonne-swing,20,40960,15025.6875
+1714148504.7007728,start-inference-F-16,0.6537346839904785,222529,16,256,16,falcon-7b,1,/* An improved random number generation package.,272,32,argonne-swing,20,40960,15025.6875
+1714148505.363303,start-inference-F-32,1.3011713027954102,417700,32,256,32,falcon-7b,1,/* An improved random number generation package.,288,32,argonne-swing,20,40960,15025.6875
+1714148506.6734107,start-inference-F-64,2.620349407196045,852864,64,256,64,falcon-7b,1,/* An improved random number generation package.,320,32,argonne-swing,20,40960,15025.6875
+1714148509,start-inference-F-128,5.418254613876343,1800283,128,256,128,falcon-7b,1,/* An improved random number generation package.,384,32,argonne-swing,24,40960,15025.6875
+1714148514.7306194,start-inference-F-256,12.448145866394043,4258894,256,256,256,falcon-7b,1,/* An improved random number generation package.,512,32,argonne-swing,24,40960,15025.6875
+1714148527.1880095,start-inference-F-512,31.76964020729065,11256262,512,256,512,falcon-7b,1,/* An improved random number generation package.,765,32,argonne-swing,24,40960,15025.6875
+1714148558.9706433,start-inference-F-1024,96.36183023452759,36370338,1024,256,1024,falcon-7b,1,/* An improved random number generation package.,1271,32,argonne-swing,24,40960,15729.6875
+1714148655.3493028,start-inference-F-2048,369.78632044792175,142391646,2048,256,2048,falcon-7b,1,/* An improved random number generation package.,2200,32,argonne-swing,20,40960,31455.6875
+1714149025,start-inference-G-8,0.5396225452423096,174023,8,512,8,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,523,32,argonne-swing,24,40960,15027.6875
+1714149025.7334883,start-inference-G-16,1.060880184173584,393244,16,512,16,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,531,32,argonne-swing,24,40960,15027.6875
+1714149026.802614,start-inference-G-32,2.120999574661255,759288,32,512,32,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,argonne-swing,24,40960,15027.6875
+1714149028.931864,start-inference-G-64,4.274909019470215,1535652,64,512,64,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,579,32,argonne-swing,24,40960,15027.6875
+1714149033.2156513,start-inference-G-128,8.756705284118652,3261485,128,512,128,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,643,32,argonne-swing,24,40960,15027.6875
+1714149042,start-inference-G-256,19.016396045684814,7181754,256,512,256,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,771,32,argonne-swing,24,40960,15027.6875
+1714149061.0100834,start-inference-G-512,46.05897045135498,17677946,512,512,512,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,1008,32,argonne-swing,24,40960,15169.6875
+1714149107.084015,start-inference-G-1024,130.1599588394165,50878118,1024,512,1024,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,1539,32,argonne-swing,24,40960,22353.6875
+1714149237.2666216,start-inference-G-2048,465.93424701690674,179054331,2048,512,2048,falcon-7b,1,/*This is a version (aka ptmalloc2) of malloc/free,2553,32,argonne-swing,24,40960,21389.6875
+1714149703.2285488,start-inference-H-8,1.0161399841308594,393669,8,1024,8,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1031,32,argonne-swing,25,40960,15177.6875
+1714149704.2600107,start-inference-H-16,2.0276339054107666,788522,16,1024,16,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1040,32,argonne-swing,25,40960,15177.6875
+1714149706.2989938,start-inference-H-32,4.137942314147949,1613025,32,1024,32,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1056,32,argonne-swing,25,40960,15177.6875
+1714149710.4481916,start-inference-H-64,8.524457931518555,3326543,64,1024,64,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1085,32,argonne-swing,25,40960,15177.6875
+1714149718.9850614,start-inference-H-128,17.335082054138184,6794717,128,1024,128,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1148,32,argonne-swing,25,40960,15339.6875
+1714149736.3452349,start-inference-H-256,36.855820417404175,14515962,256,1024,256,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1280,32,argonne-swing,25,40960,15543.6875
+1714149773.2140574,start-inference-H-512,83.83253717422485,33042394,512,1024,512,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",1536,32,argonne-swing,25,40960,22075.6875
+1714149857.0673418,start-inference-H-1024,218.90871334075928,85618878,1024,1024,1024,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",2045,32,argonne-swing,25,40960,31013.625
+1714150076.0077927,start-inference-H-2048,691.6142117977142,263708480,2048,1024,2048,falcon-7b,1,"/void _quicksort (void *const pbase, size_t total_",3055,32,argonne-swing,25,40960,21565.625
+1714150767.649186,start-inference-I-8,2.554661989212036,958546,8,2048,8,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2058,32,argonne-swing,27,40960,18465.625
+1714150770.223027,start-inference-I-16,5.125602484,1988455,16,2048,16,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2066,32,argonne-swing,27,40960,20773.625
+1714150775.3701766,start-inference-I-32,10.559422254562378,4017246,32,2048,32,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,argonne-swing,27,40960,26613.625
+1714150785.956611,start-inference-I-64,21.61690616607666,8210999,64,2048,64,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2114,32,argonne-swing,27,40960,37377.625
+1714150807.6077023,start-inference-I-128,44.42576313018799,16846437,128,2048,128,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2178,32,argonne-swing,27,40960,35709.625
+1714150852.0674224,start-inference-I-256,92.68220806121826,35179113,256,2048,256,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2306,32,argonne-swing,27,40960,39581.625
+1714150944.7876325,start-inference-I-512,199.9882755279541,75951768,512,2048,512,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2562,32,argonne-swing,27,40960,29979.625
+1714151144.805713,start-inference-I-1024,472.6075882911682,178196737,1024,2048,1024,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",3072,32,argonne-swing,27,40960,20973.625
+1714151617.4542418,start-inference-I-2048,1308.545767068863,479306070,2048,2048,2048,falcon-7b,1,"#include <alloca.h>
+#include <limits.h>
+#include <",4094,32,argonne-swing,27,40960,34043.6875
+1714146435.974388,tokenizer,0.25158262252807617,9973,32,0,0,Llama-2-7b-chat-hf,1,startup,0,32,argonne-swing,132,40960,14025.6875
+1714146436.2259705,model load,42.29731083,2334033,32,0,0,Llama-2-7b-chat-hf,1,startup,0,32,argonne-swing,132,40960,14025.6875
+1714146478.5365398,start-inference-A-8,0.241491747,32711,8,8,8,Llama-2-7b-chat-hf,1,What is the largest city in France?,17,32,argonne-swing,129,40960,14313.6875
+1714146480.5861478,start-inference-A-16,0.47747254371643066,73305,16,8,16,Llama-2-7b-chat-hf,1,What is the largest city in France?,25,32,argonne-swing,129,40960,14315.6875
+1714146481.071409,start-inference-A-32,0.938246489,138671,32,8,32,Llama-2-7b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,129,40960,14317.6875
+1714146482.0158734,start-inference-A-64,1.8826231956481934,311206,64,8,64,Llama-2-7b-chat-hf,1,What is the largest city in France?,73,32,argonne-swing,129,40960,14351.6875
+1714146483.906872,start-inference-A-128,3.810725688934326,705016,128,8,128,Llama-2-7b-chat-hf,1,What is the largest city in France?,137,32,argonne-swing,129,40960,14359.6875
+1714146487.7268069,start-inference-A-256,7.6384265422821045,1832628,256,8,256,Llama-2-7b-chat-hf,1,What is the largest city in France?,265,32,argonne-swing,129,40960,14487.6875
+1714146495.3789556,start-inference-A-512,19.017472505569458,5527912,512,8,512,Llama-2-7b-chat-hf,1,What is the largest city in France?,521,32,argonne-swing,129,40960,14487.6875
+1714146514.4061253,start-inference-A-1024,57.619953870773315,18947115,1024,8,1024,Llama-2-7b-chat-hf,1,What is the largest city in France?,1033,32,argonne-swing,1,40960,14583.6875
+1714146572.0353935,start-inference-A-2048,203.01608085632324,77636035,2048,8,2048,Llama-2-7b-chat-hf,1,What is the largest city in France?,2057,32,argonne-swing,139,40960,38291.6875
+1714146775.0952592,start-inference-B-8,0.2456047534942627,33337,8,16,8,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,29,32,argonne-swing,139,40960,14361.6875
+1714146775.355176,start-inference-B-16,0.4824955463409424,82316,16,16,16,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,37,32,argonne-swing,139,40960,14317.6875
+1714146775.8439739,start-inference-B-32,0.9513256549835205,149032,32,16,32,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,139,40960,14317.6875
+1714146776.801629,start-inference-B-64,1.9070382118225098,333042,64,16,64,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,85,32,argonne-swing,139,40960,14353.6875
+1714146778.7153466,start-inference-B-128,3.8258934020996094,786368,128,16,128,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,149,32,argonne-swing,139,40960,14359.6875
+1714146782.5484862,start-inference-B-256,7.819934844970703,1925985,256,16,256,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,277,32,argonne-swing,139,40960,14487.6875
+1714146790.3761206,start-inference-B-512,19.33237910270691,5915644,512,16,512,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,533,32,argonne-swing,139,40960,14487.6875
+1714146809.7172575,start-inference-B-1024,58.92688751220703,20356983,1024,16,1024,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,1045,32,argonne-swing,139,40960,14583.6875
+1714146868.654094,start-inference-B-2048,204.22192001342773,76545029,2048,16,2048,Llama-2-7b-chat-hf,1,Can you explain the difference between a simile an,2069,32,argonne-swing,132,40960,38799.6875
+1714147072.915363,start-inference-C-8,0.2467806339263916,56094,8,32,8,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,13,40960,14359.6875
+1714147073.1749701,start-inference-C-16,0.4834928512573242,86089,16,32,16,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,13,40960,14317.6875
+1714147073.6708796,start-inference-C-32,0.9563767910003662,157597,32,32,32,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,13,40960,14319.6875
+1714147074.6338556,start-inference-C-64,1.9281110763549805,355729,64,32,64,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,13,40960,14355.6875
+1714147076.5714211,start-inference-C-128,3.834686756134033,819841,128,32,128,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,13,40960,14359.6875
+1714147080.4136827,start-inference-C-256,8.162601470947266,2084393,256,32,256,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,13,40960,14487.6875
+1714147088.585645,start-inference-C-512,19.591297149658203,6189736,512,32,512,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,13,40960,14487.6875
+1714147108.185656,start-inference-C-1024,59.748610973358154,20762765,1024,32,1024,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,1062,32,argonne-swing,13,40960,14845.6875
+1714147167.9464183,start-inference-C-2048,208.01595258712769,79765370,2048,32,2048,Llama-2-7b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,4,40960,39313.6875
+1714147376.0067413,start-inference-D-8,0.25470471382141113,57095,8,64,8,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,86,32,argonne-swing,132,40960,14391.6875
+1714147376.2735243,start-inference-D-16,0.49741458892822266,101085,16,64,16,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,94,32,argonne-swing,132,40960,14355.6875
+1714147376.7817879,start-inference-D-32,0.9783651828765869,183635,32,64,32,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,132,40960,14357.6875
+1714147377.767129,start-inference-D-64,2.1027064323425293,440852,64,64,64,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,142,32,argonne-swing,132,40960,14359.6875
+1714147379.8929048,start-inference-D-128,3.834019184112549,952318,128,64,128,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,206,32,argonne-swing,132,40960,14359.6875
+1714147383.7345042,start-inference-D-256,8.338236808776855,2394597,256,64,256,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,334,32,argonne-swing,132,40960,14487.6875
+1714147392,start-inference-D-512,20.56351089477539,6810224,512,64,512,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,590,32,argonne-swing,132,40960,14487.6875
+1714147413,start-inference-D-1024,58.547526121139526,20935502,1024,64,1024,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,1062,32,argonne-swing,132,40960,14843.6875
+1714147471.2136197,start-inference-D-2048,213.9344036579132,81700090,2048,64,2048,Llama-2-7b-chat-hf,1,Imagine you are an expert travel guide for Japan.,2126,32,argonne-swing,132,40960,40349.6875
+1714147685.1933825,start-inference-E-8,0.2492213249206543,53655,8,128,8,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",162,32,argonne-swing,4,40960,14389.6875
+1714147685.4554121,start-inference-E-16,0.48966503143310547,137954,16,128,16,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",170,32,argonne-swing,4,40960,14349.6875
+1714147685.9536915,start-inference-E-32,0.9538919925689697,287187,32,128,32,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,4,40960,14349.6875
+1714147686.9156883,start-inference-E-64,1.9066376686096191,559058,64,128,64,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",218,32,argonne-swing,132,40960,14349.6875
+1714147688.8312976,start-inference-E-128,4.025173902511597,1222167,128,128,128,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",282,32,argonne-swing,132,40960,14479.6875
+1714147692.8653715,start-inference-E-256,9.219992161,2927066,256,128,256,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",410,32,argonne-swing,132,40960,14481.6875
+1714147702.0930355,start-inference-E-512,22.738322019577026,8012046,512,128,512,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",666,32,argonne-swing,132,40960,14487.6875
+1714147724.8421469,start-inference-E-1024,68.28527283668518,25311536,1024,128,1024,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",1178,32,argonne-swing,132,40960,16779.6875
+1714147793.1434238,start-inference-E-2048,220.88177037239075,85621166,2048,128,2048,Llama-2-7b-chat-hf,1,"As an AI language model, you possess the capabilit",2167,32,argonne-swing,132,40960,15743.6875
+1714148014,start-inference-F-8,0.31807398796081543,88538,8,256,8,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,275,32,argonne-swing,132,40960,14483.6875
+1714148014.3682334,start-inference-F-16,0.6201965808868408,188861,16,256,16,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,283,32,argonne-swing,132,40960,14445.6875
+1714148014.9966996,start-inference-F-32,1.239274024963379,415853,32,256,32,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,132,40960,14447.6875
+1714148016.2429905,start-inference-F-64,2.483543634414673,783245,64,256,64,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,331,32,argonne-swing,132,40960,14447.6875
+1714148018.7350025,start-inference-F-128,5.077390432357788,1712351,128,256,128,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,395,32,argonne-swing,132,40960,14449.6875
+1714148023.8198907,start-inference-F-256,11.365310907363892,3887090,256,256,256,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,523,32,argonne-swing,4,40960,14453.6875
+1714148035.1942072,start-inference-F-512,23.669554710388184,8684199,512,256,512,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,736,32,argonne-swing,4,40960,14545.6875
+1714148058.874245,start-inference-F-1024,77.30746388435364,28915028,1024,256,1024,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,1291,32,argonne-swing,4,40960,18875.6875
+1714148136.1989076,start-inference-F-2048,247.76632356643677,96517320,2048,256,2048,Llama-2-7b-chat-hf,1,/* An improved random number generation package.,2315,32,argonne-swing,4,40960,20711.6875
+1714148383.985329,start-inference-G-8,0.4349510669708252,183607,8,512,8,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,549,32,argonne-swing,7,40960,14487.6875
+1714148384.4324205,start-inference-G-16,0.8531897068023682,305784,16,512,16,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,557,32,argonne-swing,7,40960,14453.6875
+1714148385.295569,start-inference-G-32,1.7992641925811768,665020,32,512,32,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,7,40960,14453.6875
+1714148387.104124,start-inference-G-64,3.420656919,1331288,64,512,64,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,605,32,argonne-swing,7,40960,14455.6875
+1714148390.5329685,start-inference-G-128,7.139755487442017,2786093,128,512,128,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,669,32,argonne-swing,7,40960,14455.6875
+1714148397.6844172,start-inference-G-256,15.898265600204468,6158102,256,512,256,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,797,32,argonne-swing,7,40960,14545.6875
+1714148413.592774,start-inference-G-512,39.78990197181702,14665696,512,512,512,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,1053,32,argonne-swing,7,40960,14811.6875
+1714148453.3948667,start-inference-G-1024,100.19916987419128,38666905,1024,512,1024,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,1565,32,argonne-swing,7,40960,24867.6875
+1714148554,start-inference-G-2048,296.0861154,115794909,2048,512,2048,Llama-2-7b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,2589,32,argonne-swing,7,40960,30345.6875
+1714148849.7333043,start-inference-H-8,0.7957234382629395,279217,8,1024,8,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",994,32,argonne-swing,133,40960,14731.6875
+1714148851,start-inference-H-16,1.566469430923462,576755,16,1024,16,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1002,32,argonne-swing,133,40960,14705.6875
+1714148852.121021,start-inference-H-32,3.1324191093444824,1128370,32,1024,32,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,133,40960,14705.6875
+1714148855.262962,start-inference-H-64,6.322356700897217,2348795,64,1024,64,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1050,32,argonne-swing,133,40960,14709.6875
+1714148861.5944278,start-inference-H-128,12.835814714431763,4882145,128,1024,128,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1114,32,argonne-swing,133,40960,15773.6875
+1714148874.4425604,start-inference-H-256,26.390101671218872,10220437,256,1024,256,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1242,32,argonne-swing,133,40960,18099.6875
+1714148900.8490486,start-inference-H-512,58.058820486068726,22748766,512,1024,512,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1498,32,argonne-swing,133,40960,23511.6875
+1714148958.9320729,start-inference-H-1024,141.1164415,55529599,1024,1024,1024,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",2010,32,argonne-swing,133,40960,36911.6875
+1714149100,start-inference-H-2048,385.1820058822632,152198473,2048,1024,2048,Llama-2-7b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",3034,32,argonne-swing,133,40960,23941.6875
+1714149485.2975333,start-inference-I-8,1.617396593093872,622729,8,2048,8,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2142,32,argonne-swing,133,40960,15161.6875
+1714149486.9299335,start-inference-I-16,3.1972200870513916,1268352,16,2048,16,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2150,32,argonne-swing,133,40960,15673.6875
+1714149490.1400805,start-inference-I-32,6.369228125,2514237,32,2048,32,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,133,40960,16207.6875
+1714149496.5234325,start-inference-I-64,12.896170616149902,5114732,64,2048,64,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2198,32,argonne-swing,133,40960,17013.6875
+1714149509.4340434,start-inference-I-128,26.247548818588257,10403954,128,2048,128,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2262,32,argonne-swing,133,40960,18927.6875
+1714149535.6991317,start-inference-I-256,53.61865448951721,21298399,256,2048,256,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2390,32,argonne-swing,133,40960,23489.6875
+1714149589.3438113,start-inference-I-512,111.3640649318695,44270885,512,2048,512,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2637,32,argonne-swing,133,40960,32729.6875
+1714149700.7433329,start-inference-I-1024,256.78601574897766,101722475,1024,2048,1024,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",3158,32,argonne-swing,133,40960,29543.6875
+1714149957.5580935,start-inference-I-2048,638.6692212,249067836,2048,2048,2048,Llama-2-7b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",4182,32,argonne-swing,12,40960,35095.6875
+1714146368.1418984,tokenizer,0.33469223976135254,24101,32,0,0,Mistral-7B-v0.1,1,startup,0,32,argonne-swing,68,40960,15625.6875
+1714146368.4765906,model load,21.91585087776184,1423628,32,0,0,Mistral-7B-v0.1,1,startup,0,32,argonne-swing,68,40960,15625.6875
+1714146390.4055076,start-inference-A-8,0.216849308,31562,8,8,8,Mistral-7B-v0.1,1,What is the largest city in France?,17,32,argonne-swing,204,40960,15741.6875
+1714146391.9017408,start-inference-A-16,0.4197070598602295,67867,16,8,16,Mistral-7B-v0.1,1,What is the largest city in France?,25,32,argonne-swing,204,40960,15743.6875
+1714146392.3272479,start-inference-A-32,0.8329238891601562,144639,32,8,32,Mistral-7B-v0.1,1,What is the largest city in France?,41,32,argonne-swing,204,40960,15765.6875
+1714146393.1775315,start-inference-A-64,1.7203447818756104,318198,64,8,64,Mistral-7B-v0.1,1,What is the largest city in France?,73,32,argonne-swing,204,40960,15765.6875
+1714146394.9044557,start-inference-A-128,3.3909225463867188,744301,128,8,128,Mistral-7B-v0.1,1,What is the largest city in France?,137,32,argonne-swing,204,40960,15827.6875
+1714146398.302814,start-inference-A-256,7.5734031200408936,1959062,256,8,256,Mistral-7B-v0.1,1,What is the largest city in France?,265,32,argonne-swing,204,40960,16205.6875
+1714146405.8885744,start-inference-A-512,18.758328914642334,6103708,512,8,512,Mistral-7B-v0.1,1,What is the largest city in France?,521,32,argonne-swing,204,40960,17739.6875
+1714146424.6680486,start-inference-A-1024,48.840697050094604,18245297,1024,8,1024,Mistral-7B-v0.1,1,What is the largest city in France?,953,32,argonne-swing,204,40960,22707.6875
+1714146473.538685,start-inference-A-2048,192.30252742767334,75376835,2048,8,2048,Mistral-7B-v0.1,1,What is the largest city in France?,2057,32,argonne-swing,204,40960,22791.6875
+1714146665.8633182,start-inference-B-8,0.22187519073486328,41464,8,16,8,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,28,32,argonne-swing,204,40960,15743.6875
+1714146666.092119,start-inference-B-16,0.4234039783477783,98101,16,16,16,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,36,32,argonne-swing,204,40960,15743.6875
+1714146666.5233319,start-inference-B-32,0.8411593437194824,157571,32,16,32,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,52,32,argonne-swing,204,40960,15765.6875
+1714146667.3708045,start-inference-B-64,1.6878490447998047,357356,64,16,64,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,84,32,argonne-swing,204,40960,15765.6875
+1714146669.0664995,start-inference-B-128,3.4737653732299805,807126,128,16,128,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,148,32,argonne-swing,204,40960,15827.6875
+1714146672.5478368,start-inference-B-256,7.906841039657593,2164701,256,16,256,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,276,32,argonne-swing,204,40960,16239.6875
+1714146680.4647954,start-inference-B-512,19.033324003219604,6540066,512,16,512,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,532,32,argonne-swing,204,40960,17871.6875
+1714146699.5160816,start-inference-B-1024,56.95124959945679,21597631,1024,16,1024,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,1044,32,argonne-swing,204,40960,23947.6875
+1714146756.4977942,start-inference-B-2048,194.06352496147156,76131747,2048,16,2048,Mistral-7B-v0.1,1,Can you explain the difference between a simile an,2068,32,argonne-swing,204,40960,23299.6875
+1714146950.5892096,start-inference-C-8,0.22112059593200684,68027,8,32,8,Mistral-7B-v0.1,1,What are some effective strategies for managing st,41,32,argonne-swing,64,40960,15765.6875
+1714146950.8224182,start-inference-C-16,0.4266488552093506,79672,16,32,16,Mistral-7B-v0.1,1,What are some effective strategies for managing st,49,32,argonne-swing,64,40960,15765.6875
+1714146951.2569082,start-inference-C-32,0.8398919105529785,164336,32,32,32,Mistral-7B-v0.1,1,What are some effective strategies for managing st,65,32,argonne-swing,64,40960,15765.6875
+1714146952.1046526,start-inference-C-64,1.6870753765106201,380333,64,32,64,Mistral-7B-v0.1,1,What are some effective strategies for managing st,97,32,argonne-swing,64,40960,15779.6875
+1714146953.8018014,start-inference-C-128,3.5268447399139404,883467,128,32,128,Mistral-7B-v0.1,1,What are some effective strategies for managing st,161,32,argonne-swing,64,40960,15847.6875
+1714146957.3377254,start-inference-C-256,7.838974475860596,2244321,256,32,256,Mistral-7B-v0.1,1,What are some effective strategies for managing st,289,32,argonne-swing,64,40960,16311.6875
+1714146965.1890266,start-inference-C-512,19.520225763320923,6768662,512,32,512,Mistral-7B-v0.1,1,What are some effective strategies for managing st,545,32,argonne-swing,64,40960,18007.6875
+1714146984.7258797,start-inference-C-1024,57.67127203941345,21972811,1024,32,1024,Mistral-7B-v0.1,1,What are some effective strategies for managing st,1057,32,argonne-swing,64,40960,24207.6875
+1714147042,start-inference-C-2048,196.07123112678528,77010162,2048,32,2048,Mistral-7B-v0.1,1,What are some effective strategies for managing st,2081,32,argonne-swing,66,40960,23299.6875
+1714147238.5214436,start-inference-D-8,0.22561931610107422,49417,8,64,8,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,82,32,argonne-swing,66,40960,15765.6875
+1714147238.7558572,start-inference-D-16,0.434459925,121259,16,64,16,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,90,32,argonne-swing,66,40960,15779.6875
+1714147239.1984327,start-inference-D-32,0.8628675937652588,197726,32,64,32,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,106,32,argonne-swing,66,40960,15793.6875
+1714147240.0697138,start-inference-D-64,1.7499911785125732,439582,64,64,64,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,138,32,argonne-swing,66,40960,15827.6875
+1714147241.8272326,start-inference-D-128,3.7713873386383057,1040831,128,64,128,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,202,32,argonne-swing,66,40960,15991.6875
+1714147245.608136,start-inference-D-256,8.272106409072876,2606128,256,64,256,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,330,32,argonne-swing,66,40960,16509.6875
+1714147253.8925056,start-inference-D-512,20.590813875198364,7360127,512,64,512,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,586,32,argonne-swing,66,40960,18291.6875
+1714147274.5062284,start-inference-D-1024,60.49041152000427,23323144,1024,64,1024,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,1098,32,argonne-swing,66,40960,24739.6875
+1714147335.0292478,start-inference-D-2048,202.69531559944153,79911646,2048,64,2048,Mistral-7B-v0.1,1,Imagine you are an expert travel guide for Japan.,2122,32,argonne-swing,66,40960,24847.6875
+1714147537.749006,start-inference-E-8,0.2607607841491699,86868,8,128,8,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",145,32,argonne-swing,66,40960,15777.6875
+1714147538.0189269,start-inference-E-16,0.49817538261413574,149948,16,128,16,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",153,32,argonne-swing,66,40960,15817.6875
+1714147538.5240474,start-inference-E-32,0.9974822998046875,302765,32,128,32,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",169,32,argonne-swing,66,40960,15861.6875
+1714147539.5302718,start-inference-E-64,2.0281941890716553,612720,64,128,64,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",201,32,argonne-swing,66,40960,15961.6875
+1714147541.5678937,start-inference-E-128,4.208376884460449,1325973,128,128,128,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",265,32,argonne-swing,66,40960,16177.6875
+1714147545.786916,start-inference-E-256,8.969587564468384,3139786,256,128,256,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",393,32,argonne-swing,66,40960,16799.6875
+1714147555,start-inference-E-512,22.524166584014893,8414660,512,128,512,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",649,32,argonne-swing,66,40960,18881.6875
+1714147577.3164394,start-inference-E-1024,65.00838136672974,25345441,1024,128,1024,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",1161,32,argonne-swing,66,40960,25825.6875
+1714147642.3655417,start-inference-E-2048,212.10357236862183,83914325,2048,128,2048,Mistral-7B-v0.1,1,"As an AI language model, you possess the capabilit",2185,32,argonne-swing,66,40960,26967.6875
+1714147854.4930532,start-inference-F-8,0.30030059814453125,100365,8,256,8,Mistral-7B-v0.1,1,/* An improved random number generation package.,275,32,argonne-swing,66,40960,15831.6875
+1714147854.804659,start-inference-F-16,0.5812466144561768,217954,16,256,16,Mistral-7B-v0.1,1,/* An improved random number generation package.,283,32,argonne-swing,66,40960,15903.6875
+1714147855.3948076,start-inference-F-32,1.1609818935394287,444291,32,256,32,Mistral-7B-v0.1,1,/* An improved random number generation package.,299,32,argonne-swing,66,40960,15979.6875
+1714147856.5653005,start-inference-F-64,2.3234469890594482,871415,64,256,64,Mistral-7B-v0.1,1,/* An improved random number generation package.,331,32,argonne-swing,66,40960,16143.6875
+1714147858.8974216,start-inference-F-128,4.798913002,1856592,128,256,128,Mistral-7B-v0.1,1,/* An improved random number generation package.,395,32,argonne-swing,66,40960,16419.6875
+1714147863.706156,start-inference-F-256,11.28666377067566,4299305,256,256,256,Mistral-7B-v0.1,1,/* An improved random number generation package.,523,32,argonne-swing,66,40960,17333.6875
+1714147875.0058916,start-inference-F-512,26.87566590309143,10521646,512,256,512,Mistral-7B-v0.1,1,/* An improved random number generation package.,779,32,argonne-swing,66,40960,19925.6875
+1714147901.9034312,start-inference-F-1024,68.13309049606323,26877373,1024,256,1024,Mistral-7B-v0.1,1,/* An improved random number generation package.,1230,32,argonne-swing,66,40960,26773.6875
+1714147970.0752068,start-inference-F-2048,232.28550791740417,92211826,2048,256,2048,Mistral-7B-v0.1,1,/* An improved random number generation package.,2315,32,argonne-swing,66,40960,31415.6875
+1714148202.3941927,start-inference-G-8,0.45045352,184824,8,512,8,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,549,32,argonne-swing,67,40960,16047.6875
+1714148202.857866,start-inference-G-16,0.877605677,357357,16,512,16,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,557,32,argonne-swing,67,40960,16049.6875
+1714148203.7441144,start-inference-G-32,1.7553822994232178,677729,32,512,32,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,67,40960,16189.6875
+1714148205.5094442,start-inference-G-64,3.532350540161133,1399992,64,512,64,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,605,32,argonne-swing,67,40960,16481.6875
+1714148209.0571632,start-inference-G-128,7.358175039291382,2911252,128,512,128,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,669,32,argonne-swing,67,40960,17113.6875
+1714148216.4274743,start-inference-G-256,16.17825174331665,6371704,256,512,256,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,797,32,argonne-swing,67,40960,18569.6875
+1714148232.6213658,start-inference-G-512,38.17428899,15116406,512,512,512,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,1053,32,argonne-swing,67,40960,22249.6875
+1714148270.818205,start-inference-G-1024,96.06213283538818,38133058,1024,512,1024,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,1565,32,argonne-swing,76,40960,32293.6875
+1714148366.924152,start-inference-G-2048,275.7731964588165,109715057,2048,512,2048,Mistral-7B-v0.1,1,/*This is a version (aka ptmalloc2) of malloc/free,2589,32,argonne-swing,76,40960,39211.6875
+1714148643,start-inference-H-8,0.7449498176574707,275000,8,1024,8,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",993,32,argonne-swing,77,40960,16183.6875
+1714148643.5155368,start-inference-H-16,1.4565074443817139,588839,16,1024,16,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1001,32,argonne-swing,77,40960,16183.6875
+1714148644.981408,start-inference-H-32,2.906829357147217,1150336,32,1024,32,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1017,32,argonne-swing,77,40960,16431.6875
+1714148647.912569,start-inference-H-64,5.901851177215576,2308486,64,1024,64,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1049,32,argonne-swing,77,40960,16939.6875
+1714148653.825218,start-inference-H-128,12.013882160186768,4799171,128,1024,128,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1113,32,argonne-swing,77,40960,18003.6875
+1714148665.8518567,start-inference-H-256,25.21961021,10013447,256,1024,256,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1241,32,argonne-swing,77,40960,20323.6875
+1714148691.089931,start-inference-H-512,55.424421548843384,22035471,512,1024,512,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",1497,32,argonne-swing,77,40960,25731.6875
+1714148746.5404565,start-inference-H-1024,132.31721091270447,52644357,1024,1024,1024,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",2009,32,argonne-swing,72,40960,39123.6875
+1714148878.9016263,start-inference-H-2048,348.93047547340393,138931839,2048,1024,2048,Mistral-7B-v0.1,1,"/void _quicksort (void *const pbase, size_t total_",3033,32,argonne-swing,72,40960,28495.6875
+1714149227.857257,start-inference-I-8,1.4686295986175537,558379,8,2048,8,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2147,32,argonne-swing,72,40960,16699.6875
+1714149229.3422856,start-inference-I-16,2.8982291221618652,1160500,16,2048,16,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2155,32,argonne-swing,72,40960,17227.6875
+1714149232.2536976,start-inference-I-32,5.797348737716675,2322782,32,2048,32,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,argonne-swing,72,40960,17759.6875
+1714149238.0657408,start-inference-I-64,11.750327825546265,4658509,64,2048,64,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2203,32,argonne-swing,72,40960,18835.6875
+1714149249.841388,start-inference-I-128,23.833552360534668,9518973,128,2048,128,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2267,32,argonne-swing,72,40960,21035.6875
+1714149273.6961775,start-inference-I-256,48.58554935455322,19336393,256,2048,256,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2395,32,argonne-swing,72,40960,25333.6875
+1714149322.305777,start-inference-I-512,102.28311967849731,40757587,512,2048,512,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2651,32,argonne-swing,72,40960,34927.6875
+1714149424.623299,start-inference-I-1024,227.20782327651978,90489706,1024,2048,1024,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",3163,32,argonne-swing,72,40960,32465.6875
+1714149651.8606162,start-inference-I-2048,540.8681406974792,215370783,2048,2048,2048,Mistral-7B-v0.1,1,"#include <alloca.h>
+#include <limits.h>
+#include <",4187,32,argonne-swing,72,40960,17435.6875
+1715075066.7575061,tokenizer,0.2029428482055664,10531,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,39,40960,26121.6875
+1715075066.960449,model load,70.14881753921509,4043930,32,0,0,Llama-2-13b-chat-hf,1,startup,0,32,argonne-swing,39,40960,26121.6875
+1715075137.1363757,start-inference-A-8,2.308210849761963,152718,8,8,8,Llama-2-13b-chat-hf,1,What is the largest city in France?,17,32,argonne-swing,46,40960,26409.6875
+1715075139.4516664,start-inference-A-16,0.5923044681549072,112597,16,8,16,Llama-2-13b-chat-hf,1,What is the largest city in France?,25,32,argonne-swing,46,40960,26411.6875
+1715075140.050909,start-inference-A-32,1.1770954132080078,238871,32,8,32,Llama-2-13b-chat-hf,1,What is the largest city in France?,41,32,argonne-swing,46,40960,26415.6875
+1715075141.2348862,start-inference-A-64,2.3397395610809326,489757,64,8,64,Llama-2-13b-chat-hf,1,What is the largest city in France?,73,32,argonne-swing,46,40960,26451.6875
+1715075143.5830746,start-inference-A-128,5.020844221115112,1191793,128,8,128,Llama-2-13b-chat-hf,1,What is the largest city in France?,137,32,argonne-swing,46,40960,26455.6875
+1715075148.6126423,start-inference-A-256,10.725422859191895,3199869,256,8,256,Llama-2-13b-chat-hf,1,What is the largest city in France?,265,32,argonne-swing,46,40960,26455.6875
+1715075159.349628,start-inference-A-512,28.99721670150757,10021764,512,8,512,Llama-2-13b-chat-hf,1,What is the largest city in France?,521,32,argonne-swing,46,40960,26583.6875
+1715075188.3608758,start-inference-A-1024,94.96858525276184,36332909,1024,8,1024,Llama-2-13b-chat-hf,1,What is the largest city in France?,1033,32,argonne-swing,46,40960,26683.6875
+1715075283.3409092,start-inference-A-2048,348.1581540107727,136718741,2048,8,2048,Llama-2-13b-chat-hf,1,What is the largest city in France?,2057,32,argonne-swing,175,40960,36265.6875
+1715075631.5308702,start-inference-B-8,0.30225086212158203,60633,8,16,8,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,29,32,argonne-swing,175,40960,26467.6875
+1715075631.8513079,start-inference-B-16,0.595879316,123717,16,16,16,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,37,32,argonne-swing,175,40960,26413.6875
+1715075632.4539366,start-inference-B-32,1.1662483215332031,260293,32,16,32,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,53,32,argonne-swing,175,40960,26415.6875
+1715075634,start-inference-B-64,2.3439602851867676,533995,64,16,64,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,85,32,argonne-swing,175,40960,26451.6875
+1715075635.9809031,start-inference-B-128,4.942976236343384,1272578,128,16,128,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,149,32,argonne-swing,175,40960,26455.6875
+1715075640.9404283,start-inference-B-256,11.202023029327393,3468950,256,16,256,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,277,32,argonne-swing,175,40960,26583.6875
+1715075652.1524997,start-inference-B-512,29.71600866317749,10597388,512,16,512,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,533,32,argonne-swing,175,40960,26583.6875
+1715075681.8833115,start-inference-B-1024,86.23218560218811,33080995,1024,16,1024,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,978,32,argonne-swing,175,40960,26681.6875
+1715075768.1289213,start-inference-B-2048,334.54754090309143,131324244,2048,16,2048,Llama-2-13b-chat-hf,1,Can you explain the difference between a simile an,2013,32,argonne-swing,175,40960,34759.6875
+1715076102.700784,start-inference-C-8,0.3005247116088867,43815,8,32,8,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,46,32,argonne-swing,175,40960,26453.6875
+1715076103.0153675,start-inference-C-16,0.584388256,111634,16,32,16,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,54,32,argonne-swing,175,40960,26415.6875
+1715076103.6089368,start-inference-C-32,1.167126178741455,255758,32,32,32,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,70,32,argonne-swing,175,40960,26417.6875
+1715076104.7840817,start-inference-C-64,2.390305519104004,592048,64,32,64,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,102,32,argonne-swing,175,40960,26455.6875
+1715076107.1829226,start-inference-C-128,5.066377878189087,1386618,128,32,128,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,166,32,argonne-swing,175,40960,26455.6875
+1715076112.271024,start-inference-C-256,11.69692325592041,3728119,256,32,256,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,294,32,argonne-swing,175,40960,26585.6875
+1715076123.9874125,start-inference-C-512,30.64350700378418,11214426,512,32,512,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,550,32,argonne-swing,175,40960,26583.6875
+1715076154.6395054,start-inference-C-1024,87.48373246192932,33560820,1024,32,1024,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,990,32,argonne-swing,175,40960,26681.6875
+1715076242.1345441,start-inference-C-2048,353.7258782,138680054,2048,32,2048,Llama-2-13b-chat-hf,1,What are some effective strategies for managing st,2086,32,argonne-swing,175,40960,37287.6875
+1715076595.8882012,start-inference-D-8,0.33101725578308105,79101,8,64,8,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,86,32,argonne-swing,175,40960,26501.6875
+1715076596.2352092,start-inference-D-16,0.6389644145965576,170385,16,64,16,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,94,32,argonne-swing,175,40960,26455.6875
+1715076596.881084,start-inference-D-32,1.244497299194336,318554,32,64,32,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,175,40960,26455.6875
+1715076598.1351511,start-inference-D-64,2.5611162185668945,729994,64,64,64,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,142,32,argonne-swing,175,40960,26455.6875
+1715076600.7042387,start-inference-D-128,5.400187253952026,1657372,128,64,128,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,206,32,argonne-swing,175,40960,26455.6875
+1715076606.1134393,start-inference-D-256,12.71891975402832,4339090,256,64,256,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,334,32,argonne-swing,175,40960,26585.6875
+1715076618.8425195,start-inference-D-512,33.06145405769348,12317410,512,64,512,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,590,32,argonne-swing,175,40960,26585.6875
+1715076651.9200041,start-inference-D-1024,104.51953792572021,40657111,1024,64,1024,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,1100,32,argonne-swing,175,40960,27749.6875
+1715076756.454696,start-inference-D-2048,368.60455894470215,145061436,2048,64,2048,Llama-2-13b-chat-hf,1,Imagine you are an expert travel guide for Japan.,2126,32,argonne-swing,175,40960,38325.6875
+1715077125.0884845,start-inference-E-8,0.3719332218170166,125557,8,128,8,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",162,32,argonne-swing,175,40960,26495.6875
+1715077125.476269,start-inference-E-16,0.845294714,270892,16,128,16,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",170,32,argonne-swing,175,40960,26445.6875
+1715077126.3293817,start-inference-E-32,1.4158153533935547,478982,32,128,32,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",186,32,argonne-swing,175,40960,26445.6875
+1715077127.7520633,start-inference-E-64,2.866762638092041,984349,64,128,64,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",218,32,argonne-swing,175,40960,26447.6875
+1715077130.6267567,start-inference-E-128,6.241706371307373,2275346,128,128,128,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",282,32,argonne-swing,175,40960,26577.6875
+1715077136.8762999,start-inference-E-256,14.905716180801392,5481828,256,128,256,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",410,32,argonne-swing,175,40960,26579.6875
+1715077151.7949755,start-inference-E-512,37.73790454864502,14523120,512,128,512,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",666,32,argonne-swing,175,40960,26589.6875
+1715077189.546271,start-inference-E-1024,115.48633551597595,45307942,1024,128,1024,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",1178,32,argonne-swing,175,40960,28881.6875
+1715077305.0568051,start-inference-E-2048,394.1382722854614,155462817,2048,128,2048,Llama-2-13b-chat-hf,1,"As an AI language model, you possess the capabilit",2202,32,argonne-swing,175,40960,27145.6875
+1715077699.2111075,start-inference-F-8,0.5267369747161865,169526,8,256,8,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,275,32,argonne-swing,175,40960,26589.6875
+1715077699.7513542,start-inference-F-16,1.0379769802093506,348987,16,256,16,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,283,32,argonne-swing,175,40960,26543.6875
+1715077700.7967317,start-inference-F-32,2.075216293334961,744343,32,256,32,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,299,32,argonne-swing,175,40960,26543.6875
+1715077702.8794458,start-inference-F-64,4.169498920440674,1480099,64,256,64,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,331,32,argonne-swing,175,40960,26545.6875
+1715077707.0595367,start-inference-F-128,8.540441989898682,3138340,128,256,128,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,395,32,argonne-swing,47,40960,26547.6875
+1715077715.6096926,start-inference-F-256,18.389196157455444,7032390,256,256,256,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,523,32,argonne-swing,47,40960,26551.6875
+1715077734.0094128,start-inference-F-512,46.59672403335571,18184688,512,256,512,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,779,32,argonne-swing,47,40960,26645.6875
+1715077780.6179223,start-inference-F-1024,115.12819838523865,45357514,1024,256,1024,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,1205,32,argonne-swing,47,40960,29437.6875
+1715077895.7624402,start-inference-F-2048,430.1922664642334,170152261,2048,256,2048,Llama-2-13b-chat-hf,1,/* An improved random number generation package.,2315,32,argonne-swing,47,40960,31041.6875
+1715078325.9737217,start-inference-G-8,0.7575995922088623,307812,8,512,8,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,549,32,argonne-swing,175,40960,26595.6875
+1715078326.746829,start-inference-G-16,1.4945628643035889,594267,16,512,16,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,557,32,argonne-swing,175,40960,26553.6875
+1715078328.2500002,start-inference-G-32,2.9903416633605957,1156275,32,512,32,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,175,40960,26553.6875
+1715078331.2487545,start-inference-G-64,6.0532097816467285,2387899,64,512,64,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,605,32,argonne-swing,175,40960,26553.6875
+1715078337.3164227,start-inference-G-128,12.73996353149414,5010149,128,512,128,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,669,32,argonne-swing,175,40960,26555.6875
+1715078350.0681217,start-inference-G-256,29.122835874557495,11534741,256,512,256,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,797,32,argonne-swing,175,40960,26643.6875
+1715078379.2000842,start-inference-G-512,67.59281445,26741509,512,512,512,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,1053,32,argonne-swing,175,40960,26913.6875
+1715078446.8063438,start-inference-G-1024,175.92975306510925,69653727,1024,512,1024,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,1565,32,argonne-swing,175,40960,36969.6875
+1715078622.7768154,start-inference-G-2048,519.3463523387909,205655301,2048,512,2048,Llama-2-13b-chat-hf,1,/*This is a version (aka ptmalloc2) of malloc/free,2588,32,argonne-swing,47,40960,40673.6875
+1715079142.155278,start-inference-H-8,1.244605302810669,463573,8,1024,8,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",994,32,argonne-swing,175,40960,26839.6875
+1715079143.414625,start-inference-H-16,2.463961362838745,985187,16,1024,16,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1002,32,argonne-swing,175,40960,26807.6875
+1715079145.887556,start-inference-H-32,4.938392400741577,1937200,32,1024,32,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,175,40960,26807.6875
+1715079150.8384955,start-inference-H-64,10.34133791923523,4096489,64,1024,64,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1050,32,argonne-swing,175,40960,26809.6875
+1715079161.1988363,start-inference-H-128,21.666462659835815,8570390,128,1024,128,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1114,32,argonne-swing,175,40960,27875.6875
+1715079182.8975875,start-inference-H-256,45.89480924606323,17964716,256,1024,256,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1242,32,argonne-swing,175,40960,30201.6875
+1715079228.8129947,start-inference-H-512,102.88353037834167,40625334,512,1024,512,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",1498,32,argonne-swing,47,40960,35613.6875
+1715079331.7254095,start-inference-H-1024,245.74884510040283,97279900,1024,1024,1024,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",2010,32,argonne-swing,47,40960,34907.6875
+1715079577.5011632,start-inference-H-2048,671.2438149,265849912,2048,1024,2048,Llama-2-13b-chat-hf,1,"/void _quicksort (void *const pbase, size_t total_",3034,32,argonne-swing,36,40960,32637.6875
+1715080248.7726626,start-inference-I-8,2.8445076942443848,1097563,8,2048,8,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2142,32,argonne-swing,164,40960,27327.6875
+1715080251.635678,start-inference-I-16,5.6729114055633545,2221058,16,2048,16,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2150,32,argonne-swing,164,40960,27835.6875
+1715080257.3242137,start-inference-I-32,11.343642473220825,4447881,32,2048,32,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,164,40960,28367.6875
+1715080268.6829839,start-inference-I-64,22.85664415359497,9028514,64,2048,64,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2198,32,argonne-swing,164,40960,29173.6875
+1715080291.5563402,start-inference-I-128,46.31256890296936,18271498,128,2048,128,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2262,32,argonne-swing,164,40960,31089.6875
+1715080337.8893416,start-inference-I-256,95.06868958473206,37589554,256,2048,256,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2390,32,argonne-swing,38,40960,35649.6875
+1715080432.9852622,start-inference-I-512,199.3693723678589,79024741,512,2048,512,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",2646,32,argonne-swing,45,40960,31773.6875
+1715080632.3748333,start-inference-I-1024,413.94827222824097,163876671,1024,2048,1024,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",3092,32,argonne-swing,39,40960,36943.6875
+1715081046.3566682,start-inference-I-2048,1100.3062210083008,431782665,2048,2048,2048,Llama-2-13b-chat-hf,1,"#include <alloca.h>
+#include <limits.h>
+#include <",4182,32,argonne-swing,34,40960,29959.6875
+1715075045.783106,tokenizer,0.18160748481750488,31992,32,0,0,Mixtral-8x7B-v0.1,3,startup,0,32,argonne-swing,164,40960,29215.6875
+1715075045.9647136,model load,90.02550983428955,15672169,32,0,0,Mixtral-8x7B-v0.1,3,startup,0,32,argonne-swing,164,40960,29215.6875
+1715075136.0229495,start-inference-A-8,4.472810983657837,872556,8,8,8,Mixtral-8x7B-v0.1,3,What is the largest city in France?,17,32,argonne-swing,37,40960,29331.6875
+1715075140.5155256,start-inference-A-16,3.0266435146331787,705217,16,8,16,Mixtral-8x7B-v0.1,3,What is the largest city in France?,25,32,argonne-swing,37,40960,29331.6875
+1715075143.5598454,start-inference-A-32,6.285378456115723,1482896,32,8,32,Mixtral-8x7B-v0.1,3,What is the largest city in France?,41,32,argonne-swing,37,40960,29355.6875
+1715075149.8618689,start-inference-A-64,12.539247751235962,2979700,64,8,64,Mixtral-8x7B-v0.1,3,What is the largest city in France?,73,32,argonne-swing,37,40960,29355.6875
+1715075162.4223468,start-inference-A-128,25.669764280319214,6135408,128,8,128,Mixtral-8x7B-v0.1,3,What is the largest city in France?,137,32,argonne-swing,37,40960,29421.6875
+1715075188.1122522,start-inference-A-256,52.03369760513306,12761211,256,8,256,Mixtral-8x7B-v0.1,3,What is the largest city in France?,265,32,argonne-swing,37,40960,29797.6875
+1715075240.1691403,start-inference-A-512,113.63266205787659,29084208,512,8,512,Mixtral-8x7B-v0.1,3,What is the largest city in France?,521,32,argonne-swing,37,40960,31333.6875
+1715075353.8419976,start-inference-A-1024,270.0115509033203,76007051,1024,8,1024,Mixtral-8x7B-v0.1,3,What is the largest city in France?,1033,32,argonne-swing,165,40960,37285.6875
+1715075623.9249427,start-inference-A-2048,589.3286657333374,219183550,2048,8,2048,Mixtral-8x7B-v0.1,3,What is the largest city in France?,1910,32,argonne-swing,34,40960,34047.6875
+1715076213.294298,start-inference-B-8,1.527794599533081,484763,8,16,8,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,28,32,argonne-swing,34,40960,29331.6875
+1715076214.8390052,start-inference-B-16,3.1204307079315186,787543,16,16,16,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,36,32,argonne-swing,34,40960,29333.6875
+1715076217.9752614,start-inference-B-32,6.272576093673706,1538084,32,16,32,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,52,32,argonne-swing,34,40960,29355.6875
+1715076224.2654183,start-inference-B-64,12.87643051147461,3139400,64,16,64,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,84,32,argonne-swing,34,40960,29357.6875
+1715076237.1635756,start-inference-B-128,25.69865918159485,6324235,128,16,128,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,148,32,argonne-swing,34,40960,29419.6875
+1715076262.8842854,start-inference-B-256,52.82679224014282,13167556,256,16,256,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,276,32,argonne-swing,162,40960,29831.6875
+1715076315.740132,start-inference-B-512,115.6492748260498,30138547,512,16,512,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,532,32,argonne-swing,162,40960,31463.6875
+1715076431.4272265,start-inference-B-1024,270.0287506580353,76458231,1024,16,1024,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,1044,32,argonne-swing,32,40960,37539.6875
+1715076701.5208998,start-inference-B-2048,657.0350029468536,253517771,2048,16,2048,Mixtral-8x7B-v0.1,3,Can you explain the difference between a simile an,2068,32,argonne-swing,32,40960,38947.6875
+1715077358.611603,start-inference-C-8,1.7119009494781494,532837,8,32,8,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,41,32,argonne-swing,172,40960,29353.6875
+1715077360.3407872,start-inference-C-16,3.159773826599121,811042,16,32,16,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,49,32,argonne-swing,172,40960,29353.6875
+1715077363.5202103,start-inference-C-32,6.378211498260498,1564973,32,32,32,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,65,32,argonne-swing,172,40960,29355.6875
+1715077369.9174879,start-inference-C-64,12.862623929977417,3157932,64,32,64,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,97,32,argonne-swing,172,40960,29357.6875
+1715077382.7964847,start-inference-C-128,25.928945541381836,6394784,128,32,128,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,161,32,argonne-swing,172,40960,29439.6875
+1715077408.7440863,start-inference-C-256,53.09481167793274,13270022,256,32,256,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,289,32,argonne-swing,172,40960,29903.6875
+1715077461.8688488,start-inference-C-512,115.3143687,29910376,512,32,512,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,545,32,argonne-swing,172,40960,31599.6875
+1715077577.2221904,start-inference-C-1024,272.9433171749115,77611724,1024,32,1024,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,1057,32,argonne-swing,32,40960,37799.6875
+1715077850.2336712,start-inference-C-2048,658.8153824806213,252896206,2048,32,2048,Mixtral-8x7B-v0.1,3,What are some effective strategies for managing st,2081,32,argonne-swing,32,40960,38945.6875
+1715078509.1442187,start-inference-D-8,1.6081645488739014,512951,8,64,8,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,82,32,argonne-swing,163,40960,29357.6875
+1715078510.7704885,start-inference-D-16,3.262373208999634,839519,16,64,16,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,90,32,argonne-swing,163,40960,29357.6875
+1715078514.049636,start-inference-D-32,6.688678026199341,1646053,32,64,32,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,106,32,argonne-swing,163,40960,29385.6875
+1715078520.760975,start-inference-D-64,13.040069580078125,3225489,64,64,64,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,138,32,argonne-swing,163,40960,29419.6875
+1715078533.8223262,start-inference-D-128,26.17031717300415,6530064,128,64,128,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,202,32,argonne-swing,163,40960,29585.6875
+1715078560.014521,start-inference-D-256,53.68748903274536,13626497,256,64,256,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,330,32,argonne-swing,163,40960,30103.6875
+1715078613.7713668,start-inference-D-512,121.69609189033508,31703154,512,64,512,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,586,32,argonne-swing,38,40960,31883.6875
+1715078735.5139167,start-inference-D-1024,278.1640992164612,80820029,1024,64,1024,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,1098,32,argonne-swing,38,40960,38331.6875
+1715079013.744533,start-inference-D-2048,670.2527041435242,258365418,2048,64,2048,Mixtral-8x7B-v0.1,3,Imagine you are an expert travel guide for Japan.,2122,32,argonne-swing,32,40960,40493.6875
+1715079684.058715,start-inference-E-8,1.6000723838806152,535665,8,128,8,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",145,32,argonne-swing,32,40960,29371.6875
+1715079685.676028,start-inference-E-16,3.245312452316284,858712,16,128,16,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",153,32,argonne-swing,32,40960,29411.6875
+1715079688.9410636,start-inference-E-32,6.485181570053101,1654908,32,128,32,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",169,32,argonne-swing,32,40960,29455.6875
+1715079695.447909,start-inference-E-64,13.15873646736145,3330119,64,128,64,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",201,32,argonne-swing,32,40960,29555.6875
+1715079708.6283374,start-inference-E-128,26.496410369873047,6758677,128,128,128,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",265,32,argonne-swing,32,40960,29769.6875
+1715079735.1500392,start-inference-E-256,55.44103741645813,14365415,256,128,256,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",393,32,argonne-swing,32,40960,30391.6875
+1715079790.6229265,start-inference-E-512,124.3663752,33037758,512,128,512,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",649,32,argonne-swing,162,40960,32471.6875
+1715079915.033897,start-inference-E-1024,287.0440116,86426680,1024,128,1024,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",1161,32,argonne-swing,34,40960,39415.6875
+1715080202.1556556,start-inference-E-2048,686.4922611713409,273031246,2048,128,2048,Mixtral-8x7B-v0.1,3,"As an AI language model, you possess the capabilit",2185,32,argonne-swing,34,40960,31453.6875
+1715080888.6977465,start-inference-F-8,1.7037787437438965,580529,8,256,8,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,275,32,argonne-swing,34,40960,29403.6875
+1715080890.4197605,start-inference-F-16,3.4943346977233887,943910,16,256,16,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,283,32,argonne-swing,34,40960,29475.6875
+1715080893.9328582,start-inference-F-32,7.170309066772461,1902657,32,256,32,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,299,32,argonne-swing,34,40960,29551.6875
+1715080901.122818,start-inference-F-64,14.122958421707153,3741385,64,256,64,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,331,32,argonne-swing,34,40960,29715.6875
+1715080915.2681766,start-inference-F-128,28.995551347732544,7726154,128,256,128,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,395,32,argonne-swing,34,40960,29991.6875
+1715080944.2917209,start-inference-F-256,61.26145911216736,16430768,256,256,256,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,523,32,argonne-swing,34,40960,30903.6875
+1715081005.5881753,start-inference-F-512,136.75998711585999,37446203,512,256,512,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,779,32,argonne-swing,34,40960,33495.6875
+1715081142.4165618,start-inference-F-1024,301.5410828590393,97166297,1024,256,1024,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,1291,32,argonne-swing,32,40960,29959.6875
+1715081443.9997938,start-inference-F-2048,721.3353590965271,294694310,2048,256,2048,Mixtral-8x7B-v0.1,3,/* An improved random number generation package.,2315,32,argonne-swing,32,40960,35359.6875
+1715082165.3827581,start-inference-G-8,2.0927488803863525,741145,8,512,8,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,549,32,argonne-swing,32,40960,29577.6875
+1715082167.4951098,start-inference-G-16,4.479193925857544,1239920,16,512,16,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,557,32,argonne-swing,32,40960,29577.6875
+1715082171.9980812,start-inference-G-32,8.989210605621338,2506062,32,512,32,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,160,40960,29717.6875
+1715082181.007033,start-inference-G-64,18.413637399673462,5092148,64,512,64,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,605,32,argonne-swing,160,40960,30009.6875
+1715082199.4446466,start-inference-G-128,37.355751276016235,10361536,128,512,128,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,669,32,argonne-swing,160,40960,30641.6875
+1715082236.8304372,start-inference-G-256,77.27440476417542,21732827,256,512,256,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,797,32,argonne-swing,160,40960,32097.6875
+1715082314.143883,start-inference-G-512,158.39238834381104,48379690,512,512,512,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,1053,32,argonne-swing,160,40960,35777.6875
+1715082473,start-inference-G-1024,332.0765919685364,122111454,1024,512,1024,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,1565,32,argonne-swing,160,40960,34507.6875
+1715082804.7161305,start-inference-G-2048,805.6459774971008,345046249,2048,512,2048,Mixtral-8x7B-v0.1,3,/*This is a version (aka ptmalloc2) of malloc/free,2589,32,argonne-swing,32,40960,32453.6875
+1715083610.409219,start-inference-H-8,2.441432476043701,1018900,8,1024,8,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",993,32,argonne-swing,32,40960,29661.6875
+1715083612.871922,start-inference-H-16,5.0145041942596436,1841759,16,1024,16,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1001,32,argonne-swing,32,40960,29661.6875
+1715083617.9109862,start-inference-H-32,11.173405647277832,3834740,32,1024,32,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1017,32,argonne-swing,32,40960,29909.6875
+1715083629.1096566,start-inference-H-64,20.583324909210205,7279118,64,1024,64,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1049,32,argonne-swing,32,40960,30417.6875
+1715083649.716701,start-inference-H-128,41.043829679489136,15013103,128,1024,128,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1113,32,argonne-swing,32,40960,31481.6875
+1715083690.7908196,start-inference-H-256,82.74915075302124,31963557,256,1024,256,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1241,32,argonne-swing,160,40960,33801.6875
+1715083773.5783675,start-inference-H-512,170.49142718315125,71408774,512,1024,512,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",1497,32,argonne-swing,160,40960,39209.6875
+1715083944.1218476,start-inference-H-1024,376.79240322113037,167142374,1024,1024,1024,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",2009,32,argonne-swing,160,40960,30067.6875
+1715084320.943948,start-inference-H-2048,902.9941275119781,426550997,2048,1024,2048,Mixtral-8x7B-v0.1,3,"/void _quicksort (void *const pbase, size_t total_",3033,32,argonne-swing,160,40960,34783.6875
+1715085223.9857306,start-inference-I-8,3.680682659,1781864,8,2048,8,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2147,32,argonne-swing,160,40960,30101.6875
+1715085227.6925232,start-inference-I-16,7.2829201221466064,3527865,16,2048,16,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2155,32,argonne-swing,160,40960,30629.6875
+1715085235.010535,start-inference-I-32,14.76380705833435,7168227,32,2048,32,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,argonne-swing,160,40960,31161.6875
+1715085249.8147182,start-inference-I-64,29.45323920249939,14304138,64,2048,64,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2203,32,argonne-swing,160,40960,32237.6875
+1715085279.307575,start-inference-I-128,59.31430220603943,28910260,128,2048,128,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2267,32,argonne-swing,32,40960,34437.6875
+1715085338.675493,start-inference-I-256,121.53062701225281,59500675,256,2048,256,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2395,32,argonne-swing,160,40960,38735.6875
+1715085460.2655582,start-inference-I-512,253.22668886184692,124723547,512,2048,512,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2651,32,argonne-swing,160,40960,37143.6875
+1715085713.5349216,start-inference-I-1024,547.2510991096497,271772951,1024,2048,1024,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",3163,32,argonne-swing,33,40960,36871.6875
+1715086260.8438454,start-inference-I-2048,1254.2457723617554,632588046,2048,2048,2048,Mixtral-8x7B-v0.1,3,"#include <alloca.h>
+#include <limits.h>
+#include <",4187,32,argonne-swing,43,40960,38403.6875
+1715075021.379089,tokenizer,0.41504597663879395,87055,32,0,0,Llama-2-70b-chat-hf,4,startup,0,32,argonne-swing,84,40960,34185.6875
+1715075021.794135,model load,282.45785546302795,63619044,32,0,0,Llama-2-70b-chat-hf,4,startup,0,32,argonne-swing,223,40960,34185.6875
+1715075304.3740087,start-inference-A-8,4.641672611236572,1214180,8,8,8,Llama-2-70b-chat-hf,4,What is the largest city in France?,17,32,argonne-swing,223,40960,34335.6875
+1715075309.045511,start-inference-A-16,3.299469470977783,1087397,16,8,16,Llama-2-70b-chat-hf,4,What is the largest city in France?,25,32,argonne-swing,211,40960,34337.6875
+1715075312.3700073,start-inference-A-32,6.564976453781128,2235504,32,8,32,Llama-2-70b-chat-hf,4,What is the largest city in France?,41,32,argonne-swing,85,40960,34369.6875
+1715075319.1342902,start-inference-A-64,14.122347116470337,4853064,64,8,64,Llama-2-70b-chat-hf,4,What is the largest city in France?,73,32,argonne-swing,219,40960,34375.6875
+1715075333.282933,start-inference-A-128,29.583410501480103,10318515,128,8,128,Llama-2-70b-chat-hf,4,What is the largest city in France?,137,32,argonne-swing,209,40960,34395.6875
+1715075362.893035,start-inference-A-256,68.46594738960266,25548644,256,8,256,Llama-2-70b-chat-hf,4,What is the largest city in France?,265,32,argonne-swing,88,40960,34517.6875
+1715075431.3898075,start-inference-A-512,171.2092376,78582560,512,8,512,Llama-2-70b-chat-hf,4,What is the largest city in France?,521,32,argonne-swing,93,40960,36051.6875
+1715075602.6541007,start-inference-A-1024,496.9145140647888,280940572,1024,8,1024,Llama-2-70b-chat-hf,4,What is the largest city in France?,1033,32,argonne-swing,213,40960,35785.6875
+1715076099.6582267,start-inference-A-2048,1663.6726236343384,1003086997,2048,8,2048,Llama-2-70b-chat-hf,4,What is the largest city in France?,2057,32,argonne-swing,223,40960,36313.6875
+1715077763.4126194,start-inference-B-8,1.8108198642730713,736478,8,16,8,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,29,32,argonne-swing,221,40960,34363.6875
+1715077765.2600179,start-inference-B-16,3.756755828857422,1269916,16,16,16,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,37,32,argonne-swing,217,40960,34337.6875
+1715077769.0439048,start-inference-B-32,7.370251655578613,2462822,32,16,32,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,53,32,argonne-swing,92,40960,34371.6875
+1715077776.4398093,start-inference-B-64,15.445990085601807,5233765,64,16,64,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,85,32,argonne-swing,205,40960,34375.6875
+1715077791.9225826,start-inference-B-128,32.24592971801758,11368209,128,16,128,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,149,32,argonne-swing,90,40960,34395.6875
+1715077824.203548,start-inference-B-256,74.23896551132202,27650923,256,16,256,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,277,32,argonne-swing,81,40960,34549.6875
+1715077898.4823086,start-inference-B-512,181.73884439468384,82688755,512,16,512,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,533,32,argonne-swing,94,40960,36183.6875
+1715078080,start-inference-B-1024,510.5407907962799,284379439,1024,16,1024,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,1045,32,argonne-swing,206,40960,36041.6875
+1715078590.9240522,start-inference-B-2048,1705.838897228241,1036241646,2048,16,2048,Llama-2-70b-chat-hf,4,Can you explain the difference between a simile an,2069,32,argonne-swing,86,40960,36821.6875
+1715080296.8582938,start-inference-C-8,1.7841250896453857,752443,8,32,8,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,46,32,argonne-swing,210,40960,34395.6875
+1715080298.6782002,start-inference-C-16,3.7326207160949707,1262624,16,32,16,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,54,32,argonne-swing,94,40960,34373.6875
+1715080302.4377172,start-inference-C-32,7.543445825576782,2561764,32,32,32,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,70,32,argonne-swing,223,40960,34375.6875
+1715080310.0075788,start-inference-C-64,15.815550327301025,5467043,64,32,64,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,102,32,argonne-swing,219,40960,34375.6875
+1715080325.8512113,start-inference-C-128,34.55908179283142,12302682,128,32,128,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,166,32,argonne-swing,207,40960,34415.6875
+1715080360.4408891,start-inference-C-256,77.28023028373718,29130800,256,32,256,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,294,32,argonne-swing,89,40960,34621.6875
+1715080438,start-inference-C-512,186.14657831192017,87179021,512,32,512,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,550,32,argonne-swing,95,40960,36319.6875
+1715080623.9662416,start-inference-C-1024,524.1773097515106,295697570,1024,32,1024,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,1062,32,argonne-swing,215,40960,36301.6875
+1715081148.2505808,start-inference-C-2048,1727.4615771770477,1051395417,2048,32,2048,Llama-2-70b-chat-hf,4,What are some effective strategies for managing st,2086,32,argonne-swing,223,40960,37335.6875
+1715082875.793112,start-inference-D-8,1.9541492462158203,894390,8,64,8,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,86,32,argonne-swing,223,40960,34399.6875
+1715082877.7841594,start-inference-D-16,4.161132335662842,1464705,16,64,16,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,94,32,argonne-swing,93,40960,34375.6875
+1715082881.9927895,start-inference-D-32,8.475521326065063,2959970,32,64,32,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,110,32,argonne-swing,199,40960,34375.6875
+1715082890.4899068,start-inference-D-64,17.465486526489258,6244301,64,64,64,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,142,32,argonne-swing,192,40960,34395.6875
+1715082907.9833405,start-inference-D-128,37.314305543899536,13800502,128,64,128,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,206,32,argonne-swing,222,40960,34429.6875
+1715082945.3299658,start-inference-D-256,83.33809614181519,32320261,256,64,256,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,334,32,argonne-swing,218,40960,34855.6875
+1715083028.7092874,start-inference-D-512,196.15468335151672,96045122,512,64,512,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,590,32,argonne-swing,84,40960,36599.6875
+1715083224.9303362,start-inference-D-1024,548.0962138175964,314545492,1024,64,1024,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,1102,32,argonne-swing,87,40960,37105.6875
+1715083773.1153352,start-inference-D-2048,1764.1998219490051,1070183388,2048,64,2048,Llama-2-70b-chat-hf,4,Imagine you are an expert travel guide for Japan.,2126,32,argonne-swing,95,40960,38369.6875
+1715085537.3992963,start-inference-E-8,2.2586379051208496,1127602,8,128,8,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",162,32,argonne-swing,193,40960,34421.6875
+1715085539.696113,start-inference-E-16,5.082648515701294,1922263,16,128,16,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",170,32,argonne-swing,90,40960,34427.6875
+1715085544.8047857,start-inference-E-32,10.005360841751099,3832890,32,128,32,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",186,32,argonne-swing,194,40960,34427.6875
+1715085554.8378692,start-inference-E-64,19.87956142425537,7684212,64,128,64,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",218,32,argonne-swing,193,40960,34441.6875
+1715085574.7495399,start-inference-E-128,42.31931924819946,16518108,128,128,128,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",282,32,argonne-swing,87,40960,34613.6875
+1715085617.102171,start-inference-E-256,93.48313879966736,39286192,256,128,256,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",410,32,argonne-swing,95,40960,35233.6875
+1715085710.6270745,start-inference-E-512,218.60136103630066,114957969,512,128,512,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",666,32,argonne-swing,86,40960,37379.6875
+1715085929.3057342,start-inference-E-1024,590.1171305179596,346149075,1024,128,1024,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",1173,32,argonne-swing,215,40960,38235.6875
+1715086519.5371015,start-inference-E-2048,1618.054609298706,990646697,2048,128,2048,Llama-2-70b-chat-hf,4,"As an AI language model, you possess the capabilit",2032,32,argonne-swing,194,40960,35307.6875
+1715088137.680525,start-inference-F-8,2.8492166996002197,1434924,8,256,8,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,275,32,argonne-swing,89,40960,34503.6875
+1715088140.5676346,start-inference-F-16,6.322083473205566,2566256,16,256,16,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,283,32,argonne-swing,210,40960,34551.6875
+1715088146.9173205,start-inference-F-32,12.22777795791626,5150853,32,256,32,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,299,32,argonne-swing,211,40960,34627.6875
+1715088159.1782844,start-inference-F-64,25.002392053604126,10446567,64,256,64,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,331,32,argonne-swing,217,40960,34791.6875
+1715088184.215921,start-inference-F-128,50.73573327064514,21852694,128,256,128,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,395,32,argonne-swing,210,40960,35071.6875
+1715088235.0064907,start-inference-F-256,105.90170311927795,54109355,256,256,256,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,523,32,argonne-swing,218,40960,35987.6875
+1715088340.960123,start-inference-F-512,250.47814345359802,143075221,512,256,512,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,779,32,argonne-swing,89,40960,38577.6875
+1715088591.5095413,start-inference-F-1024,662.1383728981018,399975069,1024,256,1024,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,1291,32,argonne-swing,90,40960,40247.6875
+1715089203.9997938,start-inference-F-2048,1741.3353590965271,1004698310,2048,256,2048,Llama-2-70b-chat-hf,4,/* An improved random number generation package.,2315,32,argonne-swing,32,40960,35359.6875
+1715175931.5553977,start-inference-G-8,8.806884527206421,3474484,8,512,8,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,549,32,argonne-swing,189,40960,34719.6875
+1715175940.4107707,start-inference-G-16,7.640662670135498,4826256,16,512,16,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,557,32,argonne-swing,62,40960,34721.6875
+1715175948.0834312,start-inference-G-32,15.668142795562744,9820009,32,512,32,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,573,32,argonne-swing,52,40960,34861.6875
+1715175963.7924056,start-inference-G-64,31.107057571411133,19781671,64,512,64,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,605,32,argonne-swing,62,40960,35153.6875
+1715175994.9361777,start-inference-G-128,63.35720896720886,40743449,128,512,128,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,669,32,argonne-swing,177,40960,35787.6875
+1715176058.3485746,start-inference-G-256,138.1055645942688,88244444,256,512,256,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,797,32,argonne-swing,56,40960,37245.6875
+1715176196.510476,start-inference-G-512,318.3132631778717,201675226,512,512,512,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,1053,32,argonne-swing,50,40960,40929.6875
+1715176514.9005806,start-inference-G-1024,813.3415386676788,514814834,1024,512,1024,Llama-2-70b-chat-hf,4,/*This is a version (aka ptmalloc2) of malloc/free,1565,32,argonne-swing,58,40960,38663.6875
+1715177328.3703966,start-inference-H-8,5.914596319198608,3690586,8,1024,8,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",994,32,argonne-swing,130,40960,34933.6875
+1715177334.3457808,start-inference-H-16,11.770387887954712,7391210,16,1024,16,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1002,32,argonne-swing,60,40960,35051.6875
+1715177346.1523619,start-inference-H-32,23.46202016,14864233,32,1024,32,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1018,32,argonne-swing,191,40960,35299.6875
+1715177369.6517172,start-inference-H-64,48.50747275352478,30812860,64,1024,64,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1050,32,argonne-swing,188,40960,35683.6875
+1715177418.2172854,start-inference-H-128,100.39242172241211,63751459,128,1024,128,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1114,32,argonne-swing,60,40960,36749.6875
+1715177518.6595223,start-inference-H-256,210.91123414039612,134656972,256,1024,256,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1242,32,argonne-swing,142,40960,39071.6875
+1715177729.669116,start-inference-H-512,465.29207396507263,298006713,512,1024,512,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",1498,32,argonne-swing,140,40960,38471.6875
+1715178195.0459268,start-inference-H-1024,1122.7792809009552,718111993,1024,1024,1024,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",2008,32,argonne-swing,3,40960,40185.6875
+1715179323.1592095,start-inference-H-2048,2718.6235225200653,1440009973,2048,1024,2048,Llama-2-70b-chat-hf,4,"/void _quicksort (void *const pbase, size_t total_",3032,32,argonne-swing,3,40960,37383.6875
+1715179317.8791382,start-inference-I-8,12.493916034698486,7943944,8,2048,8,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2142,32,argonne-swing,3,40960,35517.6875
+1715179330.4198227,start-inference-I-16,24.775622367858887,15856832,16,2048,16,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2150,32,argonne-swing,128,40960,36047.6875
+1715179355.2386158,start-inference-I-32,49.87935114,31795634,32,2048,32,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,argonne-swing,143,40960,36579.6875
+1715179405.1592095,start-inference-I-64,99.69505358,63848831,64,2048,64,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2198,32,argonne-swing,15,40960,37385.6875
+1715179504.9017742,start-inference-I-128,203.6235225200653,130061997,128,2048,128,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2262,32,argonne-swing,133,40960,39301.6875
+1715179709,start-inference-I-256,417.9781768321991,267101317,256,2048,256,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2390,32,argonne-swing,0,40960,38447.6875
+1715180117.1592095,start-inference-I-512,858.6235225200653,542180997,512,2048,512,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",2646,32,argonne-swing,0,40960,37183.6875
+1715180935.9017742,start-inference-I-1024,1763.9781768321991,1094376357,1024,2048,1024,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",3158,32,argonne-swing,0,40960,36871.6875
+1715182573.1592095,start-inference-I-2048,3618.6235225200653,2188752717,2048,2048,2048,Llama-2-70b-chat-hf,4,"#include <alloca.h>
+#include <limits.h>
+#include <",4182,32,argonne-swing,0,40960,38403.6875
+1715159439.3153656,start-inference-A-8,3.278115749359131,639852,8,8,8,falcon-40b,3,What is the largest city in France?,16,32,argonne-swing,175,40960,26813.6875
+1715159442.610006,start-inference-A-16,1.6147887706756592,447430,16,8,16,falcon-40b,3,What is the largest city in France?,24,32,argonne-swing,175,40960,26815.6875
+1715159444.2406566,start-inference-A-32,3.2391583919525146,907881,32,8,32,falcon-40b,3,What is the largest city in France?,40,32,argonne-swing,175,40960,26837.6875
+1715159447.498736,start-inference-A-64,6.624094009399414,1897359,64,8,64,falcon-40b,3,What is the largest city in France?,72,32,argonne-swing,175,40960,26841.6875
+1715159454.146309,start-inference-A-128,14.230789422988892,4279653,128,8,128,falcon-40b,3,What is the largest city in France?,136,32,argonne-swing,175,40960,26881.6875
+1715159468.397476,start-inference-A-256,32.05758786201477,11087713,256,8,256,falcon-40b,3,What is the largest city in France?,264,32,argonne-swing,175,40960,27273.6875
+1715159500.4808095,start-inference-A-512,88.74226021766663,31988600,512,8,512,falcon-40b,3,What is the largest city in France?,520,32,argonne-swing,175,40960,28905.6875
+1715159589.2631783,start-inference-A-1024,224.53780484199524,109805480,1024,8,1024,falcon-40b,3,What is the largest city in France?,955,32,argonne-swing,175,40960,33981.6875
+1715159813.870836,start-inference-A-2048,861.4988654,477386924,2048,8,2048,falcon-40b,3,What is the largest city in France?,2056,32,argonne-swing,47,40960,32733.6875
+1715160675.4728465,start-inference-B-8,0.8174912929534912,310580,8,16,8,falcon-40b,3,Can you explain the difference between a simile an,24,32,argonne-swing,160,40960,26817.6875
+1715160676,start-inference-B-16,1.606628179550171,573003,16,16,16,falcon-40b,3,Can you explain the difference between a simile an,32,32,argonne-swing,160,40960,26817.6875
+1715160677.9294295,start-inference-B-32,3.2982873916625977,966299,32,16,32,falcon-40b,3,Can you explain the difference between a simile an,48,32,argonne-swing,160,40960,26845.6875
+1715160681.2459333,start-inference-B-64,6.771018028259277,2017234,64,16,64,falcon-40b,3,Can you explain the difference between a simile an,80,32,argonne-swing,160,40960,26845.6875
+1715160688.0396905,start-inference-B-128,14.587204456329346,4556685,128,16,128,falcon-40b,3,Can you explain the difference between a simile an,144,32,argonne-swing,160,40960,26885.6875
+1715160702.6490722,start-inference-B-256,28.84765076637268,9974600,256,16,256,falcon-40b,3,Can you explain the difference between a simile an,247,32,argonne-swing,160,40960,27209.6875
+1715160731.5231338,start-inference-B-512,90.06889796257019,33016966,512,16,512,falcon-40b,3,Can you explain the difference between a simile an,528,32,argonne-swing,160,40960,28909.6875
+1715160821.6630251,start-inference-B-1024,256.5610320568085,128521381,1024,16,1024,falcon-40b,3,Can you explain the difference between a simile an,1040,32,argonne-swing,160,40960,35245.6875
+1715161078.3031805,start-inference-B-2048,871.8848457336426,479039168,2048,16,2048,falcon-40b,3,Can you explain the difference between a simile an,2064,32,argonne-swing,160,40960,32733.6875
+1715161950.285284,start-inference-C-8,0.8284850120544434,329326,8,32,8,falcon-40b,3,What are some effective strategies for managing st,40,32,argonne-swing,163,40960,26841.6875
+1715161951.1331754,start-inference-C-16,1.6151683330535889,573943,16,32,16,falcon-40b,3,What are some effective strategies for managing st,48,32,argonne-swing,163,40960,26843.6875
+1715161952.7673783,start-inference-C-32,3.313772439956665,991766,32,32,32,falcon-40b,3,What are some effective strategies for managing st,64,32,argonne-swing,163,40960,26845.6875
+1715161956.1012523,start-inference-C-64,7.035096645355225,2147937,64,32,64,falcon-40b,3,What are some effective strategies for managing st,96,32,argonne-swing,163,40960,26865.6875
+1715161963.1597767,start-inference-C-128,15.075881958007812,4853502,128,32,128,falcon-40b,3,What are some effective strategies for managing st,160,32,argonne-swing,163,40960,26885.6875
+1715161978.2540824,start-inference-C-256,34.38477135,12124964,256,32,256,falcon-40b,3,What are some effective strategies for managing st,288,32,argonne-swing,163,40960,27349.6875
+1715162012.665536,start-inference-C-512,92.76963782310486,34523130,512,32,512,falcon-40b,3,What are some effective strategies for managing st,544,32,argonne-swing,163,40960,29045.6875
+1715162105.4798656,start-inference-C-1024,222.17346334457397,108891632,1024,32,1024,falcon-40b,3,What are some effective strategies for managing st,955,32,argonne-swing,163,40960,33985.6875
+1715162327.725903,start-inference-C-2048,882.6859021186829,485756292,2048,32,2048,falcon-40b,3,What are some effective strategies for managing st,2080,32,argonne-swing,47,40960,33251.6875
+1715163210.5142667,start-inference-D-8,0.8979291915893555,355986,8,64,8,falcon-40b,3,Imagine you are an expert travel guide for Japan.,69,32,argonne-swing,39,40960,26845.6875
+1715163211.4296927,start-inference-D-16,1.7651798725128174,658422,16,64,16,falcon-40b,3,Imagine you are an expert travel guide for Japan.,77,32,argonne-swing,39,40960,26845.6875
+1715163213.2143557,start-inference-D-32,3.648881435394287,1126904,32,64,32,falcon-40b,3,Imagine you are an expert travel guide for Japan.,93,32,argonne-swing,39,40960,26865.6875
+1715163216.8843334,start-inference-D-64,7.420312404632568,2331843,64,64,64,falcon-40b,3,Imagine you are an expert travel guide for Japan.,125,32,argonne-swing,39,40960,26865.6875
+1715163224.3234725,start-inference-D-128,16.091441869735718,5458513,128,64,128,falcon-40b,3,Imagine you are an expert travel guide for Japan.,189,32,argonne-swing,39,40960,26977.6875
+1715163240.4383352,start-inference-D-256,37.18746829032898,13526515,256,64,256,falcon-40b,3,Imagine you are an expert travel guide for Japan.,317,32,argonne-swing,39,40960,27505.6875
+1715163277.6561272,start-inference-D-512,97.05930757522583,37711397,512,64,512,falcon-40b,3,Imagine you are an expert travel guide for Japan.,573,32,argonne-swing,39,40960,29329.6875
+1715163374.756836,start-inference-D-1024,270.97392082214355,138040384,1024,64,1024,falcon-40b,3,Imagine you are an expert travel guide for Japan.,1085,32,argonne-swing,39,40960,36049.6875
+1715163645.8130329,start-inference-D-2048,905.1865644454956,499431331,2048,64,2048,falcon-40b,3,Imagine you are an expert travel guide for Japan.,2109,32,argonne-swing,38,40960,34295.6875
+1715164551.1002774,start-inference-E-8,0.9738926887512207,431224,8,128,8,falcon-40b,3,"As an AI language model, you possess the capabilit",133,32,argonne-swing,40,40960,26875.6875
+1715164552.0919588,start-inference-E-16,2.0117385387420654,836589,16,128,16,falcon-40b,3,"As an AI language model, you possess the capabilit",141,32,argonne-swing,40,40960,26875.6875
+1715164554.1214037,start-inference-E-32,4.311058759689331,1549885,32,128,32,falcon-40b,3,"As an AI language model, you possess the capabilit",157,32,argonne-swing,40,40960,26875.6875
+1715164558.4504251,start-inference-E-64,8.800326347351074,3157935,64,128,64,falcon-40b,3,"As an AI language model, you possess the capabilit",189,32,argonne-swing,40,40960,26967.6875
+1715164567.272752,start-inference-E-128,17.59072756767273,6646447,128,128,128,falcon-40b,3,"As an AI language model, you possess the capabilit",253,32,argonne-swing,40,40960,27199.6875
+1715164584.8851907,start-inference-E-256,42.135143756866455,15448290,256,128,256,falcon-40b,3,"As an AI language model, you possess the capabilit",381,32,argonne-swing,40,40960,27855.6875
+1715164627.056142,start-inference-E-512,105.94762802124023,44652609,512,128,512,falcon-40b,3,"As an AI language model, you possess the capabilit",637,32,argonne-swing,40,40960,29935.6875
+1715164733.0482476,start-inference-E-1024,255.38527822494507,131193079,1024,128,1024,falcon-40b,3,"As an AI language model, you possess the capabilit",1065,32,argonne-swing,40,40960,35633.6875
+1715164988.5147724,start-inference-E-2048,945.1336333751678,528922152,2048,128,2048,falcon-40b,3,"As an AI language model, you possess the capabilit",2173,32,argonne-swing,40,40960,36431.6875
+1715165933.7539127,start-inference-F-8,1.2741172313690186,672941,8,256,8,falcon-40b,3,/* An improved random number generation package.,264,32,argonne-swing,46,40960,27021.6875
+1715165935.0489886,start-inference-F-16,2.5286717414855957,1289566,16,256,16,falcon-40b,3,/* An improved random number generation package.,272,32,argonne-swing,46,40960,27021.6875
+1715165937.598437,start-inference-F-32,5.989941596984863,2216538,32,256,32,falcon-40b,3,/* An improved random number generation package.,286,32,argonne-swing,46,40960,27093.6875
+1715165943.6123676,start-inference-F-64,12.321811199188232,4371736,64,256,64,falcon-40b,3,/* An improved random number generation package.,320,32,argonne-swing,46,40960,27249.6875
+1715165955.9584188,start-inference-F-128,24.83350372314453,8897554,128,256,128,falcon-40b,3,/* An improved random number generation package.,384,32,argonne-swing,46,40960,27609.6875
+1715165980.819541,start-inference-F-256,56.29354190826416,20451734,256,256,256,falcon-40b,3,/* An improved random number generation package.,512,32,argonne-swing,46,40960,28521.6875
+1715166037.1501307,start-inference-F-512,126.62724471092224,60378210,512,256,512,falcon-40b,3,/* An improved random number generation package.,768,32,argonne-swing,46,40960,31113.6875
+1715166163.826461,start-inference-F-1024,329.89720034599304,182752953,1024,256,1024,falcon-40b,3,/* An improved random number generation package.,1280,32,argonne-swing,46,40960,39371.6875
+1715166493.8113513,start-inference-F-2048,1039.975417137146,586966129,2048,256,2048,falcon-40b,3,/* An improved random number generation package.,2304,32,argonne-swing,46,40960,40871.6875
+1715167533.9031398,start-inference-G-8,2.021883726119995,1144255,8,512,8,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,523,32,argonne-swing,160,40960,27261.6875
+1715167535.9512806,start-inference-G-16,4.056283950805664,2276168,16,512,16,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,531,32,argonne-swing,160,40960,27261.6875
+1715167540.031941,start-inference-G-32,7.934319496154785,4506514,32,512,32,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,547,32,argonne-swing,160,40960,27397.6875
+1715167547.9891374,start-inference-G-64,16.17243266105652,8773023,64,512,64,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,579,32,argonne-swing,160,40960,27683.6875
+1715167564.2053761,start-inference-G-128,32.52331996,18341759,128,512,128,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,643,32,argonne-swing,160,40960,28299.6875
+1715167596.7599788,start-inference-G-256,70.48394227027893,40623234,256,512,256,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,771,32,argonne-swing,160,40960,29723.6875
+1715167667.2873316,start-inference-G-512,164.35651326179504,94767706,512,512,512,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,1027,32,argonne-swing,160,40960,33339.6875
+1715167831.7010555,start-inference-G-1024,420.2009425163269,242125955,1024,512,1024,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,1539,32,argonne-swing,160,40960,30151.6875
+1715168251.9707835,start-inference-G-2048,1227.9358956813812,700317538,2048,512,2048,falcon-40b,3,/*This is a version (aka ptmalloc2) of malloc/free,2562,32,argonne-swing,160,40960,35963.6875
+1715169479.9898577,start-inference-H-8,3.437406063079834,1942508,8,1024,8,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1030,32,argonne-swing,173,40960,27585.6875
+1715169483.480032,start-inference-H-16,6.723298788070679,3865723,16,1024,16,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1038,32,argonne-swing,173,40960,27845.6875
+1715169490.2436144,start-inference-H-32,13.467525482177734,7758100,32,1024,32,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1055,32,argonne-swing,173,40960,28109.6875
+1715169503.748368,start-inference-H-64,27.018664836883545,15545771,64,1024,64,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1085,32,argonne-swing,173,40960,28649.6875
+1715169530.8028002,start-inference-H-128,54.35053753852844,31371145,128,1024,128,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1150,32,argonne-swing,173,40960,29777.6875
+1715169585.2030149,start-inference-H-256,114.5737521648407,66247040,256,1024,256,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1273,32,argonne-swing,44,40960,32225.6875
+1715169699.8268383,start-inference-H-512,255.38395166397095,146340761,512,1024,512,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",1527,32,argonne-swing,44,40960,37889.6875
+1715169955.2915082,start-inference-H-1024,609.4505947,348059927,1024,1024,1024,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",2047,32,argonne-swing,172,40960,38443.6875
+1715267091.002791,start-inference-H-2048,1636.3101947307587,936926350,2048,1024,2048,falcon-40b,3,"/void _quicksort (void *const pbase, size_t total_",3047,32,argonne-swing,98,40960,40339.6875
+1715268727.3812172,start-inference-I-8,6.739342451095581,3819282,8,2048,8,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2058,32,argonne-swing,98,40960,27985.6875
+1715268734.1572268,start-inference-I-16,13.40687608718872,7620106,16,2048,16,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2066,32,argonne-swing,98,40960,28243.6875
+1715268747.6040916,start-inference-I-32,26.779844760894775,15268670,32,2048,32,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,argonne-swing,98,40960,28761.6875
+1715268774.4219162,start-inference-I-64,53.60452461242676,30562773,64,2048,64,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2114,32,argonne-swing,98,40960,29809.6875
+1715268828.0726962,start-inference-I-128,107.51625609397888,61351074,128,2048,128,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2178,32,argonne-swing,98,40960,31681.6875
+1715268935.6379635,start-inference-I-256,218.24297857284546,124533486,256,2048,256,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2306,32,argonne-swing,98,40960,36145.6875
+1715269153.9427373,start-inference-I-512,457.8295638561249,261371993,512,2048,512,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",2561,32,argonne-swing,98,40960,32727.6875
+1715269611.8671916,start-inference-I-1024,1018.9077820777893,580860308,1024,2048,1024,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",3074,32,argonne-swing,108,40960,29525.6875
+1715270630.8689709,start-inference-I-2048,2446.119527578354,1390084643,2048,2048,2048,falcon-40b,3,"#include <alloca.h>
+#include <limits.h>
+#include <",4093,32,argonne-swing,109,40960,35621.6875

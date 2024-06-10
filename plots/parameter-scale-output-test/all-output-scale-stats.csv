@@ -1,0 +1,726 @@
+Phase,Runtime (s),CPU Energy (J),GPU Energy (J),Number of Output Tokens,Number of Input Tokens,Iteration,Model,Number of GPUs,Prompt,Total Number of Tokens,Batch Size,System,Active Parameters (B),Class
+tokenizer,0.172778845,1.3192386819263895,10.035,32,0,0,Mistral (7B),1,startup,0,32,Swing AMD+A100,7,Mistral
+model load,20.921754121780396,159.74633559926545,1155.813,32,0,0,Mistral (7B),1,startup,0,32,Swing AMD+A100,7,Mistral
+start-inference-8-0,2.4996871948242188,19.086156313340478,152.885,8,33,0,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-1,0.2134077548980713,1.6294573884673875,28.647,8,33,1,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-2,0.2110171318054199,1.6112039821503485,33.89,8,33,2,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-3,0.2136662006378173,1.6314307296908501,51.507,8,33,3,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-4,0.2154438495635986,1.6450038220913537,33.297,8,33,4,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-5,0.2147896289825439,1.6400085745662756,33.764,8,33,5,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-8-6,0.221001387,1.6874379400977535,33.83,8,33,6,Mistral (7B),1,What are some effective strategies for managing st,41,32,Swing AMD+A100,7,Mistral
+start-inference-16-0,0.4181723594665527,3.192920712328682,86.41,16,33,0,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-1,0.417165995,3.185236696,69.415,16,33,1,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-2,0.5114002227783203,3.9047544072051577,79.128,16,33,2,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-3,0.5169503688812256,3.947132092021588,73.554,16,33,3,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-4,0.4183063507080078,3.1939437914500717,69.704,16,33,4,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-5,0.4222006797790527,3.2236786212877613,87.405,16,33,5,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-16-6,0.417020321,3.184124416395309,70.088,16,33,6,Mistral (7B),1,What are some effective strategies for managing st,49,32,Swing AMD+A100,7,Mistral
+start-inference-32-0,0.8338596820831299,6.366867129849097,142.475,32,33,0,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-1,0.8338778018951416,6.367005482185797,162.077,32,33,1,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-2,0.8297841548919678,6.335748776644404,143.769,32,33,2,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-3,0.8341593742370605,6.369155404681102,143.732,32,33,3,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-4,0.8313443660736084,6.347661641004501,163.157,32,33,4,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-5,0.8332126140594482,6.361926495088506,143.902,32,33,5,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-32-6,0.8300514221191406,6.337789473610734,144.638,32,33,6,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,7,Mistral
+start-inference-64-0,1.6786963939666748,12.817548469356394,338.261,64,33,0,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-1,1.673126220703125,12.77501787,345.586,64,33,1,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-2,1.675527811050415,12.793355014688654,321.131,64,33,2,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-3,1.6764907836914062,12.800707713214086,343.916,64,33,3,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-4,1.6722404956817627,12.768254988130428,345.549,64,33,4,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-5,1.6767091751098633,12.802375222956423,345.332,64,33,5,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-64-6,1.677091360092163,12.805293365005513,321.237,64,33,6,Mistral (7B),1,What are some effective strategies for managing st,97,32,Swing AMD+A100,7,Mistral
+start-inference-128-0,3.4984402656555176,26.71205337269453,800.125,128,33,0,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-1,3.4956324100494385,26.690614221782415,787.024,128,33,1,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-2,3.4957525730133057,26.691531716225796,786.773,128,33,2,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-3,3.682708263397217,28.119016538216385,806.468,128,33,3,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-4,3.475235939025879,26.534878642145795,768.374,128,33,4,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-5,3.4904613494873047,26.65113101,792.036,128,33,5,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-128-6,3.4838881492614746,26.60094188292024,792.034,128,33,6,Mistral (7B),1,What are some effective strategies for managing st,161,32,Swing AMD+A100,7,Mistral
+start-inference-256-0,7.783647775650024,59.431403433855735,2033.052,256,33,0,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-1,7.768443346,59.31531125996023,2051.406,256,33,1,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-2,7.913355588912964,60.42177679101978,2053.983,256,33,2,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-3,7.760146617889404,59.251962273580794,2086.036,256,33,3,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-4,7.768036603927612,59.31220561,2090.392,256,33,4,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-5,7.771066188812256,59.33533776069761,2092.251,256,33,5,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-256-6,7.906336784362793,60.368185285228684,2106.57,256,33,6,Mistral (7B),1,What are some effective strategies for managing st,289,32,Swing AMD+A100,7,Mistral
+start-inference-512-0,19.22894525527954,146.82103250472522,6227.801,512,33,0,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-1,19.327242136001587,147.57157026579364,6287.28,512,33,1,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-2,19.229579210281372,146.82587301608427,6288.662,512,33,2,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-3,19.377641439437863,147.95639000862386,6296.014,512,33,3,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-4,19.29684066772461,147.33944235119262,6321.57,512,33,4,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-5,19.22544288635254,146.79429045438144,6305.312,512,33,5,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-512-6,19.33991503715515,147.66833316191173,6313.01,512,33,6,Mistral (7B),1,What are some effective strategies for managing st,545,32,Swing AMD+A100,7,Mistral
+start-inference-1024-0,57.02446794509888,435.4056424094963,21236.982,1024,33,0,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-1,48.97728657722473,373.96204987237184,18009.739,1024,33,1,Mistral (7B),1,What are some effective strategies for managing st,965,32,Swing AMD+A100,7,Mistral
+start-inference-1024-2,57.09085464477539,435.9125326035079,21263.994,1024,33,2,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-3,56.93423008918762,434.7166386706009,21235.672,1024,33,3,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-4,57.08539056777954,435.87081209229075,21224.403,1024,33,4,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-5,57.13246846199035,436.2302714877187,21253.341,1024,33,5,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-6,57.09361720085144,435.93362587357825,21212.16,1024,33,6,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-7,56.99504995346069,435.1810237500122,21247.295,1024,33,7,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-8,57.19861435890198,436.73532305199257,21269.827,1024,33,8,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-9,57.12708830833435,436.1891917662716,21272.986,1024,33,9,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-10,57.022130489349365,435.38779495806193,21224.421,1024,33,10,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-11,56.97465634346008,435.0253100154814,21256.278,1024,33,11,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-12,57.175392150878906,436.55801178953266,21286.227,1024,33,12,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-13,58.02648401260376,443.0564538120093,21323.453,1024,33,13,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-14,57.04958105,435.5973914664611,21266.34,1024,33,14,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-15,56.986111879348755,435.11277781908376,21224.349,1024,33,15,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-16,56.93072772026062,434.68989662025706,21226.49,1024,33,16,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-17,57.123035192489624,436.1582445330623,21254.72,1024,33,17,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-18,57.06980824,435.7518345440049,21250.767,1024,33,18,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-19,57.03067374229431,435.4530262643907,21273.755,1024,33,19,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-20,56.99474501609802,435.17869542581957,21261.564,1024,33,20,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-21,57.126911878585815,436.1878446514143,21244.549,1024,33,21,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-22,57.07544279098511,435.79485665944225,21265.726,1024,33,22,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-23,56.95297908782959,434.8597951101506,21234.266,1024,33,23,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-24,57.049842834472656,435.59939029364136,21253.289,1024,33,24,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-25,57.100971698760986,435.9897805384493,21265.748,1024,33,25,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-26,49.93269443511963,381.2569881176582,18433.722,1024,33,26,Mistral (7B),1,What are some effective strategies for managing st,978,32,Swing AMD+A100,7,Mistral
+start-inference-1024-27,57.08854937553406,435.8949309095137,21210.212,1024,33,27,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-28,57.022873640060425,435.3934692242921,21213.807,1024,33,28,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-29,57.05970048904419,435.6746576056574,21252.911,1024,33,29,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-30,57.017215967178345,435.3502705275829,21243.842,1024,33,30,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-31,57.02790975570679,435.4319220717674,21226.255,1024,33,31,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-32,53.26941442489624,406.73423960359963,19733.631,1024,33,32,Mistral (7B),1,What are some effective strategies for managing st,1016,32,Swing AMD+A100,7,Mistral
+start-inference-1024-33,57.03712701797485,435.5022997209364,21258.249,1024,33,33,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-34,57.00922656059265,435.2892680696509,21239.097,1024,33,34,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-35,48.48987889289856,370.24048852236183,17858.664,1024,33,35,Mistral (7B),1,What are some effective strategies for managing st,961,32,Swing AMD+A100,7,Mistral
+start-inference-1024-36,57.013073444366455,435.31864063481754,21262.65,1024,33,36,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-37,57.179221868515015,436.5872532840645,21274.777,1024,33,37,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-38,57.104214668273926,436.0145419658677,21242.551,1024,33,38,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-39,57.06089425086975,435.6837724760502,21248.817,1024,33,39,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-40,56.95374035835266,434.8656077287176,21177.63,1024,33,40,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-41,57.16017031669617,436.4417867245769,21251.489,1024,33,41,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-42,48.467568159103394,370.0701367,17825.04,1024,33,42,Mistral (7B),1,What are some effective strategies for managing st,960,32,Swing AMD+A100,7,Mistral
+start-inference-1024-43,56.94279956817627,434.7820702237327,21211.458,1024,33,43,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-44,57.17847133,436.5815225846443,21232.629,1024,33,44,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-45,57.103182792663574,436.00666316437764,21233.191,1024,33,45,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-46,57.01525282859802,435.3352811441567,21196.017,1024,33,46,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-47,56.96320581436157,434.9378804408141,21212.377,1024,33,47,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-48,57.11105704307556,436.06678635680146,21216.313,1024,33,48,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-49,52.11205768585205,397.8973373,19240.021,1024,33,49,Mistral (7B),1,What are some effective strategies for managing st,1001,32,Swing AMD+A100,7,Mistral
+start-inference-1024-50,58.00078582763672,442.8602374309095,21279.691,1024,33,50,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-51,56.93518924713135,434.7239622423185,21182.705,1024,33,51,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-52,57.07598042488098,435.7989617189062,21201.687,1024,33,52,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-53,57.111281633377075,436.0685011976063,21245.774,1024,33,53,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-54,56.97004485,434.9900993457912,21207.58,1024,33,54,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-55,56.92121481895447,434.6172616434893,21188.866,1024,33,55,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-56,57.02892565727234,435.43967890475005,21236.32,1024,33,56,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-57,57.01405215263367,435.32611348142484,21235.023,1024,33,57,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-58,56.90157914161682,434.4673350415687,21221.876,1024,33,58,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-59,57.09649729728699,435.9556166134117,21219.264,1024,33,59,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-60,57.063632011413574,435.7046764218703,21263.509,1024,33,60,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-61,57.063127756118774,435.70082622197407,21271.347,1024,33,61,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-62,51.07822346687317,390.0035809740716,18877.85,1024,33,62,Mistral (7B),1,What are some effective strategies for managing st,991,32,Swing AMD+A100,7,Mistral
+start-inference-1024-63,57.03488016,435.4851440311854,21241.242,1024,33,63,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-64,56.97456359863281,435.02460186996854,21220.123,1024,33,64,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-65,56.97159982,435.0019721607907,21237.851,1024,33,65,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-66,57.18556499481201,436.63568570403703,21254.296,1024,33,66,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-67,57.06949210166931,435.7494206598146,21206.101,1024,33,67,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-68,57.02029037475586,435.3737449141849,21220.937,1024,33,68,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-69,56.990660429000854,435.14750789644654,21243.593,1024,33,69,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-1024-70,57.15614724159241,436.41106886497846,21207.864,1024,33,70,Mistral (7B),1,What are some effective strategies for managing st,1057,32,Swing AMD+A100,7,Mistral
+start-inference-2048-0,193.2561011314392,1475.5910908927808,75278.244,2048,33,0,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-1,194.03109216690063,1481.5084713053707,75396.617,2048,33,1,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-2,193.63056540489197,1478.450282103457,75394.573,2048,33,2,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-3,193.48784351348877,1477.3605408213089,75332.699,2048,33,3,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-4,193.52062678337097,1477.610854786484,75404.811,2048,33,4,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-5,193.58923387527463,1478.1346986030178,75382.611,2048,33,5,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-2048-6,193.57252192497253,1478.0070958787942,75328.397,2048,33,6,Mistral (7B),1,What are some effective strategies for managing st,2081,32,Swing AMD+A100,7,Mistral
+start-inference-4096-0,719.3838391304016,5492.796231209783,284185.79,4096,33,0,Mistral (7B),1,What are some effective strategies for managing st,4129,32,Swing AMD+A100,7,Mistral
+start-inference-4096-1,719.5276527404785,5493.894308220219,284143.287,4096,33,1,Mistral (7B),1,What are some effective strategies for managing st,4129,32,Swing AMD+A100,7,Mistral
+start-inference-4096-2,719.3888001441956,5492.834110623233,284169.66,4096,33,2,Mistral (7B),1,What are some effective strategies for managing st,4129,32,Swing AMD+A100,7,Mistral
+start-inference-4096-3,719.4271745681763,5493.127115386406,284194.828,4096,33,3,Mistral (7B),1,What are some effective strategies for managing st,4129,32,Swing AMD+A100,7,Mistral
+start-inference-4096-4,719.6008615493774,5494.453288068998,284200.985,4096,33,4,Mistral (7B),1,What are some effective strategies for managing st,4129,32,Swing AMD+A100,7,Mistral
+tokenizer,0.2869987487792969,0.45688186779356843,15.978,32,0,0,Llama-2 (7B),1,startup,0,32,Swing AMD+A100,7,Llama-2
+model load,46.64306998252869,74.25249421429217,2699.85,32,0,0,Llama-2 (7B),1,startup,0,32,Swing AMD+A100,7,Llama-2
+start-inference-8-0,2.204537868499756,3.509469582239787,138.986,8,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-1,0.2421026229858398,0.3854103861357036,44.122,8,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-2,0.2423686981201172,0.385833959,31.62,8,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-3,0.2461762428283691,0.39189530305695114,47.624,8,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-4,0.247091532,0.3933523787950215,30.995,8,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-5,0.2420039176940918,0.38525325423792794,48.219,8,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-8-6,0.241908312,0.38510105643356046,31.95,8,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,46,32,Swing AMD+A100,7,Llama-2
+start-inference-16-0,0.4806854724884033,0.7652175398876794,81.62,16,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-1,0.4799208641052246,0.7640003369983875,81.537,16,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-2,0.4966309070587158,0.7906015527457523,79.795,16,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-3,0.5139951705932617,0.8182442417479399,77.837,16,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-4,0.4799118041992187,0.7639859142638089,81.979,16,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-5,0.4794621467590332,0.7632700911739417,81.492,16,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-16-6,0.4797120094299316,0.7636678550117894,82.16,16,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,54,32,Swing AMD+A100,7,Llama-2
+start-inference-32-0,0.9589133262634276,1.5265227232481304,151.412,32,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-1,0.95742774,1.5241577743229118,170.129,32,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-2,0.9567666053771972,1.5231052942443313,151.692,32,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-3,0.9581656455993652,1.5253324680997618,152.55,32,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-4,0.95624733,1.5222786438255977,171.649,32,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-5,0.9560775756835938,1.5220084073250757,153.135,32,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-32-6,0.959303379,1.5271436599262977,170.964,32,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,7,Llama-2
+start-inference-64-0,1.924238681793213,3.0632529471213363,346.897,64,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-1,1.9244933128356936,3.063658302,353.982,64,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-2,2.0884664058685303,3.3246919590966746,341.001,64,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-3,1.9230315685272217,3.061331307511581,362.446,64,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-4,1.9263591766357424,3.0666286261039875,342.424,64,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-5,1.9258668422698977,3.065844864343343,341.135,64,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-64-6,1.922719955444336,3.060835241351212,343.878,64,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,102,32,Swing AMD+A100,7,Llama-2
+start-inference-128-0,3.847742080688477,6.125335375467937,806.831,128,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-1,3.849112510681152,6.1275170038457505,793.73,128,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-2,3.8482003211975098,6.126064862,793.616,128,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-3,3.838056802749634,6.109917092657927,794.355,128,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-4,3.8462398052215576,6.122943858347441,793.179,128,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-5,3.845132350921631,6.121180868818049,792.504,128,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-128-6,4.013427495956421,6.389094929527819,814.38,128,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,166,32,Swing AMD+A100,7,Llama-2
+start-inference-256-0,7.969341278076172,12.686632062677752,2020.373,256,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-1,7.971500635147095,12.690069607600833,2074.195,256,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-2,7.968825578689575,12.685811105443722,2055.723,256,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-3,8.141242265701294,12.960286371749746,2082.438,256,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-4,7.966186046600342,12.681609155587983,2063.429,256,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-5,7.965601205825806,12.68067813011638,2062.021,256,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-256-6,7.9674601554870605,12.683637447524491,2097.249,256,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,294,32,Swing AMD+A100,7,Llama-2
+start-inference-512-0,19.64504599571228,31.27353462545496,6152.386,512,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-1,19.009451150894165,30.261712235651522,5981.672,512,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,539,32,Swing AMD+A100,7,Llama-2
+start-inference-512-2,17.386993885040283,27.67887412506238,5275.519,512,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,504,32,Swing AMD+A100,7,Llama-2
+start-inference-512-3,19.621415615081787,31.235916717763537,6146.186,512,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-4,17.51339292526245,27.88009252698798,5367.66,512,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,510,32,Swing AMD+A100,7,Llama-2
+start-inference-512-5,19.634178638458252,31.256234555328106,6111.157,512,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-6,18.14222764968872,28.881153279522014,5638.427,512,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,522,32,Swing AMD+A100,7,Llama-2
+start-inference-512-7,19.66441345214844,31.304366256981574,6159.934,512,38,7,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-8,19.53149938583374,31.092776390711467,6168.687,512,38,8,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-9,19.703957557678223,31.367317697960036,6157.718,512,38,9,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-10,19.639943599700928,31.265411969067763,6176.963,512,38,10,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-11,19.53683352470398,31.101267965467358,6172.751,512,38,11,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-12,19.65340471,31.286841116286162,6130.438,512,38,12,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-512-13,19.532322883605957,31.09408734137552,6113.877,512,38,13,Llama-2 (7B),1,What are some effective strategies for managing st,550,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-0,59.74955892562866,95.11710485809729,21043.663,1024,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-1,59.70580410957336,95.04745026145065,20887.711,1024,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-2,50.229817628860474,79.96234476566316,17594.91,1024,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,965,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-3,59.61243939399719,94.89882018616325,21042.416,1024,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-4,59.74289536476135,95.10649693681484,20780.749,1024,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-5,59.70478081703186,95.04582125153459,20956.547,1024,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-6,59.69502091407776,95.03028417093712,21074.028,1024,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-7,49.98931431770325,79.57948037172619,17262.405,1024,38,7,Llama-2 (7B),1,What are some effective strategies for managing st,963,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-8,59.72232127189636,95.07374442476977,21026.203,1024,38,8,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-9,59.67470192909241,94.99793777273413,20819.696,1024,38,9,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-10,59.67255163192749,94.99451465054563,20862.695,1024,38,10,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-11,59.65462923049927,94.96598344518428,20824.097,1024,38,11,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-12,58.38045692443848,92.93759054953593,20522.826,1024,38,12,Llama-2 (7B),1,What are some effective strategies for managing st,1049,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-13,56.60501480102539,90.11121128,19709.597,1024,38,13,Llama-2 (7B),1,What are some effective strategies for managing st,1030,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-14,54.883100748062134,87.37004495,19237.472,1024,38,14,Llama-2 (7B),1,What are some effective strategies for managing st,1013,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-15,59.597981452941895,94.87580415859559,20803.205,1024,38,15,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-16,52.30141854286194,83.26018804525074,18288.346,1024,38,16,Llama-2 (7B),1,What are some effective strategies for managing st,987,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-17,59.66819429397583,94.98757807,20800.845,1024,38,17,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-18,59.65081429481506,94.95991033528982,20861.32,1024,38,18,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-19,59.61185050010681,94.89788270841566,20261.273,1024,38,19,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-20,59.581862688064575,94.85014421605229,21001.296,1024,38,20,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-21,56.30230402946472,89.62931697602859,19628.064,1024,38,21,Llama-2 (7B),1,What are some effective strategies for managing st,1027,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-22,54.20628881454468,86.29260784266289,18973.159,1024,38,22,Llama-2 (7B),1,What are some effective strategies for managing st,1006,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-23,59.63676309585571,94.93754181259557,20812.334,1024,38,23,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-24,58.120635986328125,92.52397384911254,20393.824,1024,38,24,Llama-2 (7B),1,What are some effective strategies for managing st,1045,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-25,59.738991498947144,95.10028225639411,20978.087,1024,38,25,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-26,59.706403732299805,95.04840481875236,20929.483,1024,38,26,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-27,59.68154978752136,95.00883908280156,21058.731,1024,38,27,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-28,59.65749001502991,94.97053761340025,20756.043,1024,38,28,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-29,59.716466426849365,95.06442392232127,21048.367,1024,38,29,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-30,59.73164463043213,95.08858655728793,20978.125,1024,38,30,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-31,59.678709506988525,95.00431755551122,20977.966,1024,38,31,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-32,59.61583375930786,94.90422377753677,20996.563,1024,38,32,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-33,52.014676332473755,82.80371456857314,18226.575,1024,38,33,Llama-2 (7B),1,What are some effective strategies for managing st,984,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-34,59.71473765,95.06167183683631,20887.692,1024,38,34,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-35,59.653990507125854,94.96496664,20114.405,1024,38,35,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-36,59.64087247848511,94.94408366136385,21038.115,1024,38,36,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-37,59.59638571739197,94.87326385958154,20824.701,1024,38,37,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-38,59.59637641906738,94.87324905730131,20637.648,1024,38,38,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-39,59.539894580841064,94.78333393448278,20919.565,1024,38,39,Llama-2 (7B),1,What are some effective strategies for managing st,1059,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-40,59.70358920097351,95.04392428239188,20994.709,1024,38,40,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-41,51.67693710327149,82.26605741668168,17851.067,1024,38,41,Llama-2 (7B),1,What are some effective strategies for managing st,980,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-42,59.58638858795166,94.85734913106552,20945.611,1024,38,42,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-43,52.15317511558533,83.02419491207391,17965.876,1024,38,43,Llama-2 (7B),1,What are some effective strategies for managing st,984,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-44,59.65846014022827,94.97208198463709,20982.159,1024,38,44,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-45,59.60925817489624,94.89375591,20813.877,1024,38,45,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-46,59.59266281,94.86733725430673,20997.917,1024,38,46,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-47,59.73578882217407,95.09518381972063,20892.74,1024,38,47,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-48,57.88005900382995,92.14099218,20339.907,1024,38,48,Llama-2 (7B),1,What are some effective strategies for managing st,1043,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-49,59.53764057159424,94.77974570993793,20997.326,1024,38,49,Llama-2 (7B),1,What are some effective strategies for managing st,1060,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-50,59.638203144073486,94.93983426830225,20666.844,1024,38,50,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-51,59.62588667869568,94.92022731973415,21012.002,1024,38,51,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-52,59.74871802330017,95.11576620060102,20715.168,1024,38,52,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-53,59.693891763687134,95.02848664275388,20861.285,1024,38,53,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-54,59.64071798324585,94.94383771578472,20128.803,1024,38,54,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-55,59.64092135429382,94.94416146822144,20958.332,1024,38,55,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-56,59.61568903923035,94.90399339332917,20730.9,1024,38,56,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-57,59.78060436248779,95.16652701494986,20953.024,1024,38,57,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-58,59.720709800720215,95.07117907574303,20866.941,1024,38,58,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-59,59.65394092,94.96488769690197,20885.454,1024,38,59,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-60,59.66398596763611,94.98087871,20982.928,1024,38,60,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-61,59.58994985,94.86301840439178,20844.806,1024,38,61,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-62,50.68951892852783,80.69415697499326,17665.116,1024,38,62,Llama-2 (7B),1,What are some effective strategies for managing st,969,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-63,51.27322745323181,81.62337998432027,17729.622,1024,38,63,Llama-2 (7B),1,What are some effective strategies for managing st,976,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-64,59.56209850311279,94.81868102,20259.171,1024,38,64,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-65,59.71530199050903,95.06257022138229,20731.952,1024,38,65,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-66,59.671157121658325,94.99229468805748,20730.921,1024,38,66,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-67,54.76968717575073,87.18949849697583,19024.426,1024,38,67,Llama-2 (7B),1,What are some effective strategies for managing st,1012,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-68,55.294044494628906,88.02423855162505,19143.937,1024,38,68,Llama-2 (7B),1,What are some effective strategies for managing st,1018,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-69,59.72391176223755,95.07627637377958,20422.376,1024,38,69,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-70,59.35304570198059,94.48588363153894,20868.613,1024,38,70,Llama-2 (7B),1,What are some effective strategies for managing st,1058,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-71,59.667431354522705,94.98636352823492,20973.086,1024,38,71,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-72,59.65041637420654,94.95927687,20764.615,1024,38,72,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-73,59.64219713211059,94.94619241697747,20997.017,1024,38,73,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-74,59.73701214790344,95.09713126843437,21060.779,1024,38,74,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-75,59.65010094642639,94.95877473471458,20863.376,1024,38,75,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-76,59.65043616294861,94.95930837589398,20860.691,1024,38,76,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-77,59.619996070861816,94.91084988543862,20708.134,1024,38,77,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-78,51.33073973655701,81.71493550342427,17931.329,1024,38,78,Llama-2 (7B),1,What are some effective strategies for managing st,977,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-79,52.45203781,83.49996335079796,18273.646,1024,38,79,Llama-2 (7B),1,What are some effective strategies for managing st,988,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-80,54.13992476463318,86.18696093,18834.761,1024,38,80,Llama-2 (7B),1,What are some effective strategies for managing st,1006,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-81,59.24834347,94.31920502,20857.298,1024,38,81,Llama-2 (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-82,53.0586462,84.46564133995459,18421.074,1024,38,82,Llama-2 (7B),1,What are some effective strategies for managing st,994,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-83,59.64874815940857,94.95662119271464,21007.603,1024,38,83,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-84,58.200186014175415,92.65061191098732,20161.3,1024,38,84,Llama-2 (7B),1,What are some effective strategies for managing st,1047,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-85,59.745150327682495,95.11008667954229,20978.4,1024,38,85,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-86,59.67692041397095,95.00146944497763,20619.947,1024,38,86,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-87,54.67142033576965,87.03306458364455,19120.825,1024,38,87,Llama-2 (7B),1,What are some effective strategies for managing st,1011,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-88,59.58839201927185,94.86053845313559,20888.776,1024,38,88,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-89,59.74242592,95.10574961,20937.916,1024,38,89,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-90,59.69933462142944,95.03715129032472,20973.522,1024,38,90,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-91,59.62975358963013,94.92638317057963,20052.958,1024,38,91,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-92,59.60011315345764,94.87919767622364,20811.898,1024,38,92,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-93,57.56045913696289,91.63221161557918,20105.812,1024,38,93,Llama-2 (7B),1,What are some effective strategies for managing st,1041,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-94,59.690736293792725,95.02346335611846,20071.088,1024,38,94,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-95,49.64781212806702,79.03583285089125,17184.701,1024,38,95,Llama-2 (7B),1,What are some effective strategies for managing st,959,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-96,58.27391862869263,92.76798905908016,20305.277,1024,38,96,Llama-2 (7B),1,What are some effective strategies for managing st,1048,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-97,59.71673893928528,95.06485774299556,20823.235,1024,38,97,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-98,59.66612648963928,94.98428627490999,20849.478,1024,38,98,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-1024-99,59.623783349990845,94.91687896803806,20389.49,1024,38,99,Llama-2 (7B),1,What are some effective strategies for managing st,1062,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-0,207.4775629043579,330.2897203147621,79309.443,2048,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-1,207.59059739112857,330.4696632854563,78856.569,2048,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-2,207.57779383659363,330.4492809251317,78740.322,2048,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-3,207.69877004623413,330.64186656132085,78774.548,2048,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-4,207.85345220565796,330.8881097042352,79238.375,2048,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-5,207.32210564613345,330.0422432689501,76902.085,2048,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-2048-6,207.50261664390564,330.3296041099649,76652.814,2048,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,2086,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-0,828.1633841991425,1318.3779909163193,322162.114,4096,38,0,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-1,1316.2096617221832,2095.3134158714197,358777.56,4096,38,1,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-2,1315.104917049408,2093.5547398783033,358772.539,4096,38,2,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-3,1315.8394377231598,2094.724045245606,359075.527,4096,38,3,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-4,1202.471780538559,1914.2506906327872,321281.022,4096,38,4,Llama-2 (7B),1,What are some effective strategies for managing st,3914,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-5,1283.2254688739777,2042.8048955372763,348559.328,4096,38,5,Llama-2 (7B),1,What are some effective strategies for managing st,4072,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-6,1318.299987077713,2098.6410671479243,358944.842,4096,38,6,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-7,1323.4021060466766,2106.7632825030782,358954.107,4096,38,7,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-8,1319.3350808620453,2100.2888638144213,348411.854,4096,38,8,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-9,1319.3506581783297,2100.313661808801,358712.869,4096,38,9,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+start-inference-4096-10,1324.388001680374,2108.332759166266,347907.821,4096,38,10,Llama-2 (7B),1,What are some effective strategies for managing st,4134,32,Swing AMD+A100,7,Llama-2
+tokenizer,0.3152072429656982,1.019734301966216,15.129,32,0,0,Falcon (7B),1,startup,0,32,Swing AMD+A100,7,Falcon
+model load,64.15093017,207.5361701021498,3558.69,32,0,0,Falcon (7B),1,startup,0,32,Swing AMD+A100,7,Falcon
+start-inference-8-0,4.167891741,13.48364376080307,237.304,8,32,0,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-1,0.2427010536193847,0.7851678380561866,19.986,8,32,1,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-2,0.2333362102508545,0.7548714148979462,31.533,8,32,2,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-3,0.2353110313415527,0.7612602046588797,31.88,8,32,3,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-4,0.2334635257720947,0.7552832963095527,31.269,8,32,4,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-5,0.2348332405090332,0.759714492,31.667,8,32,5,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-8-6,0.2351584434509277,0.7607665640157554,48.235,8,32,6,Falcon (7B),1,What are some effective strategies for managing st,40,32,Swing AMD+A100,7,Falcon
+start-inference-16-0,0.4685847759246826,1.5159295354185467,64.847,16,32,0,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-1,0.4628465175628662,1.4973655619830588,82.144,16,32,1,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-2,0.4637794494628906,1.5003837117276602,82.138,16,32,2,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-3,0.4872059822082519,1.5761714340903068,80.916,16,32,3,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-4,0.4648642539978027,1.5038931881748707,65.529,16,32,4,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-5,0.4635918140411377,1.4997766879993184,82.816,16,32,5,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-16-6,0.4633023738861084,1.4988403134043922,81.601,16,32,6,Falcon (7B),1,What are some effective strategies for managing st,48,32,Swing AMD+A100,7,Falcon
+start-inference-32-0,0.927332878,3.0000362182526925,152.478,32,32,0,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-1,0.926304817,2.9967103144196434,151.964,32,32,1,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-2,0.929405928,3.0067427891776375,150.349,32,32,2,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-3,0.9260408878326416,2.99585647,149.866,32,32,3,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-4,0.9250931739807128,2.9927904991878354,148.039,32,32,4,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-5,0.9262828826904296,2.9966393535771942,152.577,32,32,5,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-32-6,0.9231984615325928,2.9866608707645423,166.639,32,32,6,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,7,Falcon
+start-inference-64-0,1.9057583808898928,6.165363377974483,341.688,64,32,0,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-1,1.9035985469818115,6.158376049,343.431,64,32,1,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-2,1.905735969543457,6.165290874505023,344.626,64,32,2,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-3,1.906846284866333,6.1688828814972565,347.904,64,32,3,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-4,1.9028539657592771,6.1559672368580145,350.184,64,32,4,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-5,1.9039027690887451,6.159360245,351.201,64,32,5,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-64-6,1.9050276279449463,6.162999302082021,349.283,64,32,6,Falcon (7B),1,What are some effective strategies for managing st,96,32,Swing AMD+A100,7,Falcon
+start-inference-128-0,4.1102190017700195,13.297065337912748,833.329,128,32,0,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-1,4.1415321826934814,13.398367339703372,830.418,128,32,1,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-2,3.985502243041992,12.893591243509231,811.705,128,32,2,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-3,3.995616912841797,12.926313447640325,813.503,128,32,3,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-4,4.004978418,12.956599072409498,810.142,128,32,4,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-5,4.003738880157471,12.95258901349762,809.925,128,32,5,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-128-6,3.996846437454224,12.930291111385001,791.526,128,32,6,Falcon (7B),1,What are some effective strategies for managing st,160,32,Swing AMD+A100,7,Falcon
+start-inference-256-0,8.607919454574585,27.84768095366149,2094.302,256,32,0,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-1,8.761861562728882,28.34570265749338,2098.751,256,32,1,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-2,8.592550516,27.797960542509816,2112.623,256,32,2,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-3,8.607226610183716,27.845439516616306,2081.775,256,32,3,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-4,8.608494520187378,27.849541361835268,2121.528,256,32,4,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-5,8.776837111,28.394150401361998,2118.406,256,32,5,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-256-6,8.613263130187988,27.864968403246397,2128.495,256,32,6,Falcon (7B),1,What are some effective strategies for managing st,288,32,Swing AMD+A100,7,Falcon
+start-inference-512-0,21.518234491348267,69.61414218190495,6522.665,512,32,0,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-1,21.406625509262085,69.25307336137281,6557.895,512,32,1,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-2,21.54757332801819,69.70905693656165,6575.289,512,32,2,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-3,21.50081706047058,69.55779464511934,6564.52,512,32,3,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-4,21.37988233566284,69.16655589684375,6573.618,512,32,4,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-5,21.52767586708069,69.64468619669826,6586.267,512,32,5,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-512-6,21.497761964797977,69.54791103,6566.93,512,32,6,Falcon (7B),1,What are some effective strategies for managing st,544,32,Swing AMD+A100,7,Falcon
+start-inference-1024-0,69.28487181663513,224.14510445257676,24766.569,1024,32,0,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-1,69.13377523422241,223.65628837542565,24638.892,1024,32,1,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-2,69.11276316642761,223.58831174492693,24546.844,1024,32,2,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-3,69.14199614524841,223.68288403638746,24582.503,1024,32,3,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-4,69.13545870780945,223.66173462008362,24601.663,1024,32,4,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-5,69.1776123,223.79810670431416,24599.808,1024,32,5,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-1024-6,69.18442344665527,223.82014158852166,24752.078,1024,32,6,Falcon (7B),1,What are some effective strategies for managing st,1056,32,Swing AMD+A100,7,Falcon
+start-inference-2048-0,294.4398775100708,952.5493137111202,111195.808,2048,32,0,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-1,293.65092182159424,949.9969447658467,111141.272,2048,32,1,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-2,293.54569005966187,949.6565070389432,111445.354,2048,32,2,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-3,294.4482822418213,952.5765040547943,110753.04,2048,32,3,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-4,293.6752860546112,950.0757660642241,110253.896,2048,32,4,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-5,293.7502737045288,950.3183603590929,110414.897,2048,32,5,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-2048-6,293.85009145736694,950.6412830989276,111394.027,2048,32,6,Falcon (7B),1,What are some effective strategies for managing st,2080,32,Swing AMD+A100,7,Falcon
+start-inference-4096-0,1630.4585139751434,5274.734358861955,584765.521,4096,32,0,Falcon (7B),1,What are some effective strategies for managing st,4127,32,Swing AMD+A100,7,Falcon
+start-inference-4096-1,1621.1659727096558,5244.671841923265,585628.143,4096,32,1,Falcon (7B),1,What are some effective strategies for managing st,4128,32,Swing AMD+A100,7,Falcon
+start-inference-4096-2,1621.240732908249,5244.913700385049,585100.778,4096,32,2,Falcon (7B),1,What are some effective strategies for managing st,4125,32,Swing AMD+A100,7,Falcon
+start-inference-4096-3,1621.1208910942078,5244.525997,586100.562,4096,32,3,Falcon (7B),1,What are some effective strategies for managing st,4122,32,Swing AMD+A100,7,Falcon
+start-inference-4096-4,1621.8484346866608,5246.879690579252,584518.45,4096,32,4,Falcon (7B),1,What are some effective strategies for managing st,4127,32,Swing AMD+A100,7,Falcon
+start-inference-4096-5,1621.1816527843475,5244.722569,584686.376,4096,32,5,Falcon (7B),1,What are some effective strategies for managing st,4124,32,Swing AMD+A100,7,Falcon
+start-inference-4096-6,1621.378015041351,5245.357825,585404.121,4096,32,6,Falcon (7B),1,What are some effective strategies for managing st,4117,32,Swing AMD+A100,7,Falcon
+tokenizer,0.2120234966278076,0.9208290821028312,41.855,32,0,0,Llama-2 (70B),4,startup,0,32,argonne-swing,70,Llama-2
+model load,256.58412647247314,1114.3582169883741,59121.747,32,0,0,Llama-2 (70B),4,startup,0,32,argonne-swing,70,Llama-2
+start-inference-8-0,5.902270555496216,25.63386824754088,1538.561,8,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-1,1.6713533401489258,7.2587745535604355,556.393,8,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-2,1.6839182376861572,7.3133445575927505,558.788,8,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-3,1.7826645374298096,7.742204877322393,589.49,8,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-4,1.733743667602539,7.529738993233161,583.343,8,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-5,1.7651851177215576,7.666290848,601.864,8,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-8-6,1.7087373733520508,7.421135355675518,583.728,8,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,46,32,argonne-swing,70,Llama-2
+start-inference-16-0,3.384556770324707,14.69930622648863,1173.478,16,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-1,3.336925506591797,14.492441168793787,1144.028,16,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-2,3.321746349334717,14.426517298720709,1152.339,16,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-3,3.3890602588653564,14.718865111636282,1149.628,16,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-4,3.3282532691955566,14.454777190374566,1147.034,16,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-5,3.3402345180511475,14.506812377802433,1148.929,16,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-16-6,3.3529045581817627,14.561839021590696,1170.781,16,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,54,32,argonne-swing,70,Llama-2
+start-inference-32-0,6.7171571254730225,29.17296303743057,2366.274,32,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-1,6.824557542800903,29.63940864,2386.566,32,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-2,6.857919454574585,29.78430115968022,2394.956,32,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-3,6.754576206207275,29.335476052797638,2366.281,32,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-4,6.7535011768341064,29.33080714427253,2363.167,32,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-5,6.9621899127960205,30.237153187222404,2432.273,32,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-32-6,6.813407897949219,29.590985152340455,2388.393,32,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,70,32,argonne-swing,70,Llama-2
+start-inference-64-0,14.43123173713684,62.675590608942485,5126.583,64,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-1,14.451568126678469,62.76391260727163,5132.9,64,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-2,14.434394121170044,62.68932500740712,5125.373,64,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-3,14.667006969451904,63.69957471546055,5188.725,64,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-4,14.60688543319702,63.438463754059036,5196.961,64,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-5,14.559847593307495,63.23417596700492,5181.063,64,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-64-6,14.632137060165403,63.54813288438056,5221.005,64,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,102,32,argonne-swing,70,Llama-2
+start-inference-128-0,32.035356521606445,139.13122087789827,11790.403,128,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-1,31.780211210250854,138.02311150985574,11738.628,128,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-2,31.826294898986816,138.22325536878444,11745.553,128,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-3,32.01099967956543,139.02543784509166,11810.705,128,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-4,32.11254358291626,139.46644830290816,11848.819,128,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-5,32.15147328,139.63552202007497,11846.383,128,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-128-6,32.37705183029175,140.6152213894447,11906.437,128,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,166,32,argonne-swing,70,Llama-2
+start-inference-256-0,73.08755397796631,317.42305128008667,28595.798,256,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-1,72.94483804702759,316.8032285633694,28480.843,256,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-2,73.39918732643127,318.7764911336109,28796.22,256,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-3,72.99017071723938,317.0001107097556,28535.747,256,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-4,73.17803072929382,317.81599652059845,28543.761,256,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-5,74.35935521125793,322.9465502360773,28924.048,256,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-256-6,74.15468502044678,322.0576569438905,28861.311,256,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,294,32,argonne-swing,70,Llama-2
+start-inference-512-0,180.1481695175171,782.3928772881301,87066.256,512,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-1,164.77006459236145,715.6049671369733,77673.794,512,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,516,32,argonne-swing,70,Llama-2
+start-inference-512-2,181.6205825805664,788.7876438630063,87636.178,512,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-3,183.479661,796.8617181546164,88598.235,512,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-4,185.1928927898407,804.3023730477962,88698.208,512,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-5,185.0173738002777,803.5400849400087,88411.746,512,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-6,183.86216926574707,798.5229715158291,88239.222,512,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-7,186.4801287651062,809.8929058915887,89272.724,512,32,7,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-8,186.7121419906616,810.9005514069294,89234.301,512,32,8,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-9,185.7164363861084,806.5761501378811,88624.664,512,32,9,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-10,185.2356534004211,804.4880846053225,89216.965,512,32,10,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-11,185.27795386314392,804.6717977167516,88749.149,512,32,11,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-12,185.7489640712738,806.7174195676857,88845.939,512,32,12,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-512-13,175.68062734603882,762.9901090928691,82637.614,512,32,13,Llama-2 (70B),4,What are some effective strategies for managing st,530,32,argonne-swing,70,Llama-2
+start-inference-512-14,185.4683213233948,805.4985735056293,89028.249,512,32,14,Llama-2 (70B),4,What are some effective strategies for managing st,550,32,argonne-swing,70,Llama-2
+start-inference-1024-0,523.2267680168152,2272.401088499759,299599.944,1024,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-1,521.1933069229126,2263.569661123212,300076.459,1024,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-2,522.5704451,2269.5506437385548,299893.448,1024,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-3,523.0028319358826,2271.428522443947,299691.155,1024,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-4,522.2192807197571,2268.0255187269013,299348.554,1024,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-5,521.2466025352478,2263.801126741727,298912.914,1024,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-6,522.0679762363434,2267.368395479734,300084.268,1024,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-7,522.7399082183838,2270.2866310531426,299821.157,1024,32,7,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-8,523.0764198303223,2271.7481184998956,299640.102,1024,32,8,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-9,521.1620442867279,2263.433885866979,299926.227,1024,32,9,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-10,523.6168825626373,2274.0953762785093,299574.554,1024,32,10,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-11,471.4828817844391,2047.6746972194867,267327.804,1024,32,11,Llama-2 (70B),4,What are some effective strategies for managing st,996,32,argonne-swing,70,Llama-2
+start-inference-1024-12,525.2412276268005,2281.1499914425885,300812.709,1024,32,12,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-1024-13,485.84998750686646,2110.0717852086586,275541.942,1024,32,13,Llama-2 (70B),4,What are some effective strategies for managing st,1012,32,argonne-swing,70,Llama-2
+start-inference-1024-14,524.2240853309631,2276.7324895074703,300401.186,1024,32,14,Llama-2 (70B),4,What are some effective strategies for managing st,1062,32,argonne-swing,70,Llama-2
+start-inference-2048-0,1663.470393896103,7224.538507661262,1029011.706,2048,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-1,1658.141002178192,7201.392682024846,1023821.588,2048,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-2,1664.2640523910522,7227.9854078163435,1030695.381,2048,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-3,1665.263494,7232.326034810961,1030193.192,2048,32,3,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-4,1665.659281730652,7234.044961462711,1031034.459,2048,32,4,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-5,1666.647752046585,7238.3379394966705,1030974.417,2048,32,5,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-6,1665.2796211242676,7232.396075687088,1030259.757,2048,32,6,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-7,1657.5685789585114,7198.906618185997,1022888.884,2048,32,7,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-8,1665.7150027751925,7234.286960859542,1031104.157,2048,32,8,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-9,1656.461953163147,7194.100484754637,1018072.325,2048,32,9,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-10,1664.9406552314758,7230.923929170838,1030549.647,2048,32,10,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-2048-11,1659.727316,7208.282125,1029165.353,2048,32,11,Llama-2 (70B),4,What are some effective strategies for managing st,2086,32,argonne-swing,70,Llama-2
+start-inference-4096-0,6358.9778247282883,27603.64869,3933610.715,4096,32,0,Llama-2 (70B),4,What are some effective strategies for managing st,4096,32,argonne-swing,70,Llama-2
+start-inference-4096-1,6219.184385,27008.02592,3847135.661,4096,32,1,Llama-2 (70B),4,What are some effective strategies for managing st,4096,32,argonne-swing,70,Llama-2
+start-inference-4096-2,6217.5556334134961,27016.62213,3847601.003,4096,32,2,Llama-2 (70B),4,What are some effective strategies for managing st,4096,32,argonne-swing,70,Llama-2
+tokenizer,0.3254749774932861,2.8996722812568305,16.262,32,0,0,Llama-2 (13B),1,startup,0,32,argonne-swing,13,Llama-2
+model load,59.66281270980835,531.5388776392732,3521.182,32,0,0,Llama-2 (13B),1,startup,0,32,argonne-swing,13,Llama-2
+start-inference-8-0,3.5474843978881836,31.604709695262628,241.058,8,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-1,0.2958700656890869,2.6359206933195973,57.753,8,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-2,0.2948760986328125,2.6270653928483934,62.793,8,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-3,0.2952313423156738,2.6302302759623517,62.404,8,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-4,0.2947533130645752,2.625971490295582,63.023,8,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-5,0.2946000099182129,2.6246057051665383,63.234,8,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-8-6,0.2952122688293457,2.6300603493522066,63.616,8,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,46,32,argonne-swing,13,Llama-2
+start-inference-16-0,0.5913872718811035,5.268697744351504,129.17,16,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-1,0.5860137939453125,5.220825170108282,129.518,16,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-2,0.5863914489746094,5.224189716989161,130.578,16,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-3,0.5981216430664062,5.328694582228603,125.94,16,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-4,0.5871257781982422,5.230731891479761,130.36,16,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-5,0.5845410823822021,5.207704711722427,129.912,16,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-16-6,0.5890812873840332,5.248153617184921,130.081,16,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,54,32,argonne-swing,13,Llama-2
+start-inference-32-0,1.1671607494354248,10.39829144155533,246.656,32,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-1,1.1667742729187012,10.394848303617259,262.649,32,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-2,1.1694996356964111,10.419128692124414,247.733,32,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-3,1.168797731399536,10.41287539287106,248.464,32,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-4,1.1664924621582031,10.392337637952359,273.42,32,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-5,1.168828010559082,10.413145151364668,248.781,32,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-32-6,1.171928644180298,10.440768845926437,246.091,32,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,70,32,argonne-swing,13,Llama-2
+start-inference-64-0,2.379835605621338,21.20207026,581.531,64,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-1,2.3774919509887695,21.18119052434858,575.588,64,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-2,2.377002716064453,21.17683190679835,551.931,64,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-3,2.379718542098999,21.201027332000432,546.029,64,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-4,2.380638360977173,21.209222042774698,577.747,64,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-5,2.3787965774536133,21.19281350448253,578.741,64,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-64-6,2.3761401176452637,21.16914697585452,581.105,64,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,102,32,argonne-swing,13,Llama-2
+start-inference-128-0,5.215528488,46.46539499194675,1347.439,128,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-1,5.044161319732666,44.938676618599345,1363.68,128,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-2,5.044600248336792,44.94258705471532,1343.54,128,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-3,5.038989305496216,44.89259889417579,1390.756,128,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-4,5.040091514587402,44.90241852815957,1393.568,128,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-5,5.044324636459351,44.940131615198716,1396.879,128,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-128-6,5.191360235214233,46.25007886014885,1399.441,128,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,166,32,argonne-swing,13,Llama-2
+start-inference-256-0,11.510875940322876,102.55094924410562,3732.75,256,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-1,11.51694941520691,102.60505812494118,3734.132,256,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-2,11.64310884475708,103.7290185710045,3802.907,256,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-3,11.509579181671144,102.53939635869837,3798.644,256,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-4,11.526933193206789,102.69400408493918,3792.385,256,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-5,11.648036479949951,103.77291911073557,3708.437,256,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-256-6,11.506000518798828,102.50751387846982,3810.076,256,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,294,32,argonne-swing,13,Llama-2
+start-inference-512-0,30.737836837768555,273.84487173399117,11393.548,512,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-1,30.747432947158813,273.93036393563796,11354.04,512,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-2,30.75609064102173,274.0074957480656,11353.646,512,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-3,30.71205043792725,273.6151394534051,11286.71,512,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-4,27.30092477798462,243.2252563348984,9992.1,512,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,514,32,argonne-swing,13,Llama-2
+start-inference-512-5,30.676424026489254,273.29774203464484,11092.809,512,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-6,30.71189665794373,273.61376942011077,11319.926,512,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-7,30.741435766220093,273.8769348,11341.909,512,32,7,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-8,30.740030765533447,273.8644175423231,11363.29,512,32,8,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-9,30.67296552658081,273.2669300920603,11144.553,512,32,9,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-10,30.731969356536865,273.7925980605452,11346.412,512,32,10,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-11,30.653748989105225,273.09572903233874,11277.004,512,32,11,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-12,30.824676275253296,274.6185284732397,11329.166,512,32,12,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-13,30.835496187210083,274.71492359100995,11358.897,512,32,13,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-512-14,30.839568853378296,274.7512071704412,11320.257,512,32,14,Llama-2 (13B),1,What are some effective strategies for managing st,550,32,argonne-swing,13,Llama-2
+start-inference-1024-0,99.62373471260072,887.5526601960398,38700.005,1024,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-1,99.24964523,884.2198789708441,38434.875,1024,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-2,99.58896827697754,887.2429243433144,38630.216,1024,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-3,98.81585812568665,880.3552486967197,37977.923,1024,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-4,99.07381296157835,882.6533807780615,38368.266,1024,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-5,98.83918285369872,880.5630498241838,37929.509,1024,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-1024-6,99.08799839019775,882.7797594461922,38490.578,1024,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,1062,32,argonne-swing,13,Llama-2
+start-inference-2048-0,358.3234279155731,3192.320711269272,141286.159,2048,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-1,356.2867805957794,3174.176122012718,139992.133,2048,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-2,357.4705253,3184.72216,140803.165,2048,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-3,357.57625007629395,3185.6640678418316,140616.287,2048,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-4,357.92911100387573,3188.8077228740176,141089.531,2048,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-5,360.3485209941864,3210.3623632335652,142001.829,2048,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-6,359.1519658565521,3199.7021957690326,141527.835,2048,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-7,342.34143567085266,3049.9363711021897,134920.456,2048,32,7,Llama-2 (13B),1,What are some effective strategies for managing st,2033,32,argonne-swing,13,Llama-2
+start-inference-2048-8,356.0119044780731,3171.727237415103,140512.044,2048,32,8,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-9,357.5147695541382,3185.1163349030194,140750.983,2048,32,9,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-10,357.58165216445923,3185.7121953059896,140544.303,2048,32,10,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-11,357.4207377433777,3184.2786009631673,140257.921,2048,32,11,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-12,359.7901363372803,3205.387687378666,141920.878,2048,32,12,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-13,356.21272230148315,3173.5163330949285,140455.512,2048,32,13,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-2048-14,359.7316598892212,3204.866717880952,141922.277,2048,32,14,Llama-2 (13B),1,What are some effective strategies for managing st,2086,32,argonne-swing,13,Llama-2
+start-inference-4096-0,1436.0780091285706,12794.088285568769,565982.964,4096,32,0,Llama-2 (13B),1,What are some effective strategies for managing st,4135,32,argonne-swing,13,Llama-2
+start-inference-4096-1,1905.8844919204712,16979.61691267971,608030.261,4096,32,1,Llama-2 (13B),1,What are some effective strategies for managing st,4012,32,argonne-swing,13,Llama-2
+start-inference-4096-2,1913.760176897049,17049.781770200792,613555.71,4096,32,2,Llama-2 (13B),1,What are some effective strategies for managing st,4134,32,argonne-swing,13,Llama-2
+start-inference-4096-3,1906.1657044887545,16982.12225,606711.435,4096,32,3,Llama-2 (13B),1,What are some effective strategies for managing st,3949,32,argonne-swing,13,Llama-2
+start-inference-4096-4,1815.405010223389,16173.530843882221,580424.967,4096,32,4,Llama-2 (13B),1,What are some effective strategies for managing st,4004,32,argonne-swing,13,Llama-2
+start-inference-4096-5,1924.317099571228,17143.83390376095,618131.202,4096,32,5,Llama-2 (13B),1,What are some effective strategies for managing st,4134,32,argonne-swing,13,Llama-2
+start-inference-4096-6,1915.6933567523956,17067.004562823455,608785.006,4096,32,6,Llama-2 (13B),1,What are some effective strategies for managing st,4023,32,argonne-swing,13,Llama-2
+start-inference-4096-7,1919.553404,17101.393908733065,611840.604,4096,32,7,Llama-2 (13B),1,What are some effective strategies for managing st,4110,32,argonne-swing,13,Llama-2
+tokenizer,0.4821321964263916,0.6608995572616286,71.825,32,0,0,Mixtral (8x7B),3,startup,0,32,argonne-swing,12,Mistral
+model load,118.06976914405824,161.8482622228366,19836.111,32,0,0,Mixtral (8x7B),3,startup,0,32,argonne-swing,12,Mistral
+start-inference-8-0,3.6013588905334473,4.936688555411933,711.14,8,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-1,1.589703083,2.179141056218347,371.584,8,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-2,1.5909996032714844,2.1809183066372646,371.042,8,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-3,1.585461139678955,2.1733262641158495,366.321,8,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-4,1.5987865924835205,2.1915925942305456,371.331,8,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-5,1.5809087753295898,2.167085951593082,366.411,8,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-8-6,1.5848991870880127,2.1725559479633323,356.069,8,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,41,32,argonne-swing,12,Mistral
+start-inference-16-0,3.1848044395446777,4.365681984445728,732.708,16,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-1,3.1635000705718994,4.336478276155325,736.272,16,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-2,3.181676149368286,4.361393771362496,737.876,16,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-3,3.326869965,4.560423267659906,758.515,16,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-4,3.1824190616607666,4.362412144349872,737.209,16,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-5,3.169659376144409,4.344921359517281,723.811,16,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-16-6,3.2170565128326416,4.409892641014148,744.114,16,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,49,32,argonne-swing,12,Mistral
+start-inference-32-0,6.380319833755493,8.746046384314383,1477.292,32,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-1,6.401116609573364,8.774554291548906,1493.841,32,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-2,6.376143694,8.740321794697287,1486.28,32,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-3,6.5351879596710205,8.95833728,1503.135,32,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-4,6.369783163070679,8.731602874749534,1475.322,32,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-5,6.365550518035889,8.725800829,1481.647,32,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-32-6,6.365584612,8.725847563996107,1479.026,32,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,65,32,argonne-swing,12,Mistral
+start-inference-64-0,13.12411117553711,17.990334040446328,3051.322,64,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-1,12.870286226272585,17.642394620855022,3015.711,64,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-2,12.855097770690918,17.621574514577503,3008.924,64,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-3,13.034308195114136,17.867233466698647,3052.02,64,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-4,12.856681108474731,17.623744930177363,3010.898,64,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-5,13.04432463645935,17.880963853715855,3044.857,64,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-64-6,12.84910273551941,17.613356610608456,3001.884,64,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,97,32,argonne-swing,12,Mistral
+start-inference-128-0,26.095497131347656,35.77131465,6137.41,128,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-1,25.96731758117676,35.595608050813844,6141.658,128,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-2,25.784113883972168,35.34447518047526,6073.433,128,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-3,25.97317147254944,35.60363247698812,6147.453,128,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-4,25.952861547470093,35.57579193741733,6130.094,128,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-5,25.95074963569641,35.57289696054885,6121.894,128,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-128-6,25.763859510421753,35.31671079010411,6113.653,128,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,161,32,argonne-swing,12,Mistral
+start-inference-256-0,53.05613970756531,72.72855765004788,12826.727,256,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-1,53.01108622550965,72.66679902,12820.269,256,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-2,52.841960430145264,72.43496392062946,12789.701,256,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-3,53.05509352684021,72.72712356125821,12835.258,256,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-4,53.095733880996704,72.78283274697131,12854.134,256,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-5,52.95591711997986,72.59117403564959,12817.715,256,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-256-6,53.08961772918701,72.77444881813783,12855.554,256,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,289,32,argonne-swing,12,Mistral
+start-inference-512-0,115.93064522743224,158.91598335844068,29256.564,512,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-1,115.93586325645448,158.9231361540767,29313.795,512,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-2,115.5383598804474,158.37824450991707,29195.655,512,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-3,115.63639545440674,158.51263019895808,29178.078,512,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-4,116.50515627861024,159.70351445920474,29463.359,512,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-5,116.20557188987732,159.29284868881305,29293.695,512,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-512-6,115.55514764785768,158.4012569287746,29168.151,512,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,545,32,argonne-swing,12,Mistral
+start-inference-1024-0,275.69624376296997,377.9202608582873,76399.679,1024,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-1,274.67668533325195,376.5226655103776,76268.662,1024,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-2,275.86347103118896,378.1494934802677,76508.241,1024,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-3,278.02062249183655,381.10648423063736,76688.144,1024,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-4,279.4099142551422,383.0109044665843,76902.502,1024,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-5,279.66821122169495,383.3649740601564,77268.088,1024,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-6,278.6640396118164,381.98847073326283,76950.249,1024,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-7,276.26344323158264,378.6977694,76648.411,1024,32,7,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-8,274.8396270275116,376.74602353208587,76287.67,1024,32,8,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-9,274.91577982902527,376.8504126460626,76562.929,1024,32,9,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-10,275.31229877471924,377.3939548479678,76495.458,1024,32,10,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-11,253.95067167282104,348.11175797608155,69098.722,1024,32,11,Mixtral (8x7B),3,What are some effective strategies for managing st,987,32,argonne-swing,12,Mistral
+start-inference-1024-12,275.3247826099396,377.41106750136703,76566.392,1024,32,12,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-13,276.5242335796356,379.0552568351324,76756.05,1024,32,13,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-1024-14,276.7453031539917,379.3582956798702,76633.776,1024,32,14,Mixtral (8x7B),3,What are some effective strategies for managing st,1057,32,argonne-swing,12,Mistral
+start-inference-2048-0,664.1793544,910.4470610720123,247425.072,2048,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-1,667.6912662982941,915.2611369968312,246856.708,2048,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-2,596.7472615242004,818.0121631819832,215246.422,2048,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,1922,32,argonne-swing,12,Mistral
+start-inference-2048-3,666.9499722,914.2449821408633,248774.008,2048,32,3,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-4,666.1964817047119,913.2121087771388,247585.312,2048,32,4,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-5,666.5063760280609,913.6369072507056,246854.229,2048,32,5,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-6,665.1072952747345,911.7190684,246127.603,2048,32,6,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-7,666.2912373542786,913.3419983951956,247602.652,2048,32,7,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-8,665.5035352706909,912.2622282363972,247799.912,2048,32,8,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-9,667.5101208686829,915.0128255687263,246537.013,2048,32,9,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-10,667.1088304519653,914.4627427061674,246766.759,2048,32,10,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-11,666.0545459,913.0175452843307,247261.369,2048,32,11,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-12,665.9984059333801,912.9405895,247394.187,2048,32,12,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-2048-13,622.5396420955658,853.3679702130975,226584.002,2048,32,13,Mixtral (8x7B),3,What are some effective strategies for managing st,1982,32,argonne-swing,12,Mistral
+start-inference-2048-14,666.9668292999268,914.2680896645153,247876.685,2048,32,14,Mixtral (8x7B),3,What are some effective strategies for managing st,2081,32,argonne-swing,12,Mistral
+start-inference-4096-0,1910.397998,2618.7448179876665,853882.438,4096,32,0,Mixtral (8x7B),3,What are some effective strategies for managing st,4129,32,argonne-swing,12,Mistral
+start-inference-4096-1,1910.9522514343264,2619.504580449392,856977.74,4096,32,1,Mixtral (8x7B),3,What are some effective strategies for managing st,4129,32,argonne-swing,12,Mistral
+start-inference-4096-2,1913.5673322677612,2623.0892938907073,855493.416,4096,32,2,Mixtral (8x7B),3,What are some effective strategies for managing st,4129,32,argonne-swing,12,Mistral
+tokenizer,0.6587076187133789,1.1768985024961816,92.138,32,0,0,Falcon (40B),3,startup,0,32,argonne-swing,40,Falcon
+model load,297.2970416545868,531.1741251805284,50044.928,32,0,0,Falcon (40B),3,startup,0,32,argonne-swing,40,Falcon
+start-inference-8-0,4.021332025527954,7.184826020576374,766.52,8,32,0,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-1,0.8633348941802979,1.5425015822621073,237.055,8,32,1,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-2,0.8367490768432617,1.4950012836125948,238.078,8,32,2,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-3,0.8480312824249268,1.5151589536875985,222.209,8,32,3,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-4,0.8434934616088867,1.5070513284358593,249.975,8,32,4,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-5,0.8403375148773193,1.5014126674020092,224.442,8,32,5,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-8-6,0.8418376445770264,1.504092916342478,242.845,8,32,6,Falcon (40B),3,What are some effective strategies for managing st,40,32,argonne-swing,40,Falcon
+start-inference-16-0,1.6898550987243652,3.0192271633488073,473.484,16,32,0,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-1,1.6535027027130127,2.954277132086872,492.833,16,32,1,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-2,1.659839391708374,2.965598755789952,472.852,16,32,2,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-3,1.6660826206207275,2.9767533964058317,459.054,16,32,3,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-4,1.6676251888275146,2.9795094692991615,485.968,16,32,4,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-5,1.657428503036499,2.9612912737038073,484.881,16,32,5,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-16-6,1.6838176250457764,3.0084401411111257,479.921,16,32,6,Falcon (40B),3,What are some effective strategies for managing st,48,32,argonne-swing,40,Falcon
+start-inference-32-0,3.3093037605285645,5.912660684991627,963.733,32,32,0,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-1,3.3227574825286865,5.936698155980456,962.433,32,32,1,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-2,3.339118003845215,5.965929141763022,959.908,32,32,2,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-3,3.4790501594543457,6.215942865164494,975.155,32,32,3,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-4,3.3340232372283936,5.956826433624294,968.485,32,32,4,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-5,3.3460543155670166,5.978322098283216,961.721,32,32,5,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-32-6,3.3338780403137207,5.956567013470965,973.985,32,32,6,Falcon (40B),3,What are some effective strategies for managing st,64,32,argonne-swing,40,Falcon
+start-inference-64-0,6.976075649261475,12.464001860115653,2073.382,64,32,0,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-1,6.996101379394531,12.499781394366405,2104.352,64,32,1,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-2,7.1517415046691895,12.777860203780886,2123.76,64,32,2,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-3,6.968046665,12.449656649797912,2109.498,64,32,3,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-4,6.974579572677612,12.461328852788661,2078.972,64,32,4,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-5,6.966252326965332,12.446450744914575,2105.609,64,32,5,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-64-6,6.988034963607788,12.485369305618333,2075.751,64,32,6,Falcon (40B),3,What are some effective strategies for managing st,96,32,argonne-swing,40,Falcon
+start-inference-128-0,15.276861429214478,27.294834351547816,4835.413,128,32,0,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-1,15.095015525817873,26.96993425124147,4831.023,128,32,1,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-2,15.238326787948608,27.22598535039521,4849.317,128,32,2,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-3,15.138803243637083,27.04816880943561,4814.89,128,32,3,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-4,15.219809770584106,27.1929014,4899.352,128,32,4,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-5,15.062154054641724,26.91122137906827,4837.455,128,32,5,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-128-6,15.209054946899414,27.17368599189774,4870.942,128,32,6,Falcon (40B),3,What are some effective strategies for managing st,160,32,argonne-swing,40,Falcon
+start-inference-256-0,34.478798627853394,61.60251577512821,12164.552,256,32,0,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-1,34.50206756591797,61.644089878091165,12143.502,256,32,1,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-2,34.572165966033936,61.769333157173016,12170.502,256,32,2,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-3,34.45302916,61.556474022628116,12160.575,256,32,3,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-4,34.574286699295044,61.77312222492977,12156.554,256,32,4,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-5,34.508058071136475,61.65479298280799,12200.681,256,32,5,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-256-6,34.465445041656494,61.57865721458995,12171.927,256,32,6,Falcon (40B),3,What are some effective strategies for managing st,288,32,argonne-swing,40,Falcon
+start-inference-512-0,93.33185529708862,166.75398555262365,34950.373,512,32,0,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-1,92.99152970314026,166.14593325369734,35032.825,512,32,1,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-2,89.54276323318481,159.9840975945356,33068.855,512,32,2,Falcon (40B),3,What are some effective strategies for managing st,529,32,argonne-swing,40,Falcon
+start-inference-512-3,93.26080465316772,166.6270409203523,34941.042,512,32,3,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-4,93.15742754936218,166.44233930888655,34752.554,512,32,4,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-5,93.14883613586426,166.4269892182048,34983.067,512,32,5,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-6,93.06070137023926,166.26952075915688,34833.979,512,32,6,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-7,93.07089471817017,166.28773299107053,34946.836,512,32,7,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-8,92.76142287254332,165.7348064097834,35165.712,512,32,8,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-9,93.14497232437134,166.4200858306763,34729.954,512,32,9,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-10,92.80883598327635,165.8195183782428,35131.101,512,32,10,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-11,93.01691675186156,166.1912917386671,34984.353,512,32,11,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-12,93.20696306228638,166.5308433269435,35005.092,512,32,12,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-13,93.02205014,166.2004634551225,34954.415,512,32,13,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-512-14,93.09296941757202,166.3271733739218,35074.38,512,32,14,Falcon (40B),3,What are some effective strategies for managing st,544,32,argonne-swing,40,Falcon
+start-inference-1024-0,263.6454155445099,471.0495004602792,132776.029,1024,32,0,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-1,263.3785629272461,470.5727207,133371.134,1024,32,1,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-2,263.44300651550293,470.68786067297077,133247.989,1024,32,2,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-3,263.61722803115845,470.99913844637507,133192.611,1024,32,3,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-4,264.05831003189087,471.7872100146894,133381.919,1024,32,4,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-5,258.8175311088562,462.4236248803919,135612.421,1024,32,5,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-6,263.4827389717102,470.75884978389405,132893.25,1024,32,6,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-7,263.48321771621704,470.7597051462386,132879.634,1024,32,7,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-8,263.5349950790405,470.8522146285021,133363.915,1024,32,8,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-9,263.4873676300049,470.7671197,133175.029,1024,32,9,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-10,263.44463777542114,470.6907752,132775.117,1024,32,10,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-1024-11,263.8973968029022,471.49970986614323,133008.391,1024,32,11,Falcon (40B),3,What are some effective strategies for managing st,1056,32,argonne-swing,40,Falcon
+start-inference-2048-0,892.3414537906647,1594.326968212078,488361.877,2048,32,0,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-1,889.6665301322937,1589.5477405875706,488805.667,2048,32,1,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-2,889.2383441925049,1588.7827101294265,487885.698,2048,32,2,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-3,889.7371160984039,1589.673854990156,488880.246,2048,32,3,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-4,889.3590943813324,1588.998451852112,488502.116,2048,32,4,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-5,889.2615540027618,1588.8241785900284,488605.327,2048,32,5,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-2048-6,889.9089407920837,1589.9808504141329,489220.762,2048,32,6,Falcon (40B),3,What are some effective strategies for managing st,2080,32,argonne-swing,40,Falcon
+start-inference-4096-0,3339.3219952583313,5966.293608761426,1864097.082,4096,32,0,Falcon (40B),3,What are some effective strategies for managing st,4113,32,argonne-swing,40,Falcon
+start-inference-4096-1,3336.2695491313934,5960.839869995265,1863658.431,4096,32,1,Falcon (40B),3,What are some effective strategies for managing st,4123,32,argonne-swing,40,Falcon
+start-inference-4096-2,3337.7378656864166,5963.463279085588,1863928.856,4096,32,2,Falcon (40B),3,What are some effective strategies for managing st,4034,32,argonne-swing,40,Falcon

@@ -1,0 +1,889 @@
+Phase,Runtime (s),CPU Energy (J),GPU Energy (J),Output Token Limit,Number of Input Tokens,Iteration,Model,Number of GPUs,Prompt,Total Number of Tokens,Batch Size,System,GPU Used Memory (MB),GPU Total Memory (MB)
+tokenizer,0.4698555469512939,0.8389937658205516,11.509,32,0,0,Falcon (7B),1,startup,0,32,Palmetto Intel+V100,15060.0625,16384
+model load,27.09138536453247,216.36676353444005,932.979,32,0,0,Falcon (7B),1,startup,0,32,Palmetto Intel+V100,15060.0625,16384
+start-inference-A-0,7.666747808456421,44.25519537337601,729.251,32,8,0,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.0625,16384
+start-inference-A-1,6.311681509017944,35.394707422049734,685.543,32,8,1,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.0625,16384
+start-inference-A-2,6.3127992153167725,39.150029321913095,689.545,32,8,2,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.0625,16384
+start-inference-A-3,6.308841943740845,36.209000961005835,688.591,32,8,3,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.0625,16384
+start-inference-A-4,6.31043005,35.441965766464534,691.874,32,8,4,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.0625,16384
+start-inference-A-5,6.310232400894165,36.14677818626261,693.518,32,8,5,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.25,16384
+start-inference-A-6,6.301867961883545,35.568955286111354,694.174,32,8,6,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-0,6.442526102,37.29715157282874,730.845,32,16,0,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-1,6.445905447006226,40.66415634216839,731.646,32,16,1,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-2,6.446681976318359,36.49149157101977,731.788,32,16,2,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-3,6.443960189819336,35.898830659577605,733.225,32,16,3,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-4,6.443507194519043,36.362005545725104,731.863,32,16,4,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-5,6.446749687194824,37.20854062382722,733.221,32,16,5,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-B-6,6.446179628372192,45.73564125318435,733.438,32,16,6,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+V100,15222.25,16384
+start-inference-C-0,6.464061260223389,39.852206301106214,774.573,32,32,0,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-1,6.458288192749023,37.39759625646174,776.266,32,32,1,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-2,6.470242977142334,36.92505130529967,777.48,32,32,2,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-3,6.462202310562134,40.418890284417834,779.534,32,32,3,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-4,6.462316513061523,52.32986336996272,776.759,32,32,4,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-5,6.4698100090026855,38.18381239016488,774.285,32,32,5,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-C-6,6.472641468048096,37.30422086601344,774.831,32,32,6,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+V100,15224.4375,16384
+start-inference-D-0,7.838479042053223,46.460298027670504,1192.426,32,64,0,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.4375,16384
+start-inference-D-1,7.836808919906616,44.001985313177464,1195.581,32,64,1,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.4375,16384
+start-inference-D-2,7.839291572570801,55.16692566135967,1199.517,32,64,2,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.625,16384
+start-inference-D-3,7.841517210006714,73.59058312599808,1199.627,32,64,3,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.625,16384
+start-inference-D-4,7.839545488357544,47.226384609387516,1199.955,32,64,4,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.625,16384
+start-inference-D-5,7.837153911590576,44.731456212516726,1201.075,32,64,5,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.625,16384
+start-inference-D-6,7.867530345916748,44.27458938184273,1185.263,32,64,6,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+V100,15226.625,16384
+start-inference-E-0,10.049397945404053,56.77492819426304,1785.133,32,128,0,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15220.625,16384
+start-inference-E-1,10.048604726791382,56.51583547,1787.155,32,128,1,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15220.625,16384
+start-inference-E-2,10.051352262496948,57.41212991913092,1793.735,32,128,2,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-E-3,10.05213189125061,56.76516008349806,1795.808,32,128,3,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-E-4,10.048152923583984,58.165928173979935,1799.316,32,128,4,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15219.875,16384
+start-inference-E-5,10.044293880462646,56.83084669249755,1800.267,32,128,5,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15219.875,16384
+start-inference-E-6,10.04880690574646,60.11681856782073,1802.133,32,128,6,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+V100,15219.875,16384
+start-inference-F-0,18.79162907600403,106.62824419169259,3278.29,32,256,0,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-F-1,18.794597387313843,107.09243235877871,3278.657,32,256,1,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-F-2,18.78346085548401,108.17200528612078,3281.851,32,256,2,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-F-3,18.79253101348877,107.28008342680002,3279.801,32,256,3,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-F-4,18.78899717330933,107.9513104102093,3281.424,32,256,4,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.25,16384
+start-inference-F-5,18.789798974990845,107.23892365172851,3282.685,32,256,5,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.25,16384
+start-inference-F-6,18.785021781921387,110.26916296474826,3282.638,32,256,6,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+V100,15220.25,16384
+start-inference-G-0,26.693515300750732,155.33164518092048,5791.139,32,512,0,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.4375,16384
+start-inference-G-1,26.62417960166931,155.54216987038612,5899.372,32,512,1,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.4375,16384
+start-inference-G-2,26.600836515426636,156.00105967929613,5951.788,32,512,2,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.625,16384
+start-inference-G-3,26.595337867736816,155.5067153099383,5971.159,32,512,3,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.625,16384
+start-inference-G-4,26.597007989883423,158.12359502443135,5980.843,32,512,4,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.8125,16384
+start-inference-G-5,26.593384981155396,154.49751817069304,5989.116,32,512,5,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15219.875,16384
+start-inference-G-6,26.600958824157715,163.66130175003636,5991.747,32,512,6,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+V100,15220.0625,16384
+start-inference-H-0,53.034337520599365,307.90819655856063,11926.364,32,1024,0,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,Palmetto Intel+V100,15364.0625,16384
+start-inference-H-1,53.03428244590759,320.4166480120866,11920.276,32,1024,1,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+V100,15364.25,16384
+start-inference-H-2,53.03791403770447,328.7811333795619,11929.958,32,1024,2,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,Palmetto Intel+V100,15364.4375,16384
+start-inference-H-3,53.03861665725708,351.49509468457364,11930.012,32,1024,3,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+V100,15364.625,16384
+start-inference-H-4,53.032814025878906,307.9757718703935,11933.766,32,1024,4,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+V100,15363.875,16384
+start-inference-H-5,53.03314137458801,311.39970021371937,11934.802,32,1024,5,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+V100,15364.0625,16384
+start-inference-H-6,53.04063606262207,305.3632781,11939.185,32,1024,6,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+V100,15364.0625,16384
+tokenizer,0.3041615486145019,1.8938569678277075,7.696,32,0,0,Llama-2 (7B),1,startup,0,32,Palmetto Intel+V100,14157.1875,16384
+model load,21.56447434425354,1062.0334917360856,719.604,32,0,0,Llama-2 (7B),1,startup,0,32,Palmetto Intel+V100,14157.1875,16384
+start-inference-A-0,8.659450054168701,76.73303041921228,760.649,32,8,0,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.1875,16384
+start-inference-A-1,6.705075263977051,60.18763959789526,688.051,32,8,1,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.1875,16384
+start-inference-A-2,6.714085817337036,61.34555867096236,687.763,32,8,2,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.1875,16384
+start-inference-A-3,6.711590766906738,62.36659358071691,690.565,32,8,3,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.375,16384
+start-inference-A-4,6.711435317993164,61.726019276384385,691.055,32,8,4,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.375,16384
+start-inference-A-5,6.7108941078186035,61.48708138246584,692.086,32,8,5,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.375,16384
+start-inference-A-6,6.708925962,63.557289329911974,694.615,32,8,6,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-0,6.740397214889526,62.92378802913836,726.158,32,16,0,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-1,6.740569353103638,61.84190083240229,726.921,32,16,1,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-2,6.737527132034302,62.318849741477074,726.838,32,16,2,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-3,6.744261741638184,62.35556308884108,729.18,32,16,3,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-4,6.738781929016113,61.29080909684849,728.453,32,16,4,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.375,16384
+start-inference-B-5,6.741696119308472,61.460309774542836,728.112,32,16,5,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.5625,16384
+start-inference-B-6,6.739618539810181,62.32984492185289,730.442,32,16,6,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+V100,14513.5625,16384
+start-inference-C-0,7.017266511917114,64.44810143016427,820.134,32,32,0,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-1,7.013474464416504,63.904768708677885,820.838,32,32,1,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-2,7.014541864395142,68.90069135,821.954,32,32,2,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-3,7.0138397216796875,64.38061557100522,821.71,32,32,3,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-4,7.0143632888793945,63.35552690891057,822.391,32,32,4,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-5,7.013460159301758,63.47776485245097,823.443,32,32,5,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.5625,16384
+start-inference-C-6,7.015845299,64.29038761401964,821.826,32,32,6,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+V100,14515.75,16384
+start-inference-D-0,8.795205832,79.64777077696371,1260.198,32,64,0,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14553.75,16384
+start-inference-D-1,8.783590555,79.68870805,1263.782,32,64,1,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14553.75,16384
+start-inference-D-2,8.786056995391846,81.77770242703646,1263.659,32,64,2,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14551.75,16384
+start-inference-D-3,8.786257266998291,81.77562841,1267.316,32,64,3,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14551.75,16384
+start-inference-D-4,8.784136533737183,80.78952422857219,1269.542,32,64,4,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14553.75,16384
+start-inference-D-5,8.78181529,81.32753929148382,1271.302,32,64,5,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14553.75,16384
+start-inference-D-6,8.785862922668457,80.43769231089115,1272.062,32,64,6,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+V100,14553.1875,16384
+start-inference-E-0,10.664164543151855,98.84430230306452,1881.064,32,128,0,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545.1875,16384
+start-inference-E-1,10.658944606781006,98.27322136586106,1887.176,32,128,1,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545.1875,16384
+start-inference-E-2,10.662760019302368,102.52197198585135,1892.35,32,128,2,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545.1875,16384
+start-inference-E-3,10.659046173095703,98.51850394507224,1896.371,32,128,3,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545,16384
+start-inference-E-4,10.659204721450806,97.31460718,1898.932,32,128,4,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545,16384
+start-inference-E-5,10.662357091903688,97.76117636879295,1904.256,32,128,5,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545.1875,16384
+start-inference-E-6,10.66128945350647,97.24939296572387,1903.411,32,128,6,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+V100,14545.1875,16384
+start-inference-F-0,14.21979594230652,129.18930844820832,3011.687,32,256,0,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14643.1875,16384
+start-inference-F-1,14.21882700920105,128.7444374531051,3025.933,32,256,1,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14641.1875,16384
+start-inference-F-2,14.22029948234558,129.06375858739614,3035.714,32,256,2,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14641.375,16384
+start-inference-F-3,14.217081308364868,150.55649246487974,3043.108,32,256,3,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14641.375,16384
+start-inference-F-4,14.215604305267334,146.78409680945015,3050.613,32,256,4,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14643.375,16384
+start-inference-F-5,14.214017868041992,140.47149335388445,3055.083,32,256,5,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14643.375,16384
+start-inference-F-6,14.216785669326782,129.98388276952338,3056.434,32,256,6,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,14641.375,16384
+start-inference-G-0,26.49530816078186,300.3068538218404,5775.793,32,512,0,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.5625,16384
+start-inference-G-1,26.489569664001465,250.6751566,5788.887,32,512,1,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.5625,16384
+start-inference-G-2,26.49160671234131,267.36415552312457,5790.94,32,512,2,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.75,16384
+start-inference-G-3,26.488598585128784,248.91368172287346,5796.511,32,512,3,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.75,16384
+start-inference-G-4,26.494012117385864,245.71441024768126,5802.455,32,512,4,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.9375,16384
+start-inference-G-5,26.491273641586304,246.4815438373077,5801.81,32,512,5,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.9375,16384
+start-inference-G-6,26.490909099578857,241.95908326779175,5802.476,32,512,6,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,14649.1875,16384
+start-inference-H-0,48.91979908943176,449.2143647565782,10614.679,32,1024,0,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15023.1875,16384
+start-inference-H-1,48.93363380432129,446.3563981,10615.864,32,1024,1,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15023.375,16384
+start-inference-H-2,48.914268255233765,444.20595321071005,10605.324,32,1024,2,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15021.5625,16384
+start-inference-H-3,48.92643523216248,444.92365746024655,10608.122,32,1024,3,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15023.75,16384
+start-inference-H-4,48.92706060409546,439.1223611,10606.862,32,1024,4,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15023.9375,16384
+start-inference-H-5,48.92119741439819,442.14051020275997,10612.07,32,1024,5,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15023,16384
+start-inference-H-6,48.93745684623718,441.99289315454865,10613.422,32,1024,6,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+V100,15021.1875,16384
+start-inference-I-0,102.8063132762909,1047.4174250086278,23655.673,32,2048,0,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15687.375,16384
+start-inference-I-1,102.81435084342957,981.3625830939936,23708.662,32,2048,1,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15685.75,16384
+start-inference-I-2,102.80926275253296,944.8311297983474,23712.244,32,2048,2,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15685.1875,16384
+start-inference-I-3,102.8090512752533,929.4012408904596,23712.784,32,2048,3,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15685.1875,16384
+start-inference-I-4,102.86612629890442,930.8532185931712,23715.426,32,2048,4,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15685.5625,16384
+start-inference-I-5,103.11949729919434,937.0305312630444,23711.429,32,2048,5,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15685.375,16384
+start-inference-I-6,103.1268184185028,1081.7123217157134,23714.007,32,2048,6,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Palmetto Intel+V100,15683.5625,16384
+tokenizer,0.2484614849090576,-0.548904187,5.778,32,0,0,Mistral (7B),1,startup,0,32,Palmetto Intel+V100,14670.8125,16384
+model load,28.937697649002075,74.55134506770206,1021.822,32,0,0,Mistral (7B),1,startup,0,32,Palmetto Intel+V100,14670.8125,16384
+start-inference-A-0,18.99559235572815,84.58294033221519,1252.69,32,8,0,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15351,16384
+start-inference-A-1,15.852599382400513,74.27486574,1134.242,32,8,1,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15351,16384
+start-inference-A-2,13.54474925994873,60.79023854905462,1043.871,32,8,2,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15351,16384
+start-inference-A-3,13.223540782928469,55.77025424414587,1032.263,32,8,3,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.25,16384
+start-inference-A-4,13.547492504119871,55.39128424483729,1047.745,32,8,4,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.25,16384
+start-inference-A-5,13.207191944122314,54.91653369093859,1034.906,32,8,5,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.25,16384
+start-inference-A-6,13.253261089324951,55.545457141197204,1036.711,32,8,6,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.25,16384
+start-inference-A-7,13.490003108978271,54.589528240086615,1046.369,32,8,7,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.25,16384
+start-inference-A-8,13.140425443649292,54.98017015875959,1034.183,32,8,8,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.4375,16384
+start-inference-A-9,13.437004804611206,54.61955679777813,1046.302,32,8,9,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.4375,16384
+start-inference-A-10,13.31113576889038,54.02130120699269,1043.739,32,8,10,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+V100,15350.4375,16384
+start-inference-B-0,13.233814716339111,57.64819118632072,1069.149,32,16,0,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.4375,16384
+start-inference-B-1,13.562840700149536,54.376537154971125,1082.928,32,16,1,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.625,16384
+start-inference-B-2,13.205796718597412,55.77178118027306,1067.765,32,16,2,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.625,16384
+start-inference-B-3,13.360210657119753,55.76572181479752,1075.946,32,16,3,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.625,16384
+start-inference-B-4,13.42883563041687,54.60199283512449,1081.109,32,16,4,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.625,16384
+start-inference-B-5,13.183242082595823,54.45125343155718,1068.151,32,16,5,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.625,16384
+start-inference-B-6,13.624038457870483,53.84540262228054,1088.41,32,16,6,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+V100,15100.8125,16384
+start-inference-C-0,13.14987826347351,54.628680953508976,1102.568,32,32,0,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15348.8125,16384
+start-inference-C-1,13.256896257400513,54.911703972728255,1104.901,32,32,1,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15348.8125,16384
+start-inference-C-2,13.455758810043337,57.900515311271604,1115.529,32,32,2,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15348.8125,16384
+start-inference-C-3,13.14784574508667,55.64735754793399,1101.554,32,32,3,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15349,16384
+start-inference-C-4,13.451980113983154,55.10049038893038,1117.213,32,32,4,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15349,16384
+start-inference-C-5,13.287484407424929,54.83738681421256,1107.111,32,32,5,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15349,16384
+start-inference-C-6,13.256815433502195,55.484474885046126,1110.26,32,32,6,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+V100,15349,16384
+start-inference-D-0,16.198614358901978,53.63949933,1704.394,32,64,0,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.0625,16384
+start-inference-D-1,15.869511365890505,55.28374550500071,1695.869,32,64,1,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-D-2,16.300408124923706,54.984578658154014,1715.053,32,64,2,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-D-3,15.873803615570068,57.71764766588855,1702.496,32,64,3,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-D-4,16.308800220489502,55.16062921367729,1725.354,32,64,4,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-D-5,15.876956462860107,56.04205437830198,1702.724,32,64,5,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-D-6,16.168335914611816,52.98883728,1719.274,32,64,6,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+V100,15350.25,16384
+start-inference-E-0,18.18277668952942,54.572664575641156,2363.57,32,128,0,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.25,16384
+start-inference-E-1,18.418241024017338,55.79850194919598,2382.96,32,128,1,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-E-2,18.082282543182373,55.632937288709165,2374.624,32,128,2,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-E-3,18.47520613670349,57.69919232323003,2400.33,32,128,3,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-E-4,18.04170298576355,56.66475716553175,2373.391,32,128,4,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.625,16384
+start-inference-E-5,18.47215175628662,76.15969325451184,2397.228,32,128,5,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.625,16384
+start-inference-E-6,18.04349684715271,72.26951653638756,2375.967,32,128,6,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+V100,15348.625,16384
+start-inference-F-0,22.51173210144043,76.62293472023904,3717.501,32,256,0,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.8125,16384
+start-inference-F-1,22.34556508,84.23520160967588,3722.316,32,256,1,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.8125,16384
+start-inference-F-2,22.26273798942566,84.42611852726185,3727.116,32,256,2,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.0625,16384
+start-inference-F-3,22.51189422607422,57.65678642414415,3736.805,32,256,3,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.25,16384
+start-inference-F-4,22.181807041168213,57.21176368772638,3730.546,32,256,4,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.25,16384
+start-inference-F-5,22.40415930747986,58.193244243685605,3743.132,32,256,5,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.25,16384
+start-inference-F-6,22.50719404220581,56.69982159651864,3749.483,32,256,6,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-G-0,35.41038250923157,58.21236903,6770.8,32,512,0,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-G-1,35.40242886543274,55.65958896876907,6815.064,32,512,1,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.25,16384
+start-inference-G-2,35.42277431488037,56.07041698750734,6814.557,32,512,2,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-G-3,35.40272545814514,59.21825372120714,6827.932,32,512,3,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.4375,16384
+start-inference-G-4,35.41047120094299,64.33044733954405,6825.549,32,512,4,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.625,16384
+start-inference-G-5,35.39535952,58.84164758569503,6832.104,32,512,5,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.0625,16384
+start-inference-G-6,35.40062117576599,59.07494327022695,6837.788,32,512,6,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+V100,15348.25,16384
+start-inference-H-0,58.81480622291565,67.49366845055008,12224.468,32,1024,0,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.4375,16384
+start-inference-H-1,58.629422664642334,63.89943814182329,12245.955,32,1024,1,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.625,16384
+start-inference-H-2,58.92153502,85.70031640971565,12276.234,32,1024,2,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.25,16384
+start-inference-H-3,58.883150577545166,129.6434759245591,12274.582,32,1024,3,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.4375,16384
+start-inference-H-4,58.60641121864319,96.82018205092764,12264.798,32,1024,4,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.25,16384
+start-inference-H-5,58.86743760108948,63.981642680638316,12268.479,32,1024,5,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.4375,16384
+start-inference-H-6,58.90181589126587,56.13380712944555,12282.11,32,1024,6,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+V100,15412.625,16384
+start-inference-I-0,120.57135581970216,34.42762427404595,26792.987,32,2048,0,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-1,120.32848596572876,-51.5510921,26778.727,32,2048,1,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.4375,16384
+start-inference-I-2,120.3190894126892,-51.31712653,26784.886,32,2048,2,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.8125,16384
+start-inference-I-3,121.95038509368896,81.63876751962853,26861.294,32,2048,3,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-4,122.07565760612488,-30.95510009,26855.686,32,2048,4,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.625,16384
+start-inference-I-5,120.60435914993286,-52.03121182,26799.899,32,2048,5,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15889,16384
+start-inference-I-6,120.27943587303162,-47.61041223,26788.899,32,2048,6,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-7,120.39373064041138,-31.55538991,26785.371,32,2048,7,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.625,16384
+start-inference-I-8,122.58957076072691,43.89457397205639,26889.46,32,2048,8,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-9,120.48112392425536,-56.45670152,26774.836,32,2048,9,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-10,120.40282940864564,-58.65554906,26810.028,32,2048,10,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2153,32,Palmetto Intel+V100,15888.625,16384
+start-inference-I-11,122.75076055526732,-70.65844483,26881.494,32,2048,11,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.4375,16384
+start-inference-I-12,121.29924654960632,-17.00055487,26803.446,32,2048,12,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+start-inference-I-13,121.10138773918152,30.812944372573853,26818.502,32,2048,13,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Palmetto Intel+V100,15888.25,16384
+load model,21.80514931678772,19.443789543396953,2.6216965599999993,32,0,0,Llama-2 (7B),1,,0,32,M1-Pro,12916.51563,
+inference-A-0,19.865201950073242,45.84022257454948,85.10753088,32,8,0,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-1,9.500931024551392,11.685690010127889,85.44470883000001,32,8,1,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-2,9.453864812850952,12.385261262571682,84.25711596000002,32,8,2,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-3,9.475147963,12.832452054682088,85.96261348000002,32,8,3,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-4,9.484092950820923,12.53006366061876,85.06522761000001,32,8,4,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-5,9.459970235824585,12.329622042958118,85.44895690999999,32,8,5,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-A-6,9.469401836395264,12.652167932483968,86.45824605,32,8,6,Llama-2 (7B),1,What is the largest city in France?,40,32,M1-Pro,12916.51563,
+inference-B-0,14.475600004196167,28.643622781724805,109.92211986999997,32,16,0,Llama-2 (7B),1,Can you explain the difference between a simile an,47,32,M1-Pro,12916.51563,
+inference-B-1,10.15349817276001,13.119840913279749,109.78479739999997,32,16,1,Llama-2 (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,12916.51563,
+inference-B-2,10.112746000289917,13.022409322420874,109.62513481999999,32,16,2,Llama-2 (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,12916.51563,
+inference-B-3,10.124595880508423,12.803871155756973,108.7773727,32,16,3,Llama-2 (7B),1,Can you explain the difference between a simile an,47,32,M1-Pro,12916.51563,
+inference-B-4,10.160398006439209,13.33614505628207,110.7773187,32,16,4,Llama-2 (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,12916.51563,
+inference-B-5,9.917467832565308,11.948338473404666,109.8231135,32,16,5,Llama-2 (7B),1,Can you explain the difference between a simile an,47,32,M1-Pro,12916.51563,
+inference-B-6,10.114741086959839,13.062745189594356,111.01890338000003,32,16,6,Llama-2 (7B),1,Can you explain the difference between a simile an,47,32,M1-Pro,12916.51563,
+inference-C-0,19.038471221923828,39.83576509566609,148.91921316999995,32,32,0,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-1,11.4979248,11.36650822995433,147.0106906,32,32,1,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-2,11.464313983917236,11.634276735328198,146.88081051999995,32,32,2,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-3,11.481847763061523,11.75773000271947,148.1331238,32,32,3,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-4,11.486037969589233,11.345135172099562,146.50301535999998,32,32,4,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-5,11.450514793395996,11.134741195930326,145.5274303,32,32,5,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-C-6,11.47045898,11.040423988096032,146.30816230999997,32,32,6,Llama-2 (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,12916.51563,
+inference-D-0,34.11403418,78.02506296593953,238.8645183,32,64,0,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,95,32,M1-Pro,12916.51563,
+inference-D-1,16.553722143173218,8.739323042084278,240.03624069000003,32,64,1,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,95,32,M1-Pro,12916.51563,
+inference-D-2,16.508970975875854,8.783831029302616,239.9486702,32,64,2,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,91,32,M1-Pro,12916.51563,
+inference-D-3,16.580141067504883,8.87727815,241.3343247500001,32,64,3,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,93,32,M1-Pro,12916.51563,
+inference-D-4,16.545729160308838,9.063234942768899,239.44831392999993,32,64,4,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,12916.51563,
+inference-D-5,16.529799938201904,9.001787252723993,239.79768364000006,32,64,5,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,12916.51563,
+inference-D-6,16.500131130218506,9.053026275308307,240.25914678000007,32,64,6,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,12916.51563,
+inference-E-0,55.86204504966736,129.27230551505806,413.00562468999993,32,128,0,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",158,32,M1-Pro,12916.51563,
+inference-E-1,24.976007223129272,8.462891988746623,414.72242081999997,32,128,1,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",158,32,M1-Pro,12916.51563,
+inference-E-2,25.174736738204956,8.795088549094512,418.3465554,32,128,2,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",159,32,M1-Pro,12916.51563,
+inference-E-3,25.11922574043274,8.879748878962037,418.43416373999986,32,128,3,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",159,32,M1-Pro,12916.51563,
+inference-E-4,24.916026830673218,8.858012195167472,416.3215044900001,32,128,4,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",159,32,M1-Pro,12916.51563,
+inference-E-5,24.904218196868896,8.940275679808847,415.1537525,32,128,5,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",159,32,M1-Pro,12916.51563,
+inference-E-6,25.115821838378906,12.652426457046063,417.15623547999985,32,128,6,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",158,32,M1-Pro,12916.51563,
+inference-F-0,80.53404998779297,152.36331209369996,690.8100222,32,256,0,Llama-2 (7B),1,/* An improved random number generation package.,287,32,M1-Pro,12916.51563,
+inference-F-1,38.95360016822815,10.503917807990064,697.1076139400002,32,256,1,Llama-2 (7B),1,/* An improved random number generation package.,282,32,M1-Pro,12916.51563,
+inference-F-2,38.59418583,11.211250006251111,694.9966118899999,32,256,2,Llama-2 (7B),1,/* An improved random number generation package.,286,32,M1-Pro,12916.51563,
+inference-F-3,38.754125118255615,10.36656118974844,696.0527426499998,32,256,3,Llama-2 (7B),1,/* An improved random number generation package.,286,32,M1-Pro,12916.51563,
+inference-F-4,38.810872077941895,10.943362590176253,699.6973323300001,32,256,4,Llama-2 (7B),1,/* An improved random number generation package.,286,32,M1-Pro,12916.51563,
+inference-F-5,38.919662952423096,11.369915091010384,700.7350745099999,32,256,5,Llama-2 (7B),1,/* An improved random number generation package.,286,32,M1-Pro,12916.51563,
+inference-F-6,38.72255277633667,11.020791026070086,698.9476118099998,32,256,6,Llama-2 (7B),1,/* An improved random number generation package.,285,32,M1-Pro,12916.51563,
+inference-G-0,117.42335915565491,166.8266453728928,1362.6126109700006,32,512,0,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,543,32,M1-Pro,12916.51563,
+inference-G-1,71.74920201301575,17.368590923881296,1366.5408782000006,32,512,1,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,541,32,M1-Pro,12916.51563,
+inference-G-2,70.94126486778259,15.709228431169903,1372.0080254600002,32,512,2,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,541,32,M1-Pro,12916.51563,
+inference-G-3,71.33502626419067,15.706545619777028,1367.020674110001,32,512,3,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,543,32,M1-Pro,12916.51563,
+inference-G-4,71.36753392219543,15.47325763705576,1368.689026070002,32,512,4,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,543,32,M1-Pro,12916.51563,
+inference-G-5,70.84525418281555,15.005834318334086,1365.2470256099991,32,512,5,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,543,32,M1-Pro,12916.51563,
+inference-G-6,71.57420397,16.67626261768774,1367.714711,32,512,6,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,538,32,M1-Pro,12916.51563,
+inference-H-0,198.70784616470337,261.3545240135754,2500.4192619500004,32,1024,0,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1052,32,M1-Pro,12916.51563,
+inference-H-1,132.08657503128052,29.43299210576544,2518.543828200001,32,1024,1,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-2,127.13076901435852,25.895136709834976,2514.8723509900005,32,1024,2,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-3,127.92239904403687,25.930009597185606,2506.0759434499987,32,1024,3,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-4,127.96254706382751,25.068596252235146,2508.966635,32,1024,4,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1052,32,M1-Pro,12916.51563,
+inference-H-5,129.81068325042725,28.878338600367613,2508.143447560003,32,1024,5,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1051,32,M1-Pro,12916.51563,
+inference-H-6,131.94320702552795,31.697296544826074,2511.681304030003,32,1024,6,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1052,32,M1-Pro,12916.51563,
+inference-H-7,127.0641222000122,23.74139818190464,2513.127427,32,1024,7,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-8,130.42508578300476,30.072080000524775,2511.617266470001,32,1024,8,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-9,126.67854404449463,27.415202030838728,2503.4880755699996,32,1024,9,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1051,32,M1-Pro,12916.51563,
+inference-H-10,127.0535671710968,25.195570543950247,2509.1749714299985,32,1024,10,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,M1-Pro,12916.51563,
+inference-H-11,136.59669876098633,36.29784226183492,2510.0500216999994,32,1024,11,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,M1-Pro,12916.51563,
+inference-H-12,131.91260695457458,31.716278447984024,2508.303958219998,32,1024,12,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-13,126.06750893592834,26.090979829836737,2511.4118362500003,32,1024,13,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-14,126.78395676612854,22.22759699809338,2510.3745712200002,32,1024,14,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1050,32,M1-Pro,12916.51563,
+inference-H-15,125.82508587837219,23.585924642715643,2506.6112419800006,32,1024,15,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,M1-Pro,12916.51563,
+inference-H-16,114.51232409477234,21.74171483781839,2269.2213887200023,32,1024,16,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1048,32,M1-Pro,12916.51563,
+inference-H-17,126.14900588989258,24.107763508768215,2512.295038,32,1024,17,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-18,134.04911518096924,30.96889180123924,2564.7162314499983,32,1024,18,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,M1-Pro,12916.51563,
+inference-H-19,133.2583270072937,30.527445114028236,2548.796971240001,32,1024,19,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,M1-Pro,12916.51563,
+inference-H-20,135.2080099582672,32.97874853,2559.6474383800005,32,1024,20,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-21,135.18564295768738,29.767721557250606,2569.6200783399977,32,1024,21,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-22,133.37849521636963,27.337173548483772,2558.1315834099996,32,1024,22,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-23,136.56150770187378,33.77985932282638,2575.132326360001,32,1024,23,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,M1-Pro,12916.51563,
+inference-H-24,135.7289719581604,33.872616825130066,2557.1853724400003,32,1024,24,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,M1-Pro,12916.51563,
+inference-I-0,424.7139141559601,392.90189640768955,5765.829540780003,32,2048,0,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2073,32,M1-Pro,12916.51563,
+inference-I-1,355.2435269355774,149.9803092319644,5717.898633489997,32,2048,1,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2063,32,M1-Pro,12916.51563,
+inference-I-2,343.8879029750824,147.5947293,5790.085692609997,32,2048,2,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2077,32,M1-Pro,12916.51563,
+inference-I-3,364.6391680240631,177.69188442029443,5780.192877320009,32,2048,3,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2076,32,M1-Pro,12916.51563,
+inference-I-4,345.79121494293213,128.0340476,5797.608652359995,32,2048,4,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2078,32,M1-Pro,12916.51563,
+inference-I-5,361.95430517196655,178.72495751610774,5792.058802950012,32,2048,5,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2064,32,M1-Pro,12916.51563,
+inference-I-6,309.87514209747314,97.68658061169579,5768.468611100008,32,2048,6,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2077,32,M1-Pro,12916.51563,
+inference-A-0,20.947091102600098,42.81316884221227,91.95531973999998,32,8,0,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-1,9.779757022857666,11.886476452149616,91.54461519999998,32,8,1,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-2,9.767246723175049,11.741865104079974,90.69101196999999,32,8,2,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-3,9.787562131881714,11.456241236579066,90.83710857999998,32,8,3,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-4,9.772897005081177,11.630937137021418,91.29889286000002,32,8,4,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-5,9.789476871490479,11.744076469583991,91.56155656999998,32,8,5,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-A-6,9.769757270812988,11.731209701333354,91.68779303000002,32,8,6,Mistral (7B),1,What is the largest city in France?,40,32,M1-Pro,14324.51563,
+inference-B-0,13.405998706817627,23.257785558946743,111.1273247,32,16,0,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-1,10.676896333694458,11.547305820089834,112.33305356000001,32,16,1,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-2,10.444138050079346,11.16781697451184,111.15578282999999,32,16,2,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-3,10.451776027679443,11.213786536472433,111.6218892,32,16,3,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-4,10.438223838806152,11.293875039479353,112.01342032999999,32,16,4,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-5,10.631871938705444,11.400496881153373,112.76659114999997,32,16,5,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-B-6,10.456851959228516,11.310044065491219,111.8430511,32,16,6,Mistral (7B),1,Can you explain the difference between a simile an,48,32,M1-Pro,14324.51563,
+inference-C-0,15.689032077789307,25.439042371867792,144.2743646000001,32,32,0,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-1,12.018866777420044,10.74485829,142.71027709999998,32,32,1,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-2,12.038453102111816,10.700589076523904,145.5129032,32,32,2,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-3,12.027474880218506,10.655644440625766,145.1940461,32,32,3,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-4,12.227391004562378,10.81608556,145.5824137,32,32,4,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-5,12.020961046218872,10.997300699435147,143.28467484000004,32,32,5,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-C-6,12.03402304649353,10.892051041666859,144.72485742000003,32,32,6,Mistral (7B),1,What are some effective strategies for managing st,64,32,M1-Pro,14324.51563,
+inference-D-0,30.67923402786255,63.85218658816055,245.28657732000002,32,64,0,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-1,16.85532498,8.232597509191049,247.43888175000006,32,64,1,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-2,17.054083824157715,8.348850497194096,251.39741256999997,32,64,2,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-3,16.874263048171997,8.419839662,248.08534296000002,32,64,3,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-4,17.11846089363098,8.486313140558082,250.69856014000004,32,64,4,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-5,17.18362808227539,8.450477900485623,251.65750507999996,32,64,5,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-D-6,16.909810781478882,8.401138458,247.70716109000003,32,64,6,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,96,32,M1-Pro,14324.51563,
+inference-E-0,44.286823987960815,85.48954410871448,407.7061372699999,32,128,0,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-1,24.82695508003235,7.8415189196497375,409.35705778999977,32,128,1,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-2,24.603622913360596,8.139654972569753,408.30625398000006,32,128,2,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-3,24.70588994026184,7.874775529104335,407.51930377000014,32,128,3,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-4,24.750768899917603,7.883700834,408.06495000999996,32,128,4,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-5,24.63421607017517,8.019641257125487,407.0891499000001,32,128,5,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-E-6,24.582776069641113,8.115522451,407.57391427999994,32,128,6,Mistral (7B),1,"As an AI language model, you possess the capabilit",160,32,M1-Pro,14324.51563,
+inference-F-0,69.31507420539856,129.67781460677932,734.4094762500002,32,256,0,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-1,40.70758318901062,9.070345747415553,737.1604581599998,32,256,1,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-2,40.568090200424194,7.241344919,741.0479776299997,32,256,2,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-3,41.083319902420044,8.799591529723058,741.3998404300002,32,256,3,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-4,40.51144814491272,8.218276201696595,740.6934280500002,32,256,4,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-5,40.505841970443726,8.240470869944469,742.8232750899998,32,256,5,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-F-6,40.38344693183899,9.028118988188236,739.4670569999998,32,256,6,Mistral (7B),1,/* An improved random number generation package.,288,32,M1-Pro,14324.51563,
+inference-G-0,112.84073805809021,145.6337391,1439.868795750001,32,512,0,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-1,75.58787727355957,20.786268654370108,1448.6227659300002,32,512,1,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-2,75.28652715682983,17.98040412119578,1452.0209776799998,32,512,2,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-3,74.92525815963745,17.713993880521105,1450.9737960599994,32,512,3,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-4,74.18391227722168,16.265480867182614,1449.4108265900002,32,512,4,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-5,74.93665814399719,17.697881306936726,1445.686851,32,512,5,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-G-6,74.28979396820068,15.536676441670219,1448.1186746899996,32,512,6,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,544,32,M1-Pro,14324.51563,
+inference-H-0,186.37502598762512,182.82205452564003,2664.4314521500014,32,1024,0,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-1,137.88400411605835,35.06397742284318,2669.477366009998,32,1024,1,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-2,137.71876096725464,35.293237427301314,2668.9802382300027,32,1024,2,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-3,136.9758231639862,35.46972770008917,2680.6242472400027,32,1024,3,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-4,141.8671031,41.611272432817366,2681.433389440003,32,1024,4,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-5,137.9995138645172,35.571215320160995,2667.0117214399997,32,1024,5,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-6,138.0936679840088,35.43406449828778,2666.549636990002,32,1024,6,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-7,138.26124811172485,37.844633224486465,2679.797496570003,32,1024,7,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-8,137.9867730140686,37.11505634720895,2690.0719213999996,32,1024,8,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-9,137.7649440765381,37.42783147153682,2672.027789030004,32,1024,9,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-10,142.7606930732727,46.11625563242247,2696.4936972099986,32,1024,10,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-11,143.38625597953796,46.49606215,2689.3299888100014,32,1024,11,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-12,142.24639415740967,42.635290482638545,2670.1558838899996,32,1024,12,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-13,142.6810679,44.345186447727066,2677.219358,32,1024,13,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-14,147.16135001182556,51.70837003768895,2682.8914357599992,32,1024,14,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-H-15,141.62929582595825,42.984547536831215,2669.9933960699946,32,1024,15,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,M1-Pro,14324.51563,
+inference-I-0,347.4721426963806,149.07651282199254,6049.424763070012,32,2048,0,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,M1-Pro,14324.51563,
+inference-I-1,366.06022596359253,166.78673269992564,6061.652622160007,32,2048,1,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2080,32,M1-Pro,14324.51563,
+inference-I-2,360.5579979419708,154.61322217637647,5993.335121760009,32,2048,2,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2080,32,M1-Pro,14324.51563,
+inference-I-3,374.62812781333923,188.55002380616233,6018.779468319985,32,2048,3,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2080,32,M1-Pro,14324.51563,
+tokenizer,0.2961413860321045,0.8025179883238277,15.984,32,0,0,Falcon (7B),1,startup,0,32,Swing AMD+A100,14925.6875,40960
+model load,51.574416637420654,139.76228599251164,2984.902,32,0,0,Falcon (7B),1,startup,0,32,Swing AMD+A100,14925.6875,40960
+start-inference-A-0,3.3413374423980713,9.054740502543895,261.955,32,8,0,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-1,0.9277348518371582,2.514082604157013,137.342,32,8,1,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-2,0.9229679107666016,2.501164598978275,140.51,32,8,2,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-3,0.9224629402160645,2.499796171701664,155.685,32,8,3,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-4,0.9273734092712402,2.5131031255208742,139.049,32,8,4,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-5,0.9236528873443604,2.5030208272906944,139.933,32,8,5,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-A-6,0.9240169525146484,2.5040074129617924,140.549,32,8,6,Falcon (7B),1,What is the largest city in France?,40,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-0,0.9276182651519777,2.513766664148391,159.824,32,16,0,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-1,0.9283416271209716,2.5157269136088427,140.916,32,16,1,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-2,0.9260680675506592,2.5095657603936563,142.353,32,16,2,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-3,0.9362359046936036,2.537119734928899,157.663,32,16,3,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-4,0.9279398918151855,2.5146382450719735,143.73,32,16,4,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-5,0.9290673732757568,2.5176936240101675,143.927,32,16,5,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-B-6,0.926288366,2.5101627513301947,144.738,32,16,6,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Swing AMD+A100,15023.6875,40960
+start-inference-C-0,0.9311771392822266,2.523410910587473,149.769,32,32,0,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-1,0.9267845153808594,2.511507273125581,148.068,32,32,1,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-2,0.9271843433380128,2.512590772909754,149.341,32,32,2,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-3,0.9308023452758788,2.5223952506824525,166.232,32,32,3,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-4,0.9289841651916504,2.5174681371737475,149.613,32,32,4,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-5,0.9380767345428468,2.542108227375885,144.448,32,32,5,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-C-6,0.927419901,2.5132291138678706,161.177,32,32,6,Falcon (7B),1,What are some effective strategies for managing st,64,32,Swing AMD+A100,15025.6875,40960
+start-inference-D-0,0.9844577312469482,2.6677967867162344,182.582,32,64,0,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-1,0.9851284027099608,2.669614249383424,164.383,32,64,1,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-2,0.9862051010131836,2.672532010281053,164.532,32,64,2,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-3,0.9831900596618652,2.6643615044547886,183.409,32,64,3,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-4,0.982779026,2.663247638248519,183.503,32,64,4,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-5,1.1395156383514404,3.087990537243592,184.709,32,64,5,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-D-6,0.9873840808868408,2.6757269455420736,183.807,32,64,6,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Swing AMD+A100,15027.6875,40960
+start-inference-E-0,1.1924738883972168,3.231502894166509,255.5,32,128,0,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-1,1.0981180667877195,2.9758066365131235,251.847,32,128,1,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-2,1.097080945968628,2.972996127233965,253.4,32,128,2,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-3,1.0977418422698977,2.9747871000435815,252.182,32,128,3,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-4,1.0956108570098877,2.9690123110925173,253.216,32,128,4,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-5,1.0978398323059082,2.9750526447134047,253.177,32,128,5,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-E-6,1.0945184230804443,2.966051907985136,252.263,32,128,6,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-0,1.234905242919922,3.346488258858917,358.745,32,256,0,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-1,1.237462282180786,3.353417617943739,366.173,32,256,1,Falcon (7B),1,/* An improved random number generation package.,286,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-2,1.232060432434082,3.3387790642108865,366.425,32,256,2,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-3,1.231551170349121,3.3373990072407063,367.184,32,256,3,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-4,1.231553316116333,3.337404822087491,368.198,32,256,4,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-5,1.234161615371704,3.3444730914010545,367.416,32,256,5,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-F-6,1.231888771057129,3.338313876468129,399.733,32,256,6,Falcon (7B),1,/* An improved random number generation package.,288,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-0,2.1070826053619385,5.710014788,705.334,32,512,0,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,546,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-1,2.1049094200134277,5.704125641,707.414,32,512,1,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-2,2.104872703552246,5.7040261422608465,707.469,32,512,2,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-3,2.108499526977539,5.713854525514771,708.845,32,512,3,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-4,2.1052656173706055,5.705090905316491,711.541,32,512,4,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-5,2.1043267250061035,5.702546586801243,715.138,32,512,5,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-G-6,2.107363224029541,5.710775241095352,722.32,32,512,6,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Swing AMD+A100,15021.6875,40960
+start-inference-H-0,4.225121259689331,11.449719538296925,1554.711,32,1024,0,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-1,4.112611770629883,11.144828384658771,1552.76,32,1024,1,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-2,4.116048097610474,11.154140538737051,1569.778,32,1024,2,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-3,4.117655515670776,11.158496505072707,1578.099,32,1024,3,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-4,4.1195127964019775,11.163529578011707,1581.233,32,1024,4,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-5,4.124387502670288,11.17673961771784,1564.936,32,1024,5,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Swing AMD+A100,15165.6875,40960
+start-inference-H-6,4.121939659118652,11.170106169724939,1568.661,32,1024,6,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Swing AMD+A100,15165.6875,40960
+start-inference-I-0,10.679460048675535,28.940429129073706,3898.124,32,2048,0,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,Swing AMD+A100,26571.6875,40960
+start-inference-I-1,10.461214065551758,28.349001062625533,3892.105,32,2048,1,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2078,32,Swing AMD+A100,26569.6875,40960
+start-inference-I-2,10.463834285736084,28.35610163664345,3891.486,32,2048,2,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,Swing AMD+A100,26569.6875,40960
+start-inference-I-3,10.491636753082275,28.43144396033571,3867.386,32,2048,3,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,Swing AMD+A100,26569.6875,40960
+start-inference-I-4,10.46038007736206,28.346741025508635,3885.58,32,2048,4,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,Swing AMD+A100,26569.6875,40960
+start-inference-I-5,9.761764287948608,26.45355160864487,3608.916,32,2048,5,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2076,32,Swing AMD+A100,25397.6875,40960
+start-inference-I-6,10.500657558441162,28.455889576217608,3846.977,32,2048,6,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2079,32,Swing AMD+A100,26569.6875,40960
+tokenizer,0.3276929855346679,0.6628005055983699,16.237,32,0,0,Llama-2 (7B),1,startup,0,32,Swing AMD+A100,14025.6875,40960
+model load,61.26034331321716,123.90679176388554,3586.627,32,0,0,Llama-2 (7B),1,startup,0,32,Swing AMD+A100,14025.6875,40960
+start-inference-A-0,5.429890871047974,10.982640988797804,390.803,32,8,0,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-1,0.9455738067626952,1.9125426080766255,138.01,32,8,1,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-2,0.9435195922851562,1.9083876995054248,139.909,32,8,2,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-3,0.9494125843048096,1.920307021134298,138.695,32,8,3,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-4,0.9463934898376464,1.914200520758588,139.318,32,8,4,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-5,0.9466376304626464,1.914694326048387,140.487,32,8,5,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-A-6,0.94328928,1.907921863655868,139.798,32,8,6,Llama-2 (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,14317.6875,40960
+start-inference-B-0,0.9476661682128906,1.9167746737243576,160.835,32,16,0,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14317.6875,40960
+start-inference-B-1,0.9466228485107422,1.9146644276812315,144.975,32,16,1,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14317.6875,40960
+start-inference-B-2,1.0068888664245603,2.0365600705754647,161.094,32,16,2,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14317.6875,40960
+start-inference-B-3,1.0777394771575928,2.1798643910484437,150.251,32,16,3,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14319.6875,40960
+start-inference-B-4,0.9488685131072998,1.9192065683302728,162.64,32,16,4,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14319.6875,40960
+start-inference-B-5,0.9488074779510498,1.919083117007823,144.528,32,16,5,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14319.6875,40960
+start-inference-B-6,0.9505372047424316,1.922581708196781,161.795,32,16,6,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Swing AMD+A100,14317.6875,40960
+start-inference-C-0,0.9555728435516356,1.9327669245306172,152.966,32,32,0,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-1,0.9564015865325928,1.934443162018256,172.458,32,32,1,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-2,0.9551880359649658,1.9319886025211097,154.299,32,32,2,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-3,0.9655470848083496,1.9529410888848635,154.039,32,32,3,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-4,0.9542884826660156,1.9301691422101601,174.3,32,32,4,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-5,0.9606096744537354,1.942954552023095,154.982,32,32,5,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-C-6,0.95405221,1.9296912505673953,174.535,32,32,6,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Swing AMD+A100,14319.6875,40960
+start-inference-D-0,0.9788222312927246,1.9797917515176937,202.876,32,64,0,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14355.6875,40960
+start-inference-D-1,0.9685657024383544,1.9590466247971168,181.2,32,64,1,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14355.6875,40960
+start-inference-D-2,0.9701921939849854,1.9623364096477125,203.288,32,64,2,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14357.6875,40960
+start-inference-D-3,0.9706239700317384,1.9632097313076995,202.242,32,64,3,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14357.6875,40960
+start-inference-D-4,0.974642277,1.9713372648567962,202.772,32,64,4,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14355.6875,40960
+start-inference-D-5,0.9716346263885498,1.9652539116040457,182.665,32,64,5,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14357.6875,40960
+start-inference-D-6,0.9734256267547609,1.9688764363471818,203.093,32,64,6,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Swing AMD+A100,14357.6875,40960
+start-inference-E-0,0.9562530517578124,1.9341427316515127,268.369,32,128,0,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-1,0.957911253,1.9374966533219753,244.131,32,128,1,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-2,0.9559886455535888,1.9336079366648062,274.445,32,128,2,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-3,0.9572103023529052,1.9360788920407155,245.793,32,128,3,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-4,0.9558959007263184,1.9334203485224901,246.303,32,128,4,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-5,0.9558548927307128,1.9333374046652192,274.002,32,128,5,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-E-6,0.954885721,1.9313771326896005,245.586,32,128,6,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Swing AMD+A100,14349.6875,40960
+start-inference-F-0,1.2376134395599363,2.5032296987903684,393.469,32,256,0,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-1,1.237055778503418,2.5021017587778296,364.058,32,256,1,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-2,1.238497972488403,2.505018778502434,364.319,32,256,2,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-3,1.237936258,2.5038826405505135,395.206,32,256,3,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-4,1.2361090183258057,2.500186816584673,365.644,32,256,4,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-5,1.2376902103424072,2.503384977406888,365.456,32,256,5,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-F-6,1.2373032569885254,2.502602315311825,367.611,32,256,6,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,14447.6875,40960
+start-inference-G-0,1.781250238418579,3.6028038766064747,655.599,32,512,0,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-1,1.7034611701965332,3.4454656483759427,642.98,32,512,1,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-2,1.7029650211334229,3.444462124,647.19,32,512,2,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-3,1.7047185897827148,3.4480089385110997,647.182,32,512,3,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-4,1.7016096115112305,3.441720636773814,650.338,32,512,4,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-5,1.700690746307373,3.439862116,651.043,32,512,5,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-G-6,1.7021667957305908,3.4428476123228964,650.982,32,512,6,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,14453.6875,40960
+start-inference-H-0,3.134373188018799,6.339666167596533,1117.78,32,1024,0,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-H-1,3.132110118865967,6.335088824031325,1116.054,32,1024,1,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-H-2,3.1330652236938477,6.337020644334972,1121.205,32,1024,2,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14705.6875,40960
+start-inference-H-3,3.1337738037109375,6.338453837031538,1158.756,32,1024,3,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-H-4,3.1320085525512695,6.334883393,1124.111,32,1024,4,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-H-5,3.1324779987335205,6.335832907588121,1124.605,32,1024,5,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-H-6,3.1339449882507324,6.338800079412471,1125.919,32,1024,6,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Swing AMD+A100,14707.6875,40960
+start-inference-I-0,6.352797985076904,12.849337344231367,2488.865,32,2048,0,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-1,6.363069534301758,12.870112851550829,2494.263,32,2048,1,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-2,6.363901615142822,12.871795840282662,2487.358,32,2048,2,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-3,6.359682559967041,12.863262267618321,2488.726,32,2048,3,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-4,6.358743667602539,12.861363239072197,2478.718,32,2048,4,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-5,6.3646039962768555,12.873216494954292,2480.675,32,2048,5,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15927.6875,40960
+start-inference-I-6,6.364439010620117,12.872882790598295,2481.706,32,2048,6,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2149,32,Swing AMD+A100,15931.6875,40960
+tokenizer,0.2686319351196289,0.8166834811670293,10.87,32,0,0,Mistral (7B),1,startup,0,32,Swing AMD+A100,15625.6875,40960
+model load,23.531474828720093,71.53939747169402,1380.311,32,0,0,Mistral (7B),1,startup,0,32,Swing AMD+A100,15625.6875,40960
+start-inference-A-0,3.1488189697265625,9.572906648704562,256.409,32,8,0,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-1,0.8371725082397461,2.5451365566871176,149.016,32,8,1,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-2,0.8345363140106201,2.537122110157831,136.701,32,8,2,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-3,0.8346858024597168,2.5375765786369717,152.972,32,8,3,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-4,0.8332388401031494,2.5331775846977265,136.073,32,8,4,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-5,0.8297979831695557,2.5227168365462687,135.04,32,8,5,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-A-6,0.8360190391540527,2.5416298286136176,154.202,32,8,6,Mistral (7B),1,What is the largest city in France?,41,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-0,0.8328971862792969,2.5321389031497055,139.85,32,16,0,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-1,0.8354475498199463,2.5398924108392933,139.567,32,16,1,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-2,0.8305473327636719,2.5249949775828564,159.134,32,16,2,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-3,0.8321874141693115,2.529981083911423,140.404,32,16,3,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-4,0.8411388397216797,2.5571948304016163,158.604,32,16,4,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-5,0.8311376571655273,2.526789656935892,140.213,32,16,5,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-B-6,0.8478784561157227,2.577684327958808,139.628,32,16,6,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-0,0.8355872631072998,2.5403171612839133,165.699,32,32,0,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-1,0.8333110809326172,2.533397208221139,146.395,32,32,1,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-2,0.8476958274841309,2.5771291080943386,164.69,32,32,2,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-3,0.8357794284820557,2.540901374352793,147.681,32,32,3,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-4,0.8328497409820557,2.5319946619577607,148.038,32,32,4,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-5,0.8337907791137695,2.534855566403008,167.281,32,32,5,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-C-6,0.8393762111663818,2.551836161396369,147.225,32,32,6,Mistral (7B),1,What are some effective strategies for managing st,65,32,Swing AMD+A100,15765.6875,40960
+start-inference-D-0,0.8547477722167969,2.598568133095988,200.827,32,64,0,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-1,0.8533854484558105,2.594426453845889,179.953,32,64,1,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-2,0.8533785343170166,2.594405433772691,203.477,32,64,2,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-3,0.8544697761535645,2.597722981,203.443,32,64,3,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-4,0.8531303405761719,2.5936508856278975,181.222,32,64,4,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-5,0.8633556365966797,2.624737399397278,197.406,32,64,5,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-D-6,0.8532352447509766,2.5939698108764175,173.934,32,64,6,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Swing AMD+A100,15793.6875,40960
+start-inference-E-0,0.9931304454803468,3.0192733008704264,263.408,32,128,0,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-1,1.130511999130249,3.436934907011829,293.133,32,128,1,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-2,0.9912762641906738,3.0136362971028343,267.605,32,128,2,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-3,0.9913694858551024,3.013919705675951,241.265,32,128,3,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-4,0.9922885894775392,3.016713925751054,241.292,32,128,4,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-5,0.9911882877349854,3.013368834792144,268.176,32,128,5,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-E-6,0.9903545379638672,3.010834104,267.967,32,128,6,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Swing AMD+A100,15861.6875,40960
+start-inference-F-0,1.1539244651794434,3.5081124990105095,396.86,32,256,0,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-1,1.154965877532959,3.511278556932181,368.914,32,256,1,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-2,1.1508471965789795,3.498757116777218,372.923,32,256,2,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-3,1.1514811515808103,3.5006844400404327,405.145,32,256,3,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-4,1.151484489440918,3.500694587661977,372.766,32,256,4,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-5,1.1529743671417236,3.505224051021072,406.846,32,256,5,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-F-6,1.1527557373046875,3.504559381809952,372.651,32,256,6,Mistral (7B),1,/* An improved random number generation package.,299,32,Swing AMD+A100,15979.6875,40960
+start-inference-G-0,1.7176110744476318,5.221808758315554,669.722,32,512,0,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-1,1.7194900512695312,5.227521144414613,672.757,32,512,1,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-2,1.7214288711547852,5.233415462871351,669.28,32,512,2,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-3,1.7197425365447998,5.228288739501392,672.729,32,512,3,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-4,1.7223460674285889,5.236203884305572,671.778,32,512,4,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-5,1.725379228591919,5.245425172968462,671.583,32,512,5,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-G-6,1.724658727645874,5.243234736375218,711.623,32,512,6,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Swing AMD+A100,16189.6875,40960
+start-inference-H-0,2.858959674835205,8.691688643499502,1100.754,32,1024,0,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-1,2.859890937805176,8.694519829910227,1138.587,32,1024,1,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-2,2.876446008682251,8.744849858277242,1096.803,32,1024,2,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-3,2.8608484268188477,8.697430747633083,1146.426,32,1024,3,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-4,2.8632588386535645,8.704758780047941,1112.634,32,1024,4,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-5,2.862846851348877,8.703506274,1117.903,32,1024,5,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-H-6,2.864084243774414,8.707268141889706,1151.165,32,1024,6,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Swing AMD+A100,16431.6875,40960
+start-inference-I-0,5.678539991378784,17.263657822515352,2246.653,32,2048,0,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-1,5.685473680496216,17.284737331782306,2231.855,32,2048,1,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-2,5.680952072143555,17.270990928740982,2238.329,32,2048,2,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-3,5.6901116371154785,17.298837451917443,2267.502,32,2048,3,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2153,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-4,5.681945801,17.27401202,2239.478,32,2048,4,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-5,5.690350056,17.299562282027715,2232.891,32,2048,5,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+start-inference-I-6,5.6842217445373535,17.280931248873262,2237.892,32,2048,6,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2154,32,Swing AMD+A100,17799.6875,40960
+tokenizer,0.2030739784240722,0.9829116181945838,6.035,32,0,0,Falcon (7B),1,startup,0,32,Palmetto Intel+A100,15627.9375,40960
+model load,26.362341165542603,267.5876475843048,851.09,32,0,0,Falcon (7B),1,startup,0,32,Palmetto Intel+A100,15627.9375,40960
+start-inference-A-0,6.489435195922852,22.907572305786132,291.94,32,8,0,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-1,1.0422756671905518,5.2868749607086185,139.623,32,8,1,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-2,1.0426499843597412,5.342542173019409,130.786,32,8,2,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-3,1.0423946380615234,5.2628161453857425,145.058,32,8,3,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-4,1.0442698001861572,5.476730986038208,131.077,32,8,4,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-5,1.0432734489440918,5.732852329193115,131.796,32,8,5,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-A-6,1.0425746440887451,5.523850693344116,145.05,32,8,6,Falcon (7B),1,What is the largest city in France?,40,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-0,1.0454106330871582,5.1949405184631345,134.48,32,16,0,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-1,1.0456600189208984,5.306485580932617,148.51,32,16,1,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-2,1.0440518856048584,5.21603558,134.364,32,16,2,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-3,1.058854103088379,5.181002268371582,146.748,32,16,3,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-4,1.0443341732025146,5.110209009811402,134.788,32,16,4,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-5,1.044994831085205,5.318715668609619,148.109,32,16,5,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-B-6,1.0454511642456057,5.305730681579575,134.319,32,16,6,Falcon (7B),1,Can you explain the difference between a simile an,48,32,Palmetto Intel+A100,16003.9375,40960
+start-inference-C-0,1.0467092990875244,5.178717568435669,154.599,32,32,0,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-1,1.0439224243164062,5.205665176269531,141.435,32,32,1,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-2,1.0448203086853027,5.235186848602295,155.982,32,32,2,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-3,1.045517921447754,5.256412891418457,141.387,32,32,3,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-4,1.044541835784912,5.322539316131592,155.737,32,32,4,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-5,1.045109748840332,5.167152836975098,141.177,32,32,5,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-C-6,1.046593427658081,5.212370925643921,141.093,32,32,6,Falcon (7B),1,What are some effective strategies for managing st,64,32,Palmetto Intel+A100,16005.9375,40960
+start-inference-D-0,1.0996599197387695,5.449903019592285,162.473,32,64,0,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-1,1.0958991050720217,5.468110119598374,162.816,32,64,1,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-2,1.0978074073791504,5.779087446563721,163.8,32,64,2,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-3,1.106008768081665,5.584943393875122,179.663,32,64,3,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-4,1.0971360206604004,5.59854545,180.968,32,64,4,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-5,1.0950262546539309,5.555973900955185,181.231,32,64,5,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-D-6,1.0953030586242676,5.823785603179932,181.359,32,64,6,Falcon (7B),1,Imagine you are an expert travel guide for Japan.,93,32,Palmetto Intel+A100,16007.9375,40960
+start-inference-E-0,1.2455785274505615,6.894403441207886,243.763,32,128,0,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-1,1.2160139083862305,6.279968871032715,248.605,32,128,1,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-2,1.2166497707366943,6.490212194747925,248.687,32,128,2,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-3,1.216296911239624,6.4503326570281985,271.96,32,128,3,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-4,1.2160933017730713,6.298551367019654,248.068,32,128,4,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-5,1.2146921157836914,6.244216316223144,244.656,32,128,5,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-E-6,1.2154109477996826,6.348507915023804,245.198,32,128,6,Falcon (7B),1,"As an AI language model, you possess the capabilit",157,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-0,1.372910976409912,7.8772797692565915,345.028,32,256,0,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-1,1.3704779148101809,7.311591389236435,324.306,32,256,1,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-2,1.371234655380249,8.068005846481324,346.985,32,256,2,Falcon (7B),1,/* An improved random number generation package.,286,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-3,1.3726637363433838,7.529917774246216,347.268,32,256,3,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-4,1.371697187423706,7.5173869432220455,346.454,32,256,4,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-5,1.3782083988189695,7.460807088577285,321.349,32,256,5,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-F-6,1.3783159255981443,7.633040580139175,345.088,32,256,6,Falcon (7B),1,/* An improved random number generation package.,288,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-0,2.3628458976745605,14.150081674407959,596.864,32,512,0,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-1,2.356788158416748,13.821271118743896,572.354,32,512,1,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-2,2.366564989089966,15.226797818252564,597.037,32,512,2,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-3,2.3626041412353516,20.02586440734863,573.191,32,512,3,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-4,2.3584625720977783,14.512645092666626,598.858,32,512,4,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-5,2.362431049346924,16.697486298980714,570.48,32,512,5,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-G-6,2.364750623703003,15.07991722227478,598.259,32,512,6,Falcon (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,547,32,Palmetto Intel+A100,16001.9375,40960
+start-inference-H-0,4.699566602706909,30.813078796981813,1179.05,32,1024,0,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-1,4.698302268981934,30.72498082635498,1152.388,32,1024,1,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-2,4.701121091842651,30.942646111801146,1177.772,32,1024,2,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1055,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-3,4.706350803375244,30.89166374685669,1177.197,32,1024,3,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1054,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-4,4.709362506866455,31.00648498501587,1179.965,32,1024,4,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1056,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-5,4.714935541152954,30.01844041352844,1154.542,32,1024,5,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1052,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-H-6,4.717806816101074,50.169801792419435,1180.645,32,1024,6,Falcon (7B),1,"/void _quicksort (void *const pbase, size_t total_",1053,32,Palmetto Intel+A100,16145.9375,40960
+start-inference-I-0,11.99323272705078,90.25122747119147,2984.145,32,2048,0,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-1,11.911383867263794,154.06454895521546,2959.073,32,2048,1,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-2,11.916462421417236,87.29686439370728,2955.604,32,2048,2,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-3,11.934595346450806,81.85505701618958,2952.028,32,2048,3,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-4,11.941226959228516,98.76248705786132,2957.362,32,2048,4,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-5,11.952764511108398,85.36021666687012,2963.891,32,2048,5,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+start-inference-I-6,11.970250606536863,91.67349550973516,2960.168,32,2048,6,Falcon (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2082,32,Palmetto Intel+A100,27589.9375,40960
+tokenizer,0.3122847080230713,0.35794389826965334,10.252,32,0,0,Mistral (7B),1,startup,0,32,Palmetto Intel+A100,16327.9375,40960
+model load,30.41758394241333,351.35036831900027,1061.604,32,0,0,Mistral (7B),1,startup,0,32,Palmetto Intel+A100,16327.9375,40960
+start-inference-A-0,1.880931615829468,13.908858812789887,133.598,32,8,0,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-1,0.7695920467376709,5.097878494674682,130.033,32,8,1,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-2,0.768021822,5.094370351821899,131.652,32,8,2,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-3,0.7672669887542725,5.320415843429566,114.859,32,8,3,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-4,0.7670457363128662,5.209567776535034,114.395,32,8,4,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-5,0.7672097682952881,5.620300377853393,132.443,32,8,5,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-A-6,0.7665150165557861,5.024457758,132.866,32,8,6,Mistral (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-0,0.7713208198547363,5.027059510894776,119.09,32,16,0,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-1,0.7661914825439453,5.647049809204102,137.616,32,16,1,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-2,0.7691926956176758,5.702353828674316,137.367,32,16,2,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-3,0.76778698,5.166609524353027,119.23,32,16,3,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-4,0.7719402313232422,5.008191650756836,136.556,32,16,4,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-5,0.7671008110046387,5.064935174652099,137.614,32,16,5,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-B-6,0.7699761390686035,5.118510569854736,137.462,32,16,6,Mistral (7B),1,Can you explain the difference between a simile an,52,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-0,0.7726075649261475,5.056469631,124.976,32,32,0,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-1,0.7694869041442871,5.119558189178467,143.944,32,32,1,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-2,0.771749735,5.080949884109497,148.636,32,32,2,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-3,0.7767391204833984,5.2990299637451175,139.485,32,32,3,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-4,0.7699410915374756,5.168319134689331,125.11,32,32,4,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-5,0.7727189064025879,4.980919019805908,143.628,32,32,5,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-C-6,0.7705152034759521,5.024369739303589,144.483,32,32,6,Mistral (7B),1,What are some effective strategies for managing st,65,32,Palmetto Intel+A100,16745.9375,40960
+start-inference-D-0,0.7973406314849854,5.268621638626098,178.307,32,64,0,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-1,0.7923762798309326,5.044392012680054,180.377,32,64,1,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-2,0.7906136512756348,5.304763154327393,180.277,32,64,2,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-3,0.7915744781494141,5.262669138793945,180.305,32,64,3,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-4,0.791029692,5.124635122787476,181.354,32,64,4,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-5,0.7944061756134033,5.185056828994751,180.671,32,64,5,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-D-6,0.7927961349487305,5.091332878845215,157.36,32,64,6,Mistral (7B),1,Imagine you are an expert travel guide for Japan.,106,32,Palmetto Intel+A100,16773.9375,40960
+start-inference-E-0,1.0148718357086182,7.087464321853638,244.284,32,128,0,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-1,1.0136315822601318,6.971071330490112,243.68,32,128,1,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-2,1.0115633010864258,7.066743418518066,244.053,32,128,2,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-3,1.011878490447998,7.137709216400147,244.713,32,128,3,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-4,1.015357255935669,7.337311804824829,243.255,32,128,4,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-5,1.0291011333465576,7.155638999008179,265.736,32,128,5,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-E-6,1.013106107711792,6.998212922,245.275,32,128,6,Mistral (7B),1,"As an AI language model, you possess the capabilit",169,32,Palmetto Intel+A100,16841.9375,40960
+start-inference-F-0,1.2694509029388428,8.973471279586793,300.063,32,256,0,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-1,1.264580488204956,9.911200384628296,325.225,32,256,1,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-2,1.264695644378662,8.944008671600342,324.177,32,256,2,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-3,1.2718663215637207,9.208817882720947,298.976,32,256,3,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-4,1.2680246829986572,9.278251775100708,323.093,32,256,4,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-5,1.2646069526672363,9.052772549957275,298.799,32,256,5,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-F-6,1.2649405002593994,9.024338480545044,299.842,32,256,6,Mistral (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,16959.9375,40960
+start-inference-G-0,2.011218309402466,15.111937794815063,502.163,32,512,0,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-1,2.0130879878997803,14.89517390751648,499.325,32,512,1,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-2,2.012144088745117,15.036766344116211,500.071,32,512,2,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-3,2.009462594985962,14.926051376052856,499.397,32,512,3,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-4,2.012033462524414,14.931782310668945,500.803,32,512,4,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-5,2.0132195949554443,15.304491378341675,498.64,32,512,5,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-G-6,2.012218952178955,15.18935458657837,497.431,32,512,6,Mistral (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,17169.9375,40960
+start-inference-H-0,3.321192741394043,26.18315539544678,827.269,32,1024,0,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-1,3.3308908939361572,26.15073795478821,822.763,32,1024,1,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-2,3.327631950378418,25.228657721618653,825.863,32,1024,2,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-3,3.332493543624878,31.855476228134155,824.328,32,1024,3,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-4,3.323822498321533,25.61299962588501,827.307,32,1024,4,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-5,3.328118085861206,25.822689560409547,825.564,32,1024,5,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-H-6,3.333341598510742,25.771929111694337,826.06,32,1024,6,Mistral (7B),1,"/void _quicksort (void *const pbase, size_t total_",1017,32,Palmetto Intel+A100,17411.9375,40960
+start-inference-I-0,6.682676792144775,53.36428658914185,1659.107,32,2048,0,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-1,6.6934120655059814,52.924924087051394,1659.368,32,2048,1,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-2,6.695095062255859,52.86107933081055,1661.352,32,2048,2,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-3,6.705771446228027,53.03507853289795,1660.296,32,2048,3,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-4,6.694382905960083,53.032165052993776,1669.581,32,2048,4,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-5,6.698057174682617,52.738894898803714,1657.354,32,2048,5,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2171,32,Palmetto Intel+A100,18739.9375,40960
+start-inference-I-6,6.711256504058838,53.78293719558716,1679.329,32,2048,6,Mistral (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2170,32,Palmetto Intel+A100,18739.9375,40960
+tokenizer,0.3080205917358398,0.6847106198120154,9.235,32,0,0,Llama-2 (7B),1,startup,0,32,Palmetto Intel+A100,14727.9375,40960
+model load,18.37217402458191,946.4888341563568,596.465,32,0,0,Llama-2 (7B),1,startup,0,32,Palmetto Intel+A100,14727.9375,40960
+start-inference-A-0,2.1669318675994873,14.520976930038453,152.217,32,8,0,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-1,0.8734264373779297,5.566565196655273,131.94,32,8,1,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-2,0.8701105117797852,5.601332616516113,134.179,32,8,2,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-3,0.8717291355133057,5.677505836502076,116.827,32,8,3,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-4,0.8693854808807373,5.662301933944702,133.543,32,8,4,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-5,0.8695588111877441,5.610911161,137.444,32,8,5,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-A-6,0.868910551,5.550949669662476,116.771,32,8,6,Llama-2 (7B),1,What is the largest city in France?,41,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-B-0,0.8717505931854248,5.649834511,138.593,32,16,0,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-B-1,0.8741843700408936,5.759110246932983,142.478,32,16,1,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-B-2,0.8714895248413086,5.5889706369018555,139.263,32,16,2,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-B-3,0.8729269504547119,5.6128167158966065,127.508,32,16,3,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-B-4,0.8719537258148193,5.718278564,143.161,32,16,4,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-B-5,0.8824930191040039,5.557285567199707,137.681,32,16,5,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-B-6,0.8720088005065918,5.557348962005615,141.343,32,16,6,Llama-2 (7B),1,Can you explain the difference between a simile an,53,32,Palmetto Intel+A100,15297.9375,40960
+start-inference-C-0,0.8840248584747314,5.590590614395142,145.2,32,32,0,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-1,0.8773684501647949,5.5217082376403805,133.925,32,32,1,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-2,0.8782510757446289,6.195011319152832,152.632,32,32,2,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-3,0.8772754669189453,5.902154981079102,147.548,32,32,3,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-4,0.8789219856262207,5.588785078033447,148.144,32,32,4,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-5,0.8791041374206543,5.674488693450928,150.28,32,32,5,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-C-6,0.8770930767059326,5.598208247055053,141.172,32,32,6,Llama-2 (7B),1,What are some effective strategies for managing st,70,32,Palmetto Intel+A100,15299.9375,40960
+start-inference-D-0,0.8974692821502686,5.873210838729858,176.618,32,64,0,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15335.9375,40960
+start-inference-D-1,0.8902478218078613,5.789821364,183.455,32,64,1,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15335.9375,40960
+start-inference-D-2,0.8922581672668457,5.918220454986573,184.101,32,64,2,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15337.9375,40960
+start-inference-D-3,0.9034864902496338,5.788923231277466,177.474,32,64,3,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15337.9375,40960
+start-inference-D-4,0.8909151554107666,5.986901344192505,180.009,32,64,4,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15335.9375,40960
+start-inference-D-5,0.8919403553009033,5.796426352432251,178.699,32,64,5,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15337.9375,40960
+start-inference-D-6,0.8932187557220459,5.687179320846558,179.617,32,64,6,Llama-2 (7B),1,Imagine you are an expert travel guide for Japan.,110,32,Palmetto Intel+A100,15337.9375,40960
+start-inference-E-0,0.9023823738098145,5.866055964263916,222.389,32,128,0,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-1,0.8988983631134033,6.007300766494751,222.387,32,128,1,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-2,0.9017884731292723,5.900099515,223.917,32,128,2,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-3,0.9014322757720948,5.801694317,223.824,32,128,3,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-4,0.9049813747406006,5.746264894454956,222.918,32,128,4,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-5,0.910515547,5.8563469900970455,223.813,32,128,5,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-E-6,0.9019362926483154,5.860937051376343,220.5,32,128,6,Llama-2 (7B),1,"As an AI language model, you possess the capabilit",186,32,Palmetto Intel+A100,15329.9375,40960
+start-inference-F-0,1.3151047229766846,9.024462776748658,320.484,32,256,0,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-1,1.314455270767212,8.992604692459107,321.264,32,256,1,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-2,1.3161134719848633,9.124404601135254,320.81,32,256,2,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-3,1.3115556240081787,8.974362199386597,324.893,32,256,3,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-4,1.3116803169250488,9.058943230621338,324.644,32,256,4,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-5,1.3148815631866455,9.746093761001587,325.378,32,256,5,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-F-6,1.3117494583129885,9.225448626525864,326.491,32,256,6,Llama-2 (7B),1,/* An improved random number generation package.,299,32,Palmetto Intel+A100,15427.9375,40960
+start-inference-G-0,1.956996202468872,13.962360814834595,475.539,32,512,0,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-1,1.9494731426239016,14.332927303207368,476.214,32,512,1,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-2,1.952260971069336,14.368407169799804,476.97,32,512,2,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-3,1.953472375869751,14.194481809768677,500.874,32,512,3,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-4,1.9587063789367676,14.310598579742432,476.843,32,512,4,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-5,1.9538640975952148,14.370608680358886,501.815,32,512,5,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-G-6,1.9572057723999023,15.518172070007324,476.086,32,512,6,Llama-2 (7B),1,/*This is a version (aka ptmalloc2) of malloc/free,573,32,Palmetto Intel+A100,15433.9375,40960
+start-inference-H-0,3.505023479,26.582642040374754,873.185,32,1024,0,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-H-1,3.5012130737304688,26.418289470214845,873.681,32,1024,1,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-H-2,3.501779556274414,29.066591279418944,874.143,32,1024,2,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-H-3,3.508254289627075,26.666624277969362,872.688,32,1024,3,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-H-4,3.503814935684204,26.931521823684694,875.019,32,1024,4,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15685.9375,40960
+start-inference-H-5,3.515631675720215,26.911291320983885,874.998,32,1024,5,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-H-6,3.5141377449035645,27.122152132232667,851.882,32,1024,6,Llama-2 (7B),1,"/void _quicksort (void *const pbase, size_t total_",1018,32,Palmetto Intel+A100,15687.9375,40960
+start-inference-I-0,7.378369569778442,58.21715226661682,1827.084,32,2048,0,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
+start-inference-I-1,7.382974147796631,58.731425915252686,1825.269,32,2048,1,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
+start-inference-I-2,7.385086297988892,57.75209365083313,1825.178,32,2048,2,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
+start-inference-I-3,7.392508029937744,58.36233175466919,1849.005,32,2048,3,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
+start-inference-I-4,7.394267320632935,59.59946095252991,1824.16,32,2048,4,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
+start-inference-I-5,7.4061150550842285,63.14726986868286,1852.075,32,2048,5,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17187.9375,40960
+start-inference-I-6,7.395717620849609,57.352265436279296,1828.993,32,2048,6,Llama-2 (7B),1,"#include <alloca.h>
+#include <limits.h>
+#include <",2166,32,Palmetto Intel+A100,17185.9375,40960
