@@ -77,7 +77,7 @@ def run_inference(
 
 
 def monitor_power_usage(power_readings: list[str], stop_monitoring: threading.Event):
-    cmd = "echo ***REMOVED*** | sudo -S powermetrics --show-process-energy -i 200"
+    cmd = "echo tnarg1 | sudo -S powermetrics --show-process-energy -i 200"
     with subprocess.Popen(
         cmd, stdout=subprocess.PIPE, shell=True, text=True
     ) as process:
