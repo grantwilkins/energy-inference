@@ -56,7 +56,7 @@ def run_inference(
         prompt,
         do_sample=True,
         max_new_tokens=num_tokens,
-        min_new_tokens=int(num_tokens * 0.9),
+        min_new_tokens=num_tokens - 1,
         temperature=0.7,
         top_k=50,
         top_p=0.95,
@@ -73,7 +73,7 @@ def run_inference(
 def monitor_power_usage(
     power_readings: list[str], stop_monitoring: threading.Event, sudo_password: str
 ):
-    cmd = f"echo {sudo_password} | sudo -S powermetrics --show-process-energy -i 200"
+    cmd = f"echo ${sudo_password} | sudo -S powermetrics --show-process-energy -i 200"
     with subprocess.Popen(
         cmd, stdout=subprocess.PIPE, shell=True, text=True
     ) as process:
@@ -149,9 +149,9 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--sudo_password", type=str, default="password")
     args = parser.parse_args()
-    sudo_password = args.sudo_password
     todays_date = datetime.date.today().strftime("%Y-%m-%d")
     start_time = datetime.datetime.now().strftime("%H-%M-%S")
+    sudo_password = args.sudo_password
     num_tokens = args.num_tokens
     hf_name = args.hf_name
     system_name = args.system_name
@@ -541,8 +541,12 @@ _quicksort (void *const pbase, size_t total_elems, size_t size,
 Describe the code above and some potential confusion points for developers. Describe ways that we can also make the code more readable.
 """,
     }
-    new_prompts = {}
-    new_prompts["I"] = prompts["I"]
+    temp = {}
+    temp["F"] = prompts["F"]
+    temp["G"] = prompts["G"]
+    temp["H"] = prompts["H"]
+    temp["I"] = prompts["I"]
+    prompts = temp
     out_dir = f"{model_name}/{todays_date}/{start_time}"
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
@@ -558,7 +562,7 @@ Describe the code above and some potential confusion points for developers. Desc
         file.write(f"    num_tokens: {num_tokens}\n")
         file.write(f"    batch_size: {batch_size}\n")
         file.write(f"    hf_name: {hf_name}\n")
-        for idx, prompt in new_prompts.items():
+        for idx, prompt in prompts.items():
             file.write(f"    prompt-{idx}: {prompt[:50].strip()}\n")
 
     load_model_event = threading.Event()
@@ -607,10 +611,10 @@ Describe the code above and some potential confusion points for developers. Desc
         mode="a",
     )
 
-    for idx, prompt in new_prompts.items():
-        runtimes = []
-        for i in range(25):
-            dict_key = f"inference-{idx}-{i}"
+    output_tokens_vals = [8, 16, 32, 64, 128, 256]
+    for idx, prompt in prompts.items():
+        for num_tokens in output_tokens_vals:
+            dict_key = f"inference-{idx}-{num_tokens}"
             power_readings[dict_key] = []
             inference_event = threading.Event()
             inference_monitor = threading.Thread(
@@ -646,23 +650,14 @@ Describe the code above and some potential confusion points for developers. Desc
             df_energy_inference = post_process_power_data(readings, inference_runtime)
             df_energy_inference["Output Token Limit"] = num_tokens
             df_energy_inference["Input Tokens"] = num_input_tokens
-            df_energy_inference["Iteration"] = i
+            df_energy_inference["Iteration"] = 0
             df_energy_inference["Model Name"] = model_name
             df_energy_inference["Number of GPUs"] = 1
             df_energy_inference["Prompt"] = prompt[:50].strip()
-            df_energy_inference["Output Tokens"] = num_output_tokens - num_input_tokens
+            df_energy_inference["Output Tokens"] = num_output_tokens
             df_energy_inference["Batch Size"] = batch_size
             df_energy_inference["System"] = system_name
             df_energy_inference["GPU Memory (MB)"] = inference_mem
             df_energy_inference.to_csv(
                 f"{model_name}-{system_name}.csv", index=False, header=False, mode="a"
             )
-            if i > 0:
-                runtimes.append(inference_runtime)
-            mean_runtime = np.mean(runtimes)
-            std_err = stats.sem(runtimes)
-            z_critical = stats.norm.ppf((1 + 0.95) / 2)
-            ci_half_width = z_critical * std_err
-            # Break if we have more than 5 samples and the confidence interval half-width is less than 0.5
-            if i > 5 and ci_half_width < 0.5:
-                break

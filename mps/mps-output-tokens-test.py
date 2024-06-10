@@ -71,8 +71,12 @@ def run_inference(
     return sequences[0]["generated_text"]
 
 
-def monitor_power_usage(power_readings: list[str], stop_monitoring: threading.Event):
-    cmd = "echo ***REMOVED*** | sudo -S powermetrics --show-process-energy -i 200"
+def monitor_power_usage(
+    power_readings: list[str],
+    stop_monitoring: threading.Event,
+    sudo_password: str,
+):
+    cmd = f"echo {sudo_password} | sudo -S powermetrics --show-process-energy -i 200"
     with subprocess.Popen(
         cmd, stdout=subprocess.PIPE, shell=True, text=True
     ) as process:
@@ -146,7 +150,9 @@ if __name__ == "__main__":
     parser.add_argument("--hf_name", type=str, default="meta-llama/Llama-2-7b-chat-hf")
     parser.add_argument("--system_name", type=str, default="M1-Pro")
     parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--sudo_password", type=str, default="password")
     args = parser.parse_args()
+    sudo_password = args.sudo_password
     todays_date = datetime.date.today().strftime("%Y-%m-%d")
     start_time = datetime.datetime.now().strftime("%H-%M-%S")
     num_tokens = args.num_tokens
@@ -179,7 +185,11 @@ if __name__ == "__main__":
 
     load_model_monitor_thread = threading.Thread(
         target=monitor_power_usage,
-        args=(power_readings["load model"], load_model_event),
+        args=(
+            power_readings["load model"],
+            load_model_event,
+            sudo_password,
+        ),
     )
 
     pre_mem = torch.mps.current_allocated_memory() / 1024**2
@@ -228,7 +238,7 @@ if __name__ == "__main__":
             inference_event = threading.Event()
             inference_monitor = threading.Thread(
                 target=monitor_power_usage,
-                args=(power_readings[dict_key], inference_event),
+                args=(power_readings[dict_key], inference_event, sudo_password),
             )
             inference_start_time = time.time()
             llm_output = run_inference(

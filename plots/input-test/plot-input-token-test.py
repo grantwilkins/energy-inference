@@ -6,6 +6,19 @@ import matplotlib
 
 matplotlib.rcParams["pdf.fonttype"] = 42
 matplotlib.rcParams["ps.fonttype"] = 42
+plt.rcParams.update(
+    {
+        "text.usetex": True,  # Use LaTeX to write all text
+        "font.family": "serif",
+        "font.serif": ["Linux Libertine O"],  # Specify the Libertine font
+        "axes.labelsize": 9,  # LaTeX default is 10pt font.
+        "font.size": 12,
+        "legend.fontsize": 12,
+        "xtick.labelsize": 10,
+        "ytick.labelsize": 10,
+        "text.latex.preamble": r"\usepackage{libertine} \usepackage[libertine]{newtxmath}",  # Load libertine font
+    }
+)
 
 # Load the data
 # df_palmetto = pd.read_csv("input-token-test-palmetto.csv")
@@ -43,7 +56,7 @@ df = df[
 ]  # Remove the first inference job for consistency
 # df = df[df["System"] != "M1-Pro"]
 
-sns.set(style="whitegrid", context="talk", font_scale=1.2)
+sns.set(style="whitegrid", context="talk", font_scale=1.5)
 sns.set_palette("colorblind")
 
 plt.figure(figsize=(10, 6))
@@ -72,14 +85,14 @@ sns.lineplot(
         "M1-Pro",
     ],
     marker="o",
-    markersize=8,
+    markersize=10,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
     # legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
-plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
+plt.grid(which="minor", color="black", linestyle=":", linewidth=0.4, alpha=0.25)
 plt.ylim(1e0, 1e2)
 plt.xticks(
     [
@@ -130,14 +143,14 @@ sns.lineplot(
         "M1-Pro",
     ],
     marker="o",
-    markersize=8,
+    markersize=10,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
     legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
-plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
+plt.grid(which="minor", color="black", linestyle=":", linewidth=0.4, alpha=0.25)
 plt.ylim(1e0, 1e3)
 plt.xticks(
     [
@@ -183,14 +196,14 @@ sns.lineplot(
         "M1-Pro",
     ],
     marker="o",
-    markersize=8,
+    markersize=10,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
     # legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
-plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
+plt.grid(which="minor", color="black", linestyle=":", linewidth=0.4, alpha=0.25)
 plt.ylim(9e1, 1e5)
 plt.xticks(
     [
@@ -243,14 +256,14 @@ sns.lineplot(
         "M1-Pro",
     ],
     marker="o",
-    markersize=8,
+    markersize=10,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
     legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
-plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
+plt.grid(which="minor", color="black", linestyle=":", linewidth=0.4, alpha=0.25)
 plt.ylim(1e1, 1e3)
 plt.xticks(
     [
@@ -296,14 +309,14 @@ sns.lineplot(
         "M1-Pro",
     ],
     marker="o",
-    markersize=8,
+    markersize=10,
     style_order=["Falcon (7B)", "Llama-2 (7B)", "Mistral (7B)"],
     data=df,
     legend=False,
 )
 plt.xscale("log", base=2)
 plt.yscale("log")
-plt.grid(which="minor", color="black", linestyle=":", linewidth=0.5, alpha=0.3)
+plt.grid(which="minor", color="black", linestyle=":", linewidth=0.4, alpha=0.25)
 plt.ylim(1e-1, 1e3)
 plt.xticks(
     [
